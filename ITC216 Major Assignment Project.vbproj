@@ -78,6 +78,12 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Barter.Designer.vb">
+      <DependentUpon>Barter.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Barter.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Dashboard.Designer.vb">
       <DependentUpon>Dashboard.vb</DependentUpon>
     </Compile>
@@ -89,6 +95,18 @@
       <DependentUpon>Distribution.vb</DependentUpon>
     </Compile>
     <Compile Include="Distribution.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FoodExchange.Designer.vb">
+      <DependentUpon>FoodExchange.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FoodExchange.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FoodRequest.Designer.vb">
+      <DependentUpon>FoodRequest.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FoodRequest.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Login.Designer.vb">
@@ -113,6 +131,12 @@
       <DependentUpon>Registration.vb</DependentUpon>
     </Compile>
     <Compile Include="Registration.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report.Designer.vb">
+      <DependentUpon>Report.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Report.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Surplus.Designer.vb">
@@ -145,11 +169,20 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Barter.resx">
+      <DependentUpon>Barter.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Dashboard.resx">
       <DependentUpon>Dashboard.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Distribution.resx">
       <DependentUpon>Distribution.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FoodExchange.resx">
+      <DependentUpon>FoodExchange.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FoodRequest.resx">
+      <DependentUpon>FoodRequest.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.vb</DependentUpon>
@@ -169,6 +202,9 @@
     <EmbeddedResource Include="Registration.resx">
       <DependentUpon>Registration.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Report.resx">
+      <DependentUpon>Report.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Surplus.resx">
       <DependentUpon>Surplus.vb</DependentUpon>
     </EmbeddedResource>
@@ -177,6 +213,7 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
+    <None Include="Database\VitiFoodLink.db" />
     <None Include="My Project\Application.myapp">
       <Generator>MyApplicationCodeGenerator</Generator>
       <LastGenOutput>Application.Designer.vb</LastGenOutput>

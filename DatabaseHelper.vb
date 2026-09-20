@@ -54,6 +54,39 @@ Module DatabaseHelper
 
             End Using
 
+            Dim barterQuery As String =
+                "CREATE TABLE IF NOT EXISTS Barter (" &
+                "BarterID INTEGER PRIMARY KEY AUTOINCREMENT, " &
+                "OfferedProduce TEXT NOT NULL, " &
+                "OfferedQuantity REAL NOT NULL, " &
+                "RequestedProduce TEXT NOT NULL, " &
+                "RequestedQuantity REAL NOT NULL, " &
+                "Community TEXT NOT NULL, " &
+                "BarterDate TEXT NOT NULL" &
+                ");"
+
+            Using barterCmd As New SQLiteCommand(barterQuery, conn)
+                barterCmd.ExecuteNonQuery()
+            End Using
+
+            Dim requestQuery As String =
+                "CREATE TABLE IF NOT EXISTS FoodRequests (" &
+                "RequestID INTEGER PRIMARY KEY AUTOINCREMENT, " &
+                "RequesterName TEXT NOT NULL, " &
+                "FoodNeeded TEXT NOT NULL, " &
+                "QuantityNeeded REAL NOT NULL, " &
+                "RecipientType TEXT NOT NULL, " &
+                "Community TEXT NOT NULL, " &
+                "Urgency TEXT NOT NULL, " &
+                "RequestReason TEXT NOT NULL, " &
+                "RequestDate TEXT NOT NULL, " &
+                "Status TEXT NOT NULL DEFAULT 'Pending'" &
+                ");"
+
+            Using requestCmd As New SQLiteCommand(requestQuery, conn)
+                requestCmd.ExecuteNonQuery()
+            End Using
+
         End Using
 
     End Sub

@@ -110,4 +110,37 @@
         distributionForm.Show()
 
     End Sub
+
+    Private Sub btnReports_Click(sender As Object, e As EventArgs) Handles btnReports.Click
+
+        Dim reportForm As New Report()
+
+        reportForm.TopLevel = False
+        reportForm.FormBorderStyle = FormBorderStyle.None
+        reportForm.Dock = DockStyle.Fill
+
+        pnlContent.Controls.Clear()
+        pnlContent.Controls.Add(reportForm)
+
+        reportForm.Show()
+
+    End Sub
+
+    Private Sub btnBarter_Click(sender As Object, e As EventArgs) Handles btnBarter.Click
+
+
+        Dim foodExchangeForm As New frmFoodExchange()
+
+        foodExchangeForm.TopLevel = False
+        foodExchangeForm.FormBorderStyle = FormBorderStyle.None
+        foodExchangeForm.Dock = DockStyle.Fill
+
+        pnlContent.Controls.Clear()
+        pnlContent.Controls.Add(foodExchangeForm)
+
+        foodExchangeForm.Show()
+
+    End Sub
+
+
 End Class

@@ -103,7 +103,7 @@ Partial Class frmDashboard
         Me.btnBarter.Name = "btnBarter"
         Me.btnBarter.Size = New System.Drawing.Size(138, 47)
         Me.btnBarter.TabIndex = 4
-        Me.btnBarter.Text = "Barter"
+        Me.btnBarter.Text = "Food Exchange"
         Me.btnBarter.UseVisualStyleBackColor = True
         '
         'btnDistribution
