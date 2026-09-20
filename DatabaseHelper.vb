@@ -4,7 +4,11 @@ Imports System.IO
 Module DatabaseHelper
 
     Private ReadOnly DatabasePath As String =
-        Path.Combine(Application.StartupPath, "VitiFoodLink.db")
+    Path.Combine(
+        Application.StartupPath,
+        "Database",
+        "VitiFoodLink.db"
+    )
 
     Public ReadOnly ConnectionString As String =
         "Data Source=" & DatabasePath & ";Version=3;"
