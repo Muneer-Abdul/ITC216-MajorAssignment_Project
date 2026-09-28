@@ -35,6 +35,8 @@ Public Class frmDistribution
     End Sub
 
     Private Sub frmDistribution_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
+        ApplyLanguage()
         LoadProduce()
         LoadRecipients()
         LoadDistributionMethods()
@@ -316,6 +318,57 @@ Public Class frmDistribution
                 ex.Message)
 
         End Try
+
+    End Sub
+
+    Private Sub ApplyLanguage()
+
+        If LanguageHelper.CurrentLanguage = "English" Then
+
+            Me.Text = "Distribution"
+
+            Label1.Text = "PRODUCE DISTRIBUTION"
+            Label2.Text = "Select Produce:"
+            Label3.Text = "Available Quantity:"
+            Label4.Text = "Select Recipient:"
+            Label5.Text = "Distribution Quantity:"
+            Label6.Text = "Distribution Date:"
+            Label7.Text = "Distribution Method:"
+
+            btnDistribute.Text = "DISTRIBUTE"
+            btnClear.Text = "CLEAR"
+
+        ElseIf LanguageHelper.CurrentLanguage = "Itaukei" Then
+
+            Me.Text = "Veisoliyaki ni Kakana"
+
+            Label1.Text = "VEISOLIYAKI NI KAKANA"
+            Label2.Text = "Digitaka na Kakana:"
+            Label3.Text = "Levu ni Kakana:"
+            Label4.Text = "Digitaka na Ciqoma:"
+            Label5.Text = "Levu ni Veisoliyaki:"
+            Label6.Text = "Siga ni Veisoliyaki:"
+            Label7.Text = "Sala ni Veisoliyaki:"
+
+            btnDistribute.Text = "SOLIA"
+            btnClear.Text = "VAKASAVASAVATAKA"
+
+        ElseIf LanguageHelper.CurrentLanguage = "Fiji Hindi" Then
+
+            Me.Text = "Khana Baatna"
+
+            Label1.Text = "KHANA BAATNA"
+            Label2.Text = "Khana Chuniye:"
+            Label3.Text = "Khana ke Quantity:"
+            Label4.Text = "Lene Wala Chuniye:"
+            Label5.Text = "Baatne ke Quantity:"
+            Label6.Text = "Baatne ke Date:"
+            Label7.Text = "Baatne ka Tarika:"
+
+            btnDistribute.Text = "BAANTE"
+            btnClear.Text = "SAaf KARE"
+
+        End If
 
     End Sub
 End Class

@@ -1,4 +1,5 @@
 ﻿Imports System.Data.SQLite
+Imports System.Windows.Forms.VisualStyles.VisualStyleElement.Button
 Imports Microsoft.VisualBasic.Logging
 
 Public Class frmRecommendationEngine
@@ -34,7 +35,7 @@ Public Class frmRecommendationEngine
     End Sub
 
     Private Sub frmRecommendationEngine_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-
+        ApplyLanguage()
         LoadProduce()
         LoadRecipientTypes()
 
@@ -229,5 +230,68 @@ Public Class frmRecommendationEngine
         'Matching community only → 60%, Medium
         'Matching recipient type only → 40%, Low
         'No matching criteria → No suitable recipient found
+    End Sub
+
+    Private Sub ApplyLanguage()
+
+        If LanguageHelper.CurrentLanguage = "English" Then
+
+            Me.Text = "Recommendation Engine"
+            Label1.Text = "Recommendation Engine"
+            Label2.Text = "Select Produce:"
+            Label3.Text = "Available Quantity:"
+            Label4.Text = "Recipient Type:"
+            Label5.Text = "Community:"
+
+            grpResult.Text = "Recommendation Result"
+
+            Label6.Text = "Recommended Recipient:"
+            Label7.Text = "Suitability Score:"
+            Label8.Text = "Priority Level:"
+            Label9.Text = "Reason:"
+
+            btnRecommend.Text = "Find Recommendation"
+            btnClear.Text = "Clear"
+
+        ElseIf LanguageHelper.CurrentLanguage = "Itaukei" Then
+
+            Me.Text = "Vakatura ni Kakana"
+            Label1.Text = "Vakatura ni Kakana"
+            Label2.Text = "Digitaka na Kakana:"
+            Label3.Text = "Levu ni Kakana:"
+            Label4.Text = "Mataqali ni Ciqoma:"
+            Label5.Text = "Tikina:"
+
+            grpResult.Text = "Vakamacala ni Vakatura"
+
+            Label6.Text = "Ciqoma e Vakaturi:"
+            Label7.Text = "iVakadei ni Kerea:"
+            Label8.Text = "iVakatagedegede ni Bibi:"
+            Label9.Text = "Vuna:"
+
+            btnRecommend.Text = "Raica na Vakatura"
+            btnClear.Text = "Vakasavasavataka"
+
+        ElseIf LanguageHelper.CurrentLanguage = "Fiji Hindi" Then
+
+            Me.Text = "Khana Sujhav"
+            Label1.Text = "Khana Sujhav"
+            Label2.Text = "Khana Chuniye:"
+            Label3.Text = "Khana ke Quantity:"
+            Label4.Text = "Lene Wale ke Prakar:"
+            Label5.Text = "Community:"
+
+            grpResult.Text = "Sujhav ka Result"
+
+            Label6.Text = "Sujhav Lene Wala:"
+            Label7.Text = "Suitability Score:"
+            Label8.Text = "Priority Level:"
+            Label9.Text = "Karan:"
+
+            btnRecommend.Text = "Sujhav Khojiye"
+            btnClear.Text = "Saaf Kare"
+
+        End If
+
     End Sub
 End Class

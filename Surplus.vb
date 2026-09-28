@@ -102,6 +102,7 @@ Public Class frmSurplus
 
     Private Sub Surplus_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
+        ApplyLanguage()
         LoadSurplusData()
 
     End Sub
@@ -233,5 +234,59 @@ Public Class frmSurplus
         ClearFields()
 
         selectedProduceID = 0
+    End Sub
+
+    Private Sub ApplyLanguage()
+
+        If LanguageHelper.CurrentLanguage = "English" Then
+
+            Me.Text = "Surplus Produce"
+            Label1.Text = "Surplus Produce Management"
+            Label2.Text = "Produce Name:"
+            Label3.Text = "Quantity (kg):"
+            Label4.Text = "Donor"
+            Label5.Text = "Expiry Date"
+            Label6.Text = "Produce Source"
+            Label7.Text = "Community"
+
+            btnAdd.Text = "Add"
+            btnUpdate.Text = "Update"
+            btnDelete.Text = "Delete"
+            btnClear.Text = "Clear"
+
+        ElseIf LanguageHelper.CurrentLanguage = "Itaukei" Then
+
+            Me.Text = "Kakana e Soli"
+            Label1.Text = "Veiliutaki ni Kakana e Soli"
+            Label2.Text = "Yaca ni Kakana:"
+            Label3.Text = "Levu (kg):"
+            Label4.Text = "Dau Soli"
+            Label5.Text = "Siga me Oti"
+            Label6.Text = "Vanua ni Kakana"
+            Label7.Text = "Tikina"
+
+            btnAdd.Text = "Kuria"
+            btnUpdate.Text = "Vakavoui"
+            btnDelete.Text = "Bokoca"
+            btnClear.Text = "Vakasavasavataka"
+
+        ElseIf LanguageHelper.CurrentLanguage = "Fiji Hindi" Then
+
+            Me.Text = "Bacha Hua Khana"
+            Label1.Text = "Bacha Hua Khana Management"
+            Label2.Text = "Khana ke Naam:"
+            Label3.Text = "Quantity (kg):"
+            Label4.Text = "Dene Wala"
+            Label5.Text = "Expiry Date"
+            Label6.Text = "Khana Kahan Se Aaya"
+            Label7.Text = "Community"
+
+            btnAdd.Text = "Jode"
+            btnUpdate.Text = "Badle"
+            btnDelete.Text = "Mitai"
+            btnClear.Text = "Saaf Kare"
+
+        End If
+
     End Sub
 End Class

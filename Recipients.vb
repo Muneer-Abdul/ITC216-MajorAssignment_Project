@@ -34,7 +34,7 @@ Public Class frmRecipients
     End Sub
 
     Private Sub frmRecipients_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-
+        ApplyLanguage()
         LoadRecipients()
 
     End Sub
@@ -228,5 +228,59 @@ Public Class frmRecipients
         ClearFields()
 
         selectedRecipientID = 0
+    End Sub
+
+    Private Sub ApplyLanguage()
+
+        If LanguageHelper.CurrentLanguage = "English" Then
+
+            Me.Text = "Recipients Management"
+            Label1.Text = "Recipients Management"
+            Label2.Text = "Recipient Name:"
+            Label3.Text = "Organisation:"
+            Label4.Text = "Contact Number:"
+            Label5.Text = "Community:"
+            Label6.Text = "Location:"
+            Label7.Text = "Recipient Type:"
+
+            btnAdd.Text = "Add"
+            btnUpdate.Text = "Update"
+            btnDelete.Text = "Delete"
+            btnClear.Text = "Clear"
+
+        ElseIf LanguageHelper.CurrentLanguage = "Itaukei" Then
+
+            Me.Text = "Veiliutaki ni O ira e Ciqoma"
+            Label1.Text = "Veiliutaki ni O ira e Ciqoma"
+            Label2.Text = "Yaca ni Ciqoma:"
+            Label3.Text = "iSoqosoqo:"
+            Label4.Text = "Naba ni Veitaratara:"
+            Label5.Text = "Tikina:"
+            Label6.Text = "Vanua:"
+            Label7.Text = "Mataqali ni Ciqoma:"
+
+            btnAdd.Text = "Kuria"
+            btnUpdate.Text = "Vakavoui"
+            btnDelete.Text = "Bokoca"
+            btnClear.Text = "Vakasavasavataka"
+
+        ElseIf LanguageHelper.CurrentLanguage = "Fiji Hindi" Then
+
+            Me.Text = "Khana Lene Wale Management"
+            Label1.Text = "Khana Lene Wale Management"
+            Label2.Text = "Lene Wala ke Naam:"
+            Label3.Text = "Sanstha:"
+            Label4.Text = "Contact Number:"
+            Label5.Text = "Community:"
+            Label6.Text = "Jagah:"
+            Label7.Text = "Lene Wale ke Prakar:"
+
+            btnAdd.Text = "Jode"
+            btnUpdate.Text = "Badle"
+            btnDelete.Text = "Mitai"
+            btnClear.Text = "Saaf Kare"
+
+        End If
+
     End Sub
 End Class

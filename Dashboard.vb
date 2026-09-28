@@ -41,8 +41,7 @@
 
     Private Sub frmDashboard_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
-        lblUserLoggedIn.Text = "Logged in: " & loggedInName &
-                              " (" & loggedInRole & ")"
+        ApplyLanguage()
 
     End Sub
 
@@ -142,5 +141,49 @@
 
     End Sub
 
+    Private Sub ApplyLanguage()
+
+        If LanguageHelper.CurrentLanguage = "English" Then
+
+            btnSupplies.Text = "Supplies"
+            btnRecipients.Text = "Recipients"
+            btnRecommendation.Text = "Recommendation"
+            btnDistribution.Text = "Distribution"
+            btnBarter.Text = "Food Exchange"
+            btnReports.Text = "Reports"
+            btnLogout.Text = "Logout"
+
+            lblUserLoggedIn.Text = "Logged in: " & loggedInName &
+                                  " (" & loggedInRole & ")"
+
+        ElseIf LanguageHelper.CurrentLanguage = "Itaukei" Then
+
+            btnSupplies.Text = "iYau ni Kakana"
+            btnRecipients.Text = "O ira e ciqoma"
+            btnRecommendation.Text = "Vakatura"
+            btnDistribution.Text = "Veisoliyaki"
+            btnBarter.Text = "Veisau Kakana"
+            btnReports.Text = "Ripote"
+            btnLogout.Text = "Curu Yani"
+
+            lblUserLoggedIn.Text = "Curu: " & loggedInName &
+                                  " (" & loggedInRole & ")"
+
+        ElseIf LanguageHelper.CurrentLanguage = "Fiji Hindi" Then
+
+            btnSupplies.Text = "Khana Dena"
+            btnRecipients.Text = "Khana Lene Wale"
+            btnRecommendation.Text = "Sujhav"
+            btnDistribution.Text = "Khana Baatna"
+            btnBarter.Text = "Khana Exchange"
+            btnReports.Text = "Reports"
+            btnLogout.Text = "Logout"
+
+            lblUserLoggedIn.Text = "Login: " & loggedInName &
+                                  " (" & loggedInRole & ")"
+
+        End If
+
+    End Sub
 
 End Class
