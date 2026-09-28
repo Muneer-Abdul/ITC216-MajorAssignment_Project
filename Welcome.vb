@@ -1,31 +1,57 @@
 ﻿Public Class frmWelcome
 
 
-    Private Sub btnContinue_Click(sender As Object, e As EventArgs) Handles btnContinue.Click
+    Private Sub btnContinue_Click(
+    sender As Object,
+    e As EventArgs
+) Handles btnContinue.Click
 
-        If Not (rdoEnglish.Checked OrElse
-            rdoItaukei.Checked OrElse
-            rdoFijiHindi.Checked) Then
+        If rdoEnglish.Checked Then
 
-            MessageBox.Show("Please select a language.")
+            LanguageHelper.CurrentLanguage = "English"
+
+        ElseIf rdoItaukei.Checked Then
+
+            LanguageHelper.CurrentLanguage = "Itaukei"
+
+        ElseIf rdoFijiHindi.Checked Then
+
+            LanguageHelper.CurrentLanguage = "Fiji Hindi"
+
+        Else
+
+            MessageBox.Show(
+            "Please select a language.",
+            "Language Selection",
+            MessageBoxButtons.OK,
+            MessageBoxIcon.Warning
+        )
+
             Return
 
         End If
 
         Dim loginForm As New frmLogin()
+
         loginForm.Show()
         Me.Hide()
 
     End Sub
 
     Private Sub btnExit_Click(sender As Object, e As EventArgs) Handles btnExit.Click
-        Me.Close()
 
-    End Sub
+        Dim result As DialogResult
 
-    Private Sub frmWelcome_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        result = MessageBox.Show(
+        "Are you sure you want to exit Viti FoodLink?",
+        "Exit Application",
+        MessageBoxButtons.YesNo,
+        MessageBoxIcon.Question
+    )
 
-        InitializeDatabase()
+        If result = DialogResult.Yes Then
+            Application.Exit()
+        End If
 
     End Sub
 End Class

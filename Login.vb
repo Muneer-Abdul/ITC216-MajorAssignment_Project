@@ -67,4 +67,45 @@ Public Class frmLogin
 
     End Sub
 
+    Private Sub ApplyLanguage()
+
+        If LanguageHelper.CurrentLanguage = "English" Then
+
+            Label1.Text = "Welcome Back"
+            Label2.Text = "Username"
+            Label3.Text = "Password"
+            btnLogin.Text = "Login"
+            btnRegister.Text = "Create Account"
+            btnBack.Text = "Back"
+
+        ElseIf LanguageHelper.CurrentLanguage = "Itaukei" Then
+
+            Label1.Text = "Ni Bula Tale"
+            Label2.Text = "Yaca ni Vakayagataki"
+            Label3.Text = "Vosa ni Maroroi"
+            btnLogin.Text = "Curu"
+            btnRegister.Text = "Dolava na Akaude"
+            btnBack.Text = "Lesu"
+
+        ElseIf LanguageHelper.CurrentLanguage = "Fiji Hindi" Then
+
+            Label1.Text = "Phir Se Swagat Hai"
+            Label2.Text = "Username"
+            Label3.Text = "Password"
+            btnLogin.Text = "Login"
+            btnRegister.Text = "Naya Account Banai"
+            btnBack.Text = "Peechhe"
+
+        End If
+
+    End Sub
+
+    Private Sub frmLogin_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        ApplyLanguage()
+    End Sub
+
+    Private Sub btnBack_Click(sender As Object, e As EventArgs) Handles btnBack.Click
+        frmWelcome.Show()
+        Me.Hide()
+    End Sub
 End Class

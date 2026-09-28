@@ -4,6 +4,7 @@ Public Class frmRegistration
 
     Private Sub frmRegistration_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
+        ApplyLanguage()
         cmbRole.Items.Clear()
 
         cmbRole.Items.Add("Food Donor")
@@ -73,5 +74,49 @@ Public Class frmRegistration
 
         End Try
 
+    End Sub
+
+    Private Sub ApplyLanguage()
+
+        If LanguageHelper.CurrentLanguage = "English" Then
+
+            Label1.Text = "Create Account"
+            Label2.Text = "Full Name:"
+            Label3.Text = "Username:"
+            Label4.Text = "Password:"
+            Label5.Text = "Confirm Password:"
+            Label6.Text = "Role"
+            btnRegister.Text = "Register"
+            btnBack.Text = "Back to Login"
+
+        ElseIf LanguageHelper.CurrentLanguage = "Itaukei" Then
+
+            Label1.Text = "Dolava na Akaude"
+            Label2.Text = "Yaca Taucoko:"
+            Label3.Text = "Yaca ni Vakayagataki:"
+            Label4.Text = "Vosa ni Maroroi:"
+            Label5.Text = "Vakadeitaka na Vosa ni Maroroi:"
+            Label6.Text = "Itutu"
+            btnRegister.Text = "Rejisita"
+            btnBack.Text = "Lesu ki na Curu"
+
+        ElseIf LanguageHelper.CurrentLanguage = "Fiji Hindi" Then
+
+            Label1.Text = "Naya Account Banai"
+            Label2.Text = "Pura Naam:"
+            Label3.Text = "Username:"
+            Label4.Text = "Password:"
+            Label5.Text = "Password Dobara Likho:"
+            Label6.Text = "Role"
+            btnRegister.Text = "Register Karo"
+            btnBack.Text = "Login Par Jao"
+
+        End If
+
+    End Sub
+
+    Private Sub btnBack_Click(sender As Object, e As EventArgs) Handles btnBack.Click
+        frmLogin.Show()
+        Me.Hide()
     End Sub
 End Class
