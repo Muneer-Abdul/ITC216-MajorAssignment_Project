@@ -42,6 +42,7 @@
     Private Sub frmDashboard_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
         ApplyLanguage()
+        ApplyRolePermissions()
 
     End Sub
 
@@ -82,7 +83,7 @@
 
     Private Sub btnRecommendation_Click(sender As Object, e As EventArgs) Handles btnRecommendation.Click
 
-        Dim recommendationForm As New frmRecommendationEngine()
+        Dim recommendationForm As New frmRecommendationEngine(loggedInRole)
 
         recommendationForm.TopLevel = False
         recommendationForm.FormBorderStyle = FormBorderStyle.None
@@ -97,7 +98,7 @@
 
     Private Sub btnDistribution_Click(sender As Object, e As EventArgs) Handles btnDistribution.Click
 
-        Dim distributionForm As New frmDistribution()
+        Dim distributionForm As New frmDistribution(loggedInRole)
 
         distributionForm.TopLevel = False
         distributionForm.FormBorderStyle = FormBorderStyle.None
@@ -112,7 +113,7 @@
 
     Private Sub btnReports_Click(sender As Object, e As EventArgs) Handles btnReports.Click
 
-        Dim reportForm As New Report()
+        Dim reportForm As New Report(loggedInRole)
 
         reportForm.TopLevel = False
         reportForm.FormBorderStyle = FormBorderStyle.None
@@ -125,8 +126,7 @@
 
     End Sub
 
-    Private Sub btnBarter_Click(sender As Object, e As EventArgs) Handles btnBarter.Click
-
+    Private Sub btnExchange_Click(sender As Object, e As EventArgs) Handles btnExchange.Click
 
         Dim foodExchangeForm As New frmFoodExchange()
 
@@ -149,7 +149,7 @@
             btnRecipients.Text = "Recipients"
             btnRecommendation.Text = "Recommendation"
             btnDistribution.Text = "Distribution"
-            btnBarter.Text = "Food Exchange"
+            btnExchange.Text = "Food Exchange"
             btnReports.Text = "Reports"
             btnLogout.Text = "Logout"
 
@@ -162,7 +162,7 @@
             btnRecipients.Text = "O ira e ciqoma"
             btnRecommendation.Text = "Vakatura"
             btnDistribution.Text = "Veisoliyaki"
-            btnBarter.Text = "Veisau Kakana"
+            btnExchange.Text = "Veisau Kakana"
             btnReports.Text = "Ripote"
             btnLogout.Text = "Curu Yani"
 
@@ -175,7 +175,7 @@
             btnRecipients.Text = "Khana Lene Wale"
             btnRecommendation.Text = "Sujhav"
             btnDistribution.Text = "Khana Baatna"
-            btnBarter.Text = "Khana Exchange"
+            btnExchange.Text = "Khana Exchange"
             btnReports.Text = "Reports"
             btnLogout.Text = "Logout"
 
@@ -186,4 +186,34 @@
 
     End Sub
 
+    Private Sub ApplyRolePermissions()
+
+        If loggedInRole.Equals("Admin", StringComparison.OrdinalIgnoreCase) Then
+
+            btnRecommendation.Visible = True
+            btnDistribution.Visible = True
+            btnReports.Visible = True
+
+        ElseIf loggedInRole.Equals("Community Organisation", StringComparison.OrdinalIgnoreCase) Then
+
+            btnRecommendation.Visible = False
+            btnDistribution.Visible = False
+            btnReports.Visible = False
+
+        End If
+
+    End Sub
+
+    Private Sub btnBarter_Click(sender As Object, e As EventArgs) Handles btnBarter.Click
+        Dim barterMenu As New frmBarterMenu()
+
+        barterMenu.TopLevel = False
+        barterMenu.FormBorderStyle = FormBorderStyle.None
+        barterMenu.Dock = DockStyle.Fill
+
+        pnlContent.Controls.Clear()
+        pnlContent.Controls.Add(barterMenu)
+        barterMenu.Show()
+
+    End Sub
 End Class

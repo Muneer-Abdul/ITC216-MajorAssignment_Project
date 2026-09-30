@@ -1,6 +1,16 @@
 ﻿Imports System.Data.SQLite
 
 Public Class frmDistribution
+
+    Private loggedInRole As String
+
+    Public Sub New(role As String)
+
+        InitializeComponent()
+
+        loggedInRole = role
+
+    End Sub
     Private Sub LoadProduce()
 
         Try
@@ -35,12 +45,26 @@ Public Class frmDistribution
     End Sub
 
     Private Sub frmDistribution_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        If Not loggedInRole.Equals("Admin", StringComparison.OrdinalIgnoreCase) Then
+
+            MessageBox.Show(
+            "Access denied. Only administrators can access Produce Distribution.",
+            "Access Denied",
+            MessageBoxButtons.OK,
+            MessageBoxIcon.Warning
+        )
+
+            Me.Close()
+            Return
+
+        End If
 
         ApplyLanguage()
         LoadProduce()
         LoadRecipients()
         LoadDistributionMethods()
         LoadDistributionData()
+
     End Sub
 
     Private Sub cmbProduce_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cmbProduce.SelectedIndexChanged

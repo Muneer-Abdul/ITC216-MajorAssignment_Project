@@ -26,9 +26,10 @@ Partial Class frmDashboard
         Me.lblUserLoggedIn = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.pnlSidebar = New System.Windows.Forms.Panel()
+        Me.btnBarter = New System.Windows.Forms.Button()
         Me.btnLogout = New System.Windows.Forms.Button()
         Me.btnReports = New System.Windows.Forms.Button()
-        Me.btnBarter = New System.Windows.Forms.Button()
+        Me.btnExchange = New System.Windows.Forms.Button()
         Me.btnDistribution = New System.Windows.Forms.Button()
         Me.btnRecommendation = New System.Windows.Forms.Button()
         Me.btnRecipients = New System.Windows.Forms.Button()
@@ -44,7 +45,7 @@ Partial Class frmDashboard
         Me.pnlHeader.Controls.Add(Me.Label1)
         Me.pnlHeader.Location = New System.Drawing.Point(12, 3)
         Me.pnlHeader.Name = "pnlHeader"
-        Me.pnlHeader.Size = New System.Drawing.Size(1157, 68)
+        Me.pnlHeader.Size = New System.Drawing.Size(1354, 68)
         Me.pnlHeader.TabIndex = 0
         '
         'lblUserLoggedIn
@@ -67,17 +68,27 @@ Partial Class frmDashboard
         '
         'pnlSidebar
         '
+        Me.pnlSidebar.Controls.Add(Me.btnBarter)
         Me.pnlSidebar.Controls.Add(Me.btnLogout)
         Me.pnlSidebar.Controls.Add(Me.btnReports)
-        Me.pnlSidebar.Controls.Add(Me.btnBarter)
+        Me.pnlSidebar.Controls.Add(Me.btnExchange)
         Me.pnlSidebar.Controls.Add(Me.btnDistribution)
         Me.pnlSidebar.Controls.Add(Me.btnRecommendation)
         Me.pnlSidebar.Controls.Add(Me.btnRecipients)
         Me.pnlSidebar.Controls.Add(Me.btnSupplies)
         Me.pnlSidebar.Location = New System.Drawing.Point(12, 77)
         Me.pnlSidebar.Name = "pnlSidebar"
-        Me.pnlSidebar.Size = New System.Drawing.Size(237, 570)
+        Me.pnlSidebar.Size = New System.Drawing.Size(237, 707)
         Me.pnlSidebar.TabIndex = 1
+        '
+        'btnBarter
+        '
+        Me.btnBarter.Location = New System.Drawing.Point(49, 330)
+        Me.btnBarter.Name = "btnBarter"
+        Me.btnBarter.Size = New System.Drawing.Size(138, 47)
+        Me.btnBarter.TabIndex = 7
+        Me.btnBarter.Text = "Barter"
+        Me.btnBarter.UseVisualStyleBackColor = True
         '
         'btnLogout
         '
@@ -90,21 +101,21 @@ Partial Class frmDashboard
         '
         'btnReports
         '
-        Me.btnReports.Location = New System.Drawing.Point(48, 315)
+        Me.btnReports.Location = New System.Drawing.Point(48, 383)
         Me.btnReports.Name = "btnReports"
         Me.btnReports.Size = New System.Drawing.Size(138, 47)
         Me.btnReports.TabIndex = 5
         Me.btnReports.Text = "Reports"
         Me.btnReports.UseVisualStyleBackColor = True
         '
-        'btnBarter
+        'btnExchange
         '
-        Me.btnBarter.Location = New System.Drawing.Point(49, 262)
-        Me.btnBarter.Name = "btnBarter"
-        Me.btnBarter.Size = New System.Drawing.Size(138, 47)
-        Me.btnBarter.TabIndex = 4
-        Me.btnBarter.Text = "Food Exchange"
-        Me.btnBarter.UseVisualStyleBackColor = True
+        Me.btnExchange.Location = New System.Drawing.Point(49, 262)
+        Me.btnExchange.Name = "btnExchange"
+        Me.btnExchange.Size = New System.Drawing.Size(138, 47)
+        Me.btnExchange.TabIndex = 4
+        Me.btnExchange.Text = "Food Exchange"
+        Me.btnExchange.UseVisualStyleBackColor = True
         '
         'btnDistribution
         '
@@ -146,7 +157,7 @@ Partial Class frmDashboard
         '
         Me.pnlContent.Location = New System.Drawing.Point(255, 77)
         Me.pnlContent.Name = "pnlContent"
-        Me.pnlContent.Size = New System.Drawing.Size(914, 570)
+        Me.pnlContent.Size = New System.Drawing.Size(1111, 707)
         Me.pnlContent.TabIndex = 2
         '
         'frmDashboard
@@ -154,7 +165,7 @@ Partial Class frmDashboard
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.Control
-        Me.ClientSize = New System.Drawing.Size(1209, 669)
+        Me.ClientSize = New System.Drawing.Size(1378, 797)
         Me.Controls.Add(Me.pnlContent)
         Me.Controls.Add(Me.pnlSidebar)
         Me.Controls.Add(Me.pnlHeader)
@@ -175,9 +186,10 @@ Partial Class frmDashboard
     Friend WithEvents pnlContent As Panel
     Friend WithEvents btnLogout As Button
     Friend WithEvents btnReports As Button
-    Friend WithEvents btnBarter As Button
+    Friend WithEvents btnExchange As Button
     Friend WithEvents btnDistribution As Button
     Friend WithEvents btnRecommendation As Button
     Friend WithEvents btnRecipients As Button
     Friend WithEvents btnSupplies As Button
+    Friend WithEvents btnBarter As Button
 End Class

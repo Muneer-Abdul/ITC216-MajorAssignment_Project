@@ -2,11 +2,37 @@
 Imports System.IO
 
 Public Class Report
+
+    Private loggedInRole As String
+
+    Public Sub New(role As String)
+
+        InitializeComponent()
+
+        loggedInRole = role
+
+    End Sub
+
     Private Sub Report_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        If Not loggedInRole.Equals("Admin", StringComparison.OrdinalIgnoreCase) Then
+
+            MessageBox.Show(
+            "Access denied. Only administrators can access Reports.",
+            "Access Denied",
+            MessageBoxButtons.OK,
+            MessageBoxIcon.Warning
+        )
+
+            Me.Close()
+            Return
+
+        End If
+
         LoadReportStatistics()
         LoadReportData()
         LoadReportFilters()
         LoadDateFilters()
+
     End Sub
 
     Private Sub LoadReportStatistics()

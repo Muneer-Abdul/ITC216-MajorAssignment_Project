@@ -205,7 +205,7 @@ Partial Class frmRecipients
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1003, 581)
+        Me.ClientSize = New System.Drawing.Size(1090, 656)
         Me.Controls.Add(Me.dgvRecipients)
         Me.Controls.Add(Me.btnClear)
         Me.Controls.Add(Me.btnDelete)

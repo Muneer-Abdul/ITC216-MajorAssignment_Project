@@ -46,7 +46,7 @@ Partial Class frmDistribution
         Me.Label1.AutoSize = True
         Me.Label1.Location = New System.Drawing.Point(432, 24)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(230, 20)
+        Me.Label1.Size = New System.Drawing.Size(184, 16)
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "PRODUCE DISTRIBUTION    "
         '
@@ -55,7 +55,7 @@ Partial Class frmDistribution
         Me.Label2.AutoSize = True
         Me.Label2.Location = New System.Drawing.Point(50, 90)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(128, 20)
+        Me.Label2.Size = New System.Drawing.Size(102, 16)
         Me.Label2.TabIndex = 1
         Me.Label2.Text = "Select Produce:"
         '
@@ -64,7 +64,7 @@ Partial Class frmDistribution
         Me.Label3.AutoSize = True
         Me.Label3.Location = New System.Drawing.Point(50, 116)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(148, 20)
+        Me.Label3.Size = New System.Drawing.Size(118, 16)
         Me.Label3.TabIndex = 2
         Me.Label3.Text = "Available Quantity:"
         '
@@ -73,7 +73,7 @@ Partial Class frmDistribution
         Me.Label4.AutoSize = True
         Me.Label4.Location = New System.Drawing.Point(50, 143)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(135, 20)
+        Me.Label4.Size = New System.Drawing.Size(108, 16)
         Me.Label4.TabIndex = 3
         Me.Label4.Text = "Select Recipient:"
         '
@@ -82,7 +82,7 @@ Partial Class frmDistribution
         Me.Label5.AutoSize = True
         Me.Label5.Location = New System.Drawing.Point(50, 170)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(159, 20)
+        Me.Label5.Size = New System.Drawing.Size(127, 16)
         Me.Label5.TabIndex = 4
         Me.Label5.Text = "Distribution Quantity:"
         '
@@ -91,7 +91,7 @@ Partial Class frmDistribution
         Me.Label6.AutoSize = True
         Me.Label6.Location = New System.Drawing.Point(50, 203)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(135, 20)
+        Me.Label6.Size = New System.Drawing.Size(108, 16)
         Me.Label6.TabIndex = 5
         Me.Label6.Text = "Distribution Date:"
         '
@@ -100,7 +100,7 @@ Partial Class frmDistribution
         Me.Label7.AutoSize = True
         Me.Label7.Location = New System.Drawing.Point(50, 233)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(155, 20)
+        Me.Label7.Size = New System.Drawing.Size(124, 16)
         Me.Label7.TabIndex = 6
         Me.Label7.Text = "Distribution Method:"
         '
@@ -186,7 +186,7 @@ Partial Class frmDistribution
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1014, 610)
+        Me.ClientSize = New System.Drawing.Size(1086, 656)
         Me.Controls.Add(Me.dgvDistribution)
         Me.Controls.Add(Me.btnClear)
         Me.Controls.Add(Me.btnDistribute)

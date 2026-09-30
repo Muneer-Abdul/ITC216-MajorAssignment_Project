@@ -109,6 +109,18 @@
     <Compile Include="FoodRequest.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="frmBarterMenu.Designer.vb">
+      <DependentUpon>frmBarterMenu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmBarterMenu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmViewBarter.Designer.vb">
+      <DependentUpon>frmViewBarter.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmViewBarter.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="LanguageHelper.vb" />
     <Compile Include="Login.Designer.vb">
       <DependentUpon>Login.vb</DependentUpon>
@@ -184,6 +196,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FoodRequest.resx">
       <DependentUpon>FoodRequest.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBarterMenu.resx">
+      <DependentUpon>frmBarterMenu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmViewBarter.resx">
+      <DependentUpon>frmViewBarter.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.vb</DependentUpon>

@@ -201,7 +201,7 @@ Partial Class frmSurplus
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.ClientSize = New System.Drawing.Size(1089, 654)
         Me.Controls.Add(Me.txtCommunity)
         Me.Controls.Add(Me.cmbProduceSource)
         Me.Controls.Add(Me.Label7)

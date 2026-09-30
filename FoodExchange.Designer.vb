@@ -24,7 +24,6 @@ Partial Class frmFoodExchange
     Private Sub InitializeComponent()
         Me.btnGiveFood = New System.Windows.Forms.Button()
         Me.btnRequestFood = New System.Windows.Forms.Button()
-        Me.btnBarterExchange = New System.Windows.Forms.Button()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
@@ -46,21 +45,12 @@ Partial Class frmFoodExchange
         Me.btnRequestFood.Text = "REQUEST FOOD"
         Me.btnRequestFood.UseVisualStyleBackColor = True
         '
-        'btnBarterExchange
-        '
-        Me.btnBarterExchange.Location = New System.Drawing.Point(301, 300)
-        Me.btnBarterExchange.Name = "btnBarterExchange"
-        Me.btnBarterExchange.Size = New System.Drawing.Size(127, 69)
-        Me.btnBarterExchange.TabIndex = 2
-        Me.btnBarterExchange.Text = "BARTER EXCHANGE"
-        Me.btnBarterExchange.UseVisualStyleBackColor = True
-        '
         'Label1
         '
         Me.Label1.AutoSize = True
         Me.Label1.Location = New System.Drawing.Point(310, 38)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(160, 20)
+        Me.Label1.Size = New System.Drawing.Size(128, 16)
         Me.Label1.TabIndex = 3
         Me.Label1.Text = " FOOD EXCHANGE "
         '
@@ -70,7 +60,6 @@ Partial Class frmFoodExchange
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
         Me.Controls.Add(Me.Label1)
-        Me.Controls.Add(Me.btnBarterExchange)
         Me.Controls.Add(Me.btnRequestFood)
         Me.Controls.Add(Me.btnGiveFood)
         Me.Name = "frmFoodExchange"
@@ -82,6 +71,5 @@ Partial Class frmFoodExchange
 
     Friend WithEvents btnGiveFood As Button
     Friend WithEvents btnRequestFood As Button
-    Friend WithEvents btnBarterExchange As Button
     Friend WithEvents Label1 As Label
 End Class

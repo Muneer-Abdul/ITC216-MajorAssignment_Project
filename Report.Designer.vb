@@ -58,7 +58,7 @@ Partial Class Report
         '
         Me.pnlAvailable.Controls.Add(Me.lblAvailableValue)
         Me.pnlAvailable.Controls.Add(Me.Label2)
-        Me.pnlAvailable.Location = New System.Drawing.Point(121, 83)
+        Me.pnlAvailable.Location = New System.Drawing.Point(179, 89)
         Me.pnlAvailable.Name = "pnlAvailable"
         Me.pnlAvailable.Size = New System.Drawing.Size(180, 128)
         Me.pnlAvailable.TabIndex = 1
@@ -85,7 +85,7 @@ Partial Class Report
         '
         Me.pnlDistributed.Controls.Add(Me.lblDistributedValue)
         Me.pnlDistributed.Controls.Add(Me.Label3)
-        Me.pnlDistributed.Location = New System.Drawing.Point(383, 83)
+        Me.pnlDistributed.Location = New System.Drawing.Point(441, 89)
         Me.pnlDistributed.Name = "pnlDistributed"
         Me.pnlDistributed.Size = New System.Drawing.Size(180, 128)
         Me.pnlDistributed.TabIndex = 2
@@ -112,7 +112,7 @@ Partial Class Report
         '
         Me.pnlRecipients.Controls.Add(Me.lblRecipientsValue)
         Me.pnlRecipients.Controls.Add(Me.Label4)
-        Me.pnlRecipients.Location = New System.Drawing.Point(622, 83)
+        Me.pnlRecipients.Location = New System.Drawing.Point(680, 89)
         Me.pnlRecipients.Name = "pnlRecipients"
         Me.pnlRecipients.Size = New System.Drawing.Size(180, 135)
         Me.pnlRecipients.TabIndex = 3
@@ -122,7 +122,7 @@ Partial Class Report
         Me.lblRecipientsValue.AutoSize = True
         Me.lblRecipientsValue.Location = New System.Drawing.Point(57, 88)
         Me.lblRecipientsValue.Name = "lblRecipientsValue"
-        Me.lblRecipientsValue.Size = New System.Drawing.Size(18, 20)
+        Me.lblRecipientsValue.Size = New System.Drawing.Size(14, 16)
         Me.lblRecipientsValue.TabIndex = 7
         Me.lblRecipientsValue.Text = "0"
         '
@@ -138,7 +138,7 @@ Partial Class Report
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(163, 239)
+        Me.Label5.Location = New System.Drawing.Point(221, 245)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(83, 16)
         Me.Label5.TabIndex = 4
@@ -148,14 +148,14 @@ Partial Class Report
         '
         Me.cmbReportFilter.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cmbReportFilter.FormattingEnabled = True
-        Me.cmbReportFilter.Location = New System.Drawing.Point(279, 236)
+        Me.cmbReportFilter.Location = New System.Drawing.Point(337, 242)
         Me.cmbReportFilter.Name = "cmbReportFilter"
         Me.cmbReportFilter.Size = New System.Drawing.Size(121, 24)
         Me.cmbReportFilter.TabIndex = 5
         '
         'btnRefresh
         '
-        Me.btnRefresh.Location = New System.Drawing.Point(476, 236)
+        Me.btnRefresh.Location = New System.Drawing.Point(534, 242)
         Me.btnRefresh.Name = "btnRefresh"
         Me.btnRefresh.Size = New System.Drawing.Size(98, 30)
         Me.btnRefresh.TabIndex = 6
@@ -164,7 +164,7 @@ Partial Class Report
         '
         'btnExport
         '
-        Me.btnExport.Location = New System.Drawing.Point(434, 395)
+        Me.btnExport.Location = New System.Drawing.Point(445, 534)
         Me.btnExport.Name = "btnExport"
         Me.btnExport.Size = New System.Drawing.Size(159, 35)
         Me.btnExport.TabIndex = 7
@@ -174,17 +174,17 @@ Partial Class Report
         'dgvReport
         '
         Me.dgvReport.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.dgvReport.Location = New System.Drawing.Point(12, 272)
+        Me.dgvReport.Location = New System.Drawing.Point(90, 302)
         Me.dgvReport.Name = "dgvReport"
         Me.dgvReport.RowHeadersWidth = 51
         Me.dgvReport.RowTemplate.Height = 24
-        Me.dgvReport.Size = New System.Drawing.Size(871, 117)
+        Me.dgvReport.Size = New System.Drawing.Size(871, 199)
         Me.dgvReport.TabIndex = 8
         '
         'Label6
         '
         Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(621, 243)
+        Me.Label6.Location = New System.Drawing.Point(679, 249)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(71, 16)
         Me.Label6.TabIndex = 9
@@ -193,7 +193,7 @@ Partial Class Report
         'cmbDateFilter
         '
         Me.cmbDateFilter.FormattingEnabled = True
-        Me.cmbDateFilter.Location = New System.Drawing.Point(716, 240)
+        Me.cmbDateFilter.Location = New System.Drawing.Point(774, 246)
         Me.cmbDateFilter.Name = "cmbDateFilter"
         Me.cmbDateFilter.Size = New System.Drawing.Size(99, 24)
         Me.cmbDateFilter.TabIndex = 10
@@ -202,7 +202,7 @@ Partial Class Report
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(732, 424)
+        Me.ClientSize = New System.Drawing.Size(1088, 655)
         Me.Controls.Add(Me.cmbDateFilter)
         Me.Controls.Add(Me.Label6)
         Me.Controls.Add(Me.dgvReport)

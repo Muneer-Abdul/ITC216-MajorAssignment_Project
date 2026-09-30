@@ -3,6 +3,15 @@ Imports System.Windows.Forms.VisualStyles.VisualStyleElement.Button
 Imports Microsoft.VisualBasic.Logging
 
 Public Class frmRecommendationEngine
+    Private loggedInRole As String
+
+    Public Sub New(role As String)
+
+        InitializeComponent()
+
+        loggedInRole = role
+
+    End Sub
     Private Sub LoadProduce()
 
         Try
@@ -35,6 +44,21 @@ Public Class frmRecommendationEngine
     End Sub
 
     Private Sub frmRecommendationEngine_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
+        If Not loggedInRole.Equals("Admin", StringComparison.OrdinalIgnoreCase) Then
+
+            MessageBox.Show(
+                "Access denied. Only administrators can access the Recommendation Engine.",
+                "Access Denied",
+                MessageBoxButtons.OK,
+                MessageBoxIcon.Warning
+            )
+
+            Me.Close()
+            Return
+
+        End If
+
         ApplyLanguage()
         LoadProduce()
         LoadRecipientTypes()

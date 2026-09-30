@@ -233,7 +233,7 @@ Partial Class frmRecommendationEngine
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1053, 607)
+        Me.ClientSize = New System.Drawing.Size(1082, 662)
         Me.Controls.Add(Me.grpResult)
         Me.Controls.Add(Me.txtCommunity)
         Me.Controls.Add(Me.cmbRecipientType)

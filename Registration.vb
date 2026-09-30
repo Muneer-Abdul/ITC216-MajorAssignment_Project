@@ -7,8 +7,8 @@ Public Class frmRegistration
         ApplyLanguage()
         cmbRole.Items.Clear()
 
-        cmbRole.Items.Add("Food Donor")
-        cmbRole.Items.Add("Recipient")
+        'cmbRole.Items.Add("Food Donor")
+        'cmbRole.Items.Add("Recipient")
         cmbRole.Items.Add("Community Organisation")
 
         cmbRole.SelectedIndex = 0

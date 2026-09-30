@@ -21,7 +21,7 @@
 
     End Sub
 
-    Private Sub btnBarterExchange_Click(sender As Object, e As EventArgs) Handles btnBarterExchange.Click
+    Private Sub btnBarterExchange_Click(sender As Object, e As EventArgs)
 
         Dim barterForm As New frmBarter()
 
@@ -61,6 +61,10 @@
             requestForm.Show()
 
         End If
+
+    End Sub
+
+    Private Sub frmFoodExchange_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
     End Sub
 End Class

@@ -53,7 +53,7 @@ Partial Class frmRegistration
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(71, 16)
         Me.Label2.TabIndex = 1
-        Me.Label2.Text = "Full Nmae:"
+        Me.Label2.Text = "Full Name:"
         '
         'Label3
         '
