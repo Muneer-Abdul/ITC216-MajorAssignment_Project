@@ -40,16 +40,16 @@ Partial Class frmViewBarter
         'dgvBarter
         '
         Me.dgvBarter.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.dgvBarter.Location = New System.Drawing.Point(90, 121)
+        Me.dgvBarter.Location = New System.Drawing.Point(32, 126)
         Me.dgvBarter.Name = "dgvBarter"
         Me.dgvBarter.RowHeadersWidth = 51
         Me.dgvBarter.RowTemplate.Height = 24
-        Me.dgvBarter.Size = New System.Drawing.Size(543, 142)
+        Me.dgvBarter.Size = New System.Drawing.Size(756, 210)
         Me.dgvBarter.TabIndex = 2
         '
         'btnConfirmBarter
         '
-        Me.btnConfirmBarter.Location = New System.Drawing.Point(236, 313)
+        Me.btnConfirmBarter.Location = New System.Drawing.Point(305, 353)
         Me.btnConfirmBarter.Name = "btnConfirmBarter"
         Me.btnConfirmBarter.Size = New System.Drawing.Size(143, 53)
         Me.btnConfirmBarter.TabIndex = 3

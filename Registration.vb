@@ -10,6 +10,7 @@ Public Class frmRegistration
         'cmbRole.Items.Add("Food Donor")
         'cmbRole.Items.Add("Recipient")
         cmbRole.Items.Add("Community Organisation")
+        cmbRole.Items.Add("User")
 
         cmbRole.SelectedIndex = 0
 

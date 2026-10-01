@@ -5,10 +5,13 @@ Public Class frmBarter
     Private Sub frmBarter_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         LoadBarterData()
     End Sub
+
     Private Sub btnAddBarter_Click(sender As Object, e As EventArgs) Handles btnAddBarter.Click
 
         'Validate input
-        If txtOfferedProduce.Text.Trim() = "" OrElse
+        If txtName.Text.Trim() = "" OrElse
+           txtNumber.Text.Trim() = "" OrElse
+           txtOfferedProduce.Text.Trim() = "" OrElse
            txtOfferedQuantity.Text.Trim() = "" OrElse
            txtRequestedProduce.Text.Trim() = "" OrElse
            txtRequestedQuantity.Text.Trim() = "" OrElse
@@ -51,15 +54,25 @@ Public Class frmBarter
 
                 Dim query As String =
                     "INSERT INTO Barter " &
-                    "(OfferedProduce, OfferedQuantity, " &
-                    "RequestedProduce, RequestedQuantity, " &
-                    "Community, BarterDate) " &
+                    "(PersonName, ContactNumber, OfferedProduce, " &
+                    "OfferedQuantity, RequestedProduce, " &
+                    "RequestedQuantity, Community, BarterDate) " &
                     "VALUES " &
-                    "(@offeredProduce, @offeredQuantity, " &
-                    "@requestedProduce, @requestedQuantity, " &
-                    "@community, @barterDate)"
+                    "(@personName, @contactNumber, @offeredProduce, " &
+                    "@offeredQuantity, @requestedProduce, " &
+                    "@requestedQuantity, @community, @barterDate)"
 
                 Using cmd As New SQLiteCommand(query, conn)
+
+                    cmd.Parameters.AddWithValue(
+                        "@personName",
+                        txtName.Text.Trim()
+                    )
+
+                    cmd.Parameters.AddWithValue(
+                        "@contactNumber",
+                        txtNumber.Text.Trim()
+                    )
 
                     cmd.Parameters.AddWithValue(
                         "@offeredProduce",
@@ -119,6 +132,8 @@ Public Class frmBarter
 
     Private Sub ClearFields()
 
+        txtName.Clear()
+        txtNumber.Clear()
         txtOfferedProduce.Clear()
         txtOfferedQuantity.Clear()
         txtRequestedProduce.Clear()
@@ -137,10 +152,12 @@ Public Class frmBarter
                 conn.Open()
 
                 Dim query As String =
-                    "SELECT BarterID, OfferedProduce, " &
-                    "OfferedQuantity, RequestedProduce, " &
-                    "RequestedQuantity, Community, BarterDate " &
-                    "FROM Barter ORDER BY BarterID DESC"
+                    "SELECT BarterID, PersonName, ContactNumber, " &
+                    "OfferedProduce, OfferedQuantity, " &
+                    "RequestedProduce, RequestedQuantity, " &
+                    "Community, BarterDate, Status " &
+                    "FROM Barter " &
+                    "ORDER BY BarterID DESC"
 
                 Using adapter As New SQLiteDataAdapter(
                     query,
@@ -189,4 +206,5 @@ Public Class frmBarter
     Private Sub btnClear_Click(sender As Object, e As EventArgs) Handles btnClear.Click
         ClearFields()
     End Sub
+
 End Class

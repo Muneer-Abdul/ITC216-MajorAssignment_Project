@@ -190,14 +190,32 @@
 
         If loggedInRole.Equals("Admin", StringComparison.OrdinalIgnoreCase) Then
 
+            btnSupplies.Visible = True
+            btnRecipients.Visible = True
             btnRecommendation.Visible = True
             btnDistribution.Visible = True
+            btnExchange.Visible = True
+            btnBarter.Visible = True
             btnReports.Visible = True
 
         ElseIf loggedInRole.Equals("Community Organisation", StringComparison.OrdinalIgnoreCase) Then
 
+            btnSupplies.Visible = True
+            btnRecipients.Visible = True
             btnRecommendation.Visible = False
             btnDistribution.Visible = False
+            btnExchange.Visible = False
+            btnBarter.Visible = False
+            btnReports.Visible = False
+
+        ElseIf loggedInRole.Equals("User", StringComparison.OrdinalIgnoreCase) Then
+
+            btnSupplies.Visible = False
+            btnRecipients.Visible = False
+            btnRecommendation.Visible = False
+            btnDistribution.Visible = False
+            btnExchange.Visible = True
+            btnBarter.Visible = True
             btnReports.Visible = False
 
         End If

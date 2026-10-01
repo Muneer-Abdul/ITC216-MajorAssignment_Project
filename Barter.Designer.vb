@@ -36,6 +36,10 @@ Partial Class frmBarter
         Me.txtOfferedQuantity = New System.Windows.Forms.TextBox()
         Me.txtRequestedQuantity = New System.Windows.Forms.TextBox()
         Me.txtRequestedProduce = New System.Windows.Forms.TextBox()
+        Me.Label7 = New System.Windows.Forms.Label()
+        Me.Label8 = New System.Windows.Forms.Label()
+        Me.txtName = New System.Windows.Forms.TextBox()
+        Me.txtNumber = New System.Windows.Forms.TextBox()
         CType(Me.dgvBarter, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -51,7 +55,7 @@ Partial Class frmBarter
         'Label6
         '
         Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(51, 210)
+        Me.Label6.Location = New System.Drawing.Point(60, 232)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(79, 16)
         Me.Label6.TabIndex = 5
@@ -59,7 +63,7 @@ Partial Class frmBarter
         '
         'txtCommunity
         '
-        Me.txtCommunity.Location = New System.Drawing.Point(219, 210)
+        Me.txtCommunity.Location = New System.Drawing.Point(219, 226)
         Me.txtCommunity.Name = "txtCommunity"
         Me.txtCommunity.Size = New System.Drawing.Size(120, 22)
         Me.txtCommunity.TabIndex = 10
@@ -95,7 +99,7 @@ Partial Class frmBarter
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(45, 65)
+        Me.Label2.Location = New System.Drawing.Point(45, 100)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(108, 16)
         Me.Label2.TabIndex = 1
@@ -104,7 +108,7 @@ Partial Class frmBarter
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(45, 100)
+        Me.Label3.Location = New System.Drawing.Point(48, 127)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(105, 16)
         Me.Label3.TabIndex = 2
@@ -113,7 +117,7 @@ Partial Class frmBarter
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(45, 141)
+        Me.Label4.Location = New System.Drawing.Point(45, 162)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(131, 16)
         Me.Label4.TabIndex = 3
@@ -122,7 +126,7 @@ Partial Class frmBarter
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(45, 174)
+        Me.Label5.Location = New System.Drawing.Point(45, 198)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(128, 16)
         Me.Label5.TabIndex = 4
@@ -130,37 +134,73 @@ Partial Class frmBarter
         '
         'txtOfferedProduce
         '
-        Me.txtOfferedProduce.Location = New System.Drawing.Point(219, 65)
+        Me.txtOfferedProduce.Location = New System.Drawing.Point(219, 93)
         Me.txtOfferedProduce.Name = "txtOfferedProduce"
         Me.txtOfferedProduce.Size = New System.Drawing.Size(120, 22)
         Me.txtOfferedProduce.TabIndex = 6
         '
         'txtOfferedQuantity
         '
-        Me.txtOfferedQuantity.Location = New System.Drawing.Point(219, 100)
+        Me.txtOfferedQuantity.Location = New System.Drawing.Point(219, 121)
         Me.txtOfferedQuantity.Name = "txtOfferedQuantity"
         Me.txtOfferedQuantity.Size = New System.Drawing.Size(120, 22)
         Me.txtOfferedQuantity.TabIndex = 7
         '
         'txtRequestedQuantity
         '
-        Me.txtRequestedQuantity.Location = New System.Drawing.Point(219, 171)
+        Me.txtRequestedQuantity.Location = New System.Drawing.Point(219, 198)
         Me.txtRequestedQuantity.Name = "txtRequestedQuantity"
         Me.txtRequestedQuantity.Size = New System.Drawing.Size(120, 22)
         Me.txtRequestedQuantity.TabIndex = 9
         '
         'txtRequestedProduce
         '
-        Me.txtRequestedProduce.Location = New System.Drawing.Point(219, 141)
+        Me.txtRequestedProduce.Location = New System.Drawing.Point(219, 159)
         Me.txtRequestedProduce.Name = "txtRequestedProduce"
         Me.txtRequestedProduce.Size = New System.Drawing.Size(120, 22)
         Me.txtRequestedProduce.TabIndex = 8
+        '
+        'Label7
+        '
+        Me.Label7.AutoSize = True
+        Me.Label7.Location = New System.Drawing.Point(48, 44)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(113, 20)
+        Me.Label7.TabIndex = 14
+        Me.Label7.Text = "Person Name"
+        '
+        'Label8
+        '
+        Me.Label8.AutoSize = True
+        Me.Label8.Location = New System.Drawing.Point(48, 72)
+        Me.Label8.Name = "Label8"
+        Me.Label8.Size = New System.Drawing.Size(129, 20)
+        Me.Label8.TabIndex = 15
+        Me.Label8.Text = "Contact Number"
+        '
+        'txtName
+        '
+        Me.txtName.Location = New System.Drawing.Point(219, 41)
+        Me.txtName.Name = "txtName"
+        Me.txtName.Size = New System.Drawing.Size(106, 22)
+        Me.txtName.TabIndex = 16
+        '
+        'txtNumber
+        '
+        Me.txtNumber.Location = New System.Drawing.Point(219, 65)
+        Me.txtNumber.Name = "txtNumber"
+        Me.txtNumber.Size = New System.Drawing.Size(106, 22)
+        Me.txtNumber.TabIndex = 17
         '
         'frmBarter
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(904, 510)
+        Me.Controls.Add(Me.txtNumber)
+        Me.Controls.Add(Me.txtName)
+        Me.Controls.Add(Me.Label8)
+        Me.Controls.Add(Me.Label7)
         Me.Controls.Add(Me.btnAddBarter)
         Me.Controls.Add(Me.dgvBarter)
         Me.Controls.Add(Me.btnClear)
@@ -198,4 +238,8 @@ Partial Class frmBarter
     Friend WithEvents txtOfferedQuantity As TextBox
     Friend WithEvents txtRequestedQuantity As TextBox
     Friend WithEvents txtRequestedProduce As TextBox
+    Friend WithEvents Label7 As Label
+    Friend WithEvents Label8 As Label
+    Friend WithEvents txtName As TextBox
+    Friend WithEvents txtNumber As TextBox
 End Class

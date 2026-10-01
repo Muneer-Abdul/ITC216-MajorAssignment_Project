@@ -12,22 +12,24 @@ Public Class frmViewBarter
 
         Try
 
-            Using conn As SQLiteConnection = GetConnection()
+            Using conn As SQLiteConnection =
+            GetConnection()
 
                 conn.Open()
 
                 Dim query As String =
-                    "SELECT BarterID, OfferedProduce, OfferedQuantity, " &
-                    "RequestedProduce, RequestedQuantity, Community, BarterDate, Status " &
-                    "FROM Barter " &
-                    "ORDER BY BarterID DESC"
+                "SELECT BarterID, PersonName, ContactNumber, " &
+                "OfferedProduce, OfferedQuantity, " &
+                "RequestedProduce, RequestedQuantity, " &
+                "Community, BarterDate, Status " &
+                "FROM Barter " &
+                "ORDER BY BarterID DESC"
 
                 Using cmd As New SQLiteCommand(query, conn)
 
                     Using adapter As New SQLiteDataAdapter(cmd)
 
                         Dim table As New DataTable()
-
                         adapter.Fill(table)
 
                         dgvBarter.DataSource = table
@@ -38,24 +40,36 @@ Public Class frmViewBarter
 
             End Using
 
-            ' Make the grid easier to read
+            'Improve DataGridView appearance
             dgvBarter.AutoSizeColumnsMode =
-                DataGridViewAutoSizeColumnsMode.Fill
+            DataGridViewAutoSizeColumnsMode.Fill
 
             dgvBarter.ReadOnly = True
+
+            dgvBarter.AllowUserToAddRows = False
+
             dgvBarter.SelectionMode =
-                DataGridViewSelectionMode.FullRowSelect
+            DataGridViewSelectionMode.FullRowSelect
 
             dgvBarter.MultiSelect = False
+
+            dgvBarter.EnableHeadersVisualStyles = False
+
+            dgvBarter.ColumnHeadersDefaultCellStyle.Font =
+            New Font("Segoe UI", 10, FontStyle.Bold)
+
+            dgvBarter.ColumnHeadersHeight = 35
+
+            dgvBarter.RowTemplate.Height = 30
 
         Catch ex As Exception
 
             MessageBox.Show(
-                "Error loading barter records: " & ex.Message,
-                "Barter",
-                MessageBoxButtons.OK,
-                MessageBoxIcon.Error
-            )
+            "Error loading barter records: " & ex.Message,
+            "Barter",
+            MessageBoxButtons.OK,
+            MessageBoxIcon.Error
+        )
 
         End Try
 

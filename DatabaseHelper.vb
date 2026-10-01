@@ -73,6 +73,47 @@ Module DatabaseHelper
                 barterCmd.ExecuteNonQuery()
             End Using
 
+            ' Add Status column to Barter table if it does not already exist
+            Dim statusExists As Boolean = False
+
+            Dim checkStatusQuery As String =
+    "PRAGMA table_info(Barter);"
+
+            Using checkCmd As New SQLiteCommand(checkStatusQuery, conn)
+
+                Using reader As SQLiteDataReader = checkCmd.ExecuteReader()
+
+                    While reader.Read()
+
+                        If reader("name").ToString().Equals(
+                "Status",
+                StringComparison.OrdinalIgnoreCase) Then
+
+                            statusExists = True
+                            Exit While
+
+                        End If
+
+                    End While
+
+                End Using
+
+            End Using
+
+            If Not statusExists Then
+
+                Dim addStatusQuery As String =
+        "ALTER TABLE Barter " &
+        "ADD COLUMN Status TEXT NOT NULL DEFAULT 'Available';"
+
+                Using addStatusCmd As New SQLiteCommand(addStatusQuery, conn)
+
+                    addStatusCmd.ExecuteNonQuery()
+
+                End Using
+
+            End If
+
             Dim requestQuery As String =
                 "CREATE TABLE IF NOT EXISTS FoodRequests (" &
                 "RequestID INTEGER PRIMARY KEY AUTOINCREMENT, " &
