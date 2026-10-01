@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Viti FoodLink</title>
+<style>
+*{box-sizing:border-box}body{margin:0;font-family:Segoe UI,Arial,sans-serif;background:#f4f7f9;color:#1f2937}
+button,input,select,textarea{font:inherit}button{cursor:pointer;border:0}
+.login{min-height:100vh;display:flex;align-items:center;justify-content:center}.loginbox{width:420px;background:white;padding:30px;border-radius:14px;box-shadow:0 4px 20px #0001}
+h1{margin:0 0 8px}h2{margin-top:0}.muted{color:#6b7280}.notice{padding:12px;background:#fff7d6;border-radius:8px;margin:15px 0}
+label{display:block;font-weight:600;font-size:13px;margin:12px 0 5px}input,select,textarea{width:100%;padding:10px;border:1px solid #d1d5db;border-radius:7px;background:white}
+textarea{min-height:80px}.actions{display:flex;gap:10px;margin-top:18px;flex-wrap:wrap}
+.primary{background:#176b45;color:white;padding:10px 16px;border-radius:7px}.secondary{background:#e5e7eb;padding:10px 16px;border-radius:7px}.danger{background:#b42318;color:white;padding:10px 16px;border-radius:7px}
+.app{display:flex;min-height:100vh}.side{width:245px;background:#123b2a;color:white;padding:22px 15px;position:fixed;top:0;bottom:0}.brand{font-size:23px;font-weight:bold}.sub{font-size:12px;opacity:.75;margin-bottom:20px}
+.user{background:#ffffff18;padding:12px;border-radius:9px;margin-bottom:15px}.nav button{display:block;width:100%;text-align:left;background:transparent;color:white;padding:11px;border-radius:7px;margin:2px 0}.nav button:hover,.nav button.active{background:#ffffff1c}.logout{position:absolute;bottom:20px;left:15px;right:15px;background:#b42318;color:white;padding:10px;border-radius:7px}
+.main{margin-left:245px;width:calc(100% - 245px);padding:28px}.top{display:flex;justify-content:space-between;align-items:center;margin-bottom:20px}.badge{padding:6px 10px;background:#e8f5ed;border-radius:20px;font-size:12px}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.card{background:white;border-radius:12px;padding:20px;box-shadow:0 2px 10px #0000000d;margin-bottom:18px}.stat{font-size:28px;font-weight:bold;margin-top:7px}
+.formgrid{display:grid;grid-template-columns:repeat(2,1fr);gap:8px 16px}.tablewrap{overflow:auto}table{width:100%;border-collapse:collapse;min-width:900px}th,td{padding:10px;border-bottom:1px solid #e5e7eb;text-align:left;font-size:13px}th{background:#f3f4f6}
+.hidden{display:none!important}.access{padding:15px;background:#fdecec;color:#991b1b;border-radius:8px}
+@media(max-width:800px){.side{width:200px}.main{margin-left:200px;width:calc(100% - 200px)}.grid,.formgrid{grid-template-columns:1fr}}
+@media(max-width:600px){.app{display:block}.side{position:static;width:100%;min-height:auto}.logout{position:static;margin-top:12px}.main{margin:0;width:100%;padding:18px}}
+</style>
+</head>
+<body>
+
+<div id="login" class="login">
+<div class="loginbox">
+<h1>Viti FoodLink</h1>
+<p class="muted">Community Food Surplus Management System</p>
+<div class="notice">Web-based representation of the Viti FoodLink Windows application.</div>
+<label>Language</label><select id="lang"><option>English</option><option>Itaukei</option><option>Fiji Hindi</option></select>
+<label>Username</label><input id="username" value="admin">
+<label>Password</label><input id="password" type="password" value="admin@1234">
+<label>Role</label><select id="role"><option>Admin</option><option>Community Organisation</option><option>User</option></select>
+<div class="actions"><button class="primary" onclick="login()">Login</button><button class="secondary" onclick="alert('Public registration supports Community Organisation and User roles. Admin accounts are created by the system administrator.')">Create Account</button></div>
+</div></div>
+
+<div id="app" class="app hidden">
+<aside class="side">
+<div class="brand">Viti FoodLink</div><div class="sub">Community Food Surplus Management</div>
+<div class="user"><b id="who">Administrator</b><br><span id="whoRole">Admin</span></div>
+<div id="nav" class="nav"></div><button class="logout" onclick="logout()">Logout</button>
+</aside>
+<main class="main">
+<div class="top"><div><h1 id="title">Dashboard</h1><div class="muted">Viti FoodLink Web Prototype</div></div><span id="badge" class="badge">Admin</span></div>
+<div id="content"></div>
+</main></div>
+
+<script>
+let currentRole="Admin",currentName="Administrator",next=10;
+let surplus=[
+{id:1,name:"Cassava",qty:10,donor:"Abdul",expiry:"2026-10-20",source:"Community",community:"Nadi"},
+{id:2,name:"Vegetables",qty:20,donor:"Community Donor",expiry:"2026-10-15",source:"Donation",community:"Nadi"}];
+let recipients=[{id:1,name:"Nadi Family",org:"Community",contact:"7000000",community:"Nadi",location:"Nadi",type:"Family"}];
+let distributions=[],requests=[];
+let barters=[{id:1,person:"Abdul",contact:"8690302",offered:"Cassava",oqty:10,requested:"Vegetables",rqty:5,community:"Nadi",date:"2026-10-01",status:"Confirmed"}];
+
+const menus={
+Admin:["Dashboard","Supplies","Recipients","Recommendation","Distribution","Food Exchange","Barter","Reports"],
+"Community Organisation":["Dashboard","Supplies","Recipients"],
+User:["Dashboard","Food Exchange","Barter"]};
+
+function login(){
+ currentRole=document.getElementById("role").value;
+ currentName=currentRole==="Admin"?"Administrator":currentRole;
+ document.getElementById("who").textContent=currentName;
+ document.getElementById("whoRole").textContent=currentRole;
+ document.getElementById("badge").textContent=currentRole;
+ document.getElementById("login").classList.add("hidden");
+ document.getElementById("app").classList.remove("hidden");
+ buildNav();show("Dashboard");
+}
+function logout(){document.getElementById("app").classList.add("hidden");document.getElementById("login").classList.remove("hidden")}
+function buildNav(){let n=document.getElementById("nav");n.innerHTML="";menus[currentRole].forEach(x=>{let b=document.createElement("button");b.textContent=x;b.onclick=()=>show(x);n.appendChild(b)})}
+function show(p){document.getElementById("title").textContent=p;let c=document.getElementById("content");({Dashboard:dashboard,Supplies:supplies,Recipients:recipientPage,Recommendation:recommendation,Distribution:distribution,"Food Exchange":exchange,Barter:barter,Reports:reports}[p])(c)}
+function val(id){return document.getElementById(id)?.value.trim()||""}
+
+function dashboard(c){
+let a=surplus.reduce((s,x)=>s+Number(x.qty),0),d=distributions.reduce((s,x)=>s+Number(x.qty),0);
+c.innerHTML=`<div class="grid"><div class="card"><div class="muted">Available Produce</div><div class="stat">${a} kg</div></div><div class="card"><div class="muted">Distributed Produce</div><div class="stat">${d} kg</div></div><div class="card"><div class="muted">Recipients</div><div class="stat">${recipients.length}</div></div></div><div class="card"><h2>Welcome to Viti FoodLink</h2><p>Manage surplus food, recipients, recommendations, distribution, food requests and community barter in one system.</p><p class="muted">Logged in: ${currentName} (${currentRole})</p></div>`;
+}
+function supplies(c){
+c.innerHTML=`<div class="card"><h2>Surplus Produce Management</h2><div class="formgrid">
+<div><label>Produce Name</label><input id="sn"></div><div><label>Quantity</label><input id="sq" type="number"></div>
+<div><label>Donor</label><input id="sd"></div><div><label>Expiry Date</label><input id="se" type="date"></div>
+<div><label>Produce Source</label><select id="ss"><option>Donation</option><option>Community</option><option>Garden</option></select></div><div><label>Community</label><input id="sc"></div></div>
+<div class="actions"><button class="primary" onclick="addSurplus()">Add</button><button class="secondary" onclick="show('Supplies')">Clear</button></div></div>${tableSurplus()}`;
+}
+function tableSurplus(){return `<div class="card tablewrap"><table><tr><th>ID</th><th>Produce</th><th>Quantity</th><th>Donor</th><th>Expiry</th><th>Source</th><th>Community</th></tr>${surplus.map(x=>`<tr><td>${x.id}</td><td>${x.name}</td><td>${x.qty}</td><td>${x.donor}</td><td>${x.expiry}</td><td>${x.source}</td><td>${x.community}</td></tr>`).join("")}</table></div>`}
+function addSurplus(){let x={id:++next,name:val("sn"),qty:+val("sq"),donor:val("sd"),expiry:val("se"),source:val("ss"),community:val("sc")};if(!x.name||!x.qty||!x.donor||!x.expiry||!x.community)return alert("Please complete all fields.");surplus.push(x);show("Supplies")}
+
+function recipientPage(c){
+c.innerHTML=`<div class="card"><h2>Recipients</h2><div class="formgrid">
+<div><label>Recipient Name</label><input id="rn"></div><div><label>Organisation</label><input id="ro"></div>
+<div><label>Contact Number</label><input id="rc"></div><div><label>Community</label><input id="rco"></div>
+<div><label>Location</label><input id="rl"></div><div><label>Recipient Type</label><select id="rt"><option>Individual</option><option>Family</option><option>Community Organisation</option><option>Charity</option><option>School</option></select></div></div>
+<div class="actions"><button class="primary" onclick="addRecipient()">Add</button><button class="secondary" onclick="show('Recipients')">Clear</button></div></div>
+<div class="card tablewrap"><table><tr><th>ID</th><th>Name</th><th>Organisation</th><th>Contact</th><th>Community</th><th>Location</th><th>Type</th></tr>${recipients.map(x=>`<tr><td>${x.id}</td><td>${x.name}</td><td>${x.org}</td><td>${x.contact}</td><td>${x.community}</td><td>${x.location}</td><td>${x.type}</td></tr>`).join("")}</table></div>`;
+}
+function addRecipient(){let x={id:++next,name:val("rn"),org:val("ro"),contact:val("rc"),community:val("rco"),location:val("rl"),type:val("rt")};if(Object.values(x).some(v=>!v))return alert("Please complete all fields.");recipients.push(x);show("Recipients")}
+
+function recommendation(c){
+if(currentRole!=="Admin")return c.innerHTML=`<div class="access">Access denied. Only administrators can access Recommendation.</div>`;
+c.innerHTML=`<div class="card"><h2>AI Recommendation Engine</h2><div class="formgrid">
+<div><label>Produce</label><select id="rp">${surplus.filter(x=>x.qty>0).map(x=>`<option>${x.name}</option>`).join("")}</select></div>
+<div><label>Quantity Available</label><input id="rq" readonly></div>
+<div><label>Recipient Type</label><select id="rpt"><option>Individual</option><option>Family</option><option>Community Organisation</option><option>Charity</option><option>School</option></select></div>
+<div><label>Community</label><input id="rpc"></div></div><div class="actions"><button class="primary" onclick="recommend()">Recommend</button></div><div id="result"></div></div>`;
+updateRQ();document.getElementById("rp").onchange=updateRQ;
+}
+function updateRQ(){let x=surplus.find(a=>a.name===val("rp"));if(x)document.getElementById("rq").value=x.qty+" kg"}
+function recommend(){
+let type=val("rpt"),community=val("rpc"),best=null,score=-1;
+recipients.forEach(r=>{let s=(r.type===type?40:0)+(r.community.toLowerCase()===community.toLowerCase()?60:0);if(s>score){score=s;best=r}});
+if(!best)return;document.getElementById("result").innerHTML=`<div class="notice"><b>Recommended Recipient:</b> ${best.name}<br><b>Suitability Score:</b> ${score}<br><b>Priority:</b> ${score>=100?"High":score>=60?"Medium":"Low"}<br><b>Reason:</b> Based on recipient type and community matching.</div>`;
+}
+
+function distribution(c){
+if(currentRole!=="Admin")return c.innerHTML=`<div class="access">Access denied. Only administrators can access Distribution.</div>`;
+c.innerHTML=`<div class="card"><h2>Food Distribution</h2><div class="formgrid">
+<div><label>Produce</label><select id="dp">${surplus.filter(x=>x.qty>0).map(x=>`<option value="${x.id}">${x.name}</option>`).join("")}</select></div>
+<div><label>Available Quantity</label><input id="da" readonly></div><div><label>Recipient</label><select id="dr">${recipients.map(x=>`<option value="${x.id}">${x.name}</option>`).join("")}</select></div>
+<div><label>Distribution Quantity</label><input id="dq" type="number"></div><div><label>Distribution Date</label><input id="dd" type="date" value="${new Date().toISOString().slice(0,10)}"></div>
+<div><label>Distribution Method</label><select id="dm"><option>Direct Delivery</option><option>Collection</option><option>Community Centre</option></select></div></div>
+<div class="actions"><button class="primary" onclick="addDistribution()">Distribute</button></div></div>
+<div class="card tablewrap"><table><tr><th>Produce</th><th>Recipient</th><th>Quantity</th><th>Date</th><th>Method</th></tr>${distributions.map(x=>`<tr><td>${x.produce}</td><td>${x.recipient}</td><td>${x.qty}</td><td>${x.date}</td><td>${x.method}</td></tr>`).join("")}</table></div>`;
+updateDA();document.getElementById("dp").onchange=updateDA;
+}
+function updateDA(){let x=surplus.find(a=>a.id==val("dp"));if(x)document.getElementById("da").value=x.qty+" kg"}
+function addDistribution(){let p=surplus.find(a=>a.id==val("dp")),r=recipients.find(a=>a.id==val("dr")),q=+val("dq");if(!p||!r||q<=0||q>p.qty)return alert("Enter a valid distribution quantity.");p.qty-=q;distributions.push({produce:p.name,recipient:r.name,qty:q,date:val("dd"),method:val("dm")});show("Distribution")}
+
+function exchange(c){
+c.innerHTML=`<div class="grid"><div class="card"><h2>Give Food</h2><p>Enter surplus produce into the system.</p><button class="primary" onclick="show('Supplies')">Open Supplies</button></div>
+<div class="card"><h2>Request Food</h2><p>Submit a request with recipient type, community, urgency and reason.</p><button class="primary" onclick="requestForm()">Request Food</button></div></div><div id="exchangeForm"></div>`;
+}
+function requestForm(){document.getElementById("exchangeForm").innerHTML=`<div class="card"><h2>Food Request</h2><div class="formgrid">
+<div><label>Requester Name</label><input id="qn"></div><div><label>Food Needed</label><input id="qf"></div><div><label>Quantity Needed</label><input id="qq" type="number"></div>
+<div><label>Recipient Type</label><select id="qt"><option>Individual</option><option>Family</option><option>Community Organisation</option><option>Charity</option><option>School</option></select></div>
+<div><label>Community</label><input id="qc"></div><div><label>Urgency</label><select id="qu"><option>Low</option><option>Medium</option><option>High</option></select></div></div>
+<label>Request Reason</label><textarea id="qr"></textarea><div class="actions"><button class="primary" onclick="submitRequest()">Submit Request</button></div></div>`}
+function submitRequest(){let x={name:val("qn"),food:val("qf"),qty:+val("qq"),type:val("qt"),community:val("qc"),urgency:val("qu"),reason:val("qr"),status:"Pending"};if(!x.name||!x.food||!x.qty||!x.community||!x.reason)return alert("Please complete all fields.");requests.push(x);alert("Food request submitted successfully.");show("Food Exchange")}
+
+function barter(c){
+c.innerHTML=`<div class="grid"><div class="card"><h2>Food Barter</h2><p>Add a new community barter offer.</p><button class="primary" onclick="barterAdd()">Add Barter</button></div>
+<div class="card"><h2>Available Barter</h2><p>View and confirm barter offers.</p><button class="primary" onclick="barterView()">View Barter</button></div></div><div id="barterArea"></div>`;
+}
+function barterAdd(){document.getElementById("barterArea").innerHTML=`<div class="card"><h2>Add Barter</h2><div class="formgrid">
+<div><label>Person Name</label><input id="bp"></div><div><label>Contact Number</label><input id="bc"></div>
+<div><label>Offered Produce</label><input id="bo"></div><div><label>Offered Quantity</label><input id="bq" type="number"></div>
+<div><label>Requested Produce</label><input id="br"></div><div><label>Requested Quantity</label><input id="brq" type="number"></div>
+<div><label>Community</label><input id="bcm"></div></div><div class="actions"><button class="primary" onclick="addBarter()">Add Barter</button></div></div>`}
+function addBarter(){let x={id:++next,person:val("bp"),contact:val("bc"),offered:val("bo"),oqty:+val("bq"),requested:val("br"),rqty:+val("brq"),community:val("bcm"),date:new Date().toISOString().slice(0,10),status:"Available"};if(!x.person||!x.contact||!x.offered||!x.oqty||!x.requested||!x.rqty||!x.community)return alert("Please fill in all fields.");barters.unshift(x);alert("Barter offer added successfully!");barterView()}
+function barterView(){document.getElementById("barterArea").innerHTML=`<div class="card tablewrap"><h2>Available Barter</h2><table><tr><th>ID</th><th>Person</th><th>Contact</th><th>Offered</th><th>Qty</th><th>Requested</th><th>Qty</th><th>Community</th><th>Date</th><th>Status</th><th>Action</th></tr>${barters.map(x=>`<tr><td>${x.id}</td><td>${x.person}</td><td>${x.contact}</td><td>${x.offered}</td><td>${x.oqty}</td><td>${x.requested}</td><td>${x.rqty}</td><td>${x.community}</td><td>${x.date}</td><td>${x.status}</td><td>${x.status==="Available"?`<button class="primary" onclick="confirmBarter(${x.id})">Confirm</button>`:"Confirmed"}</td></tr>`).join("")}</table></div>`}
+function confirmBarter(id){let x=barters.find(a=>a.id===id);if(x.status==="Confirmed")return alert("This barter has already been confirmed.");if(confirm("Are you sure you want to confirm this barter?")){x.status="Confirmed";alert("Barter confirmed successfully.");barterView()}}
+
+function reports(c){
+if(currentRole!=="Admin")return c.innerHTML=`<div class="access">Access denied. Only administrators can access Reports.</div>`;
+let a=surplus.reduce((s,x)=>s+Number(x.qty),0),d=distributions.reduce((s,x)=>s+Number(x.qty),0);
+c.innerHTML=`<div class="grid"><div class="card"><div class="muted">Available Quantity</div><div class="stat">${a} kg</div></div><div class="card"><div class="muted">Distributed Quantity</div><div class="stat">${d} kg</div></div><div class="card"><div class="muted">Recipients</div><div class="stat">${recipients.length}</div></div></div>
+<div class="card"><h2>System Report</h2><p>Distribution reporting with summary statistics and CSV export.</p><button class="primary" onclick="csv()">Export CSV</button></div>`;
+}
+function csv(){let rows=[["Produce","Recipient","Quantity","Date","Method"],...distributions.map(x=>[x.produce,x.recipient,x.qty,x.date,x.method])];let data=rows.map(r=>r.join(",")).join("\n");let a=document.createElement("a");a.href=URL.createObjectURL(new Blob([data],{type:"text/csv"}));a.download="VitiFoodLink_Report.csv";a.click()}
+</script>
+</body>
+</html>
