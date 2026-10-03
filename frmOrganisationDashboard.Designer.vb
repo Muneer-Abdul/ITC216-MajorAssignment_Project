@@ -22,6 +22,7 @@ Partial Class frmOrganisationDashboard
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmOrganisationDashboard))
         Me.lblWelcome = New System.Windows.Forms.Label()
         Me.lblTitle = New System.Windows.Forms.Label()
         Me.btnSupplies = New System.Windows.Forms.Button()
@@ -29,6 +30,8 @@ Partial Class frmOrganisationDashboard
         Me.btnFoodRequests = New System.Windows.Forms.Button()
         Me.btnLogout = New System.Windows.Forms.Button()
         Me.pnlContent = New System.Windows.Forms.Panel()
+        Me.picProfile = New System.Windows.Forms.PictureBox()
+        CType(Me.picProfile, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'lblWelcome
@@ -96,11 +99,23 @@ Partial Class frmOrganisationDashboard
         Me.pnlContent.Size = New System.Drawing.Size(820, 416)
         Me.pnlContent.TabIndex = 7
         '
+        'picProfile
+        '
+        Me.picProfile.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.picProfile.Image = CType(resources.GetObject("picProfile.Image"), System.Drawing.Image)
+        Me.picProfile.Location = New System.Drawing.Point(928, 29)
+        Me.picProfile.Name = "picProfile"
+        Me.picProfile.Size = New System.Drawing.Size(73, 60)
+        Me.picProfile.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.picProfile.TabIndex = 9
+        Me.picProfile.TabStop = False
+        '
         'frmOrganisationDashboard
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1087, 624)
+        Me.Controls.Add(Me.picProfile)
         Me.Controls.Add(Me.pnlContent)
         Me.Controls.Add(Me.btnLogout)
         Me.Controls.Add(Me.btnFoodRequests)
@@ -113,6 +128,7 @@ Partial Class frmOrganisationDashboard
         Me.Name = "frmOrganisationDashboard"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "OrganisationDashboard"
+        CType(Me.picProfile, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -125,4 +141,5 @@ Partial Class frmOrganisationDashboard
     Friend WithEvents btnFoodRequests As Button
     Friend WithEvents btnLogout As Button
     Friend WithEvents pnlContent As Panel
+    Friend WithEvents picProfile As PictureBox
 End Class

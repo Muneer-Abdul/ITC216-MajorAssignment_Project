@@ -43,10 +43,9 @@ Partial Class frmWelcome
         Me.btnContinue.BackColor = System.Drawing.Color.FromArgb(CType(CType(23, Byte), Integer), CType(CType(107, Byte), Integer), CType(CType(69, Byte), Integer))
         Me.btnContinue.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnContinue.ForeColor = System.Drawing.Color.White
-        Me.btnContinue.Location = New System.Drawing.Point(189, 718)
-        Me.btnContinue.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.btnContinue.Location = New System.Drawing.Point(168, 574)
         Me.btnContinue.Name = "btnContinue"
-        Me.btnContinue.Size = New System.Drawing.Size(375, 48)
+        Me.btnContinue.Size = New System.Drawing.Size(333, 38)
         Me.btnContinue.TabIndex = 0
         Me.btnContinue.Text = "Continue To Login"
         Me.btnContinue.UseVisualStyleBackColor = False
@@ -57,9 +56,9 @@ Partial Class frmWelcome
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Segoe UI", 14.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(18, Byte), Integer), CType(CType(59, Byte), Integer), CType(CType(42, Byte), Integer))
-        Me.Label1.Location = New System.Drawing.Point(281, 9)
+        Me.Label1.Location = New System.Drawing.Point(250, 7)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(200, 38)
+        Me.Label1.Size = New System.Drawing.Size(171, 32)
         Me.Label1.TabIndex = 1
         Me.Label1.Text = " Viti FoodLink"
         Me.Label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -68,10 +67,9 @@ Partial Class frmWelcome
         '
         Me.PictureBox1.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
-        Me.PictureBox1.Location = New System.Drawing.Point(288, 68)
-        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.PictureBox1.Location = New System.Drawing.Point(256, 54)
         Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(173, 154)
+        Me.PictureBox1.Size = New System.Drawing.Size(154, 123)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox1.TabIndex = 2
         Me.PictureBox1.TabStop = False
@@ -80,9 +78,9 @@ Partial Class frmWelcome
         '
         Me.Label2.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(75, Byte), Integer), CType(CType(85, Byte), Integer), CType(CType(99, Byte), Integer))
-        Me.Label2.Location = New System.Drawing.Point(223, 312)
+        Me.Label2.Location = New System.Drawing.Point(198, 250)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(304, 78)
+        Me.Label2.Size = New System.Drawing.Size(270, 62)
         Me.Label2.TabIndex = 3
         Me.Label2.Text = "Reduce food waste, support communities, and share resources through Viti FoodLink" &
     "."
@@ -93,9 +91,9 @@ Partial Class frmWelcome
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Segoe UI Semibold", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(31, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(55, Byte), Integer))
-        Me.Label3.Location = New System.Drawing.Point(165, 252)
+        Me.Label3.Location = New System.Drawing.Point(147, 202)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(411, 28)
+        Me.Label3.Size = New System.Drawing.Size(344, 23)
         Me.Label3.TabIndex = 4
         Me.Label3.Text = "Connecting Surplus Food with communities"
         '
@@ -104,9 +102,9 @@ Partial Class frmWelcome
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Segoe UI", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label4.ForeColor = System.Drawing.Color.FromArgb(CType(CType(18, Byte), Integer), CType(CType(59, Byte), Integer), CType(CType(42, Byte), Integer))
-        Me.Label4.Location = New System.Drawing.Point(256, 471)
+        Me.Label4.Location = New System.Drawing.Point(230, 377)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(226, 28)
+        Me.Label4.Size = New System.Drawing.Size(191, 23)
         Me.Label4.TabIndex = 5
         Me.Label4.Text = " Select Your Language "
         Me.Label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -118,21 +116,18 @@ Partial Class frmWelcome
         Me.grpLanguage.Controls.Add(Me.rdoEnglish)
         Me.grpLanguage.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.grpLanguage.ForeColor = System.Drawing.Color.FromArgb(CType(CType(31, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(55, Byte), Integer))
-        Me.grpLanguage.Location = New System.Drawing.Point(288, 503)
-        Me.grpLanguage.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.grpLanguage.Location = New System.Drawing.Point(256, 423)
         Me.grpLanguage.Name = "grpLanguage"
-        Me.grpLanguage.Padding = New System.Windows.Forms.Padding(3, 4, 3, 4)
-        Me.grpLanguage.Size = New System.Drawing.Size(222, 142)
+        Me.grpLanguage.Size = New System.Drawing.Size(135, 119)
         Me.grpLanguage.TabIndex = 6
         Me.grpLanguage.TabStop = False
         '
         'rdoFijiHindi
         '
         Me.rdoFijiHindi.AutoSize = True
-        Me.rdoFijiHindi.Location = New System.Drawing.Point(24, 109)
-        Me.rdoFijiHindi.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.rdoFijiHindi.Location = New System.Drawing.Point(21, 87)
         Me.rdoFijiHindi.Name = "rdoFijiHindi"
-        Me.rdoFijiHindi.Size = New System.Drawing.Size(112, 29)
+        Me.rdoFijiHindi.Size = New System.Drawing.Size(91, 24)
         Me.rdoFijiHindi.TabIndex = 2
         Me.rdoFijiHindi.Text = "Fiji Hindi"
         Me.rdoFijiHindi.UseVisualStyleBackColor = True
@@ -140,10 +135,9 @@ Partial Class frmWelcome
         'rdoItaukei
         '
         Me.rdoItaukei.AutoSize = True
-        Me.rdoItaukei.Location = New System.Drawing.Point(24, 76)
-        Me.rdoItaukei.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.rdoItaukei.Location = New System.Drawing.Point(21, 57)
         Me.rdoItaukei.Name = "rdoItaukei"
-        Me.rdoItaukei.Size = New System.Drawing.Size(96, 29)
+        Me.rdoItaukei.Size = New System.Drawing.Size(78, 24)
         Me.rdoItaukei.TabIndex = 1
         Me.rdoItaukei.Text = "Itaukei"
         Me.rdoItaukei.UseVisualStyleBackColor = True
@@ -152,10 +146,9 @@ Partial Class frmWelcome
         '
         Me.rdoEnglish.AutoSize = True
         Me.rdoEnglish.Checked = True
-        Me.rdoEnglish.Location = New System.Drawing.Point(24, 44)
-        Me.rdoEnglish.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.rdoEnglish.Location = New System.Drawing.Point(21, 26)
         Me.rdoEnglish.Name = "rdoEnglish"
-        Me.rdoEnglish.Size = New System.Drawing.Size(98, 29)
+        Me.rdoEnglish.Size = New System.Drawing.Size(80, 24)
         Me.rdoEnglish.TabIndex = 0
         Me.rdoEnglish.TabStop = True
         Me.rdoEnglish.Text = "English"
@@ -167,20 +160,19 @@ Partial Class frmWelcome
         Me.btnExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnExit.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnExit.ForeColor = System.Drawing.Color.FromArgb(CType(CType(31, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(55, Byte), Integer))
-        Me.btnExit.Location = New System.Drawing.Point(189, 786)
-        Me.btnExit.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.btnExit.Location = New System.Drawing.Point(168, 629)
         Me.btnExit.Name = "btnExit"
-        Me.btnExit.Size = New System.Drawing.Size(375, 38)
+        Me.btnExit.Size = New System.Drawing.Size(333, 30)
         Me.btnExit.TabIndex = 7
         Me.btnExit.Text = "Exit"
         Me.btnExit.UseVisualStyleBackColor = False
         '
         'frmWelcome
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(249, Byte), Integer), CType(CType(247, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(744, 893)
+        Me.ClientSize = New System.Drawing.Size(661, 714)
         Me.Controls.Add(Me.btnExit)
         Me.Controls.Add(Me.grpLanguage)
         Me.Controls.Add(Me.Label4)
@@ -190,7 +182,6 @@ Partial Class frmWelcome
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.btnContinue)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
-        Me.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.MinimizeBox = False
         Me.Name = "frmWelcome"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen

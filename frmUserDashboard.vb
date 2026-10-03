@@ -91,4 +91,18 @@
 
     End Sub
 
+    Private Sub picProfile_Click(sender As Object, e As EventArgs) Handles picProfile.Click
+
+        Dim profileForm As New frmUserProfile(loggedInUserID)
+
+        profileForm.TopLevel = False
+        profileForm.FormBorderStyle = FormBorderStyle.None
+        profileForm.Dock = DockStyle.Fill
+
+        pnlContent.Controls.Clear()
+        pnlContent.Controls.Add(profileForm)
+
+        profileForm.Show()
+
+    End Sub
 End Class

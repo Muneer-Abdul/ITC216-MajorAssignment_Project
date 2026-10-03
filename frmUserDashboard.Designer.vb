@@ -22,6 +22,7 @@ Partial Class frmUserDashboard
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmUserDashboard))
         Me.lblTitle = New System.Windows.Forms.Label()
         Me.lblWelcome = New System.Windows.Forms.Label()
         Me.btnGiveFood = New System.Windows.Forms.Button()
@@ -29,6 +30,8 @@ Partial Class frmUserDashboard
         Me.btnBarter = New System.Windows.Forms.Button()
         Me.btnLogout = New System.Windows.Forms.Button()
         Me.pnlContent = New System.Windows.Forms.Panel()
+        Me.picProfile = New System.Windows.Forms.PictureBox()
+        CType(Me.picProfile, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'lblTitle
@@ -96,11 +99,23 @@ Partial Class frmUserDashboard
         Me.pnlContent.Size = New System.Drawing.Size(853, 433)
         Me.pnlContent.TabIndex = 7
         '
+        'picProfile
+        '
+        Me.picProfile.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.picProfile.Image = CType(resources.GetObject("picProfile.Image"), System.Drawing.Image)
+        Me.picProfile.Location = New System.Drawing.Point(964, 32)
+        Me.picProfile.Name = "picProfile"
+        Me.picProfile.Size = New System.Drawing.Size(73, 60)
+        Me.picProfile.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.picProfile.TabIndex = 8
+        Me.picProfile.TabStop = False
+        '
         'frmUserDashboard
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1091, 619)
+        Me.Controls.Add(Me.picProfile)
         Me.Controls.Add(Me.pnlContent)
         Me.Controls.Add(Me.btnLogout)
         Me.Controls.Add(Me.btnBarter)
@@ -113,6 +128,7 @@ Partial Class frmUserDashboard
         Me.Name = "frmUserDashboard"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "User Dashboard"
+        CType(Me.picProfile, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -125,4 +141,5 @@ Partial Class frmUserDashboard
     Friend WithEvents btnBarter As Button
     Friend WithEvents btnLogout As Button
     Friend WithEvents pnlContent As Panel
+    Friend WithEvents picProfile As PictureBox
 End Class
