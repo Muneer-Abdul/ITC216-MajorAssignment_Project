@@ -134,8 +134,8 @@ Public Class frmLogin
         If LanguageHelper.CurrentLanguage = "English" Then
 
             Label1.Text = "Welcome Back"
-            Label2.Text = "Username"
-            Label3.Text = "Password"
+            Label2.Text = "Username:"
+            Label3.Text = "Password:"
             btnLogin.Text = "Login"
             btnRegister.Text = "Create Account"
             btnBack.Text = "Back"
@@ -143,8 +143,8 @@ Public Class frmLogin
         ElseIf LanguageHelper.CurrentLanguage = "Itaukei" Then
 
             Label1.Text = "Ni Bula Tale"
-            Label2.Text = "Yaca ni Vakayagataki"
-            Label3.Text = "Vosa ni Maroroi"
+            Label2.Text = "Yaca ni Vakayagataki:"
+            Label3.Text = "Vosa ni Maroroi:"
             btnLogin.Text = "Curu"
             btnRegister.Text = "Dolava na Akaude"
             btnBack.Text = "Lesu"
@@ -152,8 +152,8 @@ Public Class frmLogin
         ElseIf LanguageHelper.CurrentLanguage = "Fiji Hindi" Then
 
             Label1.Text = "Phir Se Swagat Hai"
-            Label2.Text = "Username"
-            Label3.Text = "Password"
+            Label2.Text = "Username:"
+            Label3.Text = "Password:"
             btnLogin.Text = "Login"
             btnRegister.Text = "Naya Account Banai"
             btnBack.Text = "Peechhe"
