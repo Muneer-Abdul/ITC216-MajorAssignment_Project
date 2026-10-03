@@ -115,6 +115,18 @@
     <Compile Include="frmBarterMenu.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="frmOrganisationDashboard.Designer.vb">
+      <DependentUpon>frmOrganisationDashboard.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmOrganisationDashboard.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmUserDashboard.Designer.vb">
+      <DependentUpon>frmUserDashboard.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmUserDashboard.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="frmViewBarter.Designer.vb">
       <DependentUpon>frmViewBarter.vb</DependentUpon>
     </Compile>
@@ -199,6 +211,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmBarterMenu.resx">
       <DependentUpon>frmBarterMenu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmOrganisationDashboard.resx">
+      <DependentUpon>frmOrganisationDashboard.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmUserDashboard.resx">
+      <DependentUpon>frmUserDashboard.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmViewBarter.resx">
       <DependentUpon>frmViewBarter.vb</DependentUpon>
