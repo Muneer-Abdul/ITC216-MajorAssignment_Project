@@ -1,37 +1,48 @@
 ﻿Imports System.Data.SQLite
+
 Public Class frmLogin
+
     Private Sub btnRegister_Click(sender As Object, e As EventArgs) Handles btnRegister.Click
 
-        Dim registrationForm As New frmRegistration()
-        registrationForm.Show()
+        frmRegistration.Show()
         Me.Hide()
 
     End Sub
 
+
     Private Sub btnLogin_Click(sender As Object, e As EventArgs) Handles btnLogin.Click
 
         If txtUsername.Text.Trim() = "" OrElse
-       txtPassword.Text = "" Then
+           txtPassword.Text = "" Then
 
             MessageBox.Show("Please enter your username and password.")
             Return
+
         End If
 
         Try
+
             Using conn As SQLiteConnection = GetConnection()
 
                 conn.Open()
 
                 Dim query As String =
-                "SELECT UserID, FullName, Role FROM Users " &
-                "WHERE Username = @Username " &
-                "AND Password = @Password " &
-                "AND Status = 'Active'"
+                    "SELECT UserID, FullName, Role FROM Users " &
+                    "WHERE Username = @Username " &
+                    "AND Password = @Password " &
+                    "AND Status = 'Active'"
 
                 Using cmd As New SQLiteCommand(query, conn)
 
-                    cmd.Parameters.AddWithValue("@Username", txtUsername.Text.Trim())
-                    cmd.Parameters.AddWithValue("@Password", txtPassword.Text)
+                    cmd.Parameters.AddWithValue(
+                        "@Username",
+                        txtUsername.Text.Trim()
+                    )
+
+                    cmd.Parameters.AddWithValue(
+                        "@Password",
+                        txtPassword.Text
+                    )
 
                     Using reader As SQLiteDataReader = cmd.ExecuteReader()
 
@@ -39,17 +50,64 @@ Public Class frmLogin
 
                             MessageBox.Show("Login successful!")
 
-                            Dim fullName As String = reader("FullName").ToString()
-                            Dim role As String = reader("Role").ToString()
+                            Dim fullName As String =
+                                reader("FullName").ToString()
 
-                            Dim dashboard As New frmDashboard(fullName, role)
-                            dashboard.Show()
+                            Dim role As String =
+                                reader("Role").ToString()
+
+
+                            '========================================
+                            ' OPEN DASHBOARD BASED ON USER ROLE
+                            '========================================
+
+                            If role.Equals(
+                                "Admin",
+                                StringComparison.OrdinalIgnoreCase
+                            ) Then
+
+                                Dim dashboard As New frmDashboard(
+                                    fullName,
+                                    role
+                                )
+
+                                dashboard.Show()
+
+
+                            ElseIf role.Equals(
+                                "Community Organisation",
+                                StringComparison.OrdinalIgnoreCase
+                            ) Then
+
+                                Dim organisationDashboard As New frmOrganisationDashboard(
+                                    fullName,
+                                    role
+                                )
+
+                                organisationDashboard.Show()
+
+
+                            ElseIf role.Equals(
+                                "User",
+                                StringComparison.OrdinalIgnoreCase
+                            ) Then
+
+                                Dim userDashboard As New frmUserDashboard(
+                                    fullName,
+                                    role
+                                )
+
+                                userDashboard.Show()
+
+                            End If
 
                             Me.Hide()
 
                         Else
 
-                            MessageBox.Show("Invalid username or password.")
+                            MessageBox.Show(
+                                "Invalid username or password."
+                            )
 
                         End If
 
@@ -61,11 +119,14 @@ Public Class frmLogin
 
         Catch ex As Exception
 
-            MessageBox.Show("Login error: " & ex.Message)
+            MessageBox.Show(
+                "Login error: " & ex.Message
+            )
 
         End Try
 
     End Sub
+
 
     Private Sub ApplyLanguage()
 
@@ -100,12 +161,25 @@ Public Class frmLogin
 
     End Sub
 
-    Private Sub frmLogin_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
+    Private Sub frmLogin_Load(
+        sender As Object,
+        e As EventArgs
+    ) Handles MyBase.Load
+
         ApplyLanguage()
+
     End Sub
 
-    Private Sub btnBack_Click(sender As Object, e As EventArgs) Handles btnBack.Click
+
+    Private Sub btnBack_Click(
+        sender As Object,
+        e As EventArgs
+    ) Handles btnBack.Click
+
         frmWelcome.Show()
         Me.Hide()
+
     End Sub
+
 End Class
