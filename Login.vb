@@ -1,4 +1,5 @@
 ﻿Imports System.Data.SQLite
+Imports Microsoft.VisualBasic.ApplicationServices
 
 Public Class frmLogin
 
@@ -50,11 +51,11 @@ Public Class frmLogin
 
                             MessageBox.Show("Login successful!")
 
-                            Dim fullName As String =
-                                reader("FullName").ToString()
+                            Dim userID As Integer = Convert.ToInt32(reader("UserID"))
 
-                            Dim role As String =
-                                reader("Role").ToString()
+                            Dim fullName As String = reader("FullName").ToString()
+
+                            Dim role As String = reader("Role").ToString()
 
 
                             '========================================
@@ -67,6 +68,7 @@ Public Class frmLogin
                             ) Then
 
                                 Dim dashboard As New frmDashboard(
+                                    userID,
                                     fullName,
                                     role
                                 )
@@ -79,9 +81,8 @@ Public Class frmLogin
                                 StringComparison.OrdinalIgnoreCase
                             ) Then
 
-                                Dim organisationDashboard As New frmOrganisationDashboard(
-                                    fullName,
-                                    role
+                                Dim organisationDashboard As New frmOrganisationDashboard(userID,
+                                    fullName, role
                                 )
 
                                 organisationDashboard.Show()
@@ -92,7 +93,7 @@ Public Class frmLogin
                                 StringComparison.OrdinalIgnoreCase
                             ) Then
 
-                                Dim userDashboard As New frmUserDashboard(
+                                Dim userDashboard As New frmUserDashboard(userID,
                                     fullName,
                                     role
                                 )

@@ -26,7 +26,6 @@ Partial Class frmOrganisationDashboard
         Me.lblTitle = New System.Windows.Forms.Label()
         Me.btnSupplies = New System.Windows.Forms.Button()
         Me.btnRecipients = New System.Windows.Forms.Button()
-        Me.btnFoodExchange = New System.Windows.Forms.Button()
         Me.btnFoodRequests = New System.Windows.Forms.Button()
         Me.btnLogout = New System.Windows.Forms.Button()
         Me.pnlContent = New System.Windows.Forms.Panel()
@@ -68,18 +67,9 @@ Partial Class frmOrganisationDashboard
         Me.btnRecipients.Text = "Recipients"
         Me.btnRecipients.UseVisualStyleBackColor = True
         '
-        'btnFoodExchange
-        '
-        Me.btnFoodExchange.Location = New System.Drawing.Point(28, 316)
-        Me.btnFoodExchange.Name = "btnFoodExchange"
-        Me.btnFoodExchange.Size = New System.Drawing.Size(132, 91)
-        Me.btnFoodExchange.TabIndex = 4
-        Me.btnFoodExchange.Text = "Food Exchange"
-        Me.btnFoodExchange.UseVisualStyleBackColor = True
-        '
         'btnFoodRequests
         '
-        Me.btnFoodRequests.Location = New System.Drawing.Point(28, 413)
+        Me.btnFoodRequests.Location = New System.Drawing.Point(28, 326)
         Me.btnFoodRequests.Name = "btnFoodRequests"
         Me.btnFoodRequests.Size = New System.Drawing.Size(132, 91)
         Me.btnFoodRequests.TabIndex = 5
@@ -114,7 +104,6 @@ Partial Class frmOrganisationDashboard
         Me.Controls.Add(Me.pnlContent)
         Me.Controls.Add(Me.btnLogout)
         Me.Controls.Add(Me.btnFoodRequests)
-        Me.Controls.Add(Me.btnFoodExchange)
         Me.Controls.Add(Me.btnRecipients)
         Me.Controls.Add(Me.btnSupplies)
         Me.Controls.Add(Me.lblTitle)
@@ -133,7 +122,6 @@ Partial Class frmOrganisationDashboard
     Friend WithEvents lblTitle As Label
     Friend WithEvents btnSupplies As Button
     Friend WithEvents btnRecipients As Button
-    Friend WithEvents btnFoodExchange As Button
     Friend WithEvents btnFoodRequests As Button
     Friend WithEvents btnLogout As Button
     Friend WithEvents pnlContent As Panel

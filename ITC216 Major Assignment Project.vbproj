@@ -127,6 +127,12 @@
     <Compile Include="frmUserDashboard.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="frmUserProfile.Designer.vb">
+      <DependentUpon>frmUserProfile.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmUserProfile.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="frmViewBarter.Designer.vb">
       <DependentUpon>frmViewBarter.vb</DependentUpon>
     </Compile>
@@ -217,6 +223,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmUserDashboard.resx">
       <DependentUpon>frmUserDashboard.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmUserProfile.resx">
+      <DependentUpon>frmUserProfile.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmViewBarter.resx">
       <DependentUpon>frmViewBarter.vb</DependentUpon>

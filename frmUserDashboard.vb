@@ -1,12 +1,13 @@
 ﻿Public Class frmUserDashboard
 
+    Private loggedInUserID As Integer
     Private loggedInName As String
     Private loggedInRole As String
 
-    Public Sub New(fullName As String, role As String)
-
+    Public Sub New(userID As Integer, fullName As String, role As String)
         InitializeComponent()
 
+        loggedInUserID = userID
         loggedInName = fullName
         loggedInRole = role
 

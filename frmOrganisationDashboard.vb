@@ -1,12 +1,14 @@
 ﻿Public Class frmOrganisationDashboard
 
+    Private loggedInUserID As Integer
     Private loggedInName As String
     Private loggedInRole As String
 
-    Public Sub New(fullName As String, role As String)
+    Public Sub New(userID As Integer, fullName As String, role As String)
 
         InitializeComponent()
 
+        loggedInUserID = userID
         loggedInName = fullName
         loggedInRole = role
 
@@ -48,21 +50,6 @@
         pnlContent.Controls.Add(recipientsForm)
 
         recipientsForm.Show()
-
-    End Sub
-
-    Private Sub btnFoodExchange_Click(sender As Object, e As EventArgs) Handles btnFoodExchange.Click
-
-        Dim exchangeForm As New frmFoodExchange()
-
-        exchangeForm.TopLevel = False
-        exchangeForm.FormBorderStyle = FormBorderStyle.None
-        exchangeForm.Dock = DockStyle.Fill
-
-        pnlContent.Controls.Clear()
-        pnlContent.Controls.Add(exchangeForm)
-
-        exchangeForm.Show()
 
     End Sub
 

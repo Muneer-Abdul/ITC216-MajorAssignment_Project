@@ -1,5 +1,8 @@
 ﻿Public Class frmDashboard
     Private currentForm As Form = Nothing
+    Private loggedInName As String
+    Private loggedInRole As String
+    Private loggedInUserID As Integer
 
     Private Sub OpenChildForm(childForm As Form)
 
@@ -26,14 +29,11 @@
 
     End Sub
 
-
-    Private loggedInName As String
-    Private loggedInRole As String
-
-    Public Sub New(fullName As String, role As String)
+    Public Sub New(userID As Integer, fullName As String, role As String)
 
         InitializeComponent()
 
+        loggedInUserID = userID
         loggedInName = fullName
         loggedInRole = role
 
