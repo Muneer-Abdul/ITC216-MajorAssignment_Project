@@ -31,7 +31,9 @@ Partial Class frmUserDashboard
         Me.btnLogout = New System.Windows.Forms.Button()
         Me.pnlContent = New System.Windows.Forms.Panel()
         Me.picProfile = New System.Windows.Forms.PictureBox()
+        Me.picVitiBot = New System.Windows.Forms.PictureBox()
         CType(Me.picProfile, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.picVitiBot, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'lblTitle
@@ -96,7 +98,7 @@ Partial Class frmUserDashboard
         Me.pnlContent.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.pnlContent.Location = New System.Drawing.Point(208, 122)
         Me.pnlContent.Name = "pnlContent"
-        Me.pnlContent.Size = New System.Drawing.Size(853, 433)
+        Me.pnlContent.Size = New System.Drawing.Size(873, 478)
         Me.pnlContent.TabIndex = 7
         '
         'picProfile
@@ -110,11 +112,23 @@ Partial Class frmUserDashboard
         Me.picProfile.TabIndex = 8
         Me.picProfile.TabStop = False
         '
+        'picVitiBot
+        '
+        Me.picVitiBot.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.picVitiBot.Image = CType(resources.GetObject("picVitiBot.Image"), System.Drawing.Image)
+        Me.picVitiBot.Location = New System.Drawing.Point(1017, 606)
+        Me.picVitiBot.Name = "picVitiBot"
+        Me.picVitiBot.Size = New System.Drawing.Size(78, 70)
+        Me.picVitiBot.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.picVitiBot.TabIndex = 9
+        Me.picVitiBot.TabStop = False
+        '
         'frmUserDashboard
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1091, 619)
+        Me.ClientSize = New System.Drawing.Size(1143, 680)
+        Me.Controls.Add(Me.picVitiBot)
         Me.Controls.Add(Me.picProfile)
         Me.Controls.Add(Me.pnlContent)
         Me.Controls.Add(Me.btnLogout)
@@ -129,6 +143,7 @@ Partial Class frmUserDashboard
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "User Dashboard"
         CType(Me.picProfile, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.picVitiBot, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -142,4 +157,5 @@ Partial Class frmUserDashboard
     Friend WithEvents btnLogout As Button
     Friend WithEvents pnlContent As Panel
     Friend WithEvents picProfile As PictureBox
+    Friend WithEvents picVitiBot As PictureBox
 End Class

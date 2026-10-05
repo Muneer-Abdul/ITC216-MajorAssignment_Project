@@ -31,7 +31,9 @@ Partial Class frmOrganisationDashboard
         Me.btnLogout = New System.Windows.Forms.Button()
         Me.pnlContent = New System.Windows.Forms.Panel()
         Me.picProfile = New System.Windows.Forms.PictureBox()
+        Me.picVitiBot = New System.Windows.Forms.PictureBox()
         CType(Me.picProfile, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.picVitiBot, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'lblWelcome
@@ -110,11 +112,23 @@ Partial Class frmOrganisationDashboard
         Me.picProfile.TabIndex = 9
         Me.picProfile.TabStop = False
         '
+        'picVitiBot
+        '
+        Me.picVitiBot.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.picVitiBot.Image = CType(resources.GetObject("picVitiBot.Image"), System.Drawing.Image)
+        Me.picVitiBot.Location = New System.Drawing.Point(949, 542)
+        Me.picVitiBot.Name = "picVitiBot"
+        Me.picVitiBot.Size = New System.Drawing.Size(78, 70)
+        Me.picVitiBot.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.picVitiBot.TabIndex = 10
+        Me.picVitiBot.TabStop = False
+        '
         'frmOrganisationDashboard
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1087, 624)
+        Me.Controls.Add(Me.picVitiBot)
         Me.Controls.Add(Me.picProfile)
         Me.Controls.Add(Me.pnlContent)
         Me.Controls.Add(Me.btnLogout)
@@ -129,6 +143,7 @@ Partial Class frmOrganisationDashboard
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "OrganisationDashboard"
         CType(Me.picProfile, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.picVitiBot, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -142,4 +157,5 @@ Partial Class frmOrganisationDashboard
     Friend WithEvents btnLogout As Button
     Friend WithEvents pnlContent As Panel
     Friend WithEvents picProfile As PictureBox
+    Friend WithEvents picVitiBot As PictureBox
 End Class

@@ -24,6 +24,7 @@ Partial Class frmDashboard
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmDashboard))
         Me.pnlHeader = New System.Windows.Forms.Panel()
+        Me.picProfile = New System.Windows.Forms.PictureBox()
         Me.lblUserLoggedIn = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.pnlSidebar = New System.Windows.Forms.Panel()
@@ -36,10 +37,11 @@ Partial Class frmDashboard
         Me.btnRecipients = New System.Windows.Forms.Button()
         Me.btnSupplies = New System.Windows.Forms.Button()
         Me.pnlContent = New System.Windows.Forms.Panel()
-        Me.picProfile = New System.Windows.Forms.PictureBox()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.pnlHeader.SuspendLayout()
-        Me.pnlSidebar.SuspendLayout()
         CType(Me.picProfile, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.pnlSidebar.SuspendLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'pnlHeader
@@ -51,6 +53,17 @@ Partial Class frmDashboard
         Me.pnlHeader.Name = "pnlHeader"
         Me.pnlHeader.Size = New System.Drawing.Size(1354, 68)
         Me.pnlHeader.TabIndex = 0
+        '
+        'picProfile
+        '
+        Me.picProfile.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.picProfile.Image = CType(resources.GetObject("picProfile.Image"), System.Drawing.Image)
+        Me.picProfile.Location = New System.Drawing.Point(1266, 3)
+        Me.picProfile.Name = "picProfile"
+        Me.picProfile.Size = New System.Drawing.Size(73, 60)
+        Me.picProfile.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.picProfile.TabIndex = 9
+        Me.picProfile.TabStop = False
         '
         'lblUserLoggedIn
         '
@@ -164,23 +177,24 @@ Partial Class frmDashboard
         Me.pnlContent.Size = New System.Drawing.Size(1111, 707)
         Me.pnlContent.TabIndex = 2
         '
-        'picProfile
+        'PictureBox1
         '
-        Me.picProfile.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.picProfile.Image = CType(resources.GetObject("picProfile.Image"), System.Drawing.Image)
-        Me.picProfile.Location = New System.Drawing.Point(1266, 3)
-        Me.picProfile.Name = "picProfile"
-        Me.picProfile.Size = New System.Drawing.Size(73, 60)
-        Me.picProfile.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.picProfile.TabIndex = 9
-        Me.picProfile.TabStop = False
+        Me.PictureBox1.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
+        Me.PictureBox1.Location = New System.Drawing.Point(1264, 802)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(78, 70)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox1.TabIndex = 10
+        Me.PictureBox1.TabStop = False
         '
         'frmDashboard
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.Control
-        Me.ClientSize = New System.Drawing.Size(1378, 797)
+        Me.ClientSize = New System.Drawing.Size(1371, 872)
+        Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.pnlContent)
         Me.Controls.Add(Me.pnlSidebar)
         Me.Controls.Add(Me.pnlHeader)
@@ -189,8 +203,9 @@ Partial Class frmDashboard
         Me.Text = "Dashboard"
         Me.pnlHeader.ResumeLayout(False)
         Me.pnlHeader.PerformLayout()
-        Me.pnlSidebar.ResumeLayout(False)
         CType(Me.picProfile, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.pnlSidebar.ResumeLayout(False)
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -209,4 +224,5 @@ Partial Class frmDashboard
     Friend WithEvents btnSupplies As Button
     Friend WithEvents btnBarter As Button
     Friend WithEvents picProfile As PictureBox
+    Friend WithEvents PictureBox1 As PictureBox
 End Class

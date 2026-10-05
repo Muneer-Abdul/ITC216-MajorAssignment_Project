@@ -249,4 +249,19 @@
         profileForm.Show()
 
     End Sub
+
+    Private Sub PictureBox1_Click(sender As Object, e As EventArgs) Handles PictureBox1.Click
+
+        Dim botForm As New frmVitiBot(loggedInRole)
+
+        botForm.TopLevel = False
+        botForm.FormBorderStyle = FormBorderStyle.None
+        botForm.Dock = DockStyle.Fill
+
+        pnlContent.Controls.Clear()
+        pnlContent.Controls.Add(botForm)
+
+        botForm.Show()
+
+    End Sub
 End Class
