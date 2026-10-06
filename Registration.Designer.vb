@@ -54,7 +54,7 @@ Partial Class frmRegistration
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(31, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(55, Byte), Integer))
-        Me.Label2.Location = New System.Drawing.Point(212, 210)
+        Me.Label2.Location = New System.Drawing.Point(202, 207)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(102, 25)
         Me.Label2.TabIndex = 1
@@ -65,7 +65,7 @@ Partial Class frmRegistration
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(31, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(55, Byte), Integer))
-        Me.Label3.Location = New System.Drawing.Point(212, 270)
+        Me.Label3.Location = New System.Drawing.Point(202, 270)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(102, 25)
         Me.Label3.TabIndex = 2
@@ -76,7 +76,7 @@ Partial Class frmRegistration
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label4.ForeColor = System.Drawing.Color.FromArgb(CType(CType(31, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(55, Byte), Integer))
-        Me.Label4.Location = New System.Drawing.Point(212, 331)
+        Me.Label4.Location = New System.Drawing.Point(202, 331)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(97, 25)
         Me.Label4.TabIndex = 3
@@ -87,7 +87,7 @@ Partial Class frmRegistration
         Me.txtFullName.BackColor = System.Drawing.Color.White
         Me.txtFullName.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtFullName.ForeColor = System.Drawing.Color.FromArgb(CType(CType(31, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(55, Byte), Integer))
-        Me.txtFullName.Location = New System.Drawing.Point(335, 204)
+        Me.txtFullName.Location = New System.Drawing.Point(321, 204)
         Me.txtFullName.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.txtFullName.Name = "txtFullName"
         Me.txtFullName.Size = New System.Drawing.Size(220, 31)
@@ -98,7 +98,7 @@ Partial Class frmRegistration
         Me.txtUsername.BackColor = System.Drawing.Color.White
         Me.txtUsername.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtUsername.ForeColor = System.Drawing.Color.FromArgb(CType(CType(31, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(55, Byte), Integer))
-        Me.txtUsername.Location = New System.Drawing.Point(335, 270)
+        Me.txtUsername.Location = New System.Drawing.Point(321, 270)
         Me.txtUsername.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.txtUsername.Name = "txtUsername"
         Me.txtUsername.Size = New System.Drawing.Size(220, 31)
@@ -109,7 +109,7 @@ Partial Class frmRegistration
         Me.txtPassword.BackColor = System.Drawing.Color.White
         Me.txtPassword.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtPassword.ForeColor = System.Drawing.Color.FromArgb(CType(CType(31, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(55, Byte), Integer))
-        Me.txtPassword.Location = New System.Drawing.Point(335, 331)
+        Me.txtPassword.Location = New System.Drawing.Point(321, 331)
         Me.txtPassword.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.txtPassword.Name = "txtPassword"
         Me.txtPassword.Size = New System.Drawing.Size(220, 31)
@@ -119,7 +119,7 @@ Partial Class frmRegistration
         '
         Me.Label5.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label5.ForeColor = System.Drawing.Color.FromArgb(CType(CType(31, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(55, Byte), Integer))
-        Me.Label5.Location = New System.Drawing.Point(212, 383)
+        Me.Label5.Location = New System.Drawing.Point(202, 383)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(125, 66)
         Me.Label5.TabIndex = 7
@@ -130,7 +130,7 @@ Partial Class frmRegistration
         Me.txtConfirmPassword.BackColor = System.Drawing.Color.White
         Me.txtConfirmPassword.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtConfirmPassword.ForeColor = System.Drawing.Color.FromArgb(CType(CType(31, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(55, Byte), Integer))
-        Me.txtConfirmPassword.Location = New System.Drawing.Point(335, 401)
+        Me.txtConfirmPassword.Location = New System.Drawing.Point(321, 399)
         Me.txtConfirmPassword.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.txtConfirmPassword.Name = "txtConfirmPassword"
         Me.txtConfirmPassword.Size = New System.Drawing.Size(220, 31)
@@ -141,7 +141,7 @@ Partial Class frmRegistration
         Me.Label6.AutoSize = True
         Me.Label6.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label6.ForeColor = System.Drawing.Color.FromArgb(CType(CType(31, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(55, Byte), Integer))
-        Me.Label6.Location = New System.Drawing.Point(231, 475)
+        Me.Label6.Location = New System.Drawing.Point(226, 467)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(50, 25)
         Me.Label6.TabIndex = 9
@@ -153,10 +153,10 @@ Partial Class frmRegistration
         Me.cmbRole.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cmbRole.ForeColor = System.Drawing.Color.FromArgb(CType(CType(31, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(55, Byte), Integer))
         Me.cmbRole.FormattingEnabled = True
-        Me.cmbRole.Location = New System.Drawing.Point(335, 472)
+        Me.cmbRole.Location = New System.Drawing.Point(321, 464)
         Me.cmbRole.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.cmbRole.Name = "cmbRole"
-        Me.cmbRole.Size = New System.Drawing.Size(110, 33)
+        Me.cmbRole.Size = New System.Drawing.Size(220, 33)
         Me.cmbRole.TabIndex = 10
         '
         'btnRegister
@@ -165,10 +165,10 @@ Partial Class frmRegistration
         Me.btnRegister.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnRegister.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnRegister.ForeColor = System.Drawing.Color.White
-        Me.btnRegister.Location = New System.Drawing.Point(259, 619)
+        Me.btnRegister.Location = New System.Drawing.Point(207, 598)
         Me.btnRegister.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.btnRegister.Name = "btnRegister"
-        Me.btnRegister.Size = New System.Drawing.Size(220, 40)
+        Me.btnRegister.Size = New System.Drawing.Size(348, 45)
         Me.btnRegister.TabIndex = 11
         Me.btnRegister.Text = "Register"
         Me.btnRegister.UseVisualStyleBackColor = False
@@ -178,10 +178,10 @@ Partial Class frmRegistration
         Me.btnBack.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnBack.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnBack.ForeColor = System.Drawing.Color.FromArgb(CType(CType(31, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(55, Byte), Integer))
-        Me.btnBack.Location = New System.Drawing.Point(259, 702)
+        Me.btnBack.Location = New System.Drawing.Point(207, 672)
         Me.btnBack.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.btnBack.Name = "btnBack"
-        Me.btnBack.Size = New System.Drawing.Size(220, 40)
+        Me.btnBack.Size = New System.Drawing.Size(348, 45)
         Me.btnBack.TabIndex = 12
         Me.btnBack.Text = "Back To Login"
         Me.btnBack.UseVisualStyleBackColor = False
