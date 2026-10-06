@@ -120,4 +120,8 @@ Public Class frmRegistration
         frmLogin.Show()
         Me.Hide()
     End Sub
+
+    Private Sub cmbRole_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cmbRole.SelectedIndexChanged
+
+    End Sub
 End Class
