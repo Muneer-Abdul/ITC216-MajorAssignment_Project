@@ -1,6 +1,19 @@
 ﻿Public Class frmFoodExchange
-    Private Sub btnGiveFood_Click(sender As Object, e As EventArgs) Handles btnGiveFood.Click
 
+    Private Sub frmFoodExchange_Load(
+        sender As Object,
+        e As EventArgs
+    ) Handles MyBase.Load
+
+        ApplyLanguage()
+
+    End Sub
+
+
+    Private Sub btnGiveFood_Click(
+        sender As Object,
+        e As EventArgs
+    ) Handles btnGiveFood.Click
 
         Dim surplusForm As New frmSurplus()
 
@@ -21,29 +34,11 @@
 
     End Sub
 
-    Private Sub btnBarterExchange_Click(sender As Object, e As EventArgs)
 
-        Dim barterForm As New frmBarter()
-
-        barterForm.TopLevel = False
-        barterForm.FormBorderStyle = FormBorderStyle.None
-        barterForm.Dock = DockStyle.Fill
-
-        Dim parentPanel As Control = Me.Parent
-
-        If parentPanel IsNot Nothing Then
-
-            parentPanel.Controls.Clear()
-            parentPanel.Controls.Add(barterForm)
-
-            barterForm.Show()
-
-        End If
-
-    End Sub
-
-    Private Sub btnRequestFood_Click(sender As Object, e As EventArgs) Handles btnRequestFood.Click
-
+    Private Sub btnRequestFood_Click(
+        sender As Object,
+        e As EventArgs
+    ) Handles btnRequestFood.Click
 
         Dim requestForm As New frmFoodRequest()
 
@@ -64,7 +59,31 @@
 
     End Sub
 
-    Private Sub frmFoodExchange_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
+    Private Sub ApplyLanguage()
+
+        If LanguageHelper.CurrentLanguage = "English" Then
+
+            btnGiveFood.Text = "Give Food"
+            'btnBarterExchange.Text = "Barter Exchange"
+            btnRequestFood.Text = "Request Food"
+
+
+        ElseIf LanguageHelper.CurrentLanguage = "Itaukei" Then
+
+            btnGiveFood.Text = "Solia na Kakana"
+            'btnBarterExchange.Text = "Veisau Kakana"
+            btnRequestFood.Text = "Kerea na Kakana"
+
+
+        ElseIf LanguageHelper.CurrentLanguage = "Fiji Hindi" Then
+
+            btnGiveFood.Text = "Khana Do"
+            'btnBarterExchange.Text = "Khana Badlao"
+            btnRequestFood.Text = "Khana Maango"
+
+        End If
 
     End Sub
+
 End Class

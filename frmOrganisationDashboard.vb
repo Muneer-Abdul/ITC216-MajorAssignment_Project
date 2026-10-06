@@ -19,7 +19,21 @@
         e As EventArgs
     ) Handles MyBase.Load
 
-        lblWelcome.Text = "Welcome, " & loggedInName
+        ApplyLanguage()
+
+        If LanguageHelper.CurrentLanguage = "English" Then
+
+            lblWelcome.Text = "Welcome, " & loggedInName
+
+        ElseIf LanguageHelper.CurrentLanguage = "Itaukei" Then
+
+            lblWelcome.Text = "Bula, " & loggedInName
+
+        ElseIf LanguageHelper.CurrentLanguage = "Fiji Hindi" Then
+
+            lblWelcome.Text = "Namaste, " & loggedInName
+
+        End If
 
     End Sub
 
@@ -69,8 +83,10 @@
     End Sub
 
     Private Sub btnLogout_Click(sender As Object, e As EventArgs) Handles btnLogout.Click
+
         frmLogin.Show()
         Me.Close()
+
     End Sub
 
     Private Sub picProfile_Click(sender As Object, e As EventArgs) Handles picProfile.Click
@@ -102,4 +118,38 @@
         botForm.Show()
 
     End Sub
+
+    Private Sub ApplyLanguage()
+
+        If LanguageHelper.CurrentLanguage = "English" Then
+
+            lblTitle.Text = "Community Organisation Dashboard"
+            btnSupplies.Text = "Supplies"
+            btnRecipients.Text = "Recipients"
+            'btnFoodExchange.Text = "Food Exchange"
+            btnFoodRequests.Text = "Food Requests"
+            btnLogout.Text = "Logout"
+
+        ElseIf LanguageHelper.CurrentLanguage = "Itaukei" Then
+
+            lblTitle.Text = "Dashboard ni Mataisoqosoqo ni Veiqaravi"
+            btnSupplies.Text = "iYau"
+            btnRecipients.Text = "Dauciqomi"
+            'btnFoodExchange.Text = "Veisau Kakana"
+            btnFoodRequests.Text = "Kerekere ni Kakana"
+            btnLogout.Text = "Curu i Tuba"
+
+        ElseIf LanguageHelper.CurrentLanguage = "Fiji Hindi" Then
+
+            lblTitle.Text = "Community Organisation Dashboard"
+            btnSupplies.Text = "Food Supplies"
+            btnRecipients.Text = "Recipients"
+            'btnFoodExchange.Text = "Food Exchange"
+            btnFoodRequests.Text = "Food Requests"
+            btnLogout.Text = "Logout"
+
+        End If
+
+    End Sub
+
 End Class

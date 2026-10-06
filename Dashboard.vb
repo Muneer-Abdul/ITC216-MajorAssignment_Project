@@ -1,4 +1,5 @@
 ﻿Public Class frmDashboard
+
     Private currentForm As Form = Nothing
     Private loggedInName As String
     Private loggedInRole As String
@@ -23,12 +24,6 @@
 
     End Sub
 
-    Private Sub btnSupplies_Click(sender As Object, e As EventArgs) Handles btnSupplies.Click
-
-        OpenChildForm(New frmSurplus())
-
-    End Sub
-
     Public Sub New(userID As Integer, fullName As String, role As String)
 
         InitializeComponent()
@@ -46,14 +41,28 @@
 
     End Sub
 
+    Private Sub btnSupplies_Click(sender As Object, e As EventArgs) Handles btnSupplies.Click
+
+        OpenChildForm(New frmSurplus())
+
+    End Sub
+
     Private Sub btnLogout_Click(sender As Object, e As EventArgs) Handles btnLogout.Click
 
         Dim result As DialogResult = MessageBox.Show(
-        "Are you sure you want to logout?",
-        "Logout",
-        MessageBoxButtons.YesNo,
-        MessageBoxIcon.Question
-    )
+            GetText(
+                "Are you sure you want to logout?",
+                "O via vinaka mo curu yani?",
+                "Kya aap logout karna chahte hain?"
+            ),
+            GetText(
+                "Logout",
+                "Curu Yani",
+                "Logout"
+            ),
+            MessageBoxButtons.YesNo,
+            MessageBoxIcon.Question
+        )
 
         If result = DialogResult.Yes Then
 
@@ -143,46 +152,54 @@
 
     Private Sub ApplyLanguage()
 
-        If LanguageHelper.CurrentLanguage = "English" Then
+        Select Case LanguageHelper.CurrentLanguage
 
-            btnSupplies.Text = "Supplies"
-            btnRecipients.Text = "Recipients"
-            btnRecommendation.Text = "Recommendation"
-            btnDistribution.Text = "Distribution"
-            btnExchange.Text = "Food Exchange"
-            btnReports.Text = "Reports"
-            btnLogout.Text = "Logout"
+            Case "English"
 
-            lblUserLoggedIn.Text = "Logged in: " & loggedInName &
-                                  " (" & loggedInRole & ")"
+                btnSupplies.Text = "Supplies"
+                btnRecipients.Text = "Recipients"
+                btnRecommendation.Text = "Recommendation"
+                btnDistribution.Text = "Distribution"
+                btnExchange.Text = "Food Exchange"
+                btnBarter.Text = "Barter"
+                btnReports.Text = "Reports"
+                btnLogout.Text = "Logout"
 
-        ElseIf LanguageHelper.CurrentLanguage = "Itaukei" Then
+                lblUserLoggedIn.Text =
+                    "Logged in: " & loggedInName &
+                    " (" & loggedInRole & ")"
 
-            btnSupplies.Text = "iYau ni Kakana"
-            btnRecipients.Text = "O ira e ciqoma"
-            btnRecommendation.Text = "Vakatura"
-            btnDistribution.Text = "Veisoliyaki"
-            btnExchange.Text = "Veisau Kakana"
-            btnReports.Text = "Ripote"
-            btnLogout.Text = "Curu Yani"
+            Case "Itaukei"
 
-            lblUserLoggedIn.Text = "Curu: " & loggedInName &
-                                  " (" & loggedInRole & ")"
+                btnSupplies.Text = "iYau ni Kakana"
+                btnRecipients.Text = "O ira e ciqoma"
+                btnRecommendation.Text = "Vakatura"
+                btnDistribution.Text = "Veisoliyaki"
+                btnExchange.Text = "Veisau Kakana"
+                btnBarter.Text = "Veisau"
+                btnReports.Text = "Ripote"
+                btnLogout.Text = "Curu Yani"
 
-        ElseIf LanguageHelper.CurrentLanguage = "Fiji Hindi" Then
+                lblUserLoggedIn.Text =
+                    "Curu: " & loggedInName &
+                    " (" & loggedInRole & ")"
 
-            btnSupplies.Text = "Khana Dena"
-            btnRecipients.Text = "Khana Lene Wale"
-            btnRecommendation.Text = "Sujhav"
-            btnDistribution.Text = "Khana Baatna"
-            btnExchange.Text = "Khana Exchange"
-            btnReports.Text = "Reports"
-            btnLogout.Text = "Logout"
+            Case "Fiji Hindi"
 
-            lblUserLoggedIn.Text = "Login: " & loggedInName &
-                                  " (" & loggedInRole & ")"
+                btnSupplies.Text = "Khana Dena"
+                btnRecipients.Text = "Khana Lene Wale"
+                btnRecommendation.Text = "Sujhav"
+                btnDistribution.Text = "Khana Baatna"
+                btnExchange.Text = "Khana Exchange"
+                btnBarter.Text = "Barter"
+                btnReports.Text = "Reports"
+                btnLogout.Text = "Logout"
 
-        End If
+                lblUserLoggedIn.Text =
+                    "Login: " & loggedInName &
+                    " (" & loggedInRole & ")"
+
+        End Select
 
     End Sub
 
@@ -223,6 +240,7 @@
     End Sub
 
     Private Sub btnBarter_Click(sender As Object, e As EventArgs) Handles btnBarter.Click
+
         Dim barterMenu As New frmBarterMenu()
 
         barterMenu.TopLevel = False
@@ -231,6 +249,7 @@
 
         pnlContent.Controls.Clear()
         pnlContent.Controls.Add(barterMenu)
+
         barterMenu.Show()
 
     End Sub
@@ -264,4 +283,26 @@
         botForm.Show()
 
     End Sub
+
+    Private Function GetText(
+        englishText As String,
+        itaukeiText As String,
+        fijiHindiText As String
+    ) As String
+
+        Select Case LanguageHelper.CurrentLanguage
+
+            Case "Itaukei"
+                Return itaukeiText
+
+            Case "Fiji Hindi"
+                Return fijiHindiText
+
+            Case Else
+                Return englishText
+
+        End Select
+
+    End Function
+
 End Class

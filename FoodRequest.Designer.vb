@@ -49,9 +49,9 @@ Partial Class frmFoodRequest
         Me.Label1.AutoSize = True
         Me.Label1.Location = New System.Drawing.Point(419, 19)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(48, 16)
+        Me.Label1.Size = New System.Drawing.Size(93, 16)
         Me.Label1.TabIndex = 0
-        Me.Label1.Text = "Label1"
+        Me.Label1.Text = "Food Request"
         '
         'Label2
         '
@@ -103,7 +103,7 @@ Partial Class frmFoodRequest
         Me.Label7.AutoSize = True
         Me.Label7.Location = New System.Drawing.Point(61, 261)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(73, 20)
+        Me.Label7.Size = New System.Drawing.Size(58, 16)
         Me.Label7.TabIndex = 6
         Me.Label7.Text = "Urgency"
         '
@@ -112,7 +112,7 @@ Partial Class frmFoodRequest
         Me.Label8.AutoSize = True
         Me.Label8.Location = New System.Drawing.Point(61, 297)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(140, 20)
+        Me.Label8.Size = New System.Drawing.Size(112, 16)
         Me.Label8.TabIndex = 7
         Me.Label8.Text = "Request Reason:"
         '
