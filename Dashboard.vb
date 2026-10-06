@@ -1,4 +1,6 @@
-﻿Public Class frmDashboard
+﻿Imports System.Windows.Forms
+
+Public Class frmDashboard
 
     Private currentForm As Form = Nothing
     Private loggedInName As String
