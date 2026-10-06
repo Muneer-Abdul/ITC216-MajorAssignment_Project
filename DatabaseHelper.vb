@@ -4,11 +4,11 @@ Imports System.IO
 Module DatabaseHelper
 
     Private ReadOnly DatabasePath As String =
-    Path.Combine(
-        Application.StartupPath,
-        "Database",
-        "VitiFoodLink.db"
-    )
+        Path.Combine(
+            Application.StartupPath,
+            "Database",
+            "VitiFoodLink.db"
+        )
 
     Public ReadOnly ConnectionString As String =
         "Data Source=" & DatabasePath & ";Version=3;"
@@ -21,9 +21,21 @@ Module DatabaseHelper
 
     Public Sub InitializeDatabase()
 
+        ' Make sure the Database folder exists
+        Dim databaseFolder As String =
+            Path.Combine(Application.StartupPath, "Database")
+
+        If Not Directory.Exists(databaseFolder) Then
+            Directory.CreateDirectory(databaseFolder)
+        End If
+
         Using conn As SQLiteConnection = GetConnection()
 
             conn.Open()
+
+            ' =========================================================
+            ' USERS TABLE
+            ' =========================================================
 
             Dim query As String =
                 "CREATE TABLE IF NOT EXISTS Users (" &
@@ -40,7 +52,12 @@ Module DatabaseHelper
                 cmd.ExecuteNonQuery()
 
             End Using
-            '
+
+
+            ' =========================================================
+            ' SURPLUS PRODUCE TABLE
+            ' =========================================================
+
             Dim surplusQuery As String =
                 "CREATE TABLE IF NOT EXISTS SurplusProduce (" &
                 "ProduceID INTEGER PRIMARY KEY AUTOINCREMENT, " &
@@ -58,61 +75,72 @@ Module DatabaseHelper
 
             End Using
 
+
+            ' =========================================================
+            ' BARTER TABLE
+            ' =========================================================
+
+            ' Creates the table if it does not already exist.
+            '
+            ' IMPORTANT:
+            ' IF NOT EXISTS does NOT update an old table.
+            ' Therefore, migration checks are performed below.
+
             Dim barterQuery As String =
                 "CREATE TABLE IF NOT EXISTS Barter (" &
                 "BarterID INTEGER PRIMARY KEY AUTOINCREMENT, " &
+                "PersonName TEXT NOT NULL DEFAULT '', " &
+                "ContactNumber TEXT NOT NULL DEFAULT '', " &
                 "OfferedProduce TEXT NOT NULL, " &
                 "OfferedQuantity REAL NOT NULL, " &
                 "RequestedProduce TEXT NOT NULL, " &
                 "RequestedQuantity REAL NOT NULL, " &
                 "Community TEXT NOT NULL, " &
-                "BarterDate TEXT NOT NULL" &
+                "BarterDate TEXT NOT NULL, " &
+                "Status TEXT NOT NULL DEFAULT 'Available'" &
                 ");"
 
             Using barterCmd As New SQLiteCommand(barterQuery, conn)
+
                 barterCmd.ExecuteNonQuery()
+
             End Using
 
-            ' Add Status column to Barter table if it does not already exist
-            Dim statusExists As Boolean = False
 
-            Dim checkStatusQuery As String =
-    "PRAGMA table_info(Barter);"
+            ' =========================================================
+            ' BARTER TABLE MIGRATION
+            ' =========================================================
 
-            Using checkCmd As New SQLiteCommand(checkStatusQuery, conn)
+            ' Older versions of the database may not contain:
+            '
+            ' PersonName
+            ' ContactNumber
+            ' Status
+            '
+            ' Check each column and add it if missing.
 
-                Using reader As SQLiteDataReader = checkCmd.ExecuteReader()
+            AddBarterColumnIfMissing(
+                conn,
+                "PersonName",
+                "TEXT NOT NULL DEFAULT ''"
+            )
 
-                    While reader.Read()
+            AddBarterColumnIfMissing(
+                conn,
+                "ContactNumber",
+                "TEXT NOT NULL DEFAULT ''"
+            )
 
-                        If reader("name").ToString().Equals(
+            AddBarterColumnIfMissing(
+                conn,
                 "Status",
-                StringComparison.OrdinalIgnoreCase) Then
+                "TEXT NOT NULL DEFAULT 'Available'"
+            )
 
-                            statusExists = True
-                            Exit While
 
-                        End If
-
-                    End While
-
-                End Using
-
-            End Using
-
-            If Not statusExists Then
-
-                Dim addStatusQuery As String =
-        "ALTER TABLE Barter " &
-        "ADD COLUMN Status TEXT NOT NULL DEFAULT 'Available';"
-
-                Using addStatusCmd As New SQLiteCommand(addStatusQuery, conn)
-
-                    addStatusCmd.ExecuteNonQuery()
-
-                End Using
-
-            End If
+            ' =========================================================
+            ' FOOD REQUESTS TABLE
+            ' =========================================================
 
             Dim requestQuery As String =
                 "CREATE TABLE IF NOT EXISTS FoodRequests (" &
@@ -129,10 +157,86 @@ Module DatabaseHelper
                 ");"
 
             Using requestCmd As New SQLiteCommand(requestQuery, conn)
+
                 requestCmd.ExecuteNonQuery()
+
             End Using
 
         End Using
 
     End Sub
+
+
+    ' =============================================================
+    ' CHECK WHETHER A COLUMN EXISTS IN THE BARTER TABLE
+    ' =============================================================
+
+    Private Function BarterColumnExists(
+        conn As SQLiteConnection,
+        columnName As String
+    ) As Boolean
+
+        Dim checkQuery As String =
+            "PRAGMA table_info(Barter);"
+
+        Using checkCmd As New SQLiteCommand(checkQuery, conn)
+
+            Using reader As SQLiteDataReader =
+                checkCmd.ExecuteReader()
+
+                While reader.Read()
+
+                    Dim existingColumn As String =
+                        reader("name").ToString()
+
+                    If existingColumn.Equals(
+                        columnName,
+                        StringComparison.OrdinalIgnoreCase
+                    ) Then
+
+                        Return True
+
+                    End If
+
+                End While
+
+            End Using
+
+        End Using
+
+        Return False
+
+    End Function
+
+
+    ' =============================================================
+    ' ADD A MISSING BARTER COLUMN
+    ' =============================================================
+
+    Private Sub AddBarterColumnIfMissing(
+        conn As SQLiteConnection,
+        columnName As String,
+        columnDefinition As String
+    )
+
+        If Not BarterColumnExists(conn, columnName) Then
+
+            Dim alterQuery As String =
+                "ALTER TABLE Barter ADD COLUMN " &
+                columnName & " " &
+                columnDefinition & ";"
+
+            Using alterCmd As New SQLiteCommand(
+                alterQuery,
+                conn
+            )
+
+                alterCmd.ExecuteNonQuery()
+
+            End Using
+
+        End If
+
+    End Sub
+
 End Module

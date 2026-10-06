@@ -68,7 +68,7 @@ Partial Class frmDashboard
         'lblUserLoggedIn
         '
         Me.lblUserLoggedIn.AutoSize = True
-        Me.lblUserLoggedIn.Location = New System.Drawing.Point(920, 34)
+        Me.lblUserLoggedIn.Location = New System.Drawing.Point(920, 24)
         Me.lblUserLoggedIn.Name = "lblUserLoggedIn"
         Me.lblUserLoggedIn.Size = New System.Drawing.Size(99, 16)
         Me.lblUserLoggedIn.TabIndex = 1
