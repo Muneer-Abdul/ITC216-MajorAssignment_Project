@@ -14,30 +14,86 @@ Public Class Report
     End Sub
 
     Private Sub Report_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
         If Not loggedInRole.Equals("Admin", StringComparison.OrdinalIgnoreCase) Then
 
             MessageBox.Show(
-            "Access denied. Only administrators can access Reports.",
-            "Access Denied",
-            MessageBoxButtons.OK,
-            MessageBoxIcon.Warning
-        )
+                GetText(
+                    "Access denied. Only administrators can access Reports.",
+                    "E sega ni vakatarai. O ira ga na admin era rawa ni ra curuma na Reports.",
+                    "Access denied. Sirf administrators Reports access kar sakte hain."
+                ),
+                GetText("Access Denied", "Sega ni Vakatarai", "Access Denied"),
+                MessageBoxButtons.OK,
+                MessageBoxIcon.Warning
+            )
 
             Me.Close()
             Return
 
         End If
 
+        ApplyLanguage()
+
         LoadReportStatistics()
-        LoadReportData()
         LoadReportFilters()
         LoadDateFilters()
+        LoadReportData()
+
+    End Sub
+
+    Private Sub ApplyLanguage()
+
+        Select Case LanguageHelper.CurrentLanguage
+
+            Case "English"
+
+                Label1.Text = "Distribution Reports"
+
+                Label2.Text = "Available Produce"
+                Label3.Text = "Distributed Produce"
+                Label4.Text = "Registered Recipients"
+
+                Label5.Text = "Distribution Method"
+                Label6.Text = "Date Filter"
+
+                btnExport.Text = "Export"
+                btnRefresh.Text = "Refresh"
+
+            Case "Itaukei"
+
+                Label1.Text = "Ripote ni Veisoliyaki"
+
+                Label2.Text = "iYau e Tiko"
+                Label3.Text = "iYau e Soli"
+                Label4.Text = "Dauciqomi e Vola"
+                Label5.Text = "Iwalewale ni Veisoliyaki"
+                Label6.Text = "Digidigi ni Siga"
+
+                btnExport.Text = "Vakauta"
+                btnRefresh.Text = "Vakavoui"
+
+            Case "Fiji Hindi"
+
+                Label1.Text = "Distribution Reports"
+
+                Label2.Text = "Available Produce"
+                Label3.Text = "Distributed Produce"
+                Label4.Text = "Registered Recipients"
+                Label5.Text = "Distribution Method"
+                Label6.Text = "Date Filter"
+
+                btnExport.Text = "Export Karo"
+                btnRefresh.Text = "Refresh Karo"
+
+        End Select
 
     End Sub
 
     Private Sub LoadReportStatistics()
 
         Try
+
             Using conn As SQLiteConnection = DatabaseHelper.GetConnection()
 
                 conn.Open()
@@ -47,8 +103,11 @@ Public Class Report
                     "SELECT IFNULL(SUM(Quantity), 0) FROM SurplusProduce"
 
                 Using cmd As New SQLiteCommand(availableQuery, conn)
+
                     Dim availableQuantity As Object = cmd.ExecuteScalar()
+
                     lblAvailableValue.Text = availableQuantity.ToString() & " kg"
+
                 End Using
 
                 'Total distributed produce
@@ -56,8 +115,11 @@ Public Class Report
                     "SELECT IFNULL(SUM(DistributionQuantity), 0) FROM Distribution"
 
                 Using cmd As New SQLiteCommand(distributedQuery, conn)
+
                     Dim distributedQuantity As Object = cmd.ExecuteScalar()
+
                     lblDistributedValue.Text = distributedQuantity.ToString() & " kg"
+
                 End Using
 
                 'Total registered recipients
@@ -65,15 +127,27 @@ Public Class Report
                     "SELECT COUNT(*) FROM Recipients"
 
                 Using cmd As New SQLiteCommand(recipientsQuery, conn)
+
                     Dim recipientCount As Object = cmd.ExecuteScalar()
+
                     lblRecipientsValue.Text = recipientCount.ToString()
+
                 End Using
 
             End Using
 
         Catch ex As Exception
 
-            MessageBox.Show("Error loading report statistics: " & ex.Message)
+            MessageBox.Show(
+                GetText(
+                    "Error loading report statistics: " & ex.Message,
+                    "Sega ni rawa ni vakavotukana na itukutuku ni ripote: " & ex.Message,
+                    "Report statistics load karne mein error: " & ex.Message
+                ),
+                GetText("Report Error", "Sega ni Rawa ni Vakaotaka na Ripote", "Report Error"),
+                MessageBoxButtons.OK,
+                MessageBoxIcon.Error
+            )
 
         End Try
 
@@ -82,46 +156,57 @@ Public Class Report
     Private Sub LoadReportData()
 
         Try
+
             Using conn As SQLiteConnection = DatabaseHelper.GetConnection()
 
                 conn.Open()
 
                 Dim query As String =
-                "SELECT d.DistributionID, " &
-                "s.ProduceName, " &
-                "r.RecipientName, " &
-                "d.DistributionQuantity, " &
-                "d.DistributionDate, " &
-                "d.DistributionMethod " &
-                "FROM Distribution d " &
-                "INNER JOIN SurplusProduce s ON d.ProduceID = s.ProduceID " &
-                "INNER JOIN Recipients r ON d.RecipientID = r.RecipientID "
+                    "SELECT d.DistributionID, " &
+                    "s.ProduceName, " &
+                    "r.RecipientName, " &
+                    "d.DistributionQuantity, " &
+                    "d.DistributionDate, " &
+                    "d.DistributionMethod " &
+                    "FROM Distribution d " &
+                    "INNER JOIN SurplusProduce s ON d.ProduceID = s.ProduceID " &
+                    "INNER JOIN Recipients r ON d.RecipientID = r.RecipientID "
 
                 Dim conditions As New List(Of String)
 
                 'Distribution method filter
                 If cmbReportFilter.SelectedIndex > 0 Then
+
                     conditions.Add("d.DistributionMethod = @method")
+
                 End If
 
                 'Date filter
                 If cmbDateFilter.SelectedIndex = 1 Then
-                    conditions.Add("DATE(d.DistributionDate) = DATE('now', 'localtime')")
+
+                    conditions.Add(
+                        "DATE(d.DistributionDate) = DATE('now', 'localtime')"
+                    )
 
                 ElseIf cmbDateFilter.SelectedIndex = 2 Then
+
                     conditions.Add(
-                    "strftime('%Y-%m', d.DistributionDate) = strftime('%Y-%m', 'now', 'localtime')"
-                )
+                        "strftime('%Y-%m', d.DistributionDate) = strftime('%Y-%m', 'now', 'localtime')"
+                    )
 
                 ElseIf cmbDateFilter.SelectedIndex = 3 Then
+
                     conditions.Add(
-                    "strftime('%Y', d.DistributionDate) = strftime('%Y', 'now', 'localtime')"
-                )
+                        "strftime('%Y', d.DistributionDate) = strftime('%Y', 'now', 'localtime')"
+                    )
+
                 End If
 
                 'Add conditions to query
                 If conditions.Count > 0 Then
+
                     query &= "WHERE " & String.Join(" AND ", conditions)
+
                 End If
 
                 query &= " ORDER BY d.DistributionID DESC"
@@ -130,34 +215,37 @@ Public Class Report
 
                     'Method parameter
                     If cmbReportFilter.SelectedIndex > 0 Then
+
                         cmd.Parameters.AddWithValue(
-                        "@method",
-                        cmbReportFilter.SelectedItem.ToString()
-                    )
+                            "@method",
+                            GetEnglishReportFilterValue(cmbReportFilter.SelectedIndex)
+                        )
+
                     End If
 
                     Using adapter As New SQLiteDataAdapter(cmd)
 
                         Dim table As New DataTable()
+
                         adapter.Fill(table)
 
                         dgvReport.DataSource = table
 
                         'Formatting
                         dgvReport.AutoSizeColumnsMode =
-                        DataGridViewAutoSizeColumnsMode.Fill
+                            DataGridViewAutoSizeColumnsMode.Fill
 
                         dgvReport.ReadOnly = True
 
                         dgvReport.AllowUserToAddRows = False
 
                         dgvReport.SelectionMode =
-                        DataGridViewSelectionMode.FullRowSelect
+                            DataGridViewSelectionMode.FullRowSelect
 
                         dgvReport.EnableHeadersVisualStyles = False
 
                         dgvReport.ColumnHeadersDefaultCellStyle.Font =
-                        New Font("Segoe UI", 10, FontStyle.Bold)
+                            New Font("Segoe UI", 10, FontStyle.Bold)
 
                         dgvReport.ColumnHeadersHeight = 35
 
@@ -168,12 +256,23 @@ Public Class Report
                         dgvReport.Columns("DistributionDate").MinimumWidth = 130
 
                         'Column headings
-                        dgvReport.Columns("DistributionID").HeaderText = "Distribution ID"
-                        dgvReport.Columns("ProduceName").HeaderText = "Produce Name"
-                        dgvReport.Columns("RecipientName").HeaderText = "Recipient Name"
-                        dgvReport.Columns("DistributionQuantity").HeaderText = "Quantity (kg)"
-                        dgvReport.Columns("DistributionDate").HeaderText = "Distribution Date"
-                        dgvReport.Columns("DistributionMethod").HeaderText = "Distribution Method"
+                        dgvReport.Columns("DistributionID").HeaderText =
+                            GetText("Distribution ID", "ID ni Veisoliyaki", "Distribution ID")
+
+                        dgvReport.Columns("ProduceName").HeaderText =
+                            GetText("Produce Name", "Yaca ni iYau", "Produce Name")
+
+                        dgvReport.Columns("RecipientName").HeaderText =
+                            GetText("Recipient Name", "Yaca ni Dauciqomi", "Recipient Name")
+
+                        dgvReport.Columns("DistributionQuantity").HeaderText =
+                            GetText("Quantity (kg)", "Levu (kg)", "Quantity (kg)")
+
+                        dgvReport.Columns("DistributionDate").HeaderText =
+                            GetText("Distribution Date", "Siga ni Veisoliyaki", "Distribution Date")
+
+                        dgvReport.Columns("DistributionMethod").HeaderText =
+                            GetText("Distribution Method", "Iwalewale ni Veisoliyaki", "Distribution Method")
 
                     End Using
 
@@ -183,7 +282,16 @@ Public Class Report
 
         Catch ex As Exception
 
-            MessageBox.Show("Error loading report data: " & ex.Message)
+            MessageBox.Show(
+                GetText(
+                    "Error loading report data: " & ex.Message,
+                    "Sega ni rawa ni vakavotukana na itukutuku ni ripote: " & ex.Message,
+                    "Report data load karne mein error: " & ex.Message
+                ),
+                GetText("Report Error", "Sega ni Rawa ni Vakaotaka na Ripote", "Report Error"),
+                MessageBoxButtons.OK,
+                MessageBoxIcon.Error
+            )
 
         End Try
 
@@ -193,36 +301,112 @@ Public Class Report
 
         cmbReportFilter.Items.Clear()
 
-        cmbReportFilter.Items.Add("All Records")
-        cmbReportFilter.Items.Add("Direct Donation")
-        cmbReportFilter.Items.Add("Community Distribution")
-        cmbReportFilter.Items.Add("Barter Exchange")
-        cmbReportFilter.Items.Add("Charity Distribution")
+        Select Case LanguageHelper.CurrentLanguage
+
+            Case "English"
+
+                cmbReportFilter.Items.Add("All Records")
+                cmbReportFilter.Items.Add("Direct Donation")
+                cmbReportFilter.Items.Add("Community Distribution")
+                cmbReportFilter.Items.Add("Barter Exchange")
+                cmbReportFilter.Items.Add("Charity Distribution")
+
+            Case "Itaukei"
+
+                cmbReportFilter.Items.Add("All Records")
+                cmbReportFilter.Items.Add("Direct Donation")
+                cmbReportFilter.Items.Add("Community Distribution")
+                cmbReportFilter.Items.Add("Barter Exchange")
+                cmbReportFilter.Items.Add("Charity Distribution")
+
+            Case "Fiji Hindi"
+
+                cmbReportFilter.Items.Add("All Records")
+                cmbReportFilter.Items.Add("Direct Donation")
+                cmbReportFilter.Items.Add("Community Distribution")
+                cmbReportFilter.Items.Add("Barter Exchange")
+                cmbReportFilter.Items.Add("Charity Distribution")
+
+        End Select
 
         cmbReportFilter.SelectedIndex = 0
 
     End Sub
 
-    Private Sub cmbReportFilter_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cmbReportFilter.SelectedIndexChanged
+    Private Function GetEnglishReportFilterValue(index As Integer) As String
+
+        Select Case index
+
+            Case 1
+                Return "Direct Donation"
+
+            Case 2
+                Return "Community Distribution"
+
+            Case 3
+                Return "Barter Exchange"
+
+            Case 4
+                Return "Charity Distribution"
+
+            Case Else
+                Return ""
+
+        End Select
+
+    End Function
+
+    Private Sub cmbReportFilter_SelectedIndexChanged(
+        sender As Object,
+        e As EventArgs
+    ) Handles cmbReportFilter.SelectedIndexChanged
+
         LoadReportData()
+
     End Sub
 
-    Private Sub btnExport_Click(sender As Object, e As EventArgs) Handles btnExport.Click
+    Private Sub btnExport_Click(
+        sender As Object,
+        e As EventArgs
+    ) Handles btnExport.Click
 
         Try
 
             If dgvReport.Rows.Count = 0 Then
 
-                MessageBox.Show("There are no records to export.")
+                MessageBox.Show(
+                    GetText(
+                        "There are no records to export.",
+                        "Me sa tiko na ivolatukutuku me vakau yani.",
+                        "Export karne ke liye koi records nahi hain."
+                    ),
+                    GetText(
+                        "No Records",
+                        "Sega ni Tiko na Ivolatukutuku",
+                        "No Records"
+                    ),
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Warning
+                )
+
                 Return
 
             End If
 
             Dim saveDialog As New SaveFileDialog()
 
-            saveDialog.Filter = "CSV Files (*.csv)|*.csv"
-            saveDialog.Title = "Export Distribution Report"
-            saveDialog.FileName = "VitiFoodLink_Report.csv"
+            saveDialog.Filter =
+                "CSV Files (*.csv)|*.csv"
+
+            saveDialog.Title =
+                GetText(
+                    "Export Distribution Report",
+                    "Vakauta na Ripote ni Veisoliyaki",
+                    "Distribution Report Export Karo"
+                )
+
+            saveDialog.FileName =
+                "VitiFoodLink_Report.csv"
 
             If saveDialog.ShowDialog() = DialogResult.OK Then
 
@@ -231,10 +415,14 @@ Public Class Report
                     'Export column headers
                     For i As Integer = 0 To dgvReport.Columns.Count - 1
 
-                        writer.Write(dgvReport.Columns(i).HeaderText)
+                        writer.Write(
+                            dgvReport.Columns(i).HeaderText
+                        )
 
                         If i < dgvReport.Columns.Count - 1 Then
+
                             writer.Write(",")
+
                         End If
 
                     Next
@@ -249,14 +437,21 @@ Public Class Report
                             For i As Integer = 0 To dgvReport.Columns.Count - 1
 
                                 Dim value As String =
-                                row.Cells(i).Value?.ToString()
+                                    row.Cells(i).Value?.ToString()
 
-                                value = value.Replace("""", """""")
+                                value = value.Replace(
+                                    """",
+                                    """"""
+                                )
 
-                                writer.Write("""" & value & """")
+                                writer.Write(
+                                    """" & value & """"
+                                )
 
                                 If i < dgvReport.Columns.Count - 1 Then
+
                                     writer.Write(",")
+
                                 End If
 
                             Next
@@ -270,38 +465,65 @@ Public Class Report
                 End Using
 
                 MessageBox.Show(
-                "Report exported successfully!",
-                "Export Complete",
-                MessageBoxButtons.OK,
-                MessageBoxIcon.Information
-            )
+                    GetText(
+                        "Report exported successfully!",
+                        "Sa vakau vinaka na ripote!",
+                        "Report successfully export ho gaya!"
+                    ),
+                    GetText(
+                        "Export Complete",
+                        "Vakauta sa Oti",
+                        "Export Complete"
+                    ),
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Information
+                )
 
             End If
 
         Catch ex As Exception
 
             MessageBox.Show(
-            "Error exporting report: " & ex.Message,
-            "Export Error",
-            MessageBoxButtons.OK,
-            MessageBoxIcon.Error
-        )
+                GetText(
+                    "Error exporting report: " & ex.Message,
+                    "Sega ni rawa ni vakau na ripote: " & ex.Message,
+                    "Report export karne mein error: " & ex.Message
+                ),
+                GetText(
+                    "Export Error",
+                    "Sega ni Rawa ni Vakauta",
+                    "Export Error"
+                ),
+                MessageBoxButtons.OK,
+                MessageBoxIcon.Error
+            )
 
         End Try
 
     End Sub
 
-    Private Sub btnRefresh_Click(sender As Object, e As EventArgs) Handles btnRefresh.Click
+    Private Sub btnRefresh_Click(
+        sender As Object,
+        e As EventArgs
+    ) Handles btnRefresh.Click
 
         LoadReportStatistics()
         LoadReportData()
 
         MessageBox.Show(
-        "Report refreshed successfully!",
-        "Refresh Complete",
-        MessageBoxButtons.OK,
-        MessageBoxIcon.Information
-    )
+            GetText(
+                "Report refreshed successfully!",
+                "Sa vakavoui vinaka na ripote!",
+                "Report successfully refresh ho gaya!"
+            ),
+            GetText(
+                "Refresh Complete",
+                "Vakavoui sa Oti",
+                "Refresh Complete"
+            ),
+            MessageBoxButtons.OK,
+            MessageBoxIcon.Information
+        )
 
     End Sub
 
@@ -309,17 +531,66 @@ Public Class Report
 
         cmbDateFilter.Items.Clear()
 
-        cmbDateFilter.Items.Add("All Dates")
-        cmbDateFilter.Items.Add("Today")
-        cmbDateFilter.Items.Add("This Month")
-        cmbDateFilter.Items.Add("This Year")
+        Select Case LanguageHelper.CurrentLanguage
+
+            Case "English"
+
+                cmbDateFilter.Items.Add("All Dates")
+                cmbDateFilter.Items.Add("Today")
+                cmbDateFilter.Items.Add("This Month")
+                cmbDateFilter.Items.Add("This Year")
+
+            Case "Itaukei"
+
+                cmbDateFilter.Items.Add("All Dates")
+                cmbDateFilter.Items.Add("Nikua")
+                cmbDateFilter.Items.Add("Vula Oqo")
+                cmbDateFilter.Items.Add("Yabaki Oqo")
+
+            Case "Fiji Hindi"
+
+                cmbDateFilter.Items.Add("All Dates")
+                cmbDateFilter.Items.Add("Aaj")
+                cmbDateFilter.Items.Add("Ee Mahina")
+                cmbDateFilter.Items.Add("Ee Saal")
+
+        End Select
 
         cmbDateFilter.SelectedIndex = 0
 
     End Sub
 
-    Private Sub cmbDateFilter_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cmbDateFilter.SelectedIndexChanged
+    Private Sub cmbDateFilter_SelectedIndexChanged(
+        sender As Object,
+        e As EventArgs
+    ) Handles cmbDateFilter.SelectedIndexChanged
+
         LoadReportData()
 
     End Sub
+
+    Private Function GetText(
+        englishText As String,
+        itaukeiText As String,
+        fijiHindiText As String
+    ) As String
+
+        Select Case LanguageHelper.CurrentLanguage
+
+            Case "Itaukei"
+
+                Return itaukeiText
+
+            Case "Fiji Hindi"
+
+                Return fijiHindiText
+
+            Case Else
+
+                Return englishText
+
+        End Select
+
+    End Function
+
 End Class

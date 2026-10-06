@@ -5,6 +5,7 @@
     Private loggedInRole As String
 
     Public Sub New(userID As Integer, fullName As String, role As String)
+
         InitializeComponent()
 
         loggedInUserID = userID
@@ -19,7 +20,17 @@
         e As EventArgs
     ) Handles MyBase.Load
 
-        lblWelcome.Text = "Welcome, " & loggedInName
+        ApplyLanguage()
+
+        If LanguageHelper.CurrentLanguage = "English" Then
+            lblWelcome.Text = "Welcome, " & loggedInName
+
+        ElseIf LanguageHelper.CurrentLanguage = "Itaukei" Then
+            lblWelcome.Text = "Bula, " & loggedInName
+
+        ElseIf LanguageHelper.CurrentLanguage = "Fiji Hindi" Then
+            lblWelcome.Text = "Namaste, " & loggedInName
+        End If
 
     End Sub
 
@@ -91,7 +102,11 @@
 
     End Sub
 
-    Private Sub picProfile_Click(sender As Object, e As EventArgs) Handles picProfile.Click
+
+    Private Sub picProfile_Click(
+        sender As Object,
+        e As EventArgs
+    ) Handles picProfile.Click
 
         Dim profileForm As New frmUserProfile(loggedInUserID)
 
@@ -106,7 +121,11 @@
 
     End Sub
 
-    Private Sub picVitiBot_Click(sender As Object, e As EventArgs) Handles picVitiBot.Click
+
+    Private Sub picVitiBot_Click(
+        sender As Object,
+        e As EventArgs
+    ) Handles picVitiBot.Click
 
         Dim botForm As New frmVitiBot(loggedInRole)
 
@@ -120,4 +139,38 @@
         botForm.Show()
 
     End Sub
+
+
+    Private Sub ApplyLanguage()
+
+        If LanguageHelper.CurrentLanguage = "English" Then
+
+            lblTitle.Text = "User Dashboard"
+            btnGiveFood.Text = "Give Food"
+            btnRequestFood.Text = "Request Food"
+            btnBarter.Text = "Barter"
+            btnLogout.Text = "Logout"
+
+
+        ElseIf LanguageHelper.CurrentLanguage = "Itaukei" Then
+
+            lblTitle.Text = "Dashboard ni Vakayagataki"
+            btnGiveFood.Text = "Solia na Kakana"
+            btnRequestFood.Text = "Kerea na Kakana"
+            btnBarter.Text = "Veisau"
+            btnLogout.Text = "Curu i Tuba"
+
+
+        ElseIf LanguageHelper.CurrentLanguage = "Fiji Hindi" Then
+
+            lblTitle.Text = "User Dashboard"
+            btnGiveFood.Text = "Khana Do"
+            btnRequestFood.Text = "Khana Maango"
+            btnBarter.Text = "Badlao"
+            btnLogout.Text = "Logout"
+
+        End If
+
+    End Sub
+
 End Class
