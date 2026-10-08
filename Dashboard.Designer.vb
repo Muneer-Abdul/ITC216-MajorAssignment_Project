@@ -24,10 +24,13 @@ Partial Class frmDashboard
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmDashboard))
         Me.pnlHeader = New System.Windows.Forms.Panel()
+        Me.lblDashboard = New System.Windows.Forms.Label()
+        Me.lblSubheading = New System.Windows.Forms.Label()
         Me.picProfile = New System.Windows.Forms.PictureBox()
         Me.lblUserLoggedIn = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.pnlSidebar = New System.Windows.Forms.Panel()
+        Me.lblMainMenu = New System.Windows.Forms.Label()
         Me.btnBarter = New System.Windows.Forms.Button()
         Me.btnLogout = New System.Windows.Forms.Button()
         Me.btnReports = New System.Windows.Forms.Button()
@@ -38,9 +41,6 @@ Partial Class frmDashboard
         Me.btnSupplies = New System.Windows.Forms.Button()
         Me.pnlContent = New System.Windows.Forms.Panel()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.lblMainMenu = New System.Windows.Forms.Label()
-        Me.lblSubheading = New System.Windows.Forms.Label()
-        Me.lblDashboard = New System.Windows.Forms.Label()
         Me.pnlHeader.SuspendLayout()
         CType(Me.picProfile, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.pnlSidebar.SuspendLayout()
@@ -61,6 +61,27 @@ Partial Class frmDashboard
         Me.pnlHeader.Name = "pnlHeader"
         Me.pnlHeader.Size = New System.Drawing.Size(1612, 107)
         Me.pnlHeader.TabIndex = 0
+        '
+        'lblDashboard
+        '
+        Me.lblDashboard.AutoSize = True
+        Me.lblDashboard.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!)
+        Me.lblDashboard.ForeColor = System.Drawing.Color.FromArgb(CType(CType(10, Byte), Integer), CType(CType(65, Byte), Integer), CType(CType(45, Byte), Integer))
+        Me.lblDashboard.Location = New System.Drawing.Point(846, 65)
+        Me.lblDashboard.Name = "lblDashboard"
+        Me.lblDashboard.Size = New System.Drawing.Size(175, 37)
+        Me.lblDashboard.TabIndex = 11
+        Me.lblDashboard.Text = "Dashboard"
+        '
+        'lblSubheading
+        '
+        Me.lblSubheading.AutoSize = True
+        Me.lblSubheading.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblSubheading.Location = New System.Drawing.Point(39, 60)
+        Me.lblSubheading.Name = "lblSubheading"
+        Me.lblSubheading.Size = New System.Drawing.Size(285, 20)
+        Me.lblSubheading.TabIndex = 10
+        Me.lblSubheading.Text = "Community Food Surplus Management"
         '
         'picProfile
         '
@@ -113,6 +134,17 @@ Partial Class frmDashboard
         Me.pnlSidebar.Name = "pnlSidebar"
         Me.pnlSidebar.Size = New System.Drawing.Size(275, 859)
         Me.pnlSidebar.TabIndex = 1
+        '
+        'lblMainMenu
+        '
+        Me.lblMainMenu.AutoSize = True
+        Me.lblMainMenu.Font = New System.Drawing.Font("Segoe UI", 20.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblMainMenu.ForeColor = System.Drawing.Color.White
+        Me.lblMainMenu.Location = New System.Drawing.Point(19, 53)
+        Me.lblMainMenu.Name = "lblMainMenu"
+        Me.lblMainMenu.Size = New System.Drawing.Size(237, 54)
+        Me.lblMainMenu.TabIndex = 10
+        Me.lblMainMenu.Text = "Main Menu"
         '
         'btnBarter
         '
@@ -232,45 +264,13 @@ Partial Class frmDashboard
         '
         Me.PictureBox1.Cursor = System.Windows.Forms.Cursors.Hand
         Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
-        Me.PictureBox1.Location = New System.Drawing.Point(1228, 882)
+        Me.PictureBox1.Location = New System.Drawing.Point(1228, 885)
         Me.PictureBox1.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(78, 70)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox1.TabIndex = 10
         Me.PictureBox1.TabStop = False
-        '
-        'lblMainMenu
-        '
-        Me.lblMainMenu.AutoSize = True
-        Me.lblMainMenu.Font = New System.Drawing.Font("Segoe UI", 20.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblMainMenu.ForeColor = System.Drawing.Color.White
-        Me.lblMainMenu.Location = New System.Drawing.Point(19, 53)
-        Me.lblMainMenu.Name = "lblMainMenu"
-        Me.lblMainMenu.Size = New System.Drawing.Size(237, 54)
-        Me.lblMainMenu.TabIndex = 10
-        Me.lblMainMenu.Text = "Main Menu"
-        '
-        'lblSubheading
-        '
-        Me.lblSubheading.AutoSize = True
-        Me.lblSubheading.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblSubheading.Location = New System.Drawing.Point(39, 60)
-        Me.lblSubheading.Name = "lblSubheading"
-        Me.lblSubheading.Size = New System.Drawing.Size(285, 20)
-        Me.lblSubheading.TabIndex = 10
-        Me.lblSubheading.Text = "Community Food Surplus Management"
-        '
-        'lblDashboard
-        '
-        Me.lblDashboard.AutoSize = True
-        Me.lblDashboard.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!)
-        Me.lblDashboard.ForeColor = System.Drawing.Color.FromArgb(CType(CType(10, Byte), Integer), CType(CType(65, Byte), Integer), CType(CType(45, Byte), Integer))
-        Me.lblDashboard.Location = New System.Drawing.Point(846, 65)
-        Me.lblDashboard.Name = "lblDashboard"
-        Me.lblDashboard.Size = New System.Drawing.Size(175, 37)
-        Me.lblDashboard.TabIndex = 11
-        Me.lblDashboard.Text = "Dashboard"
         '
         'frmDashboard
         '
