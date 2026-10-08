@@ -283,4 +283,8 @@ Public Class frmRecipients
         End If
 
     End Sub
+
+    Private Sub txtContactNumber_TextChanged(sender As Object, e As EventArgs) Handles txtContactNumber.TextChanged
+
+    End Sub
 End Class

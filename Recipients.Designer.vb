@@ -46,166 +46,203 @@ Partial Class frmRecipients
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(451, 46)
+        Me.Label1.Font = New System.Drawing.Font("Segoe UI", 16.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(10, Byte), Integer), CType(CType(65, Byte), Integer), CType(CType(45, Byte), Integer))
+        Me.Label1.Location = New System.Drawing.Point(901, 13)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(153, 16)
+        Me.Label1.Size = New System.Drawing.Size(379, 45)
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "Recipients Management"
         '
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(52, 128)
+        Me.Label2.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.Location = New System.Drawing.Point(41, 179)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(107, 16)
+        Me.Label2.Size = New System.Drawing.Size(139, 25)
         Me.Label2.TabIndex = 1
         Me.Label2.Text = "Recipient Name:"
         '
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(52, 166)
+        Me.Label3.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.Location = New System.Drawing.Point(41, 245)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(86, 16)
+        Me.Label3.Size = New System.Drawing.Size(118, 25)
         Me.Label3.TabIndex = 2
         Me.Label3.Text = "Organisation:"
         '
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(52, 212)
+        Me.Label4.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.Location = New System.Drawing.Point(41, 315)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(106, 16)
+        Me.Label4.Size = New System.Drawing.Size(147, 25)
         Me.Label4.TabIndex = 3
         Me.Label4.Text = "Contact Number:"
         '
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(52, 255)
+        Me.Label5.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label5.Location = New System.Drawing.Point(41, 381)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(76, 16)
+        Me.Label5.Size = New System.Drawing.Size(109, 25)
         Me.Label5.TabIndex = 4
         Me.Label5.Text = "Community:"
         '
         'Label6
         '
         Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(52, 303)
+        Me.Label6.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label6.Location = New System.Drawing.Point(41, 448)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(61, 16)
+        Me.Label6.Size = New System.Drawing.Size(83, 25)
         Me.Label6.TabIndex = 5
         Me.Label6.Text = "Location:"
         '
         'txtRecipientName
         '
-        Me.txtRecipientName.Location = New System.Drawing.Point(165, 128)
+        Me.txtRecipientName.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtRecipientName.Location = New System.Drawing.Point(186, 173)
+        Me.txtRecipientName.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.txtRecipientName.Name = "txtRecipientName"
-        Me.txtRecipientName.Size = New System.Drawing.Size(124, 22)
+        Me.txtRecipientName.Size = New System.Drawing.Size(209, 31)
         Me.txtRecipientName.TabIndex = 6
         '
         'txtOrganisation
         '
-        Me.txtOrganisation.Location = New System.Drawing.Point(165, 166)
+        Me.txtOrganisation.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtOrganisation.Location = New System.Drawing.Point(186, 239)
+        Me.txtOrganisation.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.txtOrganisation.Name = "txtOrganisation"
-        Me.txtOrganisation.Size = New System.Drawing.Size(124, 22)
+        Me.txtOrganisation.Size = New System.Drawing.Size(209, 31)
         Me.txtOrganisation.TabIndex = 7
         '
         'txtContactNumber
         '
-        Me.txtContactNumber.Location = New System.Drawing.Point(165, 212)
+        Me.txtContactNumber.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtContactNumber.Location = New System.Drawing.Point(186, 309)
+        Me.txtContactNumber.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.txtContactNumber.Name = "txtContactNumber"
-        Me.txtContactNumber.Size = New System.Drawing.Size(124, 22)
+        Me.txtContactNumber.Size = New System.Drawing.Size(209, 31)
         Me.txtContactNumber.TabIndex = 8
         '
         'txtCommunity
         '
-        Me.txtCommunity.Location = New System.Drawing.Point(165, 264)
+        Me.txtCommunity.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtCommunity.Location = New System.Drawing.Point(186, 375)
+        Me.txtCommunity.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.txtCommunity.Name = "txtCommunity"
-        Me.txtCommunity.Size = New System.Drawing.Size(124, 22)
+        Me.txtCommunity.Size = New System.Drawing.Size(209, 31)
         Me.txtCommunity.TabIndex = 9
         '
         'txtLocation
         '
-        Me.txtLocation.Location = New System.Drawing.Point(165, 303)
+        Me.txtLocation.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtLocation.Location = New System.Drawing.Point(186, 442)
+        Me.txtLocation.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.txtLocation.Name = "txtLocation"
-        Me.txtLocation.Size = New System.Drawing.Size(124, 22)
+        Me.txtLocation.Size = New System.Drawing.Size(209, 31)
         Me.txtLocation.TabIndex = 10
         '
         'Label7
         '
         Me.Label7.AutoSize = True
-        Me.Label7.Location = New System.Drawing.Point(380, 134)
+        Me.Label7.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label7.Location = New System.Drawing.Point(491, 115)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(102, 16)
+        Me.Label7.Size = New System.Drawing.Size(129, 25)
         Me.Label7.TabIndex = 11
         Me.Label7.Text = "Recipient Type:"
         '
         'cmbRecipientType
         '
         Me.cmbRecipientType.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.cmbRecipientType.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cmbRecipientType.FormattingEnabled = True
         Me.cmbRecipientType.Items.AddRange(New Object() {"Community Organisation", "Individual", "School", "Charity", "Other"})
-        Me.cmbRecipientType.Location = New System.Drawing.Point(506, 130)
+        Me.cmbRecipientType.Location = New System.Drawing.Point(626, 107)
+        Me.cmbRecipientType.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.cmbRecipientType.Name = "cmbRecipientType"
-        Me.cmbRecipientType.Size = New System.Drawing.Size(131, 24)
+        Me.cmbRecipientType.Size = New System.Drawing.Size(209, 33)
         Me.cmbRecipientType.TabIndex = 13
         '
         'btnAdd
         '
-        Me.btnAdd.Location = New System.Drawing.Point(55, 499)
+        Me.btnAdd.BackColor = System.Drawing.Color.FromArgb(CType(CType(10, Byte), Integer), CType(CType(65, Byte), Integer), CType(CType(45, Byte), Integer))
+        Me.btnAdd.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnAdd.ForeColor = System.Drawing.Color.White
+        Me.btnAdd.Location = New System.Drawing.Point(134, 576)
+        Me.btnAdd.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.btnAdd.Name = "btnAdd"
-        Me.btnAdd.Size = New System.Drawing.Size(118, 51)
+        Me.btnAdd.Size = New System.Drawing.Size(213, 52)
         Me.btnAdd.TabIndex = 14
         Me.btnAdd.Text = "Add"
-        Me.btnAdd.UseVisualStyleBackColor = True
+        Me.btnAdd.UseVisualStyleBackColor = False
         '
         'btnUpdate
         '
-        Me.btnUpdate.Location = New System.Drawing.Point(236, 499)
+        Me.btnUpdate.BackColor = System.Drawing.Color.FromArgb(CType(CType(10, Byte), Integer), CType(CType(65, Byte), Integer), CType(CType(45, Byte), Integer))
+        Me.btnUpdate.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnUpdate.ForeColor = System.Drawing.Color.White
+        Me.btnUpdate.Location = New System.Drawing.Point(134, 656)
+        Me.btnUpdate.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.btnUpdate.Name = "btnUpdate"
-        Me.btnUpdate.Size = New System.Drawing.Size(118, 51)
+        Me.btnUpdate.Size = New System.Drawing.Size(213, 53)
         Me.btnUpdate.TabIndex = 15
         Me.btnUpdate.Text = "Update"
-        Me.btnUpdate.UseVisualStyleBackColor = True
+        Me.btnUpdate.UseVisualStyleBackColor = False
         '
         'btnDelete
         '
-        Me.btnDelete.Location = New System.Drawing.Point(441, 499)
+        Me.btnDelete.BackColor = System.Drawing.Color.Red
+        Me.btnDelete.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnDelete.ForeColor = System.Drawing.Color.White
+        Me.btnDelete.Location = New System.Drawing.Point(134, 824)
+        Me.btnDelete.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.btnDelete.Name = "btnDelete"
-        Me.btnDelete.Size = New System.Drawing.Size(118, 51)
+        Me.btnDelete.Size = New System.Drawing.Size(213, 56)
         Me.btnDelete.TabIndex = 16
         Me.btnDelete.Text = "Delete"
-        Me.btnDelete.UseVisualStyleBackColor = True
+        Me.btnDelete.UseVisualStyleBackColor = False
         '
         'btnClear
         '
-        Me.btnClear.Location = New System.Drawing.Point(614, 499)
+        Me.btnClear.BackColor = System.Drawing.Color.FromArgb(CType(CType(10, Byte), Integer), CType(CType(65, Byte), Integer), CType(CType(45, Byte), Integer))
+        Me.btnClear.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnClear.ForeColor = System.Drawing.Color.White
+        Me.btnClear.Location = New System.Drawing.Point(134, 739)
+        Me.btnClear.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.btnClear.Name = "btnClear"
-        Me.btnClear.Size = New System.Drawing.Size(118, 51)
+        Me.btnClear.Size = New System.Drawing.Size(213, 57)
         Me.btnClear.TabIndex = 17
         Me.btnClear.Text = "Clear"
-        Me.btnClear.UseVisualStyleBackColor = True
+        Me.btnClear.UseVisualStyleBackColor = False
         '
         'dgvRecipients
         '
         Me.dgvRecipients.AllowUserToAddRows = False
         Me.dgvRecipients.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
         Me.dgvRecipients.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.dgvRecipients.Location = New System.Drawing.Point(352, 185)
+        Me.dgvRecipients.Location = New System.Drawing.Point(495, 179)
+        Me.dgvRecipients.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.dgvRecipients.Name = "dgvRecipients"
         Me.dgvRecipients.ReadOnly = True
         Me.dgvRecipients.RowHeadersWidth = 51
         Me.dgvRecipients.RowTemplate.Height = 24
         Me.dgvRecipients.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.dgvRecipients.Size = New System.Drawing.Size(515, 213)
+        Me.dgvRecipients.Size = New System.Drawing.Size(799, 701)
         Me.dgvRecipients.TabIndex = 18
         '
         'frmRecipients
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1090, 656)
+        Me.ClientSize = New System.Drawing.Size(1292, 959)
         Me.Controls.Add(Me.dgvRecipients)
         Me.Controls.Add(Me.btnClear)
         Me.Controls.Add(Me.btnDelete)
@@ -224,7 +261,11 @@ Partial Class frmRecipients
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
+        Me.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.MinimizeBox = False
         Me.Name = "frmRecipients"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Recipients Management"
         CType(Me.dgvRecipients, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
