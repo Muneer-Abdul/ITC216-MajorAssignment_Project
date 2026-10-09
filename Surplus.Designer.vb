@@ -98,7 +98,7 @@ Partial Class frmSurplus
         'txtProduceName
         '
         Me.txtProduceName.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtProduceName.Location = New System.Drawing.Point(199, 144)
+        Me.txtProduceName.Location = New System.Drawing.Point(207, 144)
         Me.txtProduceName.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.txtProduceName.Name = "txtProduceName"
         Me.txtProduceName.Size = New System.Drawing.Size(315, 31)
@@ -107,7 +107,7 @@ Partial Class frmSurplus
         'txtQuantity
         '
         Me.txtQuantity.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtQuantity.Location = New System.Drawing.Point(199, 210)
+        Me.txtQuantity.Location = New System.Drawing.Point(207, 210)
         Me.txtQuantity.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.txtQuantity.Name = "txtQuantity"
         Me.txtQuantity.Size = New System.Drawing.Size(315, 31)
@@ -117,7 +117,7 @@ Partial Class frmSurplus
         '
         Me.cmbDonor.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cmbDonor.FormattingEnabled = True
-        Me.cmbDonor.Location = New System.Drawing.Point(199, 284)
+        Me.cmbDonor.Location = New System.Drawing.Point(207, 284)
         Me.cmbDonor.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.cmbDonor.Name = "cmbDonor"
         Me.cmbDonor.Size = New System.Drawing.Size(315, 33)
