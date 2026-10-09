@@ -59,7 +59,7 @@ Partial Class frmSurplus
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(55, 147)
+        Me.Label2.Location = New System.Drawing.Point(71, 147)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(133, 25)
         Me.Label2.TabIndex = 1
@@ -69,7 +69,7 @@ Partial Class frmSurplus
         '
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(55, 216)
+        Me.Label3.Location = New System.Drawing.Point(71, 216)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(119, 25)
         Me.Label3.TabIndex = 2
@@ -79,7 +79,7 @@ Partial Class frmSurplus
         '
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(58, 282)
+        Me.Label4.Location = New System.Drawing.Point(71, 287)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(63, 25)
         Me.Label4.TabIndex = 3
@@ -89,7 +89,7 @@ Partial Class frmSurplus
         '
         Me.Label5.AutoSize = True
         Me.Label5.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.Location = New System.Drawing.Point(644, 147)
+        Me.Label5.Location = New System.Drawing.Point(678, 147)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(101, 25)
         Me.Label5.TabIndex = 4
@@ -98,7 +98,7 @@ Partial Class frmSurplus
         'txtProduceName
         '
         Me.txtProduceName.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtProduceName.Location = New System.Drawing.Point(197, 147)
+        Me.txtProduceName.Location = New System.Drawing.Point(199, 144)
         Me.txtProduceName.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.txtProduceName.Name = "txtProduceName"
         Me.txtProduceName.Size = New System.Drawing.Size(315, 31)
@@ -107,7 +107,7 @@ Partial Class frmSurplus
         'txtQuantity
         '
         Me.txtQuantity.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtQuantity.Location = New System.Drawing.Point(197, 210)
+        Me.txtQuantity.Location = New System.Drawing.Point(199, 210)
         Me.txtQuantity.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.txtQuantity.Name = "txtQuantity"
         Me.txtQuantity.Size = New System.Drawing.Size(315, 31)
@@ -117,7 +117,7 @@ Partial Class frmSurplus
         '
         Me.cmbDonor.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cmbDonor.FormattingEnabled = True
-        Me.cmbDonor.Location = New System.Drawing.Point(197, 279)
+        Me.cmbDonor.Location = New System.Drawing.Point(199, 284)
         Me.cmbDonor.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.cmbDonor.Name = "cmbDonor"
         Me.cmbDonor.Size = New System.Drawing.Size(315, 33)
@@ -127,7 +127,7 @@ Partial Class frmSurplus
         '
         Me.dtpExpiryDate.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.dtpExpiryDate.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
-        Me.dtpExpiryDate.Location = New System.Drawing.Point(786, 145)
+        Me.dtpExpiryDate.Location = New System.Drawing.Point(820, 142)
         Me.dtpExpiryDate.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.dtpExpiryDate.Name = "dtpExpiryDate"
         Me.dtpExpiryDate.Size = New System.Drawing.Size(315, 31)
@@ -200,7 +200,7 @@ Partial Class frmSurplus
         '
         Me.Label6.AutoSize = True
         Me.Label6.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label6.Location = New System.Drawing.Point(644, 216)
+        Me.Label6.Location = New System.Drawing.Point(678, 213)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(136, 25)
         Me.Label6.TabIndex = 14
@@ -210,7 +210,7 @@ Partial Class frmSurplus
         '
         Me.Label7.AutoSize = True
         Me.Label7.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label7.Location = New System.Drawing.Point(644, 282)
+        Me.Label7.Location = New System.Drawing.Point(678, 292)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(109, 25)
         Me.Label7.TabIndex = 15
@@ -220,7 +220,7 @@ Partial Class frmSurplus
         '
         Me.cmbProduceSource.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cmbProduceSource.FormattingEnabled = True
-        Me.cmbProduceSource.Location = New System.Drawing.Point(786, 213)
+        Me.cmbProduceSource.Location = New System.Drawing.Point(820, 210)
         Me.cmbProduceSource.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.cmbProduceSource.Name = "cmbProduceSource"
         Me.cmbProduceSource.Size = New System.Drawing.Size(315, 33)
@@ -229,7 +229,7 @@ Partial Class frmSurplus
         'txtCommunity
         '
         Me.txtCommunity.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtCommunity.Location = New System.Drawing.Point(786, 276)
+        Me.txtCommunity.Location = New System.Drawing.Point(820, 286)
         Me.txtCommunity.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.txtCommunity.Name = "txtCommunity"
         Me.txtCommunity.Size = New System.Drawing.Size(315, 31)
