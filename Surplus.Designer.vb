@@ -89,7 +89,7 @@ Partial Class frmSurplus
         '
         Me.Label5.AutoSize = True
         Me.Label5.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.Location = New System.Drawing.Point(58, 354)
+        Me.Label5.Location = New System.Drawing.Point(644, 147)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(101, 25)
         Me.Label5.TabIndex = 4
@@ -127,7 +127,7 @@ Partial Class frmSurplus
         '
         Me.dtpExpiryDate.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.dtpExpiryDate.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
-        Me.dtpExpiryDate.Location = New System.Drawing.Point(197, 348)
+        Me.dtpExpiryDate.Location = New System.Drawing.Point(786, 145)
         Me.dtpExpiryDate.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.dtpExpiryDate.Name = "dtpExpiryDate"
         Me.dtpExpiryDate.Size = New System.Drawing.Size(315, 31)
@@ -138,10 +138,10 @@ Partial Class frmSurplus
         Me.btnAdd.BackColor = System.Drawing.Color.FromArgb(CType(CType(10, Byte), Integer), CType(CType(65, Byte), Integer), CType(CType(45, Byte), Integer))
         Me.btnAdd.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnAdd.ForeColor = System.Drawing.Color.White
-        Me.btnAdd.Location = New System.Drawing.Point(140, 595)
+        Me.btnAdd.Location = New System.Drawing.Point(76, 397)
         Me.btnAdd.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.btnAdd.Name = "btnAdd"
-        Me.btnAdd.Size = New System.Drawing.Size(259, 59)
+        Me.btnAdd.Size = New System.Drawing.Size(234, 59)
         Me.btnAdd.TabIndex = 9
         Me.btnAdd.Text = "Add"
         Me.btnAdd.UseVisualStyleBackColor = False
@@ -151,10 +151,10 @@ Partial Class frmSurplus
         Me.btnUpdate.BackColor = System.Drawing.Color.FromArgb(CType(CType(10, Byte), Integer), CType(CType(65, Byte), Integer), CType(CType(45, Byte), Integer))
         Me.btnUpdate.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnUpdate.ForeColor = System.Drawing.Color.White
-        Me.btnUpdate.Location = New System.Drawing.Point(140, 674)
+        Me.btnUpdate.Location = New System.Drawing.Point(382, 397)
         Me.btnUpdate.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.btnUpdate.Name = "btnUpdate"
-        Me.btnUpdate.Size = New System.Drawing.Size(259, 59)
+        Me.btnUpdate.Size = New System.Drawing.Size(234, 59)
         Me.btnUpdate.TabIndex = 10
         Me.btnUpdate.Text = "Update"
         Me.btnUpdate.UseVisualStyleBackColor = False
@@ -164,10 +164,10 @@ Partial Class frmSurplus
         Me.btnClear.BackColor = System.Drawing.Color.FromArgb(CType(CType(10, Byte), Integer), CType(CType(65, Byte), Integer), CType(CType(45, Byte), Integer))
         Me.btnClear.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnClear.ForeColor = System.Drawing.Color.White
-        Me.btnClear.Location = New System.Drawing.Point(140, 754)
+        Me.btnClear.Location = New System.Drawing.Point(683, 397)
         Me.btnClear.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.btnClear.Name = "btnClear"
-        Me.btnClear.Size = New System.Drawing.Size(259, 59)
+        Me.btnClear.Size = New System.Drawing.Size(234, 59)
         Me.btnClear.TabIndex = 11
         Me.btnClear.Text = "Clear"
         Me.btnClear.UseVisualStyleBackColor = False
@@ -177,10 +177,10 @@ Partial Class frmSurplus
         Me.btnDelete.BackColor = System.Drawing.Color.Red
         Me.btnDelete.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnDelete.ForeColor = System.Drawing.Color.White
-        Me.btnDelete.Location = New System.Drawing.Point(140, 830)
+        Me.btnDelete.Location = New System.Drawing.Point(982, 397)
         Me.btnDelete.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.btnDelete.Name = "btnDelete"
-        Me.btnDelete.Size = New System.Drawing.Size(259, 59)
+        Me.btnDelete.Size = New System.Drawing.Size(234, 59)
         Me.btnDelete.TabIndex = 12
         Me.btnDelete.Text = "Delete"
         Me.btnDelete.UseVisualStyleBackColor = False
@@ -188,19 +188,19 @@ Partial Class frmSurplus
         'dgvSurplus
         '
         Me.dgvSurplus.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.dgvSurplus.Location = New System.Drawing.Point(582, 147)
+        Me.dgvSurplus.Location = New System.Drawing.Point(77, 490)
         Me.dgvSurplus.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.dgvSurplus.Name = "dgvSurplus"
         Me.dgvSurplus.RowHeadersWidth = 51
         Me.dgvSurplus.RowTemplate.Height = 24
-        Me.dgvSurplus.Size = New System.Drawing.Size(704, 672)
+        Me.dgvSurplus.Size = New System.Drawing.Size(1139, 461)
         Me.dgvSurplus.TabIndex = 13
         '
         'Label6
         '
         Me.Label6.AutoSize = True
         Me.Label6.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label6.Location = New System.Drawing.Point(55, 422)
+        Me.Label6.Location = New System.Drawing.Point(644, 216)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(136, 25)
         Me.Label6.TabIndex = 14
@@ -210,7 +210,7 @@ Partial Class frmSurplus
         '
         Me.Label7.AutoSize = True
         Me.Label7.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label7.Location = New System.Drawing.Point(58, 490)
+        Me.Label7.Location = New System.Drawing.Point(644, 282)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(109, 25)
         Me.Label7.TabIndex = 15
@@ -220,7 +220,7 @@ Partial Class frmSurplus
         '
         Me.cmbProduceSource.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cmbProduceSource.FormattingEnabled = True
-        Me.cmbProduceSource.Location = New System.Drawing.Point(197, 414)
+        Me.cmbProduceSource.Location = New System.Drawing.Point(786, 213)
         Me.cmbProduceSource.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.cmbProduceSource.Name = "cmbProduceSource"
         Me.cmbProduceSource.Size = New System.Drawing.Size(315, 33)
@@ -229,7 +229,7 @@ Partial Class frmSurplus
         'txtCommunity
         '
         Me.txtCommunity.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtCommunity.Location = New System.Drawing.Point(197, 484)
+        Me.txtCommunity.Location = New System.Drawing.Point(786, 276)
         Me.txtCommunity.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.txtCommunity.Name = "txtCommunity"
         Me.txtCommunity.Size = New System.Drawing.Size(315, 31)

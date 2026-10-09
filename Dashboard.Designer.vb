@@ -165,7 +165,7 @@ Partial Class frmDashboard
         Me.btnLogout.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnLogout.Font = New System.Drawing.Font("Segoe UI", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnLogout.ForeColor = System.Drawing.Color.White
-        Me.btnLogout.Location = New System.Drawing.Point(33, 794)
+        Me.btnLogout.Location = New System.Drawing.Point(33, 779)
         Me.btnLogout.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.btnLogout.Name = "btnLogout"
         Me.btnLogout.Size = New System.Drawing.Size(208, 52)
