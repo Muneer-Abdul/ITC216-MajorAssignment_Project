@@ -68,17 +68,17 @@ Partial Class frmFoodExchange
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Segoe UI", 14.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(10, Byte), Integer), CType(CType(65, Byte), Integer), CType(CType(45, Byte), Integer))
-        Me.Label1.Location = New System.Drawing.Point(971, 19)
+        Me.Label1.Location = New System.Drawing.Point(1050, 19)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(268, 38)
+        Me.Label1.Size = New System.Drawing.Size(223, 38)
         Me.Label1.TabIndex = 3
-        Me.Label1.Text = " FOOD EXCHANGE "
+        Me.Label1.Text = " Food Exchange"
         '
         'lbloption
         '
         Me.lbloption.AutoSize = True
         Me.lbloption.Font = New System.Drawing.Font("Segoe UI", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lbloption.Location = New System.Drawing.Point(507, 319)
+        Me.lbloption.Location = New System.Drawing.Point(508, 318)
         Me.lbloption.Name = "lbloption"
         Me.lbloption.Size = New System.Drawing.Size(272, 28)
         Me.lbloption.TabIndex = 5
@@ -87,7 +87,7 @@ Partial Class frmFoodExchange
         'PictureBox1
         '
         Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
-        Me.PictureBox1.Location = New System.Drawing.Point(873, 399)
+        Me.PictureBox1.Location = New System.Drawing.Point(873, 398)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(45, 41)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
@@ -97,7 +97,7 @@ Partial Class frmFoodExchange
         'PictureBox2
         '
         Me.PictureBox2.Image = CType(resources.GetObject("PictureBox2.Image"), System.Drawing.Image)
-        Me.PictureBox2.Location = New System.Drawing.Point(380, 399)
+        Me.PictureBox2.Location = New System.Drawing.Point(380, 398)
         Me.PictureBox2.Name = "PictureBox2"
         Me.PictureBox2.Size = New System.Drawing.Size(43, 38)
         Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom

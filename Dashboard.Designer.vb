@@ -132,7 +132,7 @@ Partial Class frmDashboard
         Me.pnlSidebar.Location = New System.Drawing.Point(1, 138)
         Me.pnlSidebar.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.pnlSidebar.Name = "pnlSidebar"
-        Me.pnlSidebar.Size = New System.Drawing.Size(275, 859)
+        Me.pnlSidebar.Size = New System.Drawing.Size(275, 872)
         Me.pnlSidebar.TabIndex = 1
         '
         'lblMainMenu
@@ -165,7 +165,7 @@ Partial Class frmDashboard
         Me.btnLogout.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnLogout.Font = New System.Drawing.Font("Segoe UI", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnLogout.ForeColor = System.Drawing.Color.White
-        Me.btnLogout.Location = New System.Drawing.Point(33, 779)
+        Me.btnLogout.Location = New System.Drawing.Point(33, 780)
         Me.btnLogout.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.btnLogout.Name = "btnLogout"
         Me.btnLogout.Size = New System.Drawing.Size(208, 52)

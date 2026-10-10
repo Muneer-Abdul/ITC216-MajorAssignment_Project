@@ -157,10 +157,10 @@ Partial Class Report
         Me.cmbReportFilter.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cmbReportFilter.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cmbReportFilter.FormattingEnabled = True
-        Me.cmbReportFilter.Location = New System.Drawing.Point(907, 389)
+        Me.cmbReportFilter.Location = New System.Drawing.Point(380, 384)
         Me.cmbReportFilter.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.cmbReportFilter.Name = "cmbReportFilter"
-        Me.cmbReportFilter.Size = New System.Drawing.Size(197, 33)
+        Me.cmbReportFilter.Size = New System.Drawing.Size(235, 33)
         Me.cmbReportFilter.TabIndex = 5
         '
         'btnRefresh
@@ -214,10 +214,10 @@ Partial Class Report
         '
         Me.cmbDateFilter.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cmbDateFilter.FormattingEnabled = True
-        Me.cmbDateFilter.Location = New System.Drawing.Point(365, 384)
+        Me.cmbDateFilter.Location = New System.Drawing.Point(885, 389)
         Me.cmbDateFilter.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.cmbDateFilter.Name = "cmbDateFilter"
-        Me.cmbDateFilter.Size = New System.Drawing.Size(216, 33)
+        Me.cmbDateFilter.Size = New System.Drawing.Size(235, 33)
         Me.cmbDateFilter.TabIndex = 10
         '
         'Report

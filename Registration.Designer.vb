@@ -211,7 +211,7 @@ Partial Class frmRegistration
         Me.MinimizeBox = False
         Me.Name = "frmRegistration"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "Registration"
+        Me.Text = " "
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
