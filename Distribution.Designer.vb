@@ -44,149 +44,180 @@ Partial Class frmDistribution
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(432, 24)
+        Me.Label1.BackColor = System.Drawing.Color.Transparent
+        Me.Label1.Font = New System.Drawing.Font("Segoe UI", 14.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(10, Byte), Integer), CType(CType(65, Byte), Integer), CType(CType(45, Byte), Integer))
+        Me.Label1.Location = New System.Drawing.Point(949, 18)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(184, 16)
+        Me.Label1.Size = New System.Drawing.Size(314, 38)
         Me.Label1.TabIndex = 0
-        Me.Label1.Text = "PRODUCE DISTRIBUTION    "
+        Me.Label1.Text = "Produce Distribution   "
         '
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(50, 90)
+        Me.Label2.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.Location = New System.Drawing.Point(129, 161)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(102, 16)
+        Me.Label2.Size = New System.Drawing.Size(132, 25)
         Me.Label2.TabIndex = 1
         Me.Label2.Text = "Select Produce:"
         '
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(50, 116)
+        Me.Label3.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.Location = New System.Drawing.Point(129, 310)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(118, 16)
+        Me.Label3.Size = New System.Drawing.Size(160, 25)
         Me.Label3.TabIndex = 2
         Me.Label3.Text = "Available Quantity:"
         '
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(50, 143)
+        Me.Label4.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.Location = New System.Drawing.Point(129, 237)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(108, 16)
+        Me.Label4.Size = New System.Drawing.Size(138, 25)
         Me.Label4.TabIndex = 3
         Me.Label4.Text = "Select Recipient:"
         '
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(50, 170)
+        Me.Label5.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label5.Location = New System.Drawing.Point(677, 161)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(127, 16)
+        Me.Label5.Size = New System.Drawing.Size(182, 25)
         Me.Label5.TabIndex = 4
         Me.Label5.Text = "Distribution Quantity:"
         '
         'Label6
         '
         Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(50, 203)
+        Me.Label6.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label6.Location = New System.Drawing.Point(677, 237)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(108, 16)
+        Me.Label6.Size = New System.Drawing.Size(151, 25)
         Me.Label6.TabIndex = 5
         Me.Label6.Text = "Distribution Date:"
         '
         'Label7
         '
         Me.Label7.AutoSize = True
-        Me.Label7.Location = New System.Drawing.Point(50, 233)
+        Me.Label7.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label7.Location = New System.Drawing.Point(677, 304)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(124, 16)
+        Me.Label7.Size = New System.Drawing.Size(177, 25)
         Me.Label7.TabIndex = 6
         Me.Label7.Text = "Distribution Method:"
         '
         'cmbProduce
         '
         Me.cmbProduce.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.cmbProduce.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cmbProduce.FormattingEnabled = True
-        Me.cmbProduce.Location = New System.Drawing.Point(184, 86)
+        Me.cmbProduce.Location = New System.Drawing.Point(315, 153)
+        Me.cmbProduce.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.cmbProduce.Name = "cmbProduce"
-        Me.cmbProduce.Size = New System.Drawing.Size(121, 24)
+        Me.cmbProduce.Size = New System.Drawing.Size(306, 33)
         Me.cmbProduce.TabIndex = 7
         '
         'cmbRecipient
         '
         Me.cmbRecipient.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.cmbRecipient.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cmbRecipient.FormattingEnabled = True
-        Me.cmbRecipient.Location = New System.Drawing.Point(184, 143)
+        Me.cmbRecipient.Location = New System.Drawing.Point(315, 229)
+        Me.cmbRecipient.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.cmbRecipient.Name = "cmbRecipient"
-        Me.cmbRecipient.Size = New System.Drawing.Size(121, 24)
+        Me.cmbRecipient.Size = New System.Drawing.Size(306, 33)
         Me.cmbRecipient.TabIndex = 8
         '
         'cmbDistributionMethod
         '
         Me.cmbDistributionMethod.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.cmbDistributionMethod.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cmbDistributionMethod.FormattingEnabled = True
-        Me.cmbDistributionMethod.Location = New System.Drawing.Point(184, 233)
+        Me.cmbDistributionMethod.Location = New System.Drawing.Point(873, 296)
+        Me.cmbDistributionMethod.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.cmbDistributionMethod.Name = "cmbDistributionMethod"
-        Me.cmbDistributionMethod.Size = New System.Drawing.Size(121, 24)
+        Me.cmbDistributionMethod.Size = New System.Drawing.Size(306, 33)
         Me.cmbDistributionMethod.TabIndex = 9
         '
         'txtAvailableQuantity
         '
-        Me.txtAvailableQuantity.Location = New System.Drawing.Point(184, 116)
+        Me.txtAvailableQuantity.BackColor = System.Drawing.Color.White
+        Me.txtAvailableQuantity.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtAvailableQuantity.Location = New System.Drawing.Point(315, 304)
+        Me.txtAvailableQuantity.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.txtAvailableQuantity.Name = "txtAvailableQuantity"
         Me.txtAvailableQuantity.ReadOnly = True
-        Me.txtAvailableQuantity.Size = New System.Drawing.Size(121, 22)
+        Me.txtAvailableQuantity.Size = New System.Drawing.Size(306, 31)
         Me.txtAvailableQuantity.TabIndex = 10
         '
         'txtDistributionQuantity
         '
-        Me.txtDistributionQuantity.Location = New System.Drawing.Point(184, 173)
+        Me.txtDistributionQuantity.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtDistributionQuantity.Location = New System.Drawing.Point(873, 158)
+        Me.txtDistributionQuantity.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.txtDistributionQuantity.Name = "txtDistributionQuantity"
-        Me.txtDistributionQuantity.Size = New System.Drawing.Size(121, 22)
+        Me.txtDistributionQuantity.Size = New System.Drawing.Size(306, 31)
         Me.txtDistributionQuantity.TabIndex = 11
         '
         'dtpDistributionDate
         '
+        Me.dtpDistributionDate.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.dtpDistributionDate.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
-        Me.dtpDistributionDate.Location = New System.Drawing.Point(184, 205)
+        Me.dtpDistributionDate.Location = New System.Drawing.Point(873, 232)
+        Me.dtpDistributionDate.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.dtpDistributionDate.Name = "dtpDistributionDate"
-        Me.dtpDistributionDate.Size = New System.Drawing.Size(121, 22)
+        Me.dtpDistributionDate.Size = New System.Drawing.Size(306, 31)
         Me.dtpDistributionDate.TabIndex = 12
         '
         'btnDistribute
         '
-        Me.btnDistribute.Location = New System.Drawing.Point(396, 151)
+        Me.btnDistribute.BackColor = System.Drawing.Color.FromArgb(CType(CType(10, Byte), Integer), CType(CType(65, Byte), Integer), CType(CType(45, Byte), Integer))
+        Me.btnDistribute.Font = New System.Drawing.Font("Segoe UI", 8.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnDistribute.ForeColor = System.Drawing.Color.White
+        Me.btnDistribute.Location = New System.Drawing.Point(459, 402)
+        Me.btnDistribute.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.btnDistribute.Name = "btnDistribute"
-        Me.btnDistribute.Size = New System.Drawing.Size(114, 39)
+        Me.btnDistribute.Size = New System.Drawing.Size(162, 63)
         Me.btnDistribute.TabIndex = 13
-        Me.btnDistribute.Text = "DISTRIBUTE"
-        Me.btnDistribute.UseVisualStyleBackColor = True
+        Me.btnDistribute.Text = "Distribute"
+        Me.btnDistribute.UseVisualStyleBackColor = False
         '
         'btnClear
         '
-        Me.btnClear.Location = New System.Drawing.Point(574, 156)
+        Me.btnClear.BackColor = System.Drawing.Color.FromArgb(CType(CType(10, Byte), Integer), CType(CType(65, Byte), Integer), CType(CType(45, Byte), Integer))
+        Me.btnClear.Font = New System.Drawing.Font("Segoe UI", 8.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnClear.ForeColor = System.Drawing.Color.White
+        Me.btnClear.Location = New System.Drawing.Point(682, 402)
+        Me.btnClear.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.btnClear.Name = "btnClear"
-        Me.btnClear.Size = New System.Drawing.Size(114, 39)
+        Me.btnClear.Size = New System.Drawing.Size(162, 63)
         Me.btnClear.TabIndex = 14
-        Me.btnClear.Text = "CLEAR"
-        Me.btnClear.UseVisualStyleBackColor = True
+        Me.btnClear.Text = "Clear"
+        Me.btnClear.UseVisualStyleBackColor = False
         '
         'dgvDistribution
         '
         Me.dgvDistribution.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.dgvDistribution.Location = New System.Drawing.Point(53, 296)
+        Me.dgvDistribution.Location = New System.Drawing.Point(153, 526)
+        Me.dgvDistribution.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.dgvDistribution.Name = "dgvDistribution"
         Me.dgvDistribution.RowHeadersWidth = 51
         Me.dgvDistribution.RowTemplate.Height = 24
-        Me.dgvDistribution.Size = New System.Drawing.Size(875, 288)
+        Me.dgvDistribution.Size = New System.Drawing.Size(984, 416)
         Me.dgvDistribution.TabIndex = 15
         '
         'frmDistribution
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1086, 656)
+        Me.ClientSize = New System.Drawing.Size(1295, 956)
         Me.Controls.Add(Me.dgvDistribution)
         Me.Controls.Add(Me.btnClear)
         Me.Controls.Add(Me.btnDistribute)
@@ -203,8 +234,9 @@ Partial Class frmDistribution
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
+        Me.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.Name = "frmDistribution"
-        Me.Text = "Distribution"
+        Me.Text = "ss"
         CType(Me.dgvDistribution, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
