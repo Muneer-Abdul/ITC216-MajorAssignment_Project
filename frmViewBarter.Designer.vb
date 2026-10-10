@@ -31,38 +31,44 @@ Partial Class frmViewBarter
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(340, 29)
+        Me.Label1.Font = New System.Drawing.Font("Segoe UI", 14.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(10, Byte), Integer), CType(CType(65, Byte), Integer), CType(CType(45, Byte), Integer))
+        Me.Label1.Location = New System.Drawing.Point(1047, 27)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(168, 20)
+        Me.Label1.Size = New System.Drawing.Size(227, 38)
         Me.Label1.TabIndex = 0
-        Me.Label1.Text = "AVAILABLE BARTER"
+        Me.Label1.Text = "Available Barter"
         '
         'dgvBarter
         '
         Me.dgvBarter.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.dgvBarter.Location = New System.Drawing.Point(36, 158)
+        Me.dgvBarter.EnableHeadersVisualStyles = False
+        Me.dgvBarter.Location = New System.Drawing.Point(59, 189)
         Me.dgvBarter.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.dgvBarter.Name = "dgvBarter"
         Me.dgvBarter.RowHeadersWidth = 51
         Me.dgvBarter.RowTemplate.Height = 24
-        Me.dgvBarter.Size = New System.Drawing.Size(850, 262)
+        Me.dgvBarter.Size = New System.Drawing.Size(1180, 484)
         Me.dgvBarter.TabIndex = 2
         '
         'btnConfirmBarter
         '
-        Me.btnConfirmBarter.Location = New System.Drawing.Point(343, 441)
+        Me.btnConfirmBarter.BackColor = System.Drawing.Color.FromArgb(CType(CType(10, Byte), Integer), CType(CType(65, Byte), Integer), CType(CType(45, Byte), Integer))
+        Me.btnConfirmBarter.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnConfirmBarter.ForeColor = System.Drawing.Color.White
+        Me.btnConfirmBarter.Location = New System.Drawing.Point(585, 773)
         Me.btnConfirmBarter.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.btnConfirmBarter.Name = "btnConfirmBarter"
         Me.btnConfirmBarter.Size = New System.Drawing.Size(161, 66)
         Me.btnConfirmBarter.TabIndex = 3
         Me.btnConfirmBarter.Text = "Confirm Barter"
-        Me.btnConfirmBarter.UseVisualStyleBackColor = True
+        Me.btnConfirmBarter.UseVisualStyleBackColor = False
         '
         'frmViewBarter
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(900, 562)
+        Me.ClientSize = New System.Drawing.Size(1292, 959)
         Me.Controls.Add(Me.btnConfirmBarter)
         Me.Controls.Add(Me.dgvBarter)
         Me.Controls.Add(Me.Label1)
@@ -76,6 +82,6 @@ Partial Class frmViewBarter
     End Sub
 
     Friend WithEvents Label1 As Label
-    Friend WithEvents dgvBarter As DataGridView
     Friend WithEvents btnConfirmBarter As Button
+    Protected WithEvents dgvBarter As DataGridView
 End Class
