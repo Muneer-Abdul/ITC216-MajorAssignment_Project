@@ -22,6 +22,7 @@ Partial Class frmRegistration
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmRegistration))
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
@@ -35,11 +36,14 @@ Partial Class frmRegistration
         Me.cmbRole = New System.Windows.Forms.ComboBox()
         Me.btnRegister = New System.Windows.Forms.Button()
         Me.btnBack = New System.Windows.Forms.Button()
+        Me.pbDecorativeBorder = New System.Windows.Forms.PictureBox()
+        CType(Me.pbDecorativeBorder, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Label1
         '
         Me.Label1.AutoSize = True
+        Me.Label1.BackColor = System.Drawing.Color.Transparent
         Me.Label1.Font = New System.Drawing.Font("Segoe UI", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(18, Byte), Integer), CType(CType(59, Byte), Integer), CType(CType(42, Byte), Integer))
         Me.Label1.Location = New System.Drawing.Point(241, 64)
@@ -186,6 +190,17 @@ Partial Class frmRegistration
         Me.btnBack.Text = "Back To Login"
         Me.btnBack.UseVisualStyleBackColor = False
         '
+        'pbDecorativeBorder
+        '
+        Me.pbDecorativeBorder.BackColor = System.Drawing.Color.Transparent
+        Me.pbDecorativeBorder.Image = CType(resources.GetObject("pbDecorativeBorder.Image"), System.Drawing.Image)
+        Me.pbDecorativeBorder.Location = New System.Drawing.Point(-9, -12)
+        Me.pbDecorativeBorder.Name = "pbDecorativeBorder"
+        Me.pbDecorativeBorder.Size = New System.Drawing.Size(753, 909)
+        Me.pbDecorativeBorder.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.pbDecorativeBorder.TabIndex = 13
+        Me.pbDecorativeBorder.TabStop = False
+        '
         'frmRegistration
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
@@ -205,6 +220,7 @@ Partial Class frmRegistration
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
+        Me.Controls.Add(Me.pbDecorativeBorder)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.MaximizeBox = False
@@ -212,6 +228,7 @@ Partial Class frmRegistration
         Me.Name = "frmRegistration"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = " "
+        CType(Me.pbDecorativeBorder, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -230,4 +247,5 @@ Partial Class frmRegistration
     Friend WithEvents cmbRole As ComboBox
     Friend WithEvents btnRegister As Button
     Friend WithEvents btnBack As Button
+    Friend WithEvents pbDecorativeBorder As PictureBox
 End Class

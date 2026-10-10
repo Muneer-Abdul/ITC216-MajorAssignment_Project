@@ -22,6 +22,7 @@ Partial Class frmLogin
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmLogin))
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
@@ -30,6 +31,8 @@ Partial Class frmLogin
         Me.btnLogin = New System.Windows.Forms.Button()
         Me.btnRegister = New System.Windows.Forms.Button()
         Me.btnBack = New System.Windows.Forms.Button()
+        Me.pbDecorativeBorder = New System.Windows.Forms.PictureBox()
+        CType(Me.pbDecorativeBorder, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Label1
@@ -129,6 +132,17 @@ Partial Class frmLogin
         Me.btnBack.Text = "Back"
         Me.btnBack.UseVisualStyleBackColor = False
         '
+        'pbDecorativeBorder
+        '
+        Me.pbDecorativeBorder.BackColor = System.Drawing.Color.Transparent
+        Me.pbDecorativeBorder.Image = CType(resources.GetObject("pbDecorativeBorder.Image"), System.Drawing.Image)
+        Me.pbDecorativeBorder.Location = New System.Drawing.Point(-6, -12)
+        Me.pbDecorativeBorder.Name = "pbDecorativeBorder"
+        Me.pbDecorativeBorder.Size = New System.Drawing.Size(753, 909)
+        Me.pbDecorativeBorder.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.pbDecorativeBorder.TabIndex = 12
+        Me.pbDecorativeBorder.TabStop = False
+        '
         'frmLogin
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
@@ -143,6 +157,7 @@ Partial Class frmLogin
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
+        Me.Controls.Add(Me.pbDecorativeBorder)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.MaximizeBox = False
@@ -150,6 +165,7 @@ Partial Class frmLogin
         Me.Name = "frmLogin"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Login"
+        CType(Me.pbDecorativeBorder, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -163,4 +179,5 @@ Partial Class frmLogin
     Friend WithEvents btnLogin As Button
     Friend WithEvents btnRegister As Button
     Friend WithEvents btnBack As Button
+    Friend WithEvents pbDecorativeBorder As PictureBox
 End Class
