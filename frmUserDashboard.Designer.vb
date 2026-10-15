@@ -30,16 +30,16 @@ Partial Class frmUserDashboard
         Me.btnBarter = New System.Windows.Forms.Button()
         Me.btnLogout = New System.Windows.Forms.Button()
         Me.pnlContent = New System.Windows.Forms.Panel()
-        Me.picProfile = New System.Windows.Forms.PictureBox()
         Me.picVitiBot = New System.Windows.Forms.PictureBox()
+        Me.picProfile = New System.Windows.Forms.PictureBox()
         Me.pnlSidebar = New System.Windows.Forms.Panel()
         Me.lblMainMenu = New System.Windows.Forms.Label()
         Me.lblVitiFoodLink = New System.Windows.Forms.Label()
         Me.lblSubtitle = New System.Windows.Forms.Label()
         Me.pnlHeaderLine = New System.Windows.Forms.Panel()
         Me.pnlContent.SuspendLayout()
-        CType(Me.picProfile, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.picVitiBot, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.picProfile, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.pnlSidebar.SuspendLayout()
         Me.pnlHeaderLine.SuspendLayout()
         Me.SuspendLayout()
@@ -117,10 +117,10 @@ Partial Class frmUserDashboard
         Me.btnLogout.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnLogout.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnLogout.ForeColor = System.Drawing.Color.White
-        Me.btnLogout.Location = New System.Drawing.Point(41, 603)
+        Me.btnLogout.Location = New System.Drawing.Point(39, 607)
         Me.btnLogout.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.btnLogout.Name = "btnLogout"
-        Me.btnLogout.Size = New System.Drawing.Size(156, 82)
+        Me.btnLogout.Size = New System.Drawing.Size(156, 92)
         Me.btnLogout.TabIndex = 6
         Me.btnLogout.Text = "Logout"
         Me.btnLogout.UseVisualStyleBackColor = False
@@ -137,18 +137,6 @@ Partial Class frmUserDashboard
         Me.pnlContent.Size = New System.Drawing.Size(1333, 947)
         Me.pnlContent.TabIndex = 7
         '
-        'picProfile
-        '
-        Me.picProfile.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.picProfile.Image = CType(resources.GetObject("picProfile.Image"), System.Drawing.Image)
-        Me.picProfile.Location = New System.Drawing.Point(1471, 35)
-        Me.picProfile.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
-        Me.picProfile.Name = "picProfile"
-        Me.picProfile.Size = New System.Drawing.Size(82, 75)
-        Me.picProfile.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.picProfile.TabIndex = 8
-        Me.picProfile.TabStop = False
-        '
         'picVitiBot
         '
         Me.picVitiBot.Cursor = System.Windows.Forms.Cursors.Hand
@@ -160,6 +148,18 @@ Partial Class frmUserDashboard
         Me.picVitiBot.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.picVitiBot.TabIndex = 9
         Me.picVitiBot.TabStop = False
+        '
+        'picProfile
+        '
+        Me.picProfile.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.picProfile.Image = CType(resources.GetObject("picProfile.Image"), System.Drawing.Image)
+        Me.picProfile.Location = New System.Drawing.Point(1471, 35)
+        Me.picProfile.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.picProfile.Name = "picProfile"
+        Me.picProfile.Size = New System.Drawing.Size(82, 75)
+        Me.picProfile.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.picProfile.TabIndex = 8
+        Me.picProfile.TabStop = False
         '
         'pnlSidebar
         '
@@ -238,8 +238,8 @@ Partial Class frmUserDashboard
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "User Dashboard"
         Me.pnlContent.ResumeLayout(False)
-        CType(Me.picProfile, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.picVitiBot, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.picProfile, System.ComponentModel.ISupportInitialize).EndInit()
         Me.pnlSidebar.ResumeLayout(False)
         Me.pnlSidebar.PerformLayout()
         Me.pnlHeaderLine.ResumeLayout(False)

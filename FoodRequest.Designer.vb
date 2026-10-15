@@ -234,12 +234,12 @@ Partial Class frmFoodRequest
         Me.dgvRequests.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
         Me.dgvRequests.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.dgvRequests.EnableHeadersVisualStyles = False
-        Me.dgvRequests.Location = New System.Drawing.Point(2, 637)
+        Me.dgvRequests.Location = New System.Drawing.Point(6, 601)
         Me.dgvRequests.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.dgvRequests.Name = "dgvRequests"
         Me.dgvRequests.RowHeadersWidth = 51
         Me.dgvRequests.RowTemplate.Height = 24
-        Me.dgvRequests.Size = New System.Drawing.Size(1291, 316)
+        Me.dgvRequests.Size = New System.Drawing.Size(1291, 352)
         Me.dgvRequests.TabIndex = 18
         '
         'frmFoodRequest
