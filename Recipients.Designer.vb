@@ -48,7 +48,7 @@ Partial Class frmRecipients
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Segoe UI", 14.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(10, Byte), Integer), CType(CType(65, Byte), Integer), CType(CType(45, Byte), Integer))
-        Me.Label1.Location = New System.Drawing.Point(926, 11)
+        Me.Label1.Location = New System.Drawing.Point(870, 11)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(333, 38)
         Me.Label1.TabIndex = 0
@@ -107,7 +107,7 @@ Partial Class frmRecipients
         'txtRecipientName
         '
         Me.txtRecipientName.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtRecipientName.Location = New System.Drawing.Point(227, 128)
+        Me.txtRecipientName.Location = New System.Drawing.Point(245, 128)
         Me.txtRecipientName.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.txtRecipientName.Name = "txtRecipientName"
         Me.txtRecipientName.Size = New System.Drawing.Size(209, 31)
@@ -116,7 +116,7 @@ Partial Class frmRecipients
         'txtOrganisation
         '
         Me.txtOrganisation.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtOrganisation.Location = New System.Drawing.Point(227, 194)
+        Me.txtOrganisation.Location = New System.Drawing.Point(245, 194)
         Me.txtOrganisation.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.txtOrganisation.Name = "txtOrganisation"
         Me.txtOrganisation.Size = New System.Drawing.Size(209, 31)
@@ -125,7 +125,7 @@ Partial Class frmRecipients
         'txtContactNumber
         '
         Me.txtContactNumber.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtContactNumber.Location = New System.Drawing.Point(227, 264)
+        Me.txtContactNumber.Location = New System.Drawing.Point(245, 264)
         Me.txtContactNumber.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.txtContactNumber.Name = "txtContactNumber"
         Me.txtContactNumber.Size = New System.Drawing.Size(209, 31)
@@ -134,7 +134,7 @@ Partial Class frmRecipients
         'txtCommunity
         '
         Me.txtCommunity.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtCommunity.Location = New System.Drawing.Point(872, 128)
+        Me.txtCommunity.Location = New System.Drawing.Point(901, 128)
         Me.txtCommunity.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.txtCommunity.Name = "txtCommunity"
         Me.txtCommunity.Size = New System.Drawing.Size(209, 31)
@@ -143,7 +143,7 @@ Partial Class frmRecipients
         'txtLocation
         '
         Me.txtLocation.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtLocation.Location = New System.Drawing.Point(872, 195)
+        Me.txtLocation.Location = New System.Drawing.Point(901, 195)
         Me.txtLocation.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.txtLocation.Name = "txtLocation"
         Me.txtLocation.Size = New System.Drawing.Size(209, 31)
@@ -165,7 +165,7 @@ Partial Class frmRecipients
         Me.cmbRecipientType.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cmbRecipientType.FormattingEnabled = True
         Me.cmbRecipientType.Items.AddRange(New Object() {"Community Organisation", "Individual", "School", "Charity", "Other"})
-        Me.cmbRecipientType.Location = New System.Drawing.Point(871, 262)
+        Me.cmbRecipientType.Location = New System.Drawing.Point(901, 262)
         Me.cmbRecipientType.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.cmbRecipientType.Name = "cmbRecipientType"
         Me.cmbRecipientType.Size = New System.Drawing.Size(209, 33)

@@ -181,10 +181,10 @@ Partial Class frmDistribution
         Me.btnDistribute.BackColor = System.Drawing.Color.FromArgb(CType(CType(10, Byte), Integer), CType(CType(65, Byte), Integer), CType(CType(45, Byte), Integer))
         Me.btnDistribute.Font = New System.Drawing.Font("Segoe UI", 8.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnDistribute.ForeColor = System.Drawing.Color.White
-        Me.btnDistribute.Location = New System.Drawing.Point(459, 402)
+        Me.btnDistribute.Location = New System.Drawing.Point(422, 402)
         Me.btnDistribute.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.btnDistribute.Name = "btnDistribute"
-        Me.btnDistribute.Size = New System.Drawing.Size(162, 63)
+        Me.btnDistribute.Size = New System.Drawing.Size(199, 63)
         Me.btnDistribute.TabIndex = 13
         Me.btnDistribute.Text = "Distribute"
         Me.btnDistribute.UseVisualStyleBackColor = False
@@ -197,7 +197,7 @@ Partial Class frmDistribution
         Me.btnClear.Location = New System.Drawing.Point(682, 402)
         Me.btnClear.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.btnClear.Name = "btnClear"
-        Me.btnClear.Size = New System.Drawing.Size(162, 63)
+        Me.btnClear.Size = New System.Drawing.Size(199, 63)
         Me.btnClear.TabIndex = 14
         Me.btnClear.Text = "Clear"
         Me.btnClear.UseVisualStyleBackColor = False

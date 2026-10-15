@@ -52,7 +52,7 @@ Partial Class frmRecommendationEngine
         Me.Label1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(10, Byte), Integer), CType(CType(65, Byte), Integer), CType(CType(45, Byte), Integer))
         Me.Label1.Location = New System.Drawing.Point(939, 9)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(518, 57)
+        Me.Label1.Size = New System.Drawing.Size(345, 38)
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "Recommendation Engine"
         '
@@ -149,10 +149,10 @@ Partial Class frmRecommendationEngine
         '
         Me.btnClear.BackColor = System.Drawing.Color.FromArgb(CType(CType(11, Byte), Integer), CType(CType(70, Byte), Integer), CType(CType(51, Byte), Integer))
         Me.btnClear.ForeColor = System.Drawing.Color.White
-        Me.btnClear.Location = New System.Drawing.Point(216, 534)
+        Me.btnClear.Location = New System.Drawing.Point(160, 535)
         Me.btnClear.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.btnClear.Name = "btnClear"
-        Me.btnClear.Size = New System.Drawing.Size(135, 59)
+        Me.btnClear.Size = New System.Drawing.Size(232, 59)
         Me.btnClear.TabIndex = 10
         Me.btnClear.Text = "Clear"
         Me.btnClear.UseVisualStyleBackColor = False
@@ -162,7 +162,7 @@ Partial Class frmRecommendationEngine
         Me.cmbProduce.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cmbProduce.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cmbProduce.FormattingEnabled = True
-        Me.cmbProduce.Location = New System.Drawing.Point(290, 275)
+        Me.cmbProduce.Location = New System.Drawing.Point(295, 275)
         Me.cmbProduce.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.cmbProduce.Name = "cmbProduce"
         Me.cmbProduce.Size = New System.Drawing.Size(201, 33)
@@ -171,7 +171,7 @@ Partial Class frmRecommendationEngine
         'txtQuantity
         '
         Me.txtQuantity.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtQuantity.Location = New System.Drawing.Point(290, 334)
+        Me.txtQuantity.Location = New System.Drawing.Point(295, 334)
         Me.txtQuantity.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.txtQuantity.Name = "txtQuantity"
         Me.txtQuantity.ReadOnly = True
@@ -183,7 +183,7 @@ Partial Class frmRecommendationEngine
         Me.cmbRecipientType.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cmbRecipientType.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cmbRecipientType.FormattingEnabled = True
-        Me.cmbRecipientType.Location = New System.Drawing.Point(290, 408)
+        Me.cmbRecipientType.Location = New System.Drawing.Point(295, 408)
         Me.cmbRecipientType.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.cmbRecipientType.Name = "cmbRecipientType"
         Me.cmbRecipientType.Size = New System.Drawing.Size(201, 33)
@@ -192,7 +192,7 @@ Partial Class frmRecommendationEngine
         'txtCommunity
         '
         Me.txtCommunity.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtCommunity.Location = New System.Drawing.Point(290, 479)
+        Me.txtCommunity.Location = New System.Drawing.Point(295, 479)
         Me.txtCommunity.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.txtCommunity.Name = "txtCommunity"
         Me.txtCommunity.Size = New System.Drawing.Size(201, 31)

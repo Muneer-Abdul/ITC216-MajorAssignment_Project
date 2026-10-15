@@ -39,7 +39,6 @@ Partial Class frmFoodRequest
         Me.cmbUrgency = New System.Windows.Forms.ComboBox()
         Me.btnSubmitRequest = New System.Windows.Forms.Button()
         Me.btnClear = New System.Windows.Forms.Button()
-        Me.Button3 = New System.Windows.Forms.Button()
         Me.dgvRequests = New System.Windows.Forms.DataGridView()
         CType(Me.dgvRequests, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -49,7 +48,7 @@ Partial Class frmFoodRequest
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Segoe UI", 14.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(11, Byte), Integer), CType(CType(70, Byte), Integer), CType(CType(51, Byte), Integer))
-        Me.Label1.Location = New System.Drawing.Point(1075, 20)
+        Me.Label1.Location = New System.Drawing.Point(1037, 20)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(195, 38)
         Me.Label1.TabIndex = 0
@@ -59,7 +58,7 @@ Partial Class frmFoodRequest
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(172, 118)
+        Me.Label2.Location = New System.Drawing.Point(151, 118)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(146, 25)
         Me.Label2.TabIndex = 1
@@ -69,7 +68,7 @@ Partial Class frmFoodRequest
         '
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(172, 196)
+        Me.Label3.Location = New System.Drawing.Point(151, 196)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(121, 25)
         Me.Label3.TabIndex = 2
@@ -79,7 +78,7 @@ Partial Class frmFoodRequest
         '
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(172, 267)
+        Me.Label4.Location = New System.Drawing.Point(151, 267)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(147, 25)
         Me.Label4.TabIndex = 3
@@ -89,7 +88,7 @@ Partial Class frmFoodRequest
         '
         Me.Label5.AutoSize = True
         Me.Label5.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.Location = New System.Drawing.Point(172, 352)
+        Me.Label5.Location = New System.Drawing.Point(151, 352)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(105, 25)
         Me.Label5.TabIndex = 4
@@ -128,7 +127,7 @@ Partial Class frmFoodRequest
         'txtRequesterName
         '
         Me.txtRequesterName.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtRequesterName.Location = New System.Drawing.Point(338, 112)
+        Me.txtRequesterName.Location = New System.Drawing.Point(364, 112)
         Me.txtRequesterName.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.txtRequesterName.Name = "txtRequesterName"
         Me.txtRequesterName.Size = New System.Drawing.Size(194, 31)
@@ -137,7 +136,7 @@ Partial Class frmFoodRequest
         'txtFoodNeeded
         '
         Me.txtFoodNeeded.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtFoodNeeded.Location = New System.Drawing.Point(338, 190)
+        Me.txtFoodNeeded.Location = New System.Drawing.Point(364, 190)
         Me.txtFoodNeeded.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.txtFoodNeeded.Name = "txtFoodNeeded"
         Me.txtFoodNeeded.Size = New System.Drawing.Size(194, 31)
@@ -146,7 +145,7 @@ Partial Class frmFoodRequest
         'txtQuantityNeeded
         '
         Me.txtQuantityNeeded.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtQuantityNeeded.Location = New System.Drawing.Point(338, 261)
+        Me.txtQuantityNeeded.Location = New System.Drawing.Point(364, 261)
         Me.txtQuantityNeeded.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.txtQuantityNeeded.Name = "txtQuantityNeeded"
         Me.txtQuantityNeeded.Size = New System.Drawing.Size(194, 31)
@@ -155,7 +154,7 @@ Partial Class frmFoodRequest
         'txtCommunity
         '
         Me.txtCommunity.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtCommunity.Location = New System.Drawing.Point(338, 346)
+        Me.txtCommunity.Location = New System.Drawing.Point(364, 346)
         Me.txtCommunity.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.txtCommunity.Name = "txtCommunity"
         Me.txtCommunity.Size = New System.Drawing.Size(194, 31)
@@ -164,7 +163,7 @@ Partial Class frmFoodRequest
         'txtRequestReason
         '
         Me.txtRequestReason.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtRequestReason.Location = New System.Drawing.Point(873, 112)
+        Me.txtRequestReason.Location = New System.Drawing.Point(914, 112)
         Me.txtRequestReason.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.txtRequestReason.Name = "txtRequestReason"
         Me.txtRequestReason.Size = New System.Drawing.Size(194, 31)
@@ -174,7 +173,7 @@ Partial Class frmFoodRequest
         '
         Me.cmbRecipientType.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cmbRecipientType.FormattingEnabled = True
-        Me.cmbRecipientType.Location = New System.Drawing.Point(873, 259)
+        Me.cmbRecipientType.Location = New System.Drawing.Point(914, 259)
         Me.cmbRecipientType.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.cmbRecipientType.Name = "cmbRecipientType"
         Me.cmbRecipientType.Size = New System.Drawing.Size(194, 33)
@@ -184,7 +183,7 @@ Partial Class frmFoodRequest
         '
         Me.cmbUrgency.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cmbUrgency.FormattingEnabled = True
-        Me.cmbUrgency.Location = New System.Drawing.Point(873, 193)
+        Me.cmbUrgency.Location = New System.Drawing.Point(914, 193)
         Me.cmbUrgency.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.cmbUrgency.Name = "cmbUrgency"
         Me.cmbUrgency.Size = New System.Drawing.Size(194, 33)
@@ -195,7 +194,7 @@ Partial Class frmFoodRequest
         Me.btnSubmitRequest.BackColor = System.Drawing.Color.FromArgb(CType(CType(10, Byte), Integer), CType(CType(65, Byte), Integer), CType(CType(45, Byte), Integer))
         Me.btnSubmitRequest.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnSubmitRequest.ForeColor = System.Drawing.Color.White
-        Me.btnSubmitRequest.Location = New System.Drawing.Point(177, 486)
+        Me.btnSubmitRequest.Location = New System.Drawing.Point(374, 486)
         Me.btnSubmitRequest.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.btnSubmitRequest.Name = "btnSubmitRequest"
         Me.btnSubmitRequest.Size = New System.Drawing.Size(158, 70)
@@ -208,26 +207,13 @@ Partial Class frmFoodRequest
         Me.btnClear.BackColor = System.Drawing.Color.FromArgb(CType(CType(10, Byte), Integer), CType(CType(65, Byte), Integer), CType(CType(45, Byte), Integer))
         Me.btnClear.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnClear.ForeColor = System.Drawing.Color.White
-        Me.btnClear.Location = New System.Drawing.Point(602, 486)
+        Me.btnClear.Location = New System.Drawing.Point(719, 486)
         Me.btnClear.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.btnClear.Name = "btnClear"
         Me.btnClear.Size = New System.Drawing.Size(158, 70)
         Me.btnClear.TabIndex = 16
         Me.btnClear.Text = "Clear"
         Me.btnClear.UseVisualStyleBackColor = False
-        '
-        'Button3
-        '
-        Me.Button3.BackColor = System.Drawing.Color.FromArgb(CType(CType(10, Byte), Integer), CType(CType(65, Byte), Integer), CType(CType(45, Byte), Integer))
-        Me.Button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button3.ForeColor = System.Drawing.Color.White
-        Me.Button3.Location = New System.Drawing.Point(1000, 486)
-        Me.Button3.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(158, 70)
-        Me.Button3.TabIndex = 17
-        Me.Button3.Text = "Button3"
-        Me.Button3.UseVisualStyleBackColor = False
         '
         'dgvRequests
         '
@@ -248,7 +234,6 @@ Partial Class frmFoodRequest
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1296, 957)
         Me.Controls.Add(Me.dgvRequests)
-        Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.btnClear)
         Me.Controls.Add(Me.btnSubmitRequest)
         Me.Controls.Add(Me.cmbUrgency)
@@ -292,6 +277,5 @@ Partial Class frmFoodRequest
     Friend WithEvents cmbUrgency As ComboBox
     Friend WithEvents btnSubmitRequest As Button
     Friend WithEvents btnClear As Button
-    Friend WithEvents Button3 As Button
     Friend WithEvents dgvRequests As DataGridView
 End Class

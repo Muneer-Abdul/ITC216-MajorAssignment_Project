@@ -41,14 +41,15 @@ Partial Class frmViewBarter
         '
         'dgvBarter
         '
+        Me.dgvBarter.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.DisplayedCells
         Me.dgvBarter.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.dgvBarter.EnableHeadersVisualStyles = False
-        Me.dgvBarter.Location = New System.Drawing.Point(59, 189)
+        Me.dgvBarter.Location = New System.Drawing.Point(29, 189)
         Me.dgvBarter.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.dgvBarter.Name = "dgvBarter"
         Me.dgvBarter.RowHeadersWidth = 51
         Me.dgvBarter.RowTemplate.Height = 24
-        Me.dgvBarter.Size = New System.Drawing.Size(1180, 484)
+        Me.dgvBarter.Size = New System.Drawing.Size(1233, 484)
         Me.dgvBarter.TabIndex = 2
         '
         'btnConfirmBarter

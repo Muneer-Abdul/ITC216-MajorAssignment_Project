@@ -40,9 +40,9 @@ Partial Class frmBarterMenu
         Me.Label1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(10, Byte), Integer), CType(CType(65, Byte), Integer), CType(CType(45, Byte), Integer))
         Me.Label1.Location = New System.Drawing.Point(1061, 18)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(207, 38)
+        Me.Label1.Size = New System.Drawing.Size(260, 57)
         Me.Label1.TabIndex = 0
-        Me.Label1.Text = "FOOD BARTER"
+        Me.Label1.Text = "Food Barter"
         '
         'btnAddBarter
         '

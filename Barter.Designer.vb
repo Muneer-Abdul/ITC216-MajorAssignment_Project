@@ -67,7 +67,7 @@ Partial Class frmBarter
         'txtCommunity
         '
         Me.txtCommunity.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtCommunity.Location = New System.Drawing.Point(903, 264)
+        Me.txtCommunity.Location = New System.Drawing.Point(913, 264)
         Me.txtCommunity.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.txtCommunity.Name = "txtCommunity"
         Me.txtCommunity.Size = New System.Drawing.Size(201, 31)
@@ -78,10 +78,10 @@ Partial Class frmBarter
         Me.btnClear.BackColor = System.Drawing.Color.FromArgb(CType(CType(10, Byte), Integer), CType(CType(65, Byte), Integer), CType(CType(45, Byte), Integer))
         Me.btnClear.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnClear.ForeColor = System.Drawing.Color.White
-        Me.btnClear.Location = New System.Drawing.Point(709, 503)
+        Me.btnClear.Location = New System.Drawing.Point(751, 503)
         Me.btnClear.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.btnClear.Name = "btnClear"
-        Me.btnClear.Size = New System.Drawing.Size(171, 63)
+        Me.btnClear.Size = New System.Drawing.Size(199, 63)
         Me.btnClear.TabIndex = 11
         Me.btnClear.Text = "Clear Fields"
         Me.btnClear.UseVisualStyleBackColor = False
@@ -102,10 +102,10 @@ Partial Class frmBarter
         Me.btnAddBarter.BackColor = System.Drawing.Color.FromArgb(CType(CType(10, Byte), Integer), CType(CType(65, Byte), Integer), CType(CType(45, Byte), Integer))
         Me.btnAddBarter.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnAddBarter.ForeColor = System.Drawing.Color.White
-        Me.btnAddBarter.Location = New System.Drawing.Point(415, 503)
+        Me.btnAddBarter.Location = New System.Drawing.Point(341, 503)
         Me.btnAddBarter.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.btnAddBarter.Name = "btnAddBarter"
-        Me.btnAddBarter.Size = New System.Drawing.Size(171, 63)
+        Me.btnAddBarter.Size = New System.Drawing.Size(203, 63)
         Me.btnAddBarter.TabIndex = 13
         Me.btnAddBarter.Text = "Add Barter"
         Me.btnAddBarter.UseVisualStyleBackColor = False
@@ -153,7 +153,7 @@ Partial Class frmBarter
         'txtOfferedProduce
         '
         Me.txtOfferedProduce.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtOfferedProduce.Location = New System.Drawing.Point(276, 267)
+        Me.txtOfferedProduce.Location = New System.Drawing.Point(292, 267)
         Me.txtOfferedProduce.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.txtOfferedProduce.Name = "txtOfferedProduce"
         Me.txtOfferedProduce.Size = New System.Drawing.Size(201, 31)
@@ -162,7 +162,7 @@ Partial Class frmBarter
         'txtOfferedQuantity
         '
         Me.txtOfferedQuantity.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtOfferedQuantity.Location = New System.Drawing.Point(276, 338)
+        Me.txtOfferedQuantity.Location = New System.Drawing.Point(293, 338)
         Me.txtOfferedQuantity.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.txtOfferedQuantity.Name = "txtOfferedQuantity"
         Me.txtOfferedQuantity.Size = New System.Drawing.Size(201, 31)
@@ -171,7 +171,7 @@ Partial Class frmBarter
         'txtRequestedQuantity
         '
         Me.txtRequestedQuantity.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtRequestedQuantity.Location = New System.Drawing.Point(903, 202)
+        Me.txtRequestedQuantity.Location = New System.Drawing.Point(913, 202)
         Me.txtRequestedQuantity.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.txtRequestedQuantity.Name = "txtRequestedQuantity"
         Me.txtRequestedQuantity.Size = New System.Drawing.Size(201, 31)
@@ -180,7 +180,7 @@ Partial Class frmBarter
         'txtRequestedProduce
         '
         Me.txtRequestedProduce.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtRequestedProduce.Location = New System.Drawing.Point(903, 134)
+        Me.txtRequestedProduce.Location = New System.Drawing.Point(913, 134)
         Me.txtRequestedProduce.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.txtRequestedProduce.Name = "txtRequestedProduce"
         Me.txtRequestedProduce.Size = New System.Drawing.Size(201, 31)
@@ -209,7 +209,7 @@ Partial Class frmBarter
         'txtName
         '
         Me.txtName.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtName.Location = New System.Drawing.Point(276, 134)
+        Me.txtName.Location = New System.Drawing.Point(293, 134)
         Me.txtName.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.txtName.Name = "txtName"
         Me.txtName.Size = New System.Drawing.Size(201, 31)
@@ -218,7 +218,7 @@ Partial Class frmBarter
         'txtNumber
         '
         Me.txtNumber.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtNumber.Location = New System.Drawing.Point(276, 202)
+        Me.txtNumber.Location = New System.Drawing.Point(293, 202)
         Me.txtNumber.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.txtNumber.Name = "txtNumber"
         Me.txtNumber.Size = New System.Drawing.Size(201, 31)

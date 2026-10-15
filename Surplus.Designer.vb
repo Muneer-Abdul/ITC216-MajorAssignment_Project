@@ -98,7 +98,7 @@ Partial Class frmSurplus
         'txtProduceName
         '
         Me.txtProduceName.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtProduceName.Location = New System.Drawing.Point(207, 144)
+        Me.txtProduceName.Location = New System.Drawing.Point(217, 144)
         Me.txtProduceName.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.txtProduceName.Name = "txtProduceName"
         Me.txtProduceName.Size = New System.Drawing.Size(315, 31)
@@ -107,7 +107,7 @@ Partial Class frmSurplus
         'txtQuantity
         '
         Me.txtQuantity.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtQuantity.Location = New System.Drawing.Point(207, 210)
+        Me.txtQuantity.Location = New System.Drawing.Point(217, 210)
         Me.txtQuantity.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.txtQuantity.Name = "txtQuantity"
         Me.txtQuantity.Size = New System.Drawing.Size(315, 31)
@@ -117,7 +117,7 @@ Partial Class frmSurplus
         '
         Me.cmbDonor.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cmbDonor.FormattingEnabled = True
-        Me.cmbDonor.Location = New System.Drawing.Point(207, 284)
+        Me.cmbDonor.Location = New System.Drawing.Point(217, 284)
         Me.cmbDonor.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.cmbDonor.Name = "cmbDonor"
         Me.cmbDonor.Size = New System.Drawing.Size(315, 33)
@@ -127,7 +127,7 @@ Partial Class frmSurplus
         '
         Me.dtpExpiryDate.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.dtpExpiryDate.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
-        Me.dtpExpiryDate.Location = New System.Drawing.Point(820, 142)
+        Me.dtpExpiryDate.Location = New System.Drawing.Point(861, 142)
         Me.dtpExpiryDate.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.dtpExpiryDate.Name = "dtpExpiryDate"
         Me.dtpExpiryDate.Size = New System.Drawing.Size(315, 31)
@@ -220,7 +220,7 @@ Partial Class frmSurplus
         '
         Me.cmbProduceSource.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cmbProduceSource.FormattingEnabled = True
-        Me.cmbProduceSource.Location = New System.Drawing.Point(820, 210)
+        Me.cmbProduceSource.Location = New System.Drawing.Point(861, 210)
         Me.cmbProduceSource.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.cmbProduceSource.Name = "cmbProduceSource"
         Me.cmbProduceSource.Size = New System.Drawing.Size(315, 33)
@@ -229,7 +229,7 @@ Partial Class frmSurplus
         'txtCommunity
         '
         Me.txtCommunity.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtCommunity.Location = New System.Drawing.Point(820, 286)
+        Me.txtCommunity.Location = New System.Drawing.Point(861, 286)
         Me.txtCommunity.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.txtCommunity.Name = "txtCommunity"
         Me.txtCommunity.Size = New System.Drawing.Size(315, 31)

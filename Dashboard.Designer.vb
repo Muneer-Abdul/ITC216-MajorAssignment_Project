@@ -65,11 +65,11 @@ Partial Class frmDashboard
         'lblDashboard
         '
         Me.lblDashboard.AutoSize = True
-        Me.lblDashboard.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!)
+        Me.lblDashboard.Font = New System.Drawing.Font("Segoe UI", 16.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblDashboard.ForeColor = System.Drawing.Color.FromArgb(CType(CType(10, Byte), Integer), CType(CType(65, Byte), Integer), CType(CType(45, Byte), Integer))
-        Me.lblDashboard.Location = New System.Drawing.Point(846, 65)
+        Me.lblDashboard.Location = New System.Drawing.Point(846, 64)
         Me.lblDashboard.Name = "lblDashboard"
-        Me.lblDashboard.Size = New System.Drawing.Size(175, 37)
+        Me.lblDashboard.Size = New System.Drawing.Size(184, 45)
         Me.lblDashboard.TabIndex = 11
         Me.lblDashboard.Text = "Dashboard"
         '
@@ -129,10 +129,10 @@ Partial Class frmDashboard
         Me.pnlSidebar.Controls.Add(Me.btnRecommendation)
         Me.pnlSidebar.Controls.Add(Me.btnRecipients)
         Me.pnlSidebar.Controls.Add(Me.btnSupplies)
-        Me.pnlSidebar.Location = New System.Drawing.Point(1, 138)
+        Me.pnlSidebar.Location = New System.Drawing.Point(1, 159)
         Me.pnlSidebar.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.pnlSidebar.Name = "pnlSidebar"
-        Me.pnlSidebar.Size = New System.Drawing.Size(275, 872)
+        Me.pnlSidebar.Size = New System.Drawing.Size(275, 877)
         Me.pnlSidebar.TabIndex = 1
         '
         'lblMainMenu
@@ -165,7 +165,7 @@ Partial Class frmDashboard
         Me.btnLogout.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnLogout.Font = New System.Drawing.Font("Segoe UI", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnLogout.ForeColor = System.Drawing.Color.White
-        Me.btnLogout.Location = New System.Drawing.Point(33, 780)
+        Me.btnLogout.Location = New System.Drawing.Point(33, 776)
         Me.btnLogout.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.btnLogout.Name = "btnLogout"
         Me.btnLogout.Size = New System.Drawing.Size(208, 52)

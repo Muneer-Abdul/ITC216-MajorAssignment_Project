@@ -52,7 +52,7 @@ Partial Class frmLogin
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(31, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(55, Byte), Integer))
-        Me.Label2.Location = New System.Drawing.Point(158, 277)
+        Me.Label2.Location = New System.Drawing.Point(233, 230)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(102, 25)
         Me.Label2.TabIndex = 1
@@ -63,7 +63,7 @@ Partial Class frmLogin
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(31, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(55, Byte), Integer))
-        Me.Label3.Location = New System.Drawing.Point(158, 333)
+        Me.Label3.Location = New System.Drawing.Point(233, 338)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(97, 25)
         Me.Label3.TabIndex = 2
@@ -74,7 +74,7 @@ Partial Class frmLogin
         Me.txtUsername.BackColor = System.Drawing.Color.White
         Me.txtUsername.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtUsername.ForeColor = System.Drawing.Color.FromArgb(CType(CType(31, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(55, Byte), Integer))
-        Me.txtUsername.Location = New System.Drawing.Point(280, 277)
+        Me.txtUsername.Location = New System.Drawing.Point(238, 275)
         Me.txtUsername.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.txtUsername.Name = "txtUsername"
         Me.txtUsername.Size = New System.Drawing.Size(264, 31)
@@ -85,7 +85,7 @@ Partial Class frmLogin
         Me.txtPassword.BackColor = System.Drawing.Color.White
         Me.txtPassword.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtPassword.ForeColor = System.Drawing.Color.FromArgb(CType(CType(31, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(55, Byte), Integer))
-        Me.txtPassword.Location = New System.Drawing.Point(280, 340)
+        Me.txtPassword.Location = New System.Drawing.Point(238, 377)
         Me.txtPassword.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.txtPassword.Name = "txtPassword"
         Me.txtPassword.Size = New System.Drawing.Size(264, 31)
@@ -136,7 +136,7 @@ Partial Class frmLogin
         '
         Me.pbDecorativeBorder.BackColor = System.Drawing.Color.Transparent
         Me.pbDecorativeBorder.Image = CType(resources.GetObject("pbDecorativeBorder.Image"), System.Drawing.Image)
-        Me.pbDecorativeBorder.Location = New System.Drawing.Point(-6, -12)
+        Me.pbDecorativeBorder.Location = New System.Drawing.Point(-10, -9)
         Me.pbDecorativeBorder.Name = "pbDecorativeBorder"
         Me.pbDecorativeBorder.Size = New System.Drawing.Size(753, 909)
         Me.pbDecorativeBorder.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage

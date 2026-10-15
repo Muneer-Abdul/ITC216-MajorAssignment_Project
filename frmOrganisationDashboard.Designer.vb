@@ -194,11 +194,11 @@ Partial Class frmOrganisationDashboard
         '
         Me.lblOrganisationDashboard.AutoSize = True
         Me.lblOrganisationDashboard.BackColor = System.Drawing.Color.Transparent
-        Me.lblOrganisationDashboard.Font = New System.Drawing.Font("Segoe UI Semibold", 14.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblOrganisationDashboard.Font = New System.Drawing.Font("Segoe UI", 14.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblOrganisationDashboard.ForeColor = System.Drawing.Color.FromArgb(CType(CType(10, Byte), Integer), CType(CType(65, Byte), Integer), CType(CType(45, Byte), Integer))
-        Me.lblOrganisationDashboard.Location = New System.Drawing.Point(765, 135)
+        Me.lblOrganisationDashboard.Location = New System.Drawing.Point(773, 133)
         Me.lblOrganisationDashboard.Name = "lblOrganisationDashboard"
-        Me.lblOrganisationDashboard.Size = New System.Drawing.Size(327, 38)
+        Me.lblOrganisationDashboard.Size = New System.Drawing.Size(504, 57)
         Me.lblOrganisationDashboard.TabIndex = 12
         Me.lblOrganisationDashboard.Text = "Organisation Dashboard"
         '
