@@ -50,9 +50,9 @@ Partial Class Report
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Segoe UI", 14.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(10, Byte), Integer), CType(CType(65, Byte), Integer), CType(CType(45, Byte), Integer))
-        Me.Label1.Location = New System.Drawing.Point(1013, 19)
+        Me.Label1.Location = New System.Drawing.Point(900, 15)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(208, 38)
+        Me.Label1.Size = New System.Drawing.Size(179, 32)
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "System Report"
         '
@@ -62,26 +62,25 @@ Partial Class Report
         Me.pnlAvailable.Controls.Add(Me.lblAvailableValue)
         Me.pnlAvailable.Controls.Add(Me.Label2)
         Me.pnlAvailable.Font = New System.Drawing.Font("Segoe UI", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.pnlAvailable.Location = New System.Drawing.Point(492, 157)
-        Me.pnlAvailable.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.pnlAvailable.Location = New System.Drawing.Point(437, 126)
         Me.pnlAvailable.Name = "pnlAvailable"
-        Me.pnlAvailable.Size = New System.Drawing.Size(325, 160)
+        Me.pnlAvailable.Size = New System.Drawing.Size(289, 128)
         Me.pnlAvailable.TabIndex = 1
         '
         'lblAvailableValue
         '
         Me.lblAvailableValue.AutoSize = True
-        Me.lblAvailableValue.Location = New System.Drawing.Point(139, 78)
+        Me.lblAvailableValue.Location = New System.Drawing.Point(124, 62)
         Me.lblAvailableValue.Name = "lblAvailableValue"
-        Me.lblAvailableValue.Size = New System.Drawing.Size(53, 28)
+        Me.lblAvailableValue.Size = New System.Drawing.Size(45, 23)
         Me.lblAvailableValue.TabIndex = 8
         Me.lblAvailableValue.Text = "0 KG"
         '
         'Label2
         '
-        Me.Label2.Location = New System.Drawing.Point(76, 15)
+        Me.Label2.Location = New System.Drawing.Point(68, 12)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(220, 38)
+        Me.Label2.Size = New System.Drawing.Size(196, 30)
         Me.Label2.TabIndex = 4
         Me.Label2.Text = "Available Produce"
         '
@@ -91,26 +90,25 @@ Partial Class Report
         Me.pnlDistributed.Controls.Add(Me.lblDistributedValue)
         Me.pnlDistributed.Controls.Add(Me.Label3)
         Me.pnlDistributed.Font = New System.Drawing.Font("Segoe UI", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.pnlDistributed.Location = New System.Drawing.Point(27, 157)
-        Me.pnlDistributed.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.pnlDistributed.Location = New System.Drawing.Point(24, 126)
         Me.pnlDistributed.Name = "pnlDistributed"
-        Me.pnlDistributed.Size = New System.Drawing.Size(325, 160)
+        Me.pnlDistributed.Size = New System.Drawing.Size(289, 128)
         Me.pnlDistributed.TabIndex = 2
         '
         'lblDistributedValue
         '
         Me.lblDistributedValue.AutoSize = True
-        Me.lblDistributedValue.Location = New System.Drawing.Point(136, 78)
+        Me.lblDistributedValue.Location = New System.Drawing.Point(121, 62)
         Me.lblDistributedValue.Name = "lblDistributedValue"
-        Me.lblDistributedValue.Size = New System.Drawing.Size(53, 28)
+        Me.lblDistributedValue.Size = New System.Drawing.Size(45, 23)
         Me.lblDistributedValue.TabIndex = 9
         Me.lblDistributedValue.Text = "0 KG"
         '
         'Label3
         '
-        Me.Label3.Location = New System.Drawing.Point(67, 17)
+        Me.Label3.Location = New System.Drawing.Point(60, 14)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(254, 38)
+        Me.Label3.Size = New System.Drawing.Size(226, 30)
         Me.Label3.TabIndex = 5
         Me.Label3.Text = "Distributed Produce"
         '
@@ -120,25 +118,24 @@ Partial Class Report
         Me.pnlRecipients.Controls.Add(Me.lblRecipientsValue)
         Me.pnlRecipients.Controls.Add(Me.Label4)
         Me.pnlRecipients.Font = New System.Drawing.Font("Segoe UI", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.pnlRecipients.Location = New System.Drawing.Point(940, 157)
-        Me.pnlRecipients.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.pnlRecipients.Location = New System.Drawing.Point(836, 126)
         Me.pnlRecipients.Name = "pnlRecipients"
-        Me.pnlRecipients.Size = New System.Drawing.Size(325, 160)
+        Me.pnlRecipients.Size = New System.Drawing.Size(289, 128)
         Me.pnlRecipients.TabIndex = 3
         '
         'lblRecipientsValue
         '
-        Me.lblRecipientsValue.Location = New System.Drawing.Point(163, 78)
+        Me.lblRecipientsValue.Location = New System.Drawing.Point(145, 62)
         Me.lblRecipientsValue.Name = "lblRecipientsValue"
-        Me.lblRecipientsValue.Size = New System.Drawing.Size(143, 38)
+        Me.lblRecipientsValue.Size = New System.Drawing.Size(127, 30)
         Me.lblRecipientsValue.TabIndex = 7
         Me.lblRecipientsValue.Text = "0"
         '
         'Label4
         '
-        Me.Label4.Location = New System.Drawing.Point(71, 14)
+        Me.Label4.Location = New System.Drawing.Point(63, 11)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(216, 38)
+        Me.Label4.Size = New System.Drawing.Size(192, 30)
         Me.Label4.TabIndex = 6
         Me.Label4.Text = "Total Recipients"
         '
@@ -146,9 +143,9 @@ Partial Class Report
         '
         Me.Label5.AutoSize = True
         Me.Label5.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.Location = New System.Drawing.Point(687, 392)
+        Me.Label5.Location = New System.Drawing.Point(611, 314)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(112, 25)
+        Me.Label5.Size = New System.Drawing.Size(94, 20)
         Me.Label5.TabIndex = 4
         Me.Label5.Text = "Report Filter:"
         '
@@ -157,10 +154,9 @@ Partial Class Report
         Me.cmbReportFilter.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cmbReportFilter.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cmbReportFilter.FormattingEnabled = True
-        Me.cmbReportFilter.Location = New System.Drawing.Point(385, 384)
-        Me.cmbReportFilter.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.cmbReportFilter.Location = New System.Drawing.Point(342, 307)
         Me.cmbReportFilter.Name = "cmbReportFilter"
-        Me.cmbReportFilter.Size = New System.Drawing.Size(235, 33)
+        Me.cmbReportFilter.Size = New System.Drawing.Size(209, 28)
         Me.cmbReportFilter.TabIndex = 5
         '
         'btnRefresh
@@ -168,10 +164,9 @@ Partial Class Report
         Me.btnRefresh.BackColor = System.Drawing.Color.FromArgb(CType(CType(10, Byte), Integer), CType(CType(65, Byte), Integer), CType(CType(45, Byte), Integer))
         Me.btnRefresh.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnRefresh.ForeColor = System.Drawing.Color.White
-        Me.btnRefresh.Location = New System.Drawing.Point(338, 502)
-        Me.btnRefresh.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.btnRefresh.Location = New System.Drawing.Point(294, 379)
         Me.btnRefresh.Name = "btnRefresh"
-        Me.btnRefresh.Size = New System.Drawing.Size(206, 61)
+        Me.btnRefresh.Size = New System.Drawing.Size(183, 49)
         Me.btnRefresh.TabIndex = 6
         Me.btnRefresh.Text = "REFRESH"
         Me.btnRefresh.UseVisualStyleBackColor = False
@@ -181,10 +176,9 @@ Partial Class Report
         Me.btnExport.BackColor = System.Drawing.Color.FromArgb(CType(CType(10, Byte), Integer), CType(CType(65, Byte), Integer), CType(CType(45, Byte), Integer))
         Me.btnExport.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnExport.ForeColor = System.Drawing.Color.White
-        Me.btnExport.Location = New System.Drawing.Point(772, 502)
-        Me.btnExport.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.btnExport.Location = New System.Drawing.Point(680, 379)
         Me.btnExport.Name = "btnExport"
-        Me.btnExport.Size = New System.Drawing.Size(206, 61)
+        Me.btnExport.Size = New System.Drawing.Size(183, 49)
         Me.btnExport.TabIndex = 7
         Me.btnExport.Text = "EXPORT REPORT"
         Me.btnExport.UseVisualStyleBackColor = False
@@ -192,21 +186,20 @@ Partial Class Report
         'dgvReport
         '
         Me.dgvReport.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.dgvReport.Location = New System.Drawing.Point(31, 602)
-        Me.dgvReport.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.dgvReport.Location = New System.Drawing.Point(25, 463)
         Me.dgvReport.Name = "dgvReport"
         Me.dgvReport.RowHeadersWidth = 51
         Me.dgvReport.RowTemplate.Height = 24
-        Me.dgvReport.Size = New System.Drawing.Size(1238, 335)
+        Me.dgvReport.Size = New System.Drawing.Size(1100, 268)
         Me.dgvReport.TabIndex = 8
         '
         'Label6
         '
         Me.Label6.AutoSize = True
         Me.Label6.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label6.Location = New System.Drawing.Point(227, 392)
+        Me.Label6.Location = New System.Drawing.Point(202, 314)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(96, 25)
+        Me.Label6.Size = New System.Drawing.Size(81, 20)
         Me.Label6.TabIndex = 9
         Me.Label6.Text = "Date Filter:"
         '
@@ -214,17 +207,16 @@ Partial Class Report
         '
         Me.cmbDateFilter.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cmbDateFilter.FormattingEnabled = True
-        Me.cmbDateFilter.Location = New System.Drawing.Point(891, 389)
-        Me.cmbDateFilter.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.cmbDateFilter.Location = New System.Drawing.Point(792, 311)
         Me.cmbDateFilter.Name = "cmbDateFilter"
-        Me.cmbDateFilter.Size = New System.Drawing.Size(235, 33)
+        Me.cmbDateFilter.Size = New System.Drawing.Size(209, 28)
         Me.cmbDateFilter.TabIndex = 10
         '
         'Report
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1292, 954)
+        Me.ClientSize = New System.Drawing.Size(1148, 763)
         Me.Controls.Add(Me.cmbDateFilter)
         Me.Controls.Add(Me.Label6)
         Me.Controls.Add(Me.dgvReport)
@@ -236,7 +228,6 @@ Partial Class Report
         Me.Controls.Add(Me.pnlDistributed)
         Me.Controls.Add(Me.pnlAvailable)
         Me.Controls.Add(Me.Label1)
-        Me.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.Name = "Report"
         Me.Text = " "
         Me.pnlAvailable.ResumeLayout(False)
