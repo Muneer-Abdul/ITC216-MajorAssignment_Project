@@ -25,19 +25,19 @@
 
             Case "English"
 
-                lblTitle.Text = "VitiBot"
+                lblTitle.Text = "VitiBot — Viti FoodLink Assistant"
                 btnSend.Text = "Send"
                 btnClear.Text = "Clear"
 
             Case "Itaukei"
 
-                lblTitle.Text = "VitiBot"
+                lblTitle.Text = "VitiBot — Viti FoodLink Assistant"
                 btnSend.Text = "Vakauta"
                 btnClear.Text = "Sereka"
 
             Case "Fiji Hindi"
 
-                lblTitle.Text = "VitiBot"
+                lblTitle.Text = "VitiBot — Viti FoodLink Assistant"
                 btnSend.Text = "Bhejo"
                 btnClear.Text = "Saaf Karo"
 
@@ -466,5 +466,6 @@
         End If
 
     End Sub
+
 
 End Class

@@ -44,7 +44,6 @@ Partial Class frmDashboard
         Me.pnlHeader.SuspendLayout()
         CType(Me.picProfile, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.pnlSidebar.SuspendLayout()
-        Me.pnlContent.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -66,7 +65,7 @@ Partial Class frmDashboard
         Me.lblDashboard.AutoSize = True
         Me.lblDashboard.Font = New System.Drawing.Font("Segoe UI", 16.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblDashboard.ForeColor = System.Drawing.Color.FromArgb(CType(CType(10, Byte), Integer), CType(CType(65, Byte), Integer), CType(CType(45, Byte), Integer))
-        Me.lblDashboard.Location = New System.Drawing.Point(752, 51)
+        Me.lblDashboard.Location = New System.Drawing.Point(736, 48)
         Me.lblDashboard.Name = "lblDashboard"
         Me.lblDashboard.Size = New System.Drawing.Size(157, 37)
         Me.lblDashboard.TabIndex = 11
@@ -118,6 +117,7 @@ Partial Class frmDashboard
         'pnlSidebar
         '
         Me.pnlSidebar.BackColor = System.Drawing.Color.FromArgb(CType(CType(10, Byte), Integer), CType(CType(65, Byte), Integer), CType(CType(45, Byte), Integer))
+        Me.pnlSidebar.Controls.Add(Me.PictureBox1)
         Me.pnlSidebar.Controls.Add(Me.lblMainMenu)
         Me.pnlSidebar.Controls.Add(Me.btnBarter)
         Me.pnlSidebar.Controls.Add(Me.btnLogout)
@@ -127,9 +127,9 @@ Partial Class frmDashboard
         Me.pnlSidebar.Controls.Add(Me.btnRecommendation)
         Me.pnlSidebar.Controls.Add(Me.btnRecipients)
         Me.pnlSidebar.Controls.Add(Me.btnSupplies)
-        Me.pnlSidebar.Location = New System.Drawing.Point(1, 127)
+        Me.pnlSidebar.Location = New System.Drawing.Point(1, 89)
         Me.pnlSidebar.Name = "pnlSidebar"
-        Me.pnlSidebar.Size = New System.Drawing.Size(244, 765)
+        Me.pnlSidebar.Size = New System.Drawing.Size(244, 803)
         Me.pnlSidebar.TabIndex = 1
         '
         'lblMainMenu
@@ -161,7 +161,7 @@ Partial Class frmDashboard
         Me.btnLogout.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnLogout.Font = New System.Drawing.Font("Segoe UI", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnLogout.ForeColor = System.Drawing.Color.White
-        Me.btnLogout.Location = New System.Drawing.Point(26, 688)
+        Me.btnLogout.Location = New System.Drawing.Point(25, 741)
         Me.btnLogout.Name = "btnLogout"
         Me.btnLogout.Size = New System.Drawing.Size(185, 42)
         Me.btnLogout.TabIndex = 6
@@ -242,7 +242,6 @@ Partial Class frmDashboard
         '
         'pnlContent
         '
-        Me.pnlContent.Controls.Add(Me.PictureBox1)
         Me.pnlContent.Location = New System.Drawing.Point(255, 82)
         Me.pnlContent.Name = "pnlContent"
         Me.pnlContent.Size = New System.Drawing.Size(1168, 810)
@@ -252,7 +251,7 @@ Partial Class frmDashboard
         '
         Me.PictureBox1.Cursor = System.Windows.Forms.Cursors.Hand
         Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
-        Me.PictureBox1.Location = New System.Drawing.Point(1092, 708)
+        Me.PictureBox1.Location = New System.Drawing.Point(81, 627)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(69, 56)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
@@ -264,7 +263,7 @@ Partial Class frmDashboard
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(249, Byte), Integer), CType(CType(247, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(1423, 894)
+        Me.ClientSize = New System.Drawing.Size(1430, 899)
         Me.Controls.Add(Me.pnlContent)
         Me.Controls.Add(Me.pnlSidebar)
         Me.Controls.Add(Me.pnlHeader)
@@ -279,7 +278,6 @@ Partial Class frmDashboard
         CType(Me.picProfile, System.ComponentModel.ISupportInitialize).EndInit()
         Me.pnlSidebar.ResumeLayout(False)
         Me.pnlSidebar.PerformLayout()
-        Me.pnlContent.ResumeLayout(False)
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 

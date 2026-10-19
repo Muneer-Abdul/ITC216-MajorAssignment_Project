@@ -34,7 +34,7 @@ Partial Class frmVitiBot
         '
         Me.lblTitle.AutoSize = True
         Me.lblTitle.Font = New System.Drawing.Font("Segoe UI", 14.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblTitle.Location = New System.Drawing.Point(411, 16)
+        Me.lblTitle.Location = New System.Drawing.Point(371, 18)
         Me.lblTitle.Name = "lblTitle"
         Me.lblTitle.Size = New System.Drawing.Size(390, 32)
         Me.lblTitle.TabIndex = 0
