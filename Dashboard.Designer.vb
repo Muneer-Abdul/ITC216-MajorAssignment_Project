@@ -30,6 +30,7 @@ Partial Class frmDashboard
         Me.lblUserLoggedIn = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.pnlSidebar = New System.Windows.Forms.Panel()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.lblMainMenu = New System.Windows.Forms.Label()
         Me.btnBarter = New System.Windows.Forms.Button()
         Me.btnLogout = New System.Windows.Forms.Button()
@@ -40,7 +41,6 @@ Partial Class frmDashboard
         Me.btnRecipients = New System.Windows.Forms.Button()
         Me.btnSupplies = New System.Windows.Forms.Button()
         Me.pnlContent = New System.Windows.Forms.Panel()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.pnlHeader.SuspendLayout()
         CType(Me.picProfile, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.pnlSidebar.SuspendLayout()
@@ -127,10 +127,21 @@ Partial Class frmDashboard
         Me.pnlSidebar.Controls.Add(Me.btnRecommendation)
         Me.pnlSidebar.Controls.Add(Me.btnRecipients)
         Me.pnlSidebar.Controls.Add(Me.btnSupplies)
-        Me.pnlSidebar.Location = New System.Drawing.Point(1, 89)
+        Me.pnlSidebar.Location = New System.Drawing.Point(1, 82)
         Me.pnlSidebar.Name = "pnlSidebar"
-        Me.pnlSidebar.Size = New System.Drawing.Size(244, 803)
+        Me.pnlSidebar.Size = New System.Drawing.Size(251, 744)
         Me.pnlSidebar.TabIndex = 1
+        '
+        'PictureBox1
+        '
+        Me.PictureBox1.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
+        Me.PictureBox1.Location = New System.Drawing.Point(82, 594)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(69, 56)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox1.TabIndex = 10
+        Me.PictureBox1.TabStop = False
         '
         'lblMainMenu
         '
@@ -161,7 +172,7 @@ Partial Class frmDashboard
         Me.btnLogout.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnLogout.Font = New System.Drawing.Font("Segoe UI", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnLogout.ForeColor = System.Drawing.Color.White
-        Me.btnLogout.Location = New System.Drawing.Point(25, 741)
+        Me.btnLogout.Location = New System.Drawing.Point(32, 674)
         Me.btnLogout.Name = "btnLogout"
         Me.btnLogout.Size = New System.Drawing.Size(185, 42)
         Me.btnLogout.TabIndex = 6
@@ -244,26 +255,15 @@ Partial Class frmDashboard
         '
         Me.pnlContent.Location = New System.Drawing.Point(255, 82)
         Me.pnlContent.Name = "pnlContent"
-        Me.pnlContent.Size = New System.Drawing.Size(1168, 810)
+        Me.pnlContent.Size = New System.Drawing.Size(1163, 744)
         Me.pnlContent.TabIndex = 2
-        '
-        'PictureBox1
-        '
-        Me.PictureBox1.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
-        Me.PictureBox1.Location = New System.Drawing.Point(81, 627)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(69, 56)
-        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox1.TabIndex = 10
-        Me.PictureBox1.TabStop = False
         '
         'frmDashboard
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(249, Byte), Integer), CType(CType(247, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(1430, 899)
+        Me.ClientSize = New System.Drawing.Size(1430, 827)
         Me.Controls.Add(Me.pnlContent)
         Me.Controls.Add(Me.pnlSidebar)
         Me.Controls.Add(Me.pnlHeader)
