@@ -49,9 +49,9 @@ Partial Class frmOrganisationDashboard
         Me.lblWelcome.AutoSize = True
         Me.lblWelcome.Font = New System.Drawing.Font("Segoe UI", 20.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblWelcome.ForeColor = System.Drawing.Color.Black
-        Me.lblWelcome.Location = New System.Drawing.Point(51, 36)
+        Me.lblWelcome.Location = New System.Drawing.Point(57, 45)
         Me.lblWelcome.Name = "lblWelcome"
-        Me.lblWelcome.Size = New System.Drawing.Size(233, 46)
+        Me.lblWelcome.Size = New System.Drawing.Size(270, 54)
         Me.lblWelcome.TabIndex = 0
         Me.lblWelcome.Text = "Viti FoodLink"
         '
@@ -60,17 +60,18 @@ Partial Class frmOrganisationDashboard
         Me.lblTitle.AutoSize = True
         Me.lblTitle.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblTitle.ForeColor = System.Drawing.Color.Black
-        Me.lblTitle.Location = New System.Drawing.Point(54, 79)
+        Me.lblTitle.Location = New System.Drawing.Point(61, 99)
         Me.lblTitle.Name = "lblTitle"
-        Me.lblTitle.Size = New System.Drawing.Size(267, 20)
+        Me.lblTitle.Size = New System.Drawing.Size(326, 25)
         Me.lblTitle.TabIndex = 1
         Me.lblTitle.Text = "Community Food Surplus Management"
         '
         'btnLogout
         '
-        Me.btnLogout.Location = New System.Drawing.Point(1036, 1219)
+        Me.btnLogout.Location = New System.Drawing.Point(1166, 1524)
+        Me.btnLogout.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.btnLogout.Name = "btnLogout"
-        Me.btnLogout.Size = New System.Drawing.Size(376, 162)
+        Me.btnLogout.Size = New System.Drawing.Size(423, 202)
         Me.btnLogout.TabIndex = 6
         Me.btnLogout.Text = "Logout"
         Me.btnLogout.UseVisualStyleBackColor = True
@@ -81,18 +82,20 @@ Partial Class frmOrganisationDashboard
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.pnlContent.Controls.Add(Me.picVitiBot)
-        Me.pnlContent.Location = New System.Drawing.Point(238, 147)
+        Me.pnlContent.Location = New System.Drawing.Point(268, 184)
+        Me.pnlContent.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.pnlContent.Name = "pnlContent"
-        Me.pnlContent.Size = New System.Drawing.Size(1171, 742)
+        Me.pnlContent.Size = New System.Drawing.Size(1317, 928)
         Me.pnlContent.TabIndex = 7
         '
         'picVitiBot
         '
         Me.picVitiBot.Cursor = System.Windows.Forms.Cursors.Hand
         Me.picVitiBot.Image = CType(resources.GetObject("picVitiBot.Image"), System.Drawing.Image)
-        Me.picVitiBot.Location = New System.Drawing.Point(1068, 618)
+        Me.picVitiBot.Location = New System.Drawing.Point(1202, 772)
+        Me.picVitiBot.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.picVitiBot.Name = "picVitiBot"
-        Me.picVitiBot.Size = New System.Drawing.Size(76, 59)
+        Me.picVitiBot.Size = New System.Drawing.Size(86, 74)
         Me.picVitiBot.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.picVitiBot.TabIndex = 10
         Me.picVitiBot.TabStop = False
@@ -101,9 +104,10 @@ Partial Class frmOrganisationDashboard
         '
         Me.picProfile.Cursor = System.Windows.Forms.Cursors.Hand
         Me.picProfile.Image = CType(resources.GetObject("picProfile.Image"), System.Drawing.Image)
-        Me.picProfile.Location = New System.Drawing.Point(1308, 36)
+        Me.picProfile.Location = New System.Drawing.Point(1472, 45)
+        Me.picProfile.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.picProfile.Name = "picProfile"
-        Me.picProfile.Size = New System.Drawing.Size(77, 57)
+        Me.picProfile.Size = New System.Drawing.Size(87, 71)
         Me.picProfile.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.picProfile.TabIndex = 9
         Me.picProfile.TabStop = False
@@ -114,9 +118,10 @@ Partial Class frmOrganisationDashboard
         Me.btnFoodRequests.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnFoodRequests.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnFoodRequests.ForeColor = System.Drawing.Color.White
-        Me.btnFoodRequests.Location = New System.Drawing.Point(60, 354)
+        Me.btnFoodRequests.Location = New System.Drawing.Point(68, 442)
+        Me.btnFoodRequests.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.btnFoodRequests.Name = "btnFoodRequests"
-        Me.btnFoodRequests.Size = New System.Drawing.Size(132, 78)
+        Me.btnFoodRequests.Size = New System.Drawing.Size(148, 98)
         Me.btnFoodRequests.TabIndex = 5
         Me.btnFoodRequests.Text = "Food Requests"
         Me.btnFoodRequests.UseVisualStyleBackColor = True
@@ -127,9 +132,10 @@ Partial Class frmOrganisationDashboard
         Me.btnRecipients.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnRecipients.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnRecipients.ForeColor = System.Drawing.Color.White
-        Me.btnRecipients.Location = New System.Drawing.Point(60, 230)
+        Me.btnRecipients.Location = New System.Drawing.Point(68, 288)
+        Me.btnRecipients.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.btnRecipients.Name = "btnRecipients"
-        Me.btnRecipients.Size = New System.Drawing.Size(132, 78)
+        Me.btnRecipients.Size = New System.Drawing.Size(148, 98)
         Me.btnRecipients.TabIndex = 3
         Me.btnRecipients.Text = "Recipients"
         Me.btnRecipients.UseVisualStyleBackColor = True
@@ -140,9 +146,10 @@ Partial Class frmOrganisationDashboard
         Me.btnSupplies.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnSupplies.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnSupplies.ForeColor = System.Drawing.Color.White
-        Me.btnSupplies.Location = New System.Drawing.Point(60, 108)
+        Me.btnSupplies.Location = New System.Drawing.Point(68, 135)
+        Me.btnSupplies.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.btnSupplies.Name = "btnSupplies"
-        Me.btnSupplies.Size = New System.Drawing.Size(132, 78)
+        Me.btnSupplies.Size = New System.Drawing.Size(148, 98)
         Me.btnSupplies.TabIndex = 2
         Me.btnSupplies.Text = "Supplies"
         Me.btnSupplies.UseVisualStyleBackColor = True
@@ -153,9 +160,9 @@ Partial Class frmOrganisationDashboard
         Me.lblMainMenu.BackColor = System.Drawing.Color.Transparent
         Me.lblMainMenu.Font = New System.Drawing.Font("Segoe UI", 16.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblMainMenu.ForeColor = System.Drawing.Color.White
-        Me.lblMainMenu.Location = New System.Drawing.Point(42, 29)
+        Me.lblMainMenu.Location = New System.Drawing.Point(47, 36)
         Me.lblMainMenu.Name = "lblMainMenu"
-        Me.lblMainMenu.Size = New System.Drawing.Size(162, 37)
+        Me.lblMainMenu.Size = New System.Drawing.Size(191, 45)
         Me.lblMainMenu.TabIndex = 12
         Me.lblMainMenu.Text = "Main Menu"
         '
@@ -167,22 +174,22 @@ Partial Class frmOrganisationDashboard
         Me.pnlSidebar.Controls.Add(Me.btnSupplies)
         Me.pnlSidebar.Controls.Add(Me.btnRecipients)
         Me.pnlSidebar.Controls.Add(Me.btnFoodRequests)
-        Me.pnlSidebar.Location = New System.Drawing.Point(-5, 181)
+        Me.pnlSidebar.Location = New System.Drawing.Point(-6, 226)
         Me.pnlSidebar.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.pnlSidebar.Name = "pnlSidebar"
-        Me.pnlSidebar.Size = New System.Drawing.Size(238, 624)
+        Me.pnlSidebar.Size = New System.Drawing.Size(268, 780)
         Me.pnlSidebar.TabIndex = 11
         '
         'Button1
         '
         Me.Button1.BackColor = System.Drawing.Color.Red
         Me.Button1.ForeColor = System.Drawing.Color.White
-        Me.Button1.Location = New System.Drawing.Point(60, 507)
+        Me.Button1.Location = New System.Drawing.Point(68, 634)
         Me.Button1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(132, 82)
+        Me.Button1.Size = New System.Drawing.Size(148, 102)
         Me.Button1.TabIndex = 13
-        Me.Button1.Text = "Logout"
+        Me.Button1.Text = "&Logout"
         Me.Button1.UseVisualStyleBackColor = False
         '
         'lblOrganisationDashboard
@@ -191,9 +198,9 @@ Partial Class frmOrganisationDashboard
         Me.lblOrganisationDashboard.BackColor = System.Drawing.Color.Transparent
         Me.lblOrganisationDashboard.Font = New System.Drawing.Font("Segoe UI", 14.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblOrganisationDashboard.ForeColor = System.Drawing.Color.FromArgb(CType(CType(10, Byte), Integer), CType(CType(65, Byte), Integer), CType(CType(45, Byte), Integer))
-        Me.lblOrganisationDashboard.Location = New System.Drawing.Point(687, 106)
+        Me.lblOrganisationDashboard.Location = New System.Drawing.Point(773, 132)
         Me.lblOrganisationDashboard.Name = "lblOrganisationDashboard"
-        Me.lblOrganisationDashboard.Size = New System.Drawing.Size(293, 32)
+        Me.lblOrganisationDashboard.Size = New System.Drawing.Size(336, 38)
         Me.lblOrganisationDashboard.TabIndex = 12
         Me.lblOrganisationDashboard.Text = "Organisation Dashboard"
         '
@@ -204,22 +211,23 @@ Partial Class frmOrganisationDashboard
         Me.pnlHeading.Controls.Add(Me.picProfile)
         Me.pnlHeading.Controls.Add(Me.lblTitle)
         Me.pnlHeading.Controls.Add(Me.lblWelcome)
-        Me.pnlHeading.Location = New System.Drawing.Point(-5, -10)
+        Me.pnlHeading.Location = New System.Drawing.Point(-6, -12)
         Me.pnlHeading.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.pnlHeading.Name = "pnlHeading"
-        Me.pnlHeading.Size = New System.Drawing.Size(1422, 150)
+        Me.pnlHeading.Size = New System.Drawing.Size(1600, 187)
         Me.pnlHeading.TabIndex = 13
         '
         'frmOrganisationDashboard
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1407, 890)
+        Me.ClientSize = New System.Drawing.Size(1583, 1112)
         Me.Controls.Add(Me.pnlHeading)
         Me.Controls.Add(Me.pnlSidebar)
         Me.Controls.Add(Me.pnlContent)
         Me.Controls.Add(Me.btnLogout)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
+        Me.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.MinimizeBox = False
         Me.Name = "frmOrganisationDashboard"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen

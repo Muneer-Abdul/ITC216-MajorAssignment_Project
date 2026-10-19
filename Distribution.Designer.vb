@@ -47,9 +47,9 @@ Partial Class frmDistribution
         Me.Label1.BackColor = System.Drawing.Color.Transparent
         Me.Label1.Font = New System.Drawing.Font("Segoe UI", 14.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(10, Byte), Integer), CType(CType(65, Byte), Integer), CType(CType(45, Byte), Integer))
-        Me.Label1.Location = New System.Drawing.Point(844, 14)
+        Me.Label1.Location = New System.Drawing.Point(950, 18)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(275, 32)
+        Me.Label1.Size = New System.Drawing.Size(314, 38)
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "Produce Distribution   "
         '
@@ -57,9 +57,9 @@ Partial Class frmDistribution
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(115, 129)
+        Me.Label2.Location = New System.Drawing.Point(129, 161)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(110, 20)
+        Me.Label2.Size = New System.Drawing.Size(132, 25)
         Me.Label2.TabIndex = 1
         Me.Label2.Text = "Select Produce:"
         '
@@ -67,9 +67,9 @@ Partial Class frmDistribution
         '
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(115, 248)
+        Me.Label3.Location = New System.Drawing.Point(129, 310)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(134, 20)
+        Me.Label3.Size = New System.Drawing.Size(160, 25)
         Me.Label3.TabIndex = 2
         Me.Label3.Text = "Available Quantity:"
         '
@@ -77,9 +77,9 @@ Partial Class frmDistribution
         '
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(115, 190)
+        Me.Label4.Location = New System.Drawing.Point(129, 238)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(118, 20)
+        Me.Label4.Size = New System.Drawing.Size(138, 25)
         Me.Label4.TabIndex = 3
         Me.Label4.Text = "Select Recipient:"
         '
@@ -87,9 +87,9 @@ Partial Class frmDistribution
         '
         Me.Label5.AutoSize = True
         Me.Label5.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.Location = New System.Drawing.Point(602, 129)
+        Me.Label5.Location = New System.Drawing.Point(677, 161)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(150, 20)
+        Me.Label5.Size = New System.Drawing.Size(182, 25)
         Me.Label5.TabIndex = 4
         Me.Label5.Text = "Distribution Quantity:"
         '
@@ -97,9 +97,9 @@ Partial Class frmDistribution
         '
         Me.Label6.AutoSize = True
         Me.Label6.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label6.Location = New System.Drawing.Point(602, 190)
+        Me.Label6.Location = New System.Drawing.Point(677, 238)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(126, 20)
+        Me.Label6.Size = New System.Drawing.Size(151, 25)
         Me.Label6.TabIndex = 5
         Me.Label6.Text = "Distribution Date:"
         '
@@ -107,9 +107,9 @@ Partial Class frmDistribution
         '
         Me.Label7.AutoSize = True
         Me.Label7.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label7.Location = New System.Drawing.Point(602, 243)
+        Me.Label7.Location = New System.Drawing.Point(677, 304)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(146, 20)
+        Me.Label7.Size = New System.Drawing.Size(177, 25)
         Me.Label7.TabIndex = 6
         Me.Label7.Text = "Distribution Method:"
         '
@@ -118,9 +118,10 @@ Partial Class frmDistribution
         Me.cmbProduce.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cmbProduce.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cmbProduce.FormattingEnabled = True
-        Me.cmbProduce.Location = New System.Drawing.Point(280, 122)
+        Me.cmbProduce.Location = New System.Drawing.Point(315, 152)
+        Me.cmbProduce.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.cmbProduce.Name = "cmbProduce"
-        Me.cmbProduce.Size = New System.Drawing.Size(272, 28)
+        Me.cmbProduce.Size = New System.Drawing.Size(306, 33)
         Me.cmbProduce.TabIndex = 7
         '
         'cmbRecipient
@@ -128,9 +129,10 @@ Partial Class frmDistribution
         Me.cmbRecipient.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cmbRecipient.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cmbRecipient.FormattingEnabled = True
-        Me.cmbRecipient.Location = New System.Drawing.Point(280, 183)
+        Me.cmbRecipient.Location = New System.Drawing.Point(315, 229)
+        Me.cmbRecipient.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.cmbRecipient.Name = "cmbRecipient"
-        Me.cmbRecipient.Size = New System.Drawing.Size(272, 28)
+        Me.cmbRecipient.Size = New System.Drawing.Size(306, 33)
         Me.cmbRecipient.TabIndex = 8
         '
         'cmbDistributionMethod
@@ -138,36 +140,40 @@ Partial Class frmDistribution
         Me.cmbDistributionMethod.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cmbDistributionMethod.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cmbDistributionMethod.FormattingEnabled = True
-        Me.cmbDistributionMethod.Location = New System.Drawing.Point(776, 237)
+        Me.cmbDistributionMethod.Location = New System.Drawing.Point(873, 296)
+        Me.cmbDistributionMethod.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.cmbDistributionMethod.Name = "cmbDistributionMethod"
-        Me.cmbDistributionMethod.Size = New System.Drawing.Size(272, 28)
+        Me.cmbDistributionMethod.Size = New System.Drawing.Size(306, 33)
         Me.cmbDistributionMethod.TabIndex = 9
         '
         'txtAvailableQuantity
         '
         Me.txtAvailableQuantity.BackColor = System.Drawing.Color.White
         Me.txtAvailableQuantity.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtAvailableQuantity.Location = New System.Drawing.Point(280, 243)
+        Me.txtAvailableQuantity.Location = New System.Drawing.Point(315, 304)
+        Me.txtAvailableQuantity.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.txtAvailableQuantity.Name = "txtAvailableQuantity"
         Me.txtAvailableQuantity.ReadOnly = True
-        Me.txtAvailableQuantity.Size = New System.Drawing.Size(272, 27)
+        Me.txtAvailableQuantity.Size = New System.Drawing.Size(306, 31)
         Me.txtAvailableQuantity.TabIndex = 10
         '
         'txtDistributionQuantity
         '
         Me.txtDistributionQuantity.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtDistributionQuantity.Location = New System.Drawing.Point(776, 126)
+        Me.txtDistributionQuantity.Location = New System.Drawing.Point(873, 158)
+        Me.txtDistributionQuantity.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.txtDistributionQuantity.Name = "txtDistributionQuantity"
-        Me.txtDistributionQuantity.Size = New System.Drawing.Size(272, 27)
+        Me.txtDistributionQuantity.Size = New System.Drawing.Size(306, 31)
         Me.txtDistributionQuantity.TabIndex = 11
         '
         'dtpDistributionDate
         '
         Me.dtpDistributionDate.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.dtpDistributionDate.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
-        Me.dtpDistributionDate.Location = New System.Drawing.Point(776, 186)
+        Me.dtpDistributionDate.Location = New System.Drawing.Point(873, 232)
+        Me.dtpDistributionDate.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.dtpDistributionDate.Name = "dtpDistributionDate"
-        Me.dtpDistributionDate.Size = New System.Drawing.Size(272, 27)
+        Me.dtpDistributionDate.Size = New System.Drawing.Size(306, 31)
         Me.dtpDistributionDate.TabIndex = 12
         '
         'btnDistribute
@@ -175,11 +181,12 @@ Partial Class frmDistribution
         Me.btnDistribute.BackColor = System.Drawing.Color.FromArgb(CType(CType(10, Byte), Integer), CType(CType(65, Byte), Integer), CType(CType(45, Byte), Integer))
         Me.btnDistribute.Font = New System.Drawing.Font("Segoe UI", 8.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnDistribute.ForeColor = System.Drawing.Color.White
-        Me.btnDistribute.Location = New System.Drawing.Point(375, 322)
+        Me.btnDistribute.Location = New System.Drawing.Point(422, 402)
+        Me.btnDistribute.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.btnDistribute.Name = "btnDistribute"
-        Me.btnDistribute.Size = New System.Drawing.Size(177, 50)
+        Me.btnDistribute.Size = New System.Drawing.Size(199, 62)
         Me.btnDistribute.TabIndex = 13
-        Me.btnDistribute.Text = "Distribute"
+        Me.btnDistribute.Text = "&Distribute"
         Me.btnDistribute.UseVisualStyleBackColor = False
         '
         'btnClear
@@ -187,28 +194,30 @@ Partial Class frmDistribution
         Me.btnClear.BackColor = System.Drawing.Color.FromArgb(CType(CType(10, Byte), Integer), CType(CType(65, Byte), Integer), CType(CType(45, Byte), Integer))
         Me.btnClear.Font = New System.Drawing.Font("Segoe UI", 8.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnClear.ForeColor = System.Drawing.Color.White
-        Me.btnClear.Location = New System.Drawing.Point(606, 322)
+        Me.btnClear.Location = New System.Drawing.Point(682, 402)
+        Me.btnClear.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.btnClear.Name = "btnClear"
-        Me.btnClear.Size = New System.Drawing.Size(177, 50)
+        Me.btnClear.Size = New System.Drawing.Size(199, 62)
         Me.btnClear.TabIndex = 14
-        Me.btnClear.Text = "Clear"
+        Me.btnClear.Text = "&Clear"
         Me.btnClear.UseVisualStyleBackColor = False
         '
         'dgvDistribution
         '
         Me.dgvDistribution.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.dgvDistribution.Location = New System.Drawing.Point(84, 403)
+        Me.dgvDistribution.Location = New System.Drawing.Point(94, 504)
+        Me.dgvDistribution.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.dgvDistribution.Name = "dgvDistribution"
         Me.dgvDistribution.RowHeadersWidth = 51
         Me.dgvDistribution.RowTemplate.Height = 24
-        Me.dgvDistribution.Size = New System.Drawing.Size(980, 333)
+        Me.dgvDistribution.Size = New System.Drawing.Size(1102, 416)
         Me.dgvDistribution.TabIndex = 15
         '
         'frmDistribution
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1151, 765)
+        Me.ClientSize = New System.Drawing.Size(1295, 956)
         Me.Controls.Add(Me.dgvDistribution)
         Me.Controls.Add(Me.btnClear)
         Me.Controls.Add(Me.btnDistribute)
@@ -225,6 +234,7 @@ Partial Class frmDistribution
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
+        Me.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.Name = "frmDistribution"
         Me.Text = "ss"
         CType(Me.dgvDistribution, System.ComponentModel.ISupportInitialize).EndInit()

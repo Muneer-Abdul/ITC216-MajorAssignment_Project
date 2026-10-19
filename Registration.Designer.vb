@@ -174,7 +174,7 @@ Partial Class frmRegistration
         Me.btnRegister.Name = "btnRegister"
         Me.btnRegister.Size = New System.Drawing.Size(348, 45)
         Me.btnRegister.TabIndex = 11
-        Me.btnRegister.Text = "Register"
+        Me.btnRegister.Text = "&Register"
         Me.btnRegister.UseVisualStyleBackColor = False
         '
         'btnBack
@@ -187,7 +187,7 @@ Partial Class frmRegistration
         Me.btnBack.Name = "btnBack"
         Me.btnBack.Size = New System.Drawing.Size(348, 45)
         Me.btnBack.TabIndex = 12
-        Me.btnBack.Text = "Back To Login"
+        Me.btnBack.Text = "&Back To Login"
         Me.btnBack.UseVisualStyleBackColor = False
         '
         'pbDecorativeBorder

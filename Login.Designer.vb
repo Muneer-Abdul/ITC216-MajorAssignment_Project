@@ -40,9 +40,9 @@ Partial Class frmLogin
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Segoe UI", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(18, Byte), Integer), CType(CType(59, Byte), Integer), CType(CType(42, Byte), Integer))
-        Me.Label1.Location = New System.Drawing.Point(212, 62)
+        Me.Label1.Location = New System.Drawing.Point(238, 78)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(221, 41)
+        Me.Label1.Size = New System.Drawing.Size(264, 48)
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "Welcome Back"
         Me.Label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -52,9 +52,9 @@ Partial Class frmLogin
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(31, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(55, Byte), Integer))
-        Me.Label2.Location = New System.Drawing.Point(207, 184)
+        Me.Label2.Location = New System.Drawing.Point(233, 230)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(84, 20)
+        Me.Label2.Size = New System.Drawing.Size(102, 25)
         Me.Label2.TabIndex = 1
         Me.Label2.Text = "Username:"
         '
@@ -63,9 +63,9 @@ Partial Class frmLogin
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(31, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(55, Byte), Integer))
-        Me.Label3.Location = New System.Drawing.Point(207, 270)
+        Me.Label3.Location = New System.Drawing.Point(233, 338)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(80, 20)
+        Me.Label3.Size = New System.Drawing.Size(97, 25)
         Me.Label3.TabIndex = 2
         Me.Label3.Text = "Password:"
         '
@@ -74,9 +74,10 @@ Partial Class frmLogin
         Me.txtUsername.BackColor = System.Drawing.Color.White
         Me.txtUsername.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtUsername.ForeColor = System.Drawing.Color.FromArgb(CType(CType(31, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(55, Byte), Integer))
-        Me.txtUsername.Location = New System.Drawing.Point(212, 220)
+        Me.txtUsername.Location = New System.Drawing.Point(238, 275)
+        Me.txtUsername.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.txtUsername.Name = "txtUsername"
-        Me.txtUsername.Size = New System.Drawing.Size(235, 27)
+        Me.txtUsername.Size = New System.Drawing.Size(264, 31)
         Me.txtUsername.TabIndex = 3
         '
         'txtPassword
@@ -84,9 +85,10 @@ Partial Class frmLogin
         Me.txtPassword.BackColor = System.Drawing.Color.White
         Me.txtPassword.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtPassword.ForeColor = System.Drawing.Color.FromArgb(CType(CType(31, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(55, Byte), Integer))
-        Me.txtPassword.Location = New System.Drawing.Point(212, 302)
+        Me.txtPassword.Location = New System.Drawing.Point(238, 378)
+        Me.txtPassword.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.txtPassword.Name = "txtPassword"
-        Me.txtPassword.Size = New System.Drawing.Size(235, 27)
+        Me.txtPassword.Size = New System.Drawing.Size(264, 31)
         Me.txtPassword.TabIndex = 4
         Me.txtPassword.UseSystemPasswordChar = True
         '
@@ -96,11 +98,12 @@ Partial Class frmLogin
         Me.btnLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnLogin.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnLogin.ForeColor = System.Drawing.Color.White
-        Me.btnLogin.Location = New System.Drawing.Point(180, 410)
+        Me.btnLogin.Location = New System.Drawing.Point(202, 512)
+        Me.btnLogin.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.btnLogin.Name = "btnLogin"
-        Me.btnLogin.Size = New System.Drawing.Size(293, 38)
+        Me.btnLogin.Size = New System.Drawing.Size(330, 48)
         Me.btnLogin.TabIndex = 5
-        Me.btnLogin.Text = "Login"
+        Me.btnLogin.Text = "&Login"
         Me.btnLogin.UseVisualStyleBackColor = False
         '
         'btnRegister
@@ -108,11 +111,12 @@ Partial Class frmLogin
         Me.btnRegister.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnRegister.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnRegister.ForeColor = System.Drawing.Color.FromArgb(CType(CType(31, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(55, Byte), Integer))
-        Me.btnRegister.Location = New System.Drawing.Point(180, 476)
+        Me.btnRegister.Location = New System.Drawing.Point(202, 595)
+        Me.btnRegister.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.btnRegister.Name = "btnRegister"
-        Me.btnRegister.Size = New System.Drawing.Size(293, 35)
+        Me.btnRegister.Size = New System.Drawing.Size(330, 44)
         Me.btnRegister.TabIndex = 6
-        Me.btnRegister.Text = "Create Account"
+        Me.btnRegister.Text = "&Create Account"
         Me.btnRegister.UseVisualStyleBackColor = False
         '
         'btnBack
@@ -120,31 +124,32 @@ Partial Class frmLogin
         Me.btnBack.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnBack.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnBack.ForeColor = System.Drawing.Color.FromArgb(CType(CType(31, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(55, Byte), Integer))
-        Me.btnBack.Location = New System.Drawing.Point(180, 542)
+        Me.btnBack.Location = New System.Drawing.Point(202, 678)
+        Me.btnBack.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.btnBack.Name = "btnBack"
-        Me.btnBack.Size = New System.Drawing.Size(293, 34)
+        Me.btnBack.Size = New System.Drawing.Size(330, 42)
         Me.btnBack.TabIndex = 7
-        Me.btnBack.Text = "Back"
+        Me.btnBack.Text = "&Back"
         Me.btnBack.UseVisualStyleBackColor = False
         '
         'pbDecorativeBorder
         '
         Me.pbDecorativeBorder.BackColor = System.Drawing.Color.Transparent
         Me.pbDecorativeBorder.Image = CType(resources.GetObject("pbDecorativeBorder.Image"), System.Drawing.Image)
-        Me.pbDecorativeBorder.Location = New System.Drawing.Point(-9, -7)
+        Me.pbDecorativeBorder.Location = New System.Drawing.Point(-10, -9)
         Me.pbDecorativeBorder.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.pbDecorativeBorder.Name = "pbDecorativeBorder"
-        Me.pbDecorativeBorder.Size = New System.Drawing.Size(669, 727)
+        Me.pbDecorativeBorder.Size = New System.Drawing.Size(753, 909)
         Me.pbDecorativeBorder.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.pbDecorativeBorder.TabIndex = 12
         Me.pbDecorativeBorder.TabStop = False
         '
         'frmLogin
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(249, Byte), Integer), CType(CType(247, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(661, 714)
+        Me.ClientSize = New System.Drawing.Size(744, 892)
         Me.Controls.Add(Me.btnBack)
         Me.Controls.Add(Me.btnRegister)
         Me.Controls.Add(Me.btnLogin)
@@ -155,6 +160,7 @@ Partial Class frmLogin
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.pbDecorativeBorder)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
+        Me.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "frmLogin"

@@ -136,7 +136,7 @@ Partial Class frmUserProfile
         Me.btnEdit.Name = "btnEdit"
         Me.btnEdit.Size = New System.Drawing.Size(382, 44)
         Me.btnEdit.TabIndex = 9
-        Me.btnEdit.Text = "Edit Profile"
+        Me.btnEdit.Text = "&Edit Profile"
         Me.btnEdit.UseVisualStyleBackColor = False
         '
         'btnSave
@@ -149,7 +149,7 @@ Partial Class frmUserProfile
         Me.btnSave.Name = "btnSave"
         Me.btnSave.Size = New System.Drawing.Size(382, 44)
         Me.btnSave.TabIndex = 10
-        Me.btnSave.Text = "Save Changes"
+        Me.btnSave.Text = "&Save Changes"
         Me.btnSave.UseVisualStyleBackColor = False
         '
         'btnCancel
@@ -162,7 +162,7 @@ Partial Class frmUserProfile
         Me.btnCancel.Name = "btnCancel"
         Me.btnCancel.Size = New System.Drawing.Size(382, 44)
         Me.btnCancel.TabIndex = 11
-        Me.btnCancel.Text = "Cancel"
+        Me.btnCancel.Text = "&Cancel"
         Me.btnCancel.UseVisualStyleBackColor = False
         '
         'PictureBox1

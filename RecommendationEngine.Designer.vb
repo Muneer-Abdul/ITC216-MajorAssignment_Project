@@ -142,7 +142,7 @@ Partial Class frmRecommendationEngine
         Me.btnRecommend.Name = "btnRecommend"
         Me.btnRecommend.Size = New System.Drawing.Size(248, 69)
         Me.btnRecommend.TabIndex = 9
-        Me.btnRecommend.Text = "FIND RECOMMENDATION"
+        Me.btnRecommend.Text = "&FIND RECOMMENDATION"
         Me.btnRecommend.UseVisualStyleBackColor = False
         '
         'btnClear
@@ -154,7 +154,7 @@ Partial Class frmRecommendationEngine
         Me.btnClear.Name = "btnClear"
         Me.btnClear.Size = New System.Drawing.Size(232, 59)
         Me.btnClear.TabIndex = 10
-        Me.btnClear.Text = "Clear"
+        Me.btnClear.Text = "&Clear"
         Me.btnClear.UseVisualStyleBackColor = False
         '
         'cmbProduce
