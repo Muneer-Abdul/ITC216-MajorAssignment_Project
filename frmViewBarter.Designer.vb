@@ -61,7 +61,7 @@ Partial Class frmViewBarter
         Me.btnConfirmBarter.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.btnConfirmBarter.Name = "btnConfirmBarter"
         Me.btnConfirmBarter.Size = New System.Drawing.Size(161, 66)
-        Me.btnConfirmBarter.TabIndex = 3
+        Me.btnConfirmBarter.TabIndex = 0
         Me.btnConfirmBarter.Text = "Confirm Barter"
         Me.btnConfirmBarter.UseVisualStyleBackColor = False
         '

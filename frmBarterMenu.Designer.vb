@@ -40,7 +40,7 @@ Partial Class frmBarterMenu
         Me.Label1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(10, Byte), Integer), CType(CType(65, Byte), Integer), CType(CType(45, Byte), Integer))
         Me.Label1.Location = New System.Drawing.Point(1061, 18)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(260, 57)
+        Me.Label1.Size = New System.Drawing.Size(173, 38)
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "Food Barter"
         '
@@ -53,7 +53,7 @@ Partial Class frmBarterMenu
         Me.btnAddBarter.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.btnAddBarter.Name = "btnAddBarter"
         Me.btnAddBarter.Size = New System.Drawing.Size(336, 129)
-        Me.btnAddBarter.TabIndex = 1
+        Me.btnAddBarter.TabIndex = 0
         Me.btnAddBarter.Text = "ADD BARTER"
         Me.btnAddBarter.UseVisualStyleBackColor = False
         '
@@ -66,7 +66,7 @@ Partial Class frmBarterMenu
         Me.btnViewBarter.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.btnViewBarter.Name = "btnViewBarter"
         Me.btnViewBarter.Size = New System.Drawing.Size(336, 129)
-        Me.btnViewBarter.TabIndex = 2
+        Me.btnViewBarter.TabIndex = 1
         Me.btnViewBarter.Text = "VIEW BARTER"
         Me.btnViewBarter.UseVisualStyleBackColor = False
         '

@@ -78,7 +78,7 @@ Partial Class frmLogin
         Me.txtUsername.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.txtUsername.Name = "txtUsername"
         Me.txtUsername.Size = New System.Drawing.Size(264, 31)
-        Me.txtUsername.TabIndex = 3
+        Me.txtUsername.TabIndex = 0
         '
         'txtPassword
         '
@@ -89,7 +89,7 @@ Partial Class frmLogin
         Me.txtPassword.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.txtPassword.Name = "txtPassword"
         Me.txtPassword.Size = New System.Drawing.Size(264, 31)
-        Me.txtPassword.TabIndex = 4
+        Me.txtPassword.TabIndex = 1
         Me.txtPassword.UseSystemPasswordChar = True
         '
         'btnLogin
@@ -102,7 +102,7 @@ Partial Class frmLogin
         Me.btnLogin.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.btnLogin.Name = "btnLogin"
         Me.btnLogin.Size = New System.Drawing.Size(330, 48)
-        Me.btnLogin.TabIndex = 5
+        Me.btnLogin.TabIndex = 2
         Me.btnLogin.Text = "&Login"
         Me.btnLogin.UseVisualStyleBackColor = False
         '
@@ -115,7 +115,7 @@ Partial Class frmLogin
         Me.btnRegister.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.btnRegister.Name = "btnRegister"
         Me.btnRegister.Size = New System.Drawing.Size(330, 44)
-        Me.btnRegister.TabIndex = 6
+        Me.btnRegister.TabIndex = 3
         Me.btnRegister.Text = "&Create Account"
         Me.btnRegister.UseVisualStyleBackColor = False
         '
@@ -128,7 +128,7 @@ Partial Class frmLogin
         Me.btnBack.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.btnBack.Name = "btnBack"
         Me.btnBack.Size = New System.Drawing.Size(330, 42)
-        Me.btnBack.TabIndex = 7
+        Me.btnBack.TabIndex = 4
         Me.btnBack.Text = "&Back"
         Me.btnBack.UseVisualStyleBackColor = False
         '

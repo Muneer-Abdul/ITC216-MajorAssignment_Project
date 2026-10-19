@@ -97,7 +97,7 @@ Partial Class frmUserProfile
         Me.txtFullName.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.txtFullName.Name = "txtFullName"
         Me.txtFullName.Size = New System.Drawing.Size(354, 31)
-        Me.txtFullName.TabIndex = 5
+        Me.txtFullName.TabIndex = 0
         '
         'txtUsername
         '
@@ -106,7 +106,7 @@ Partial Class frmUserProfile
         Me.txtUsername.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.txtUsername.Name = "txtUsername"
         Me.txtUsername.Size = New System.Drawing.Size(354, 31)
-        Me.txtUsername.TabIndex = 6
+        Me.txtUsername.TabIndex = 1
         '
         'txtRole
         '
@@ -115,7 +115,7 @@ Partial Class frmUserProfile
         Me.txtRole.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.txtRole.Name = "txtRole"
         Me.txtRole.Size = New System.Drawing.Size(354, 31)
-        Me.txtRole.TabIndex = 7
+        Me.txtRole.TabIndex = 2
         '
         'txtStatus
         '
@@ -124,7 +124,7 @@ Partial Class frmUserProfile
         Me.txtStatus.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.txtStatus.Name = "txtStatus"
         Me.txtStatus.Size = New System.Drawing.Size(354, 31)
-        Me.txtStatus.TabIndex = 8
+        Me.txtStatus.TabIndex = 3
         '
         'btnEdit
         '
@@ -135,7 +135,7 @@ Partial Class frmUserProfile
         Me.btnEdit.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.btnEdit.Name = "btnEdit"
         Me.btnEdit.Size = New System.Drawing.Size(382, 44)
-        Me.btnEdit.TabIndex = 9
+        Me.btnEdit.TabIndex = 4
         Me.btnEdit.Text = "&Edit Profile"
         Me.btnEdit.UseVisualStyleBackColor = False
         '
@@ -148,7 +148,7 @@ Partial Class frmUserProfile
         Me.btnSave.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.btnSave.Name = "btnSave"
         Me.btnSave.Size = New System.Drawing.Size(382, 44)
-        Me.btnSave.TabIndex = 10
+        Me.btnSave.TabIndex = 5
         Me.btnSave.Text = "&Save Changes"
         Me.btnSave.UseVisualStyleBackColor = False
         '
@@ -161,7 +161,7 @@ Partial Class frmUserProfile
         Me.btnCancel.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.btnCancel.Name = "btnCancel"
         Me.btnCancel.Size = New System.Drawing.Size(382, 44)
-        Me.btnCancel.TabIndex = 11
+        Me.btnCancel.TabIndex = 6
         Me.btnCancel.Text = "&Cancel"
         Me.btnCancel.UseVisualStyleBackColor = False
         '

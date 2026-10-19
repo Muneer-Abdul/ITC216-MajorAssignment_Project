@@ -122,7 +122,7 @@ Partial Class frmOrganisationDashboard
         Me.btnFoodRequests.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.btnFoodRequests.Name = "btnFoodRequests"
         Me.btnFoodRequests.Size = New System.Drawing.Size(148, 98)
-        Me.btnFoodRequests.TabIndex = 5
+        Me.btnFoodRequests.TabIndex = 2
         Me.btnFoodRequests.Text = "Food Requests"
         Me.btnFoodRequests.UseVisualStyleBackColor = True
         '
@@ -136,7 +136,7 @@ Partial Class frmOrganisationDashboard
         Me.btnRecipients.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.btnRecipients.Name = "btnRecipients"
         Me.btnRecipients.Size = New System.Drawing.Size(148, 98)
-        Me.btnRecipients.TabIndex = 3
+        Me.btnRecipients.TabIndex = 1
         Me.btnRecipients.Text = "Recipients"
         Me.btnRecipients.UseVisualStyleBackColor = True
         '
@@ -150,7 +150,7 @@ Partial Class frmOrganisationDashboard
         Me.btnSupplies.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.btnSupplies.Name = "btnSupplies"
         Me.btnSupplies.Size = New System.Drawing.Size(148, 98)
-        Me.btnSupplies.TabIndex = 2
+        Me.btnSupplies.TabIndex = 0
         Me.btnSupplies.Text = "Supplies"
         Me.btnSupplies.UseVisualStyleBackColor = True
         '
@@ -188,7 +188,7 @@ Partial Class frmOrganisationDashboard
         Me.Button1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(148, 102)
-        Me.Button1.TabIndex = 13
+        Me.Button1.TabIndex = 3
         Me.Button1.Text = "&Logout"
         Me.Button1.UseVisualStyleBackColor = False
         '

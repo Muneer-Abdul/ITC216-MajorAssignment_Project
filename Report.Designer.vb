@@ -161,7 +161,7 @@ Partial Class Report
         Me.cmbReportFilter.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.cmbReportFilter.Name = "cmbReportFilter"
         Me.cmbReportFilter.Size = New System.Drawing.Size(235, 33)
-        Me.cmbReportFilter.TabIndex = 5
+        Me.cmbReportFilter.TabIndex = 0
         '
         'btnRefresh
         '
@@ -172,7 +172,7 @@ Partial Class Report
         Me.btnRefresh.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.btnRefresh.Name = "btnRefresh"
         Me.btnRefresh.Size = New System.Drawing.Size(206, 61)
-        Me.btnRefresh.TabIndex = 6
+        Me.btnRefresh.TabIndex = 2
         Me.btnRefresh.Text = "&Refresh"
         Me.btnRefresh.UseVisualStyleBackColor = False
         '
@@ -185,7 +185,7 @@ Partial Class Report
         Me.btnExport.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.btnExport.Name = "btnExport"
         Me.btnExport.Size = New System.Drawing.Size(206, 61)
-        Me.btnExport.TabIndex = 7
+        Me.btnExport.TabIndex = 3
         Me.btnExport.Text = "&Export Report"
         Me.btnExport.UseVisualStyleBackColor = False
         '
@@ -218,7 +218,7 @@ Partial Class Report
         Me.cmbDateFilter.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.cmbDateFilter.Name = "cmbDateFilter"
         Me.cmbDateFilter.Size = New System.Drawing.Size(235, 33)
-        Me.cmbDateFilter.TabIndex = 10
+        Me.cmbDateFilter.TabIndex = 1
         '
         'Report
         '

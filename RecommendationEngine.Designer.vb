@@ -141,7 +141,7 @@ Partial Class frmRecommendationEngine
         Me.btnRecommend.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.btnRecommend.Name = "btnRecommend"
         Me.btnRecommend.Size = New System.Drawing.Size(248, 69)
-        Me.btnRecommend.TabIndex = 9
+        Me.btnRecommend.TabIndex = 4
         Me.btnRecommend.Text = "&FIND RECOMMENDATION"
         Me.btnRecommend.UseVisualStyleBackColor = False
         '
@@ -153,7 +153,7 @@ Partial Class frmRecommendationEngine
         Me.btnClear.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.btnClear.Name = "btnClear"
         Me.btnClear.Size = New System.Drawing.Size(232, 59)
-        Me.btnClear.TabIndex = 10
+        Me.btnClear.TabIndex = 9
         Me.btnClear.Text = "&Clear"
         Me.btnClear.UseVisualStyleBackColor = False
         '
@@ -166,7 +166,7 @@ Partial Class frmRecommendationEngine
         Me.cmbProduce.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.cmbProduce.Name = "cmbProduce"
         Me.cmbProduce.Size = New System.Drawing.Size(201, 33)
-        Me.cmbProduce.TabIndex = 11
+        Me.cmbProduce.TabIndex = 0
         '
         'txtQuantity
         '
@@ -176,7 +176,7 @@ Partial Class frmRecommendationEngine
         Me.txtQuantity.Name = "txtQuantity"
         Me.txtQuantity.ReadOnly = True
         Me.txtQuantity.Size = New System.Drawing.Size(201, 31)
-        Me.txtQuantity.TabIndex = 12
+        Me.txtQuantity.TabIndex = 1
         '
         'cmbRecipientType
         '
@@ -187,7 +187,7 @@ Partial Class frmRecommendationEngine
         Me.cmbRecipientType.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.cmbRecipientType.Name = "cmbRecipientType"
         Me.cmbRecipientType.Size = New System.Drawing.Size(201, 33)
-        Me.cmbRecipientType.TabIndex = 13
+        Me.cmbRecipientType.TabIndex = 2
         '
         'txtCommunity
         '
@@ -196,7 +196,7 @@ Partial Class frmRecommendationEngine
         Me.txtCommunity.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.txtCommunity.Name = "txtCommunity"
         Me.txtCommunity.Size = New System.Drawing.Size(201, 31)
-        Me.txtCommunity.TabIndex = 14
+        Me.txtCommunity.TabIndex = 3
         '
         'grpResult
         '
@@ -227,7 +227,7 @@ Partial Class frmRecommendationEngine
         Me.txtPriority.Name = "txtPriority"
         Me.txtPriority.ReadOnly = True
         Me.txtPriority.Size = New System.Drawing.Size(249, 31)
-        Me.txtPriority.TabIndex = 14
+        Me.txtPriority.TabIndex = 7
         '
         'txtScore
         '
@@ -236,7 +236,7 @@ Partial Class frmRecommendationEngine
         Me.txtScore.Name = "txtScore"
         Me.txtScore.ReadOnly = True
         Me.txtScore.Size = New System.Drawing.Size(249, 31)
-        Me.txtScore.TabIndex = 13
+        Me.txtScore.TabIndex = 6
         '
         'txtReason
         '
@@ -247,7 +247,7 @@ Partial Class frmRecommendationEngine
         Me.txtReason.ReadOnly = True
         Me.txtReason.ScrollBars = System.Windows.Forms.ScrollBars.Vertical
         Me.txtReason.Size = New System.Drawing.Size(281, 191)
-        Me.txtReason.TabIndex = 12
+        Me.txtReason.TabIndex = 8
         '
         'txtRecommendedRecipient
         '
@@ -256,7 +256,7 @@ Partial Class frmRecommendationEngine
         Me.txtRecommendedRecipient.Name = "txtRecommendedRecipient"
         Me.txtRecommendedRecipient.ReadOnly = True
         Me.txtRecommendedRecipient.Size = New System.Drawing.Size(249, 31)
-        Me.txtRecommendedRecipient.TabIndex = 11
+        Me.txtRecommendedRecipient.TabIndex = 5
         '
         'frmRecommendationEngine
         '

@@ -122,7 +122,7 @@ Partial Class frmDistribution
         Me.cmbProduce.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.cmbProduce.Name = "cmbProduce"
         Me.cmbProduce.Size = New System.Drawing.Size(306, 33)
-        Me.cmbProduce.TabIndex = 7
+        Me.cmbProduce.TabIndex = 0
         '
         'cmbRecipient
         '
@@ -133,7 +133,7 @@ Partial Class frmDistribution
         Me.cmbRecipient.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.cmbRecipient.Name = "cmbRecipient"
         Me.cmbRecipient.Size = New System.Drawing.Size(306, 33)
-        Me.cmbRecipient.TabIndex = 8
+        Me.cmbRecipient.TabIndex = 1
         '
         'cmbDistributionMethod
         '
@@ -144,7 +144,7 @@ Partial Class frmDistribution
         Me.cmbDistributionMethod.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.cmbDistributionMethod.Name = "cmbDistributionMethod"
         Me.cmbDistributionMethod.Size = New System.Drawing.Size(306, 33)
-        Me.cmbDistributionMethod.TabIndex = 9
+        Me.cmbDistributionMethod.TabIndex = 5
         '
         'txtAvailableQuantity
         '
@@ -155,7 +155,7 @@ Partial Class frmDistribution
         Me.txtAvailableQuantity.Name = "txtAvailableQuantity"
         Me.txtAvailableQuantity.ReadOnly = True
         Me.txtAvailableQuantity.Size = New System.Drawing.Size(306, 31)
-        Me.txtAvailableQuantity.TabIndex = 10
+        Me.txtAvailableQuantity.TabIndex = 2
         '
         'txtDistributionQuantity
         '
@@ -164,7 +164,7 @@ Partial Class frmDistribution
         Me.txtDistributionQuantity.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.txtDistributionQuantity.Name = "txtDistributionQuantity"
         Me.txtDistributionQuantity.Size = New System.Drawing.Size(306, 31)
-        Me.txtDistributionQuantity.TabIndex = 11
+        Me.txtDistributionQuantity.TabIndex = 3
         '
         'dtpDistributionDate
         '
@@ -174,7 +174,7 @@ Partial Class frmDistribution
         Me.dtpDistributionDate.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.dtpDistributionDate.Name = "dtpDistributionDate"
         Me.dtpDistributionDate.Size = New System.Drawing.Size(306, 31)
-        Me.dtpDistributionDate.TabIndex = 12
+        Me.dtpDistributionDate.TabIndex = 4
         '
         'btnDistribute
         '
@@ -185,7 +185,7 @@ Partial Class frmDistribution
         Me.btnDistribute.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.btnDistribute.Name = "btnDistribute"
         Me.btnDistribute.Size = New System.Drawing.Size(199, 62)
-        Me.btnDistribute.TabIndex = 13
+        Me.btnDistribute.TabIndex = 6
         Me.btnDistribute.Text = "&Distribute"
         Me.btnDistribute.UseVisualStyleBackColor = False
         '
@@ -198,7 +198,7 @@ Partial Class frmDistribution
         Me.btnClear.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.btnClear.Name = "btnClear"
         Me.btnClear.Size = New System.Drawing.Size(199, 62)
-        Me.btnClear.TabIndex = 14
+        Me.btnClear.TabIndex = 7
         Me.btnClear.Text = "&Clear"
         Me.btnClear.UseVisualStyleBackColor = False
         '

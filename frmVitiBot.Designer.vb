@@ -57,7 +57,7 @@ Partial Class frmVitiBot
         Me.txtMessage.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.txtMessage.Name = "txtMessage"
         Me.txtMessage.Size = New System.Drawing.Size(751, 26)
-        Me.txtMessage.TabIndex = 2
+        Me.txtMessage.TabIndex = 0
         '
         'btnClear
         '
@@ -67,7 +67,7 @@ Partial Class frmVitiBot
         Me.btnClear.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.btnClear.Name = "btnClear"
         Me.btnClear.Size = New System.Drawing.Size(348, 55)
-        Me.btnClear.TabIndex = 3
+        Me.btnClear.TabIndex = 2
         Me.btnClear.Text = "&Clear"
         Me.btnClear.UseVisualStyleBackColor = False
         '
@@ -79,7 +79,7 @@ Partial Class frmVitiBot
         Me.btnSend.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.btnSend.Name = "btnSend"
         Me.btnSend.Size = New System.Drawing.Size(348, 55)
-        Me.btnSend.TabIndex = 4
+        Me.btnSend.TabIndex = 1
         Me.btnSend.Text = "&Send"
         Me.btnSend.UseVisualStyleBackColor = False
         '

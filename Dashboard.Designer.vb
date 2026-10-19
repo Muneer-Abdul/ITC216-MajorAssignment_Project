@@ -167,7 +167,7 @@ Partial Class frmDashboard
         Me.btnBarter.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.btnBarter.Name = "btnBarter"
         Me.btnBarter.Size = New System.Drawing.Size(213, 49)
-        Me.btnBarter.TabIndex = 7
+        Me.btnBarter.TabIndex = 5
         Me.btnBarter.Text = "Barter"
         Me.btnBarter.UseVisualStyleBackColor = True
         '
@@ -181,7 +181,7 @@ Partial Class frmDashboard
         Me.btnLogout.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.btnLogout.Name = "btnLogout"
         Me.btnLogout.Size = New System.Drawing.Size(208, 52)
-        Me.btnLogout.TabIndex = 6
+        Me.btnLogout.TabIndex = 7
         Me.btnLogout.Text = "&Logout"
         Me.btnLogout.UseVisualStyleBackColor = False
         '
@@ -194,7 +194,7 @@ Partial Class frmDashboard
         Me.btnReports.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.btnReports.Name = "btnReports"
         Me.btnReports.Size = New System.Drawing.Size(213, 48)
-        Me.btnReports.TabIndex = 5
+        Me.btnReports.TabIndex = 6
         Me.btnReports.Text = "Reports"
         Me.btnReports.UseVisualStyleBackColor = True
         '

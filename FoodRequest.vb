@@ -307,5 +307,7 @@ Public Class frmFoodRequest
 
     End Function
 
+    Private Sub cmbRecipientType_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cmbRecipientType.SelectedIndexChanged
 
+    End Sub
 End Class

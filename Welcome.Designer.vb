@@ -51,7 +51,7 @@ Partial Class frmWelcome
         Me.btnContinue.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.btnContinue.Name = "btnContinue"
         Me.btnContinue.Size = New System.Drawing.Size(375, 48)
-        Me.btnContinue.TabIndex = 0
+        Me.btnContinue.TabIndex = 1
         Me.btnContinue.Text = "&Continue To Login "
         Me.btnContinue.UseVisualStyleBackColor = False
         Me.btnContinue.UseWaitCursor = True
@@ -128,7 +128,7 @@ Partial Class frmWelcome
         Me.grpLanguage.Name = "grpLanguage"
         Me.grpLanguage.Padding = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.grpLanguage.Size = New System.Drawing.Size(152, 149)
-        Me.grpLanguage.TabIndex = 6
+        Me.grpLanguage.TabIndex = 0
         Me.grpLanguage.TabStop = False
         '
         'rdoFijiHindi
@@ -176,7 +176,7 @@ Partial Class frmWelcome
         Me.btnExit.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.btnExit.Name = "btnExit"
         Me.btnExit.Size = New System.Drawing.Size(375, 38)
-        Me.btnExit.TabIndex = 7
+        Me.btnExit.TabIndex = 2
         Me.btnExit.Text = "E&xit"
         Me.btnExit.UseVisualStyleBackColor = False
         '

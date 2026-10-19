@@ -102,7 +102,7 @@ Partial Class frmSurplus
         Me.txtProduceName.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.txtProduceName.Name = "txtProduceName"
         Me.txtProduceName.Size = New System.Drawing.Size(314, 31)
-        Me.txtProduceName.TabIndex = 5
+        Me.txtProduceName.TabIndex = 0
         '
         'txtQuantity
         '
@@ -111,7 +111,7 @@ Partial Class frmSurplus
         Me.txtQuantity.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.txtQuantity.Name = "txtQuantity"
         Me.txtQuantity.Size = New System.Drawing.Size(314, 31)
-        Me.txtQuantity.TabIndex = 6
+        Me.txtQuantity.TabIndex = 1
         '
         'cmbDonor
         '
@@ -121,7 +121,7 @@ Partial Class frmSurplus
         Me.cmbDonor.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.cmbDonor.Name = "cmbDonor"
         Me.cmbDonor.Size = New System.Drawing.Size(314, 33)
-        Me.cmbDonor.TabIndex = 7
+        Me.cmbDonor.TabIndex = 2
         '
         'dtpExpiryDate
         '
@@ -131,7 +131,7 @@ Partial Class frmSurplus
         Me.dtpExpiryDate.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.dtpExpiryDate.Name = "dtpExpiryDate"
         Me.dtpExpiryDate.Size = New System.Drawing.Size(314, 31)
-        Me.dtpExpiryDate.TabIndex = 8
+        Me.dtpExpiryDate.TabIndex = 3
         '
         'btnAdd
         '
@@ -142,7 +142,7 @@ Partial Class frmSurplus
         Me.btnAdd.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.btnAdd.Name = "btnAdd"
         Me.btnAdd.Size = New System.Drawing.Size(234, 59)
-        Me.btnAdd.TabIndex = 9
+        Me.btnAdd.TabIndex = 6
         Me.btnAdd.Text = "&Add"
         Me.btnAdd.UseVisualStyleBackColor = False
         '
@@ -155,7 +155,7 @@ Partial Class frmSurplus
         Me.btnUpdate.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.btnUpdate.Name = "btnUpdate"
         Me.btnUpdate.Size = New System.Drawing.Size(234, 59)
-        Me.btnUpdate.TabIndex = 10
+        Me.btnUpdate.TabIndex = 7
         Me.btnUpdate.Text = "&Update"
         Me.btnUpdate.UseVisualStyleBackColor = False
         '
@@ -168,7 +168,7 @@ Partial Class frmSurplus
         Me.btnClear.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.btnClear.Name = "btnClear"
         Me.btnClear.Size = New System.Drawing.Size(234, 59)
-        Me.btnClear.TabIndex = 11
+        Me.btnClear.TabIndex = 8
         Me.btnClear.Text = "&Clear"
         Me.btnClear.UseVisualStyleBackColor = False
         '
@@ -181,7 +181,7 @@ Partial Class frmSurplus
         Me.btnDelete.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.btnDelete.Name = "btnDelete"
         Me.btnDelete.Size = New System.Drawing.Size(234, 59)
-        Me.btnDelete.TabIndex = 12
+        Me.btnDelete.TabIndex = 9
         Me.btnDelete.Text = "&Delete"
         Me.btnDelete.UseVisualStyleBackColor = False
         '
@@ -224,7 +224,7 @@ Partial Class frmSurplus
         Me.cmbProduceSource.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.cmbProduceSource.Name = "cmbProduceSource"
         Me.cmbProduceSource.Size = New System.Drawing.Size(314, 33)
-        Me.cmbProduceSource.TabIndex = 16
+        Me.cmbProduceSource.TabIndex = 4
         '
         'txtCommunity
         '
@@ -233,7 +233,7 @@ Partial Class frmSurplus
         Me.txtCommunity.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.txtCommunity.Name = "txtCommunity"
         Me.txtCommunity.Size = New System.Drawing.Size(314, 31)
-        Me.txtCommunity.TabIndex = 17
+        Me.txtCommunity.TabIndex = 5
         '
         'frmSurplus
         '

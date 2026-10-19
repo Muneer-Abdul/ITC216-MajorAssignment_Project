@@ -131,7 +131,7 @@ Partial Class frmFoodRequest
         Me.txtRequesterName.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.txtRequesterName.Name = "txtRequesterName"
         Me.txtRequesterName.Size = New System.Drawing.Size(194, 31)
-        Me.txtRequesterName.TabIndex = 8
+        Me.txtRequesterName.TabIndex = 0
         '
         'txtFoodNeeded
         '
@@ -140,7 +140,7 @@ Partial Class frmFoodRequest
         Me.txtFoodNeeded.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.txtFoodNeeded.Name = "txtFoodNeeded"
         Me.txtFoodNeeded.Size = New System.Drawing.Size(194, 31)
-        Me.txtFoodNeeded.TabIndex = 9
+        Me.txtFoodNeeded.TabIndex = 1
         '
         'txtQuantityNeeded
         '
@@ -149,7 +149,7 @@ Partial Class frmFoodRequest
         Me.txtQuantityNeeded.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.txtQuantityNeeded.Name = "txtQuantityNeeded"
         Me.txtQuantityNeeded.Size = New System.Drawing.Size(194, 31)
-        Me.txtQuantityNeeded.TabIndex = 10
+        Me.txtQuantityNeeded.TabIndex = 2
         '
         'txtCommunity
         '
@@ -158,7 +158,7 @@ Partial Class frmFoodRequest
         Me.txtCommunity.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.txtCommunity.Name = "txtCommunity"
         Me.txtCommunity.Size = New System.Drawing.Size(194, 31)
-        Me.txtCommunity.TabIndex = 11
+        Me.txtCommunity.TabIndex = 3
         '
         'txtRequestReason
         '
@@ -167,7 +167,7 @@ Partial Class frmFoodRequest
         Me.txtRequestReason.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.txtRequestReason.Name = "txtRequestReason"
         Me.txtRequestReason.Size = New System.Drawing.Size(194, 31)
-        Me.txtRequestReason.TabIndex = 12
+        Me.txtRequestReason.TabIndex = 4
         '
         'cmbRecipientType
         '
@@ -177,7 +177,7 @@ Partial Class frmFoodRequest
         Me.cmbRecipientType.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.cmbRecipientType.Name = "cmbRecipientType"
         Me.cmbRecipientType.Size = New System.Drawing.Size(194, 33)
-        Me.cmbRecipientType.TabIndex = 13
+        Me.cmbRecipientType.TabIndex = 6
         '
         'cmbUrgency
         '
@@ -187,7 +187,7 @@ Partial Class frmFoodRequest
         Me.cmbUrgency.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.cmbUrgency.Name = "cmbUrgency"
         Me.cmbUrgency.Size = New System.Drawing.Size(194, 33)
-        Me.cmbUrgency.TabIndex = 14
+        Me.cmbUrgency.TabIndex = 5
         '
         'btnSubmitRequest
         '
@@ -198,7 +198,7 @@ Partial Class frmFoodRequest
         Me.btnSubmitRequest.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.btnSubmitRequest.Name = "btnSubmitRequest"
         Me.btnSubmitRequest.Size = New System.Drawing.Size(158, 70)
-        Me.btnSubmitRequest.TabIndex = 15
+        Me.btnSubmitRequest.TabIndex = 7
         Me.btnSubmitRequest.Text = "&Submit Request"
         Me.btnSubmitRequest.UseVisualStyleBackColor = False
         '
@@ -211,7 +211,7 @@ Partial Class frmFoodRequest
         Me.btnClear.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.btnClear.Name = "btnClear"
         Me.btnClear.Size = New System.Drawing.Size(158, 70)
-        Me.btnClear.TabIndex = 16
+        Me.btnClear.TabIndex = 8
         Me.btnClear.Text = "&Clear"
         Me.btnClear.UseVisualStyleBackColor = False
         '

@@ -111,7 +111,7 @@ Partial Class frmRecipients
         Me.txtRecipientName.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.txtRecipientName.Name = "txtRecipientName"
         Me.txtRecipientName.Size = New System.Drawing.Size(209, 31)
-        Me.txtRecipientName.TabIndex = 6
+        Me.txtRecipientName.TabIndex = 0
         '
         'txtOrganisation
         '
@@ -120,7 +120,7 @@ Partial Class frmRecipients
         Me.txtOrganisation.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.txtOrganisation.Name = "txtOrganisation"
         Me.txtOrganisation.Size = New System.Drawing.Size(209, 31)
-        Me.txtOrganisation.TabIndex = 7
+        Me.txtOrganisation.TabIndex = 1
         '
         'txtContactNumber
         '
@@ -129,7 +129,7 @@ Partial Class frmRecipients
         Me.txtContactNumber.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.txtContactNumber.Name = "txtContactNumber"
         Me.txtContactNumber.Size = New System.Drawing.Size(209, 31)
-        Me.txtContactNumber.TabIndex = 8
+        Me.txtContactNumber.TabIndex = 2
         '
         'txtCommunity
         '
@@ -138,7 +138,7 @@ Partial Class frmRecipients
         Me.txtCommunity.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.txtCommunity.Name = "txtCommunity"
         Me.txtCommunity.Size = New System.Drawing.Size(209, 31)
-        Me.txtCommunity.TabIndex = 9
+        Me.txtCommunity.TabIndex = 3
         '
         'txtLocation
         '
@@ -147,7 +147,7 @@ Partial Class frmRecipients
         Me.txtLocation.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.txtLocation.Name = "txtLocation"
         Me.txtLocation.Size = New System.Drawing.Size(209, 31)
-        Me.txtLocation.TabIndex = 10
+        Me.txtLocation.TabIndex = 4
         '
         'Label7
         '
@@ -169,7 +169,7 @@ Partial Class frmRecipients
         Me.cmbRecipientType.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.cmbRecipientType.Name = "cmbRecipientType"
         Me.cmbRecipientType.Size = New System.Drawing.Size(209, 33)
-        Me.cmbRecipientType.TabIndex = 13
+        Me.cmbRecipientType.TabIndex = 5
         '
         'btnAdd
         '
@@ -180,7 +180,7 @@ Partial Class frmRecipients
         Me.btnAdd.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.btnAdd.Name = "btnAdd"
         Me.btnAdd.Size = New System.Drawing.Size(213, 58)
-        Me.btnAdd.TabIndex = 14
+        Me.btnAdd.TabIndex = 6
         Me.btnAdd.Text = "&Add"
         Me.btnAdd.UseVisualStyleBackColor = False
         '
@@ -193,7 +193,7 @@ Partial Class frmRecipients
         Me.btnUpdate.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.btnUpdate.Name = "btnUpdate"
         Me.btnUpdate.Size = New System.Drawing.Size(213, 58)
-        Me.btnUpdate.TabIndex = 15
+        Me.btnUpdate.TabIndex = 7
         Me.btnUpdate.Text = "&Update"
         Me.btnUpdate.UseVisualStyleBackColor = False
         '
@@ -206,7 +206,7 @@ Partial Class frmRecipients
         Me.btnDelete.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.btnDelete.Name = "btnDelete"
         Me.btnDelete.Size = New System.Drawing.Size(213, 56)
-        Me.btnDelete.TabIndex = 16
+        Me.btnDelete.TabIndex = 9
         Me.btnDelete.Text = "&Delete"
         Me.btnDelete.UseVisualStyleBackColor = False
         '
@@ -219,7 +219,7 @@ Partial Class frmRecipients
         Me.btnClear.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.btnClear.Name = "btnClear"
         Me.btnClear.Size = New System.Drawing.Size(213, 58)
-        Me.btnClear.TabIndex = 17
+        Me.btnClear.TabIndex = 8
         Me.btnClear.Text = "&Clear"
         Me.btnClear.UseVisualStyleBackColor = False
         '

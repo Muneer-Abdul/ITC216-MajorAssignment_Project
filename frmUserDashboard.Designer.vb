@@ -76,7 +76,7 @@ Partial Class frmUserDashboard
         Me.btnGiveFood.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.btnGiveFood.Name = "btnGiveFood"
         Me.btnGiveFood.Size = New System.Drawing.Size(156, 98)
-        Me.btnGiveFood.TabIndex = 2
+        Me.btnGiveFood.TabIndex = 0
         Me.btnGiveFood.Text = "Give Food"
         Me.btnGiveFood.UseVisualStyleBackColor = False
         '
@@ -91,7 +91,7 @@ Partial Class frmUserDashboard
         Me.btnRequestFood.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.btnRequestFood.Name = "btnRequestFood"
         Me.btnRequestFood.Size = New System.Drawing.Size(156, 92)
-        Me.btnRequestFood.TabIndex = 3
+        Me.btnRequestFood.TabIndex = 1
         Me.btnRequestFood.Text = "Request Food"
         Me.btnRequestFood.UseVisualStyleBackColor = False
         '
@@ -106,7 +106,7 @@ Partial Class frmUserDashboard
         Me.btnBarter.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.btnBarter.Name = "btnBarter"
         Me.btnBarter.Size = New System.Drawing.Size(156, 92)
-        Me.btnBarter.TabIndex = 5
+        Me.btnBarter.TabIndex = 2
         Me.btnBarter.Text = "Barter System"
         Me.btnBarter.UseVisualStyleBackColor = False
         '
@@ -121,7 +121,7 @@ Partial Class frmUserDashboard
         Me.btnLogout.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.btnLogout.Name = "btnLogout"
         Me.btnLogout.Size = New System.Drawing.Size(156, 92)
-        Me.btnLogout.TabIndex = 6
+        Me.btnLogout.TabIndex = 3
         Me.btnLogout.Text = "&Logout"
         Me.btnLogout.UseVisualStyleBackColor = False
         '

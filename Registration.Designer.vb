@@ -95,7 +95,7 @@ Partial Class frmRegistration
         Me.txtFullName.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.txtFullName.Name = "txtFullName"
         Me.txtFullName.Size = New System.Drawing.Size(220, 31)
-        Me.txtFullName.TabIndex = 4
+        Me.txtFullName.TabIndex = 0
         '
         'txtUsername
         '
@@ -106,7 +106,7 @@ Partial Class frmRegistration
         Me.txtUsername.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.txtUsername.Name = "txtUsername"
         Me.txtUsername.Size = New System.Drawing.Size(220, 31)
-        Me.txtUsername.TabIndex = 5
+        Me.txtUsername.TabIndex = 1
         '
         'txtPassword
         '
@@ -117,7 +117,7 @@ Partial Class frmRegistration
         Me.txtPassword.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.txtPassword.Name = "txtPassword"
         Me.txtPassword.Size = New System.Drawing.Size(220, 31)
-        Me.txtPassword.TabIndex = 6
+        Me.txtPassword.TabIndex = 2
         '
         'Label5
         '
@@ -138,7 +138,7 @@ Partial Class frmRegistration
         Me.txtConfirmPassword.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.txtConfirmPassword.Name = "txtConfirmPassword"
         Me.txtConfirmPassword.Size = New System.Drawing.Size(220, 31)
-        Me.txtConfirmPassword.TabIndex = 8
+        Me.txtConfirmPassword.TabIndex = 3
         '
         'Label6
         '
@@ -161,7 +161,7 @@ Partial Class frmRegistration
         Me.cmbRole.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.cmbRole.Name = "cmbRole"
         Me.cmbRole.Size = New System.Drawing.Size(220, 33)
-        Me.cmbRole.TabIndex = 10
+        Me.cmbRole.TabIndex = 4
         '
         'btnRegister
         '
@@ -173,7 +173,7 @@ Partial Class frmRegistration
         Me.btnRegister.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.btnRegister.Name = "btnRegister"
         Me.btnRegister.Size = New System.Drawing.Size(348, 45)
-        Me.btnRegister.TabIndex = 11
+        Me.btnRegister.TabIndex = 5
         Me.btnRegister.Text = "&Register"
         Me.btnRegister.UseVisualStyleBackColor = False
         '
@@ -186,7 +186,7 @@ Partial Class frmRegistration
         Me.btnBack.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.btnBack.Name = "btnBack"
         Me.btnBack.Size = New System.Drawing.Size(348, 45)
-        Me.btnBack.TabIndex = 12
+        Me.btnBack.TabIndex = 6
         Me.btnBack.Text = "&Back To Login"
         Me.btnBack.UseVisualStyleBackColor = False
         '
