@@ -55,10 +55,9 @@ Partial Class frmDashboard
         Me.pnlHeader.Controls.Add(Me.picProfile)
         Me.pnlHeader.Controls.Add(Me.lblUserLoggedIn)
         Me.pnlHeader.Controls.Add(Me.Label1)
-        Me.pnlHeader.Location = New System.Drawing.Point(-11, -4)
-        Me.pnlHeader.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.pnlHeader.Location = New System.Drawing.Point(-10, -3)
         Me.pnlHeader.Name = "pnlHeader"
-        Me.pnlHeader.Size = New System.Drawing.Size(1612, 107)
+        Me.pnlHeader.Size = New System.Drawing.Size(1433, 86)
         Me.pnlHeader.TabIndex = 0
         '
         'lblDashboard
@@ -66,9 +65,9 @@ Partial Class frmDashboard
         Me.lblDashboard.AutoSize = True
         Me.lblDashboard.Font = New System.Drawing.Font("Segoe UI", 16.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblDashboard.ForeColor = System.Drawing.Color.FromArgb(CType(CType(10, Byte), Integer), CType(CType(65, Byte), Integer), CType(CType(45, Byte), Integer))
-        Me.lblDashboard.Location = New System.Drawing.Point(828, 60)
+        Me.lblDashboard.Location = New System.Drawing.Point(736, 48)
         Me.lblDashboard.Name = "lblDashboard"
-        Me.lblDashboard.Size = New System.Drawing.Size(184, 45)
+        Me.lblDashboard.Size = New System.Drawing.Size(157, 37)
         Me.lblDashboard.TabIndex = 11
         Me.lblDashboard.Text = "Dashboard"
         '
@@ -76,9 +75,9 @@ Partial Class frmDashboard
         '
         Me.lblSubheading.AutoSize = True
         Me.lblSubheading.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblSubheading.Location = New System.Drawing.Point(39, 60)
+        Me.lblSubheading.Location = New System.Drawing.Point(35, 48)
         Me.lblSubheading.Name = "lblSubheading"
-        Me.lblSubheading.Size = New System.Drawing.Size(285, 20)
+        Me.lblSubheading.Size = New System.Drawing.Size(251, 17)
         Me.lblSubheading.TabIndex = 10
         Me.lblSubheading.Text = "Community Food Surplus Management"
         '
@@ -86,10 +85,9 @@ Partial Class frmDashboard
         '
         Me.picProfile.Cursor = System.Windows.Forms.Cursors.Hand
         Me.picProfile.Image = CType(resources.GetObject("picProfile.Image"), System.Drawing.Image)
-        Me.picProfile.Location = New System.Drawing.Point(1505, 18)
-        Me.picProfile.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.picProfile.Location = New System.Drawing.Point(1338, 14)
         Me.picProfile.Name = "picProfile"
-        Me.picProfile.Size = New System.Drawing.Size(70, 62)
+        Me.picProfile.Size = New System.Drawing.Size(62, 50)
         Me.picProfile.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.picProfile.TabIndex = 9
         Me.picProfile.TabStop = False
@@ -99,9 +97,9 @@ Partial Class frmDashboard
         Me.lblUserLoggedIn.AutoSize = True
         Me.lblUserLoggedIn.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblUserLoggedIn.ForeColor = System.Drawing.Color.Black
-        Me.lblUserLoggedIn.Location = New System.Drawing.Point(1221, 35)
+        Me.lblUserLoggedIn.Location = New System.Drawing.Point(1085, 28)
         Me.lblUserLoggedIn.Name = "lblUserLoggedIn"
-        Me.lblUserLoggedIn.Size = New System.Drawing.Size(132, 25)
+        Me.lblUserLoggedIn.Size = New System.Drawing.Size(109, 20)
         Me.lblUserLoggedIn.TabIndex = 1
         Me.lblUserLoggedIn.Text = "Logged in User"
         '
@@ -110,9 +108,9 @@ Partial Class frmDashboard
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Segoe UI", 20.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.Color.Black
-        Me.Label1.Location = New System.Drawing.Point(32, 8)
+        Me.Label1.Location = New System.Drawing.Point(28, 6)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(270, 54)
+        Me.Label1.Size = New System.Drawing.Size(233, 46)
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "Viti FoodLink"
         '
@@ -129,20 +127,18 @@ Partial Class frmDashboard
         Me.pnlSidebar.Controls.Add(Me.btnRecommendation)
         Me.pnlSidebar.Controls.Add(Me.btnRecipients)
         Me.pnlSidebar.Controls.Add(Me.btnSupplies)
-        Me.pnlSidebar.Location = New System.Drawing.Point(1, 102)
-        Me.pnlSidebar.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.pnlSidebar.Location = New System.Drawing.Point(1, 82)
         Me.pnlSidebar.Name = "pnlSidebar"
-        Me.pnlSidebar.Size = New System.Drawing.Size(282, 930)
+        Me.pnlSidebar.Size = New System.Drawing.Size(251, 744)
         Me.pnlSidebar.TabIndex = 1
         '
         'PictureBox1
         '
         Me.PictureBox1.Cursor = System.Windows.Forms.Cursors.Hand
         Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
-        Me.PictureBox1.Location = New System.Drawing.Point(92, 742)
-        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.PictureBox1.Location = New System.Drawing.Point(82, 594)
         Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(78, 70)
+        Me.PictureBox1.Size = New System.Drawing.Size(69, 56)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox1.TabIndex = 10
         Me.PictureBox1.TabStop = False
@@ -152,9 +148,9 @@ Partial Class frmDashboard
         Me.lblMainMenu.AutoSize = True
         Me.lblMainMenu.Font = New System.Drawing.Font("Segoe UI", 20.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblMainMenu.ForeColor = System.Drawing.Color.White
-        Me.lblMainMenu.Location = New System.Drawing.Point(19, 52)
+        Me.lblMainMenu.Location = New System.Drawing.Point(17, 42)
         Me.lblMainMenu.Name = "lblMainMenu"
-        Me.lblMainMenu.Size = New System.Drawing.Size(237, 54)
+        Me.lblMainMenu.Size = New System.Drawing.Size(204, 46)
         Me.lblMainMenu.TabIndex = 10
         Me.lblMainMenu.Text = "Main Menu"
         '
@@ -163,10 +159,9 @@ Partial Class frmDashboard
         Me.btnBarter.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnBarter.Font = New System.Drawing.Font("Segoe UI", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnBarter.ForeColor = System.Drawing.Color.White
-        Me.btnBarter.Location = New System.Drawing.Point(33, 582)
-        Me.btnBarter.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.btnBarter.Location = New System.Drawing.Point(29, 466)
         Me.btnBarter.Name = "btnBarter"
-        Me.btnBarter.Size = New System.Drawing.Size(213, 49)
+        Me.btnBarter.Size = New System.Drawing.Size(189, 39)
         Me.btnBarter.TabIndex = 5
         Me.btnBarter.Text = "Barter"
         Me.btnBarter.UseVisualStyleBackColor = True
@@ -177,10 +172,9 @@ Partial Class frmDashboard
         Me.btnLogout.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnLogout.Font = New System.Drawing.Font("Segoe UI", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnLogout.ForeColor = System.Drawing.Color.White
-        Me.btnLogout.Location = New System.Drawing.Point(36, 842)
-        Me.btnLogout.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.btnLogout.Location = New System.Drawing.Point(32, 674)
         Me.btnLogout.Name = "btnLogout"
-        Me.btnLogout.Size = New System.Drawing.Size(208, 52)
+        Me.btnLogout.Size = New System.Drawing.Size(185, 42)
         Me.btnLogout.TabIndex = 7
         Me.btnLogout.Text = "&Logout"
         Me.btnLogout.UseVisualStyleBackColor = False
@@ -190,10 +184,9 @@ Partial Class frmDashboard
         Me.btnReports.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnReports.Font = New System.Drawing.Font("Segoe UI", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnReports.ForeColor = System.Drawing.Color.White
-        Me.btnReports.Location = New System.Drawing.Point(33, 662)
-        Me.btnReports.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.btnReports.Location = New System.Drawing.Point(29, 530)
         Me.btnReports.Name = "btnReports"
-        Me.btnReports.Size = New System.Drawing.Size(213, 48)
+        Me.btnReports.Size = New System.Drawing.Size(189, 38)
         Me.btnReports.TabIndex = 6
         Me.btnReports.Text = "Reports"
         Me.btnReports.UseVisualStyleBackColor = True
@@ -203,10 +196,9 @@ Partial Class frmDashboard
         Me.btnExchange.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnExchange.Font = New System.Drawing.Font("Segoe UI", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnExchange.ForeColor = System.Drawing.Color.White
-        Me.btnExchange.Location = New System.Drawing.Point(30, 498)
-        Me.btnExchange.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.btnExchange.Location = New System.Drawing.Point(27, 398)
         Me.btnExchange.Name = "btnExchange"
-        Me.btnExchange.Size = New System.Drawing.Size(213, 51)
+        Me.btnExchange.Size = New System.Drawing.Size(189, 41)
         Me.btnExchange.TabIndex = 4
         Me.btnExchange.Text = "Food Exchange"
         Me.btnExchange.UseVisualStyleBackColor = True
@@ -216,10 +208,9 @@ Partial Class frmDashboard
         Me.btnDistribution.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnDistribution.Font = New System.Drawing.Font("Segoe UI", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnDistribution.ForeColor = System.Drawing.Color.White
-        Me.btnDistribution.Location = New System.Drawing.Point(32, 418)
-        Me.btnDistribution.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.btnDistribution.Location = New System.Drawing.Point(28, 334)
         Me.btnDistribution.Name = "btnDistribution"
-        Me.btnDistribution.Size = New System.Drawing.Size(213, 49)
+        Me.btnDistribution.Size = New System.Drawing.Size(189, 39)
         Me.btnDistribution.TabIndex = 3
         Me.btnDistribution.Text = "Distribution"
         Me.btnDistribution.UseVisualStyleBackColor = True
@@ -229,10 +220,9 @@ Partial Class frmDashboard
         Me.btnRecommendation.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnRecommendation.Font = New System.Drawing.Font("Segoe UI", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnRecommendation.ForeColor = System.Drawing.Color.White
-        Me.btnRecommendation.Location = New System.Drawing.Point(30, 332)
-        Me.btnRecommendation.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.btnRecommendation.Location = New System.Drawing.Point(27, 266)
         Me.btnRecommendation.Name = "btnRecommendation"
-        Me.btnRecommendation.Size = New System.Drawing.Size(213, 52)
+        Me.btnRecommendation.Size = New System.Drawing.Size(189, 42)
         Me.btnRecommendation.TabIndex = 2
         Me.btnRecommendation.Text = "Recommendation"
         Me.btnRecommendation.UseVisualStyleBackColor = True
@@ -242,10 +232,9 @@ Partial Class frmDashboard
         Me.btnRecipients.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnRecipients.Font = New System.Drawing.Font("Segoe UI", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnRecipients.ForeColor = System.Drawing.Color.White
-        Me.btnRecipients.Location = New System.Drawing.Point(33, 248)
-        Me.btnRecipients.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.btnRecipients.Location = New System.Drawing.Point(29, 198)
         Me.btnRecipients.Name = "btnRecipients"
-        Me.btnRecipients.Size = New System.Drawing.Size(213, 52)
+        Me.btnRecipients.Size = New System.Drawing.Size(189, 42)
         Me.btnRecipients.TabIndex = 1
         Me.btnRecipients.Text = "Recipients"
         Me.btnRecipients.UseVisualStyleBackColor = True
@@ -255,33 +244,31 @@ Partial Class frmDashboard
         Me.btnSupplies.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnSupplies.Font = New System.Drawing.Font("Segoe UI", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnSupplies.ForeColor = System.Drawing.Color.White
-        Me.btnSupplies.Location = New System.Drawing.Point(33, 172)
-        Me.btnSupplies.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.btnSupplies.Location = New System.Drawing.Point(29, 138)
         Me.btnSupplies.Name = "btnSupplies"
-        Me.btnSupplies.Size = New System.Drawing.Size(213, 46)
+        Me.btnSupplies.Size = New System.Drawing.Size(189, 37)
         Me.btnSupplies.TabIndex = 0
         Me.btnSupplies.Text = "Surplus"
         Me.btnSupplies.UseVisualStyleBackColor = True
         '
         'pnlContent
         '
-        Me.pnlContent.Location = New System.Drawing.Point(287, 102)
-        Me.pnlContent.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.pnlContent.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
+        Me.pnlContent.Location = New System.Drawing.Point(255, 82)
         Me.pnlContent.Name = "pnlContent"
-        Me.pnlContent.Size = New System.Drawing.Size(1308, 930)
+        Me.pnlContent.Size = New System.Drawing.Size(1163, 744)
         Me.pnlContent.TabIndex = 2
         '
         'frmDashboard
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(249, Byte), Integer), CType(CType(247, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(1609, 1034)
+        Me.ClientSize = New System.Drawing.Size(1430, 827)
         Me.Controls.Add(Me.pnlContent)
         Me.Controls.Add(Me.pnlSidebar)
         Me.Controls.Add(Me.pnlHeader)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
-        Me.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "frmDashboard"
