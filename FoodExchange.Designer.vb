@@ -40,12 +40,11 @@ Partial Class frmFoodExchange
         Me.btnGiveFood.Font = New System.Drawing.Font("Segoe UI", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnGiveFood.ForeColor = System.Drawing.Color.White
         Me.btnGiveFood.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnGiveFood.Location = New System.Drawing.Point(230, 391)
-        Me.btnGiveFood.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.btnGiveFood.Location = New System.Drawing.Point(204, 313)
         Me.btnGiveFood.Name = "btnGiveFood"
-        Me.btnGiveFood.Size = New System.Drawing.Size(336, 129)
+        Me.btnGiveFood.Size = New System.Drawing.Size(299, 103)
         Me.btnGiveFood.TabIndex = 0
-        Me.btnGiveFood.Text = "GIVE FOOD"
+        Me.btnGiveFood.Text = "&GIVE FOOD"
         Me.btnGiveFood.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
         Me.btnGiveFood.UseVisualStyleBackColor = False
         '
@@ -55,12 +54,11 @@ Partial Class frmFoodExchange
         Me.btnRequestFood.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnRequestFood.Font = New System.Drawing.Font("Segoe UI", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnRequestFood.ForeColor = System.Drawing.Color.White
-        Me.btnRequestFood.Location = New System.Drawing.Point(725, 391)
-        Me.btnRequestFood.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.btnRequestFood.Location = New System.Drawing.Point(644, 313)
         Me.btnRequestFood.Name = "btnRequestFood"
-        Me.btnRequestFood.Size = New System.Drawing.Size(336, 129)
+        Me.btnRequestFood.Size = New System.Drawing.Size(299, 103)
         Me.btnRequestFood.TabIndex = 1
-        Me.btnRequestFood.Text = "REQUEST FOOD"
+        Me.btnRequestFood.Text = "&REQUEST FOOD"
         Me.btnRequestFood.UseVisualStyleBackColor = False
         '
         'Label1
@@ -68,9 +66,9 @@ Partial Class frmFoodExchange
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Segoe UI", 14.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(10, Byte), Integer), CType(CType(65, Byte), Integer), CType(CType(45, Byte), Integer))
-        Me.Label1.Location = New System.Drawing.Point(1050, 19)
+        Me.Label1.Location = New System.Drawing.Point(933, 15)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(223, 38)
+        Me.Label1.Size = New System.Drawing.Size(193, 32)
         Me.Label1.TabIndex = 3
         Me.Label1.Text = " Food Exchange"
         '
@@ -78,18 +76,19 @@ Partial Class frmFoodExchange
         '
         Me.lbloption.AutoSize = True
         Me.lbloption.Font = New System.Drawing.Font("Segoe UI", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lbloption.Location = New System.Drawing.Point(508, 318)
+        Me.lbloption.Location = New System.Drawing.Point(452, 254)
         Me.lbloption.Name = "lbloption"
-        Me.lbloption.Size = New System.Drawing.Size(272, 28)
+        Me.lbloption.Size = New System.Drawing.Size(239, 23)
         Me.lbloption.TabIndex = 5
         Me.lbloption.Text = "Choose an option to continue"
         '
         'PictureBox1
         '
         Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
-        Me.PictureBox1.Location = New System.Drawing.Point(873, 398)
+        Me.PictureBox1.Location = New System.Drawing.Point(776, 318)
+        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(45, 41)
+        Me.PictureBox1.Size = New System.Drawing.Size(40, 33)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox1.TabIndex = 6
         Me.PictureBox1.TabStop = False
@@ -97,25 +96,25 @@ Partial Class frmFoodExchange
         'PictureBox2
         '
         Me.PictureBox2.Image = CType(resources.GetObject("PictureBox2.Image"), System.Drawing.Image)
-        Me.PictureBox2.Location = New System.Drawing.Point(380, 398)
+        Me.PictureBox2.Location = New System.Drawing.Point(338, 318)
+        Me.PictureBox2.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.PictureBox2.Name = "PictureBox2"
-        Me.PictureBox2.Size = New System.Drawing.Size(43, 38)
+        Me.PictureBox2.Size = New System.Drawing.Size(38, 30)
         Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox2.TabIndex = 7
         Me.PictureBox2.TabStop = False
         '
         'frmFoodExchange
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1293, 959)
+        Me.ClientSize = New System.Drawing.Size(1149, 767)
         Me.Controls.Add(Me.PictureBox2)
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.lbloption)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.btnRequestFood)
         Me.Controls.Add(Me.btnGiveFood)
-        Me.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.Name = "frmFoodExchange"
         Me.Text = "FoodExchange"
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()

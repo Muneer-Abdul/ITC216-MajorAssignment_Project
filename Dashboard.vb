@@ -158,14 +158,14 @@ Public Class frmDashboard
 
             Case "English"
 
-                btnSupplies.Text = "Supplies"
-                btnRecipients.Text = "Recipients"
-                btnRecommendation.Text = "Recommendation"
-                btnDistribution.Text = "Distribution"
-                btnExchange.Text = "Food Exchange"
-                btnBarter.Text = "Barter"
-                btnReports.Text = "Reports"
-                btnLogout.Text = "Logout"
+                btnSupplies.Text = "&Supplies"
+                btnRecipients.Text = "&Recipients"
+                btnRecommendation.Text = "Re&commendation"
+                btnDistribution.Text = "&Distribution"
+                btnExchange.Text = "&Food Exchange"
+                btnBarter.Text = "&Barter"
+                btnReports.Text = "&Reports"
+                btnLogout.Text = "&Logout"
 
                 lblUserLoggedIn.Text =
                     "Logged in: " & loggedInName &

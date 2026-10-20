@@ -257,9 +257,9 @@ Public Class frmUserProfile
             lblRole.Text = "Role"
             lblStatus.Text = "Status"
 
-            btnEdit.Text = "Edit"
-            btnSave.Text = "Save"
-            btnCancel.Text = "Cancel"
+            btnEdit.Text = "&Edit"
+            btnSave.Text = "&Save"
+            btnCancel.Text = "&Cancel"
 
 
         ElseIf LanguageHelper.CurrentLanguage = "Itaukei" Then

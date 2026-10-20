@@ -134,7 +134,7 @@ Partial Class frmWelcome
         Me.rdoFijiHindi.Name = "rdoFijiHindi"
         Me.rdoFijiHindi.Size = New System.Drawing.Size(91, 24)
         Me.rdoFijiHindi.TabIndex = 2
-        Me.rdoFijiHindi.Text = "Fiji Hindi"
+        Me.rdoFijiHindi.Text = "&Fiji Hindi"
         Me.rdoFijiHindi.UseVisualStyleBackColor = True
         '
         'rdoItaukei
@@ -144,7 +144,7 @@ Partial Class frmWelcome
         Me.rdoItaukei.Name = "rdoItaukei"
         Me.rdoItaukei.Size = New System.Drawing.Size(78, 24)
         Me.rdoItaukei.TabIndex = 1
-        Me.rdoItaukei.Text = "Itaukei"
+        Me.rdoItaukei.Text = "&Itaukei"
         Me.rdoItaukei.UseVisualStyleBackColor = True
         '
         'rdoEnglish
@@ -156,7 +156,7 @@ Partial Class frmWelcome
         Me.rdoEnglish.Size = New System.Drawing.Size(80, 24)
         Me.rdoEnglish.TabIndex = 0
         Me.rdoEnglish.TabStop = True
-        Me.rdoEnglish.Text = "English"
+        Me.rdoEnglish.Text = "&English"
         Me.rdoEnglish.UseVisualStyleBackColor = True
         '
         'btnExit

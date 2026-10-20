@@ -44,9 +44,9 @@ Partial Class frmUserProfile
         Me.lblTitle.AutoSize = True
         Me.lblTitle.Font = New System.Drawing.Font("Segoe UI", 16.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblTitle.ForeColor = System.Drawing.Color.FromArgb(CType(CType(10, Byte), Integer), CType(CType(65, Byte), Integer), CType(CType(45, Byte), Integer))
-        Me.lblTitle.Location = New System.Drawing.Point(288, 28)
+        Me.lblTitle.Location = New System.Drawing.Point(256, 22)
         Me.lblTitle.Name = "lblTitle"
-        Me.lblTitle.Size = New System.Drawing.Size(204, 45)
+        Me.lblTitle.Size = New System.Drawing.Size(172, 37)
         Me.lblTitle.TabIndex = 0
         Me.lblTitle.Text = "MY PROFILE"
         '
@@ -54,9 +54,9 @@ Partial Class frmUserProfile
         '
         Me.lblFullName.AutoSize = True
         Me.lblFullName.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblFullName.Location = New System.Drawing.Point(117, 263)
+        Me.lblFullName.Location = New System.Drawing.Point(104, 210)
         Me.lblFullName.Name = "lblFullName"
-        Me.lblFullName.Size = New System.Drawing.Size(102, 25)
+        Me.lblFullName.Size = New System.Drawing.Size(84, 20)
         Me.lblFullName.TabIndex = 1
         Me.lblFullName.Text = "Full Name:"
         '
@@ -64,9 +64,9 @@ Partial Class frmUserProfile
         '
         Me.lblUsername.AutoSize = True
         Me.lblUsername.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblUsername.Location = New System.Drawing.Point(117, 322)
+        Me.lblUsername.Location = New System.Drawing.Point(104, 258)
         Me.lblUsername.Name = "lblUsername"
-        Me.lblUsername.Size = New System.Drawing.Size(97, 25)
+        Me.lblUsername.Size = New System.Drawing.Size(80, 20)
         Me.lblUsername.TabIndex = 2
         Me.lblUsername.Text = "Username"
         '
@@ -74,9 +74,9 @@ Partial Class frmUserProfile
         '
         Me.lblRole.AutoSize = True
         Me.lblRole.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblRole.Location = New System.Drawing.Point(117, 388)
+        Me.lblRole.Location = New System.Drawing.Point(104, 310)
         Me.lblRole.Name = "lblRole"
-        Me.lblRole.Size = New System.Drawing.Size(50, 25)
+        Me.lblRole.Size = New System.Drawing.Size(40, 20)
         Me.lblRole.TabIndex = 3
         Me.lblRole.Text = "Role"
         '
@@ -84,46 +84,42 @@ Partial Class frmUserProfile
         '
         Me.lblStatus.AutoSize = True
         Me.lblStatus.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblStatus.Location = New System.Drawing.Point(117, 460)
+        Me.lblStatus.Location = New System.Drawing.Point(104, 368)
         Me.lblStatus.Name = "lblStatus"
-        Me.lblStatus.Size = New System.Drawing.Size(65, 25)
+        Me.lblStatus.Size = New System.Drawing.Size(53, 20)
         Me.lblStatus.TabIndex = 4
         Me.lblStatus.Text = "Status"
         '
         'txtFullName
         '
         Me.txtFullName.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtFullName.Location = New System.Drawing.Point(259, 257)
-        Me.txtFullName.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.txtFullName.Location = New System.Drawing.Point(230, 206)
         Me.txtFullName.Name = "txtFullName"
-        Me.txtFullName.Size = New System.Drawing.Size(354, 31)
+        Me.txtFullName.Size = New System.Drawing.Size(315, 27)
         Me.txtFullName.TabIndex = 0
         '
         'txtUsername
         '
         Me.txtUsername.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtUsername.Location = New System.Drawing.Point(259, 319)
-        Me.txtUsername.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.txtUsername.Location = New System.Drawing.Point(230, 255)
         Me.txtUsername.Name = "txtUsername"
-        Me.txtUsername.Size = New System.Drawing.Size(354, 31)
+        Me.txtUsername.Size = New System.Drawing.Size(315, 27)
         Me.txtUsername.TabIndex = 1
         '
         'txtRole
         '
         Me.txtRole.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtRole.Location = New System.Drawing.Point(259, 382)
-        Me.txtRole.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.txtRole.Location = New System.Drawing.Point(230, 306)
         Me.txtRole.Name = "txtRole"
-        Me.txtRole.Size = New System.Drawing.Size(354, 31)
+        Me.txtRole.Size = New System.Drawing.Size(315, 27)
         Me.txtRole.TabIndex = 2
         '
         'txtStatus
         '
         Me.txtStatus.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtStatus.Location = New System.Drawing.Point(259, 457)
-        Me.txtStatus.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.txtStatus.Location = New System.Drawing.Point(230, 366)
         Me.txtStatus.Name = "txtStatus"
-        Me.txtStatus.Size = New System.Drawing.Size(354, 31)
+        Me.txtStatus.Size = New System.Drawing.Size(315, 27)
         Me.txtStatus.TabIndex = 3
         '
         'btnEdit
@@ -131,10 +127,9 @@ Partial Class frmUserProfile
         Me.btnEdit.BackColor = System.Drawing.Color.FromArgb(CType(CType(10, Byte), Integer), CType(CType(65, Byte), Integer), CType(CType(45, Byte), Integer))
         Me.btnEdit.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnEdit.ForeColor = System.Drawing.Color.White
-        Me.btnEdit.Location = New System.Drawing.Point(180, 615)
-        Me.btnEdit.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.btnEdit.Location = New System.Drawing.Point(160, 492)
         Me.btnEdit.Name = "btnEdit"
-        Me.btnEdit.Size = New System.Drawing.Size(382, 44)
+        Me.btnEdit.Size = New System.Drawing.Size(340, 35)
         Me.btnEdit.TabIndex = 4
         Me.btnEdit.Text = "&Edit Profile"
         Me.btnEdit.UseVisualStyleBackColor = False
@@ -144,10 +139,9 @@ Partial Class frmUserProfile
         Me.btnSave.BackColor = System.Drawing.Color.FromArgb(CType(CType(10, Byte), Integer), CType(CType(65, Byte), Integer), CType(CType(45, Byte), Integer))
         Me.btnSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnSave.ForeColor = System.Drawing.Color.White
-        Me.btnSave.Location = New System.Drawing.Point(180, 690)
-        Me.btnSave.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.btnSave.Location = New System.Drawing.Point(160, 552)
         Me.btnSave.Name = "btnSave"
-        Me.btnSave.Size = New System.Drawing.Size(382, 44)
+        Me.btnSave.Size = New System.Drawing.Size(340, 35)
         Me.btnSave.TabIndex = 5
         Me.btnSave.Text = "&Save Changes"
         Me.btnSave.UseVisualStyleBackColor = False
@@ -157,10 +151,9 @@ Partial Class frmUserProfile
         Me.btnCancel.BackColor = System.Drawing.Color.Red
         Me.btnCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnCancel.ForeColor = System.Drawing.Color.White
-        Me.btnCancel.Location = New System.Drawing.Point(180, 765)
-        Me.btnCancel.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.btnCancel.Location = New System.Drawing.Point(160, 612)
         Me.btnCancel.Name = "btnCancel"
-        Me.btnCancel.Size = New System.Drawing.Size(382, 44)
+        Me.btnCancel.Size = New System.Drawing.Size(340, 35)
         Me.btnCancel.TabIndex = 6
         Me.btnCancel.Text = "&Cancel"
         Me.btnCancel.UseVisualStyleBackColor = False
@@ -168,18 +161,19 @@ Partial Class frmUserProfile
         'PictureBox1
         '
         Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
-        Me.PictureBox1.Location = New System.Drawing.Point(340, 92)
+        Me.PictureBox1.Location = New System.Drawing.Point(302, 74)
+        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(113, 107)
+        Me.PictureBox1.Size = New System.Drawing.Size(100, 86)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox1.TabIndex = 12
         Me.PictureBox1.TabStop = False
         '
         'frmUserProfile
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(746, 892)
+        Me.ClientSize = New System.Drawing.Size(663, 714)
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.btnCancel)
         Me.Controls.Add(Me.btnSave)
@@ -193,7 +187,6 @@ Partial Class frmUserProfile
         Me.Controls.Add(Me.lblUsername)
         Me.Controls.Add(Me.lblFullName)
         Me.Controls.Add(Me.lblTitle)
-        Me.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.Name = "frmUserProfile"
         Me.Text = "User Profile"
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()

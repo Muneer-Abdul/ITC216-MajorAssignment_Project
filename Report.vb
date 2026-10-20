@@ -57,8 +57,8 @@ Public Class Report
                 Label5.Text = "Distribution Method"
                 Label6.Text = "Date Filter"
 
-                btnExport.Text = "Export"
-                btnRefresh.Text = "Refresh"
+                btnExport.Text = "&Export"
+                btnRefresh.Text = "&Refresh"
 
             Case "Itaukei"
 

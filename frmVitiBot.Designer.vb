@@ -34,39 +34,36 @@ Partial Class frmVitiBot
         '
         Me.lblTitle.AutoSize = True
         Me.lblTitle.Font = New System.Drawing.Font("Segoe UI", 14.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblTitle.Location = New System.Drawing.Point(417, 22)
+        Me.lblTitle.Location = New System.Drawing.Point(371, 18)
         Me.lblTitle.Name = "lblTitle"
-        Me.lblTitle.Size = New System.Drawing.Size(454, 38)
+        Me.lblTitle.Size = New System.Drawing.Size(390, 32)
         Me.lblTitle.TabIndex = 0
         Me.lblTitle.Text = "VitiBot — Viti FoodLink Assistant"
         Me.lblTitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'rtbChat
         '
-        Me.rtbChat.Location = New System.Drawing.Point(120, 85)
-        Me.rtbChat.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.rtbChat.Location = New System.Drawing.Point(107, 68)
         Me.rtbChat.Name = "rtbChat"
         Me.rtbChat.ReadOnly = True
-        Me.rtbChat.Size = New System.Drawing.Size(1042, 546)
+        Me.rtbChat.Size = New System.Drawing.Size(927, 438)
         Me.rtbChat.TabIndex = 1
         Me.rtbChat.Text = ""
         '
         'txtMessage
         '
-        Me.txtMessage.Location = New System.Drawing.Point(320, 702)
-        Me.txtMessage.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.txtMessage.Location = New System.Drawing.Point(284, 562)
         Me.txtMessage.Name = "txtMessage"
-        Me.txtMessage.Size = New System.Drawing.Size(751, 26)
+        Me.txtMessage.Size = New System.Drawing.Size(668, 22)
         Me.txtMessage.TabIndex = 0
         '
         'btnClear
         '
         Me.btnClear.BackColor = System.Drawing.Color.Red
         Me.btnClear.ForeColor = System.Drawing.Color.White
-        Me.btnClear.Location = New System.Drawing.Point(508, 872)
-        Me.btnClear.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.btnClear.Location = New System.Drawing.Point(419, 652)
         Me.btnClear.Name = "btnClear"
-        Me.btnClear.Size = New System.Drawing.Size(348, 55)
+        Me.btnClear.Size = New System.Drawing.Size(309, 44)
         Me.btnClear.TabIndex = 2
         Me.btnClear.Text = "&Clear"
         Me.btnClear.UseVisualStyleBackColor = False
@@ -75,10 +72,9 @@ Partial Class frmVitiBot
         '
         Me.btnSend.BackColor = System.Drawing.Color.FromArgb(CType(CType(10, Byte), Integer), CType(CType(65, Byte), Integer), CType(CType(45, Byte), Integer))
         Me.btnSend.ForeColor = System.Drawing.Color.White
-        Me.btnSend.Location = New System.Drawing.Point(508, 810)
-        Me.btnSend.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.btnSend.Location = New System.Drawing.Point(419, 602)
         Me.btnSend.Name = "btnSend"
-        Me.btnSend.Size = New System.Drawing.Size(348, 55)
+        Me.btnSend.Size = New System.Drawing.Size(309, 44)
         Me.btnSend.TabIndex = 1
         Me.btnSend.Text = "&Send"
         Me.btnSend.UseVisualStyleBackColor = False
@@ -86,24 +82,23 @@ Partial Class frmVitiBot
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(171, 702)
+        Me.Label1.Location = New System.Drawing.Point(152, 562)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(121, 20)
+        Me.Label1.Size = New System.Drawing.Size(101, 16)
         Me.Label1.TabIndex = 5
         Me.Label1.Text = "Enter Message:"
         '
         'frmVitiBot
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1289, 959)
+        Me.ClientSize = New System.Drawing.Size(1146, 767)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.btnSend)
         Me.Controls.Add(Me.btnClear)
         Me.Controls.Add(Me.txtMessage)
         Me.Controls.Add(Me.rtbChat)
         Me.Controls.Add(Me.lblTitle)
-        Me.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.Name = "frmVitiBot"
         Me.Text = "frmVitiBot"
         Me.ResumeLayout(False)

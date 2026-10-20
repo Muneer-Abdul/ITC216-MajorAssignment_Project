@@ -359,8 +359,8 @@ Public Class frmDistribution
             Label6.Text = "Distribution Date:"
             Label7.Text = "Distribution Method:"
 
-            btnDistribute.Text = "DISTRIBUTE"
-            btnClear.Text = "CLEAR"
+            btnDistribute.Text = "&DISTRIBUTE"
+            btnClear.Text = "&CLEAR"
 
         ElseIf LanguageHelper.CurrentLanguage = "Itaukei" Then
 

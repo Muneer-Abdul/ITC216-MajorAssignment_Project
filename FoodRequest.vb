@@ -252,7 +252,8 @@ Public Class frmFoodRequest
             Label6.Text = "Community"
             Label7.Text = "Urgency"
             Label8.Text = "Request Reason"
-            btnSubmitRequest.Text = "Submit Request"
+            btnSubmitRequest.Text = "&Submit Request"
+            btnClear.Text = "&Clear"
 
 
         ElseIf LanguageHelper.CurrentLanguage = "Itaukei" Then
@@ -308,6 +309,15 @@ Public Class frmFoodRequest
     End Function
 
     Private Sub cmbRecipientType_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cmbRecipientType.SelectedIndexChanged
+
+    End Sub
+
+    Private Sub btnClear_Click(sender As Object, e As EventArgs) Handles btnClear.Click
+        txtRequesterName.Clear()
+        txtFoodNeeded.Clear()
+        txtQuantityNeeded.Clear()
+        txtCommunity.Clear()
+        txtRequestReason.Clear()
 
     End Sub
 End Class

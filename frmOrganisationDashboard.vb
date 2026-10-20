@@ -124,11 +124,11 @@
         If LanguageHelper.CurrentLanguage = "English" Then
 
             lblTitle.Text = "Community Organisation Dashboard"
-            btnSupplies.Text = "Supplies"
-            btnRecipients.Text = "Recipients"
+            btnSupplies.Text = "&Supplies"
+            btnRecipients.Text = "&Recipients"
             'btnFoodExchange.Text = "Food Exchange"
-            btnFoodRequests.Text = "Food Requests"
-            btnLogout.Text = "Logout"
+            btnFoodRequests.Text = "&Food Requests"
+            btnLogout.Text = "&Logout"
 
         ElseIf LanguageHelper.CurrentLanguage = "Itaukei" Then
 
@@ -156,4 +156,5 @@
         frmLogin.Show()
         Me.Close()
     End Sub
+
 End Class

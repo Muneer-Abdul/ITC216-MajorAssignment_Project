@@ -249,9 +249,9 @@ Public Class frmSurplus
             Label6.Text = "Produce Source"
             Label7.Text = "Community"
 
-            btnAdd.Text = "Add"
-            btnUpdate.Text = "Update"
-            btnDelete.Text = "Delete"
+            btnAdd.Text = "&Add"
+            btnUpdate.Text = "&Update"
+            btnDelete.Text = "&Delete"
             btnClear.Text = "Clear"
 
         ElseIf LanguageHelper.CurrentLanguage = "Itaukei" Then

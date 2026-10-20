@@ -59,6 +59,10 @@ Public Class frmRegistration
 
             MessageBox.Show("Registration successful!")
 
+            Dim loginForm As New frmLogin()
+            loginForm.Show()
+            Me.Close()
+
             Me.Close()
 
         Catch ex As SQLiteException
@@ -87,8 +91,8 @@ Public Class frmRegistration
             Label4.Text = "Password:"
             Label5.Text = "Confirm Password:"
             Label6.Text = "Role"
-            btnRegister.Text = "Register"
-            btnBack.Text = "Back to Login"
+            btnRegister.Text = "&Register"
+            btnBack.Text = "&Back to Login"
 
         ElseIf LanguageHelper.CurrentLanguage = "Itaukei" Then
 

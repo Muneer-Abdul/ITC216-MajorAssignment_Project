@@ -255,7 +255,7 @@ Public Class frmViewBarter
         If LanguageHelper.CurrentLanguage = "English" Then
 
             Label1.Text = "View Barter"
-            btnConfirmBarter.Text = "Confirm Barter"
+            btnConfirmBarter.Text = "&Confirm Barter"
 
 
         ElseIf LanguageHelper.CurrentLanguage = "Itaukei" Then

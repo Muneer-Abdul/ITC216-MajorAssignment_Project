@@ -243,10 +243,10 @@ Public Class frmRecipients
             Label6.Text = "Location:"
             Label7.Text = "Recipient Type:"
 
-            btnAdd.Text = "Add"
-            btnUpdate.Text = "Update"
-            btnDelete.Text = "Delete"
-            btnClear.Text = "Clear"
+            btnAdd.Text = "&Add"
+            btnUpdate.Text = "&Update"
+            btnDelete.Text = "&Delete"
+            btnClear.Text = "&Clear"
 
         ElseIf LanguageHelper.CurrentLanguage = "Itaukei" Then
 

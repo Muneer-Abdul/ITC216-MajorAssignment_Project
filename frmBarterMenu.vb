@@ -53,8 +53,8 @@
         If LanguageHelper.CurrentLanguage = "English" Then
 
             Label1.Text = "Barter Menu"
-            btnAddBarter.Text = "Add Barter"
-            btnViewBarter.Text = "View Barter"
+            btnAddBarter.Text = "&Add Barter"
+            btnViewBarter.Text = "&View Barter"
 
 
         ElseIf LanguageHelper.CurrentLanguage = "Itaukei" Then

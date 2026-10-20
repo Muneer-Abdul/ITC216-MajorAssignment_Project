@@ -26,8 +26,8 @@
             Case "English"
 
                 lblTitle.Text = "VitiBot — Viti FoodLink Assistant"
-                btnSend.Text = "Send"
-                btnClear.Text = "Clear"
+                btnSend.Text = "&Send"
+                btnClear.Text = "&Clear"
 
             Case "Itaukei"
 

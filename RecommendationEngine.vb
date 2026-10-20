@@ -274,8 +274,8 @@ Public Class frmRecommendationEngine
             Label8.Text = "Priority Level:"
             Label9.Text = "Reason:"
 
-            btnRecommend.Text = "Find Recommendation"
-            btnClear.Text = "Clear"
+            btnRecommend.Text = "&Find Recommendation"
+            btnClear.Text = "&Clear"
 
         ElseIf LanguageHelper.CurrentLanguage = "Itaukei" Then
 

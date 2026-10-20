@@ -286,8 +286,8 @@ Public Class frmBarter
             Label5.Text = "Requested Quantity"
             Label6.Text = "Community"
 
-            btnAddBarter.Text = "Add Barter"
-            btnClear.Text = "Clear"
+            btnAddBarter.Text = "&Add Barter"
+            btnClear.Text = "&Clear"
 
 
         ElseIf LanguageHelper.CurrentLanguage = "Itaukei" Then

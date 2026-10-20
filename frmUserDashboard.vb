@@ -146,10 +146,10 @@
         If LanguageHelper.CurrentLanguage = "English" Then
 
             lblTitle.Text = "User Dashboard"
-            btnGiveFood.Text = "Give Food"
-            btnRequestFood.Text = "Request Food"
-            btnBarter.Text = "Barter"
-            btnLogout.Text = "Logout"
+            btnGiveFood.Text = "&Give Food"
+            btnRequestFood.Text = "&Request Food"
+            btnBarter.Text = "&Barter"
+            btnLogout.Text = "&Logout"
 
 
         ElseIf LanguageHelper.CurrentLanguage = "Itaukei" Then

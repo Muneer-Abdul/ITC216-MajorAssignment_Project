@@ -37,7 +37,6 @@ Partial Class frmUserDashboard
         Me.lblVitiFoodLink = New System.Windows.Forms.Label()
         Me.lblSubtitle = New System.Windows.Forms.Label()
         Me.pnlHeaderLine = New System.Windows.Forms.Panel()
-        Me.pnlContent.SuspendLayout()
         CType(Me.picVitiBot, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.picProfile, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.pnlSidebar.SuspendLayout()
@@ -49,9 +48,9 @@ Partial Class frmUserDashboard
         Me.lblTitle.AutoSize = True
         Me.lblTitle.Font = New System.Drawing.Font("Segoe UI", 14.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblTitle.ForeColor = System.Drawing.Color.FromArgb(CType(CType(10, Byte), Integer), CType(CType(65, Byte), Integer), CType(CType(45, Byte), Integer))
-        Me.lblTitle.Location = New System.Drawing.Point(757, 108)
+        Me.lblTitle.Location = New System.Drawing.Point(673, 86)
         Me.lblTitle.Name = "lblTitle"
-        Me.lblTitle.Size = New System.Drawing.Size(270, 38)
+        Me.lblTitle.Size = New System.Drawing.Size(230, 32)
         Me.lblTitle.TabIndex = 0
         Me.lblTitle.Text = "USER DASHBOARD"
         '
@@ -59,9 +58,9 @@ Partial Class frmUserDashboard
         '
         Me.lblWelcome.AutoSize = True
         Me.lblWelcome.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblWelcome.Location = New System.Drawing.Point(1305, 60)
+        Me.lblWelcome.Location = New System.Drawing.Point(1160, 48)
         Me.lblWelcome.Name = "lblWelcome"
-        Me.lblWelcome.Size = New System.Drawing.Size(129, 25)
+        Me.lblWelcome.Size = New System.Drawing.Size(107, 20)
         Me.lblWelcome.TabIndex = 1
         Me.lblWelcome.Text = "Welcome, User"
         '
@@ -72,10 +71,9 @@ Partial Class frmUserDashboard
         Me.btnGiveFood.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnGiveFood.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnGiveFood.ForeColor = System.Drawing.Color.White
-        Me.btnGiveFood.Location = New System.Drawing.Point(40, 149)
-        Me.btnGiveFood.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.btnGiveFood.Location = New System.Drawing.Point(36, 119)
         Me.btnGiveFood.Name = "btnGiveFood"
-        Me.btnGiveFood.Size = New System.Drawing.Size(156, 98)
+        Me.btnGiveFood.Size = New System.Drawing.Size(139, 78)
         Me.btnGiveFood.TabIndex = 0
         Me.btnGiveFood.Text = "Give Food"
         Me.btnGiveFood.UseVisualStyleBackColor = False
@@ -87,10 +85,9 @@ Partial Class frmUserDashboard
         Me.btnRequestFood.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnRequestFood.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnRequestFood.ForeColor = System.Drawing.Color.White
-        Me.btnRequestFood.Location = New System.Drawing.Point(40, 278)
-        Me.btnRequestFood.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.btnRequestFood.Location = New System.Drawing.Point(36, 222)
         Me.btnRequestFood.Name = "btnRequestFood"
-        Me.btnRequestFood.Size = New System.Drawing.Size(156, 92)
+        Me.btnRequestFood.Size = New System.Drawing.Size(139, 74)
         Me.btnRequestFood.TabIndex = 1
         Me.btnRequestFood.Text = "Request Food"
         Me.btnRequestFood.UseVisualStyleBackColor = False
@@ -102,10 +99,9 @@ Partial Class frmUserDashboard
         Me.btnBarter.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnBarter.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnBarter.ForeColor = System.Drawing.Color.White
-        Me.btnBarter.Location = New System.Drawing.Point(40, 412)
-        Me.btnBarter.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.btnBarter.Location = New System.Drawing.Point(36, 330)
         Me.btnBarter.Name = "btnBarter"
-        Me.btnBarter.Size = New System.Drawing.Size(156, 92)
+        Me.btnBarter.Size = New System.Drawing.Size(139, 74)
         Me.btnBarter.TabIndex = 2
         Me.btnBarter.Text = "Barter System"
         Me.btnBarter.UseVisualStyleBackColor = False
@@ -117,10 +113,9 @@ Partial Class frmUserDashboard
         Me.btnLogout.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnLogout.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnLogout.ForeColor = System.Drawing.Color.White
-        Me.btnLogout.Location = New System.Drawing.Point(38, 731)
-        Me.btnLogout.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.btnLogout.Location = New System.Drawing.Point(34, 637)
         Me.btnLogout.Name = "btnLogout"
-        Me.btnLogout.Size = New System.Drawing.Size(156, 92)
+        Me.btnLogout.Size = New System.Drawing.Size(139, 74)
         Me.btnLogout.TabIndex = 3
         Me.btnLogout.Text = "&Logout"
         Me.btnLogout.UseVisualStyleBackColor = False
@@ -130,21 +125,18 @@ Partial Class frmUserDashboard
         Me.pnlContent.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.pnlContent.Controls.Add(Me.picVitiBot)
-        Me.pnlContent.Location = New System.Drawing.Point(250, 165)
-        Me.pnlContent.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.pnlContent.Location = New System.Drawing.Point(222, 132)
         Me.pnlContent.Name = "pnlContent"
-        Me.pnlContent.Size = New System.Drawing.Size(1333, 948)
+        Me.pnlContent.Size = New System.Drawing.Size(1185, 758)
         Me.pnlContent.TabIndex = 7
         '
         'picVitiBot
         '
         Me.picVitiBot.Cursor = System.Windows.Forms.Cursors.Hand
         Me.picVitiBot.Image = CType(resources.GetObject("picVitiBot.Image"), System.Drawing.Image)
-        Me.picVitiBot.Location = New System.Drawing.Point(1234, 794)
-        Me.picVitiBot.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.picVitiBot.Location = New System.Drawing.Point(66, 495)
         Me.picVitiBot.Name = "picVitiBot"
-        Me.picVitiBot.Size = New System.Drawing.Size(81, 72)
+        Me.picVitiBot.Size = New System.Drawing.Size(72, 58)
         Me.picVitiBot.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.picVitiBot.TabIndex = 9
         Me.picVitiBot.TabStop = False
@@ -153,10 +145,9 @@ Partial Class frmUserDashboard
         '
         Me.picProfile.Cursor = System.Windows.Forms.Cursors.Hand
         Me.picProfile.Image = CType(resources.GetObject("picProfile.Image"), System.Drawing.Image)
-        Me.picProfile.Location = New System.Drawing.Point(1472, 35)
-        Me.picProfile.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.picProfile.Location = New System.Drawing.Point(1308, 28)
         Me.picProfile.Name = "picProfile"
-        Me.picProfile.Size = New System.Drawing.Size(82, 75)
+        Me.picProfile.Size = New System.Drawing.Size(73, 60)
         Me.picProfile.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.picProfile.TabIndex = 8
         Me.picProfile.TabStop = False
@@ -164,15 +155,16 @@ Partial Class frmUserDashboard
         'pnlSidebar
         '
         Me.pnlSidebar.BackColor = System.Drawing.Color.FromArgb(CType(CType(10, Byte), Integer), CType(CType(65, Byte), Integer), CType(CType(45, Byte), Integer))
+        Me.pnlSidebar.Controls.Add(Me.picVitiBot)
         Me.pnlSidebar.Controls.Add(Me.lblMainMenu)
         Me.pnlSidebar.Controls.Add(Me.btnLogout)
         Me.pnlSidebar.Controls.Add(Me.btnBarter)
         Me.pnlSidebar.Controls.Add(Me.btnRequestFood)
         Me.pnlSidebar.Controls.Add(Me.btnGiveFood)
-        Me.pnlSidebar.Location = New System.Drawing.Point(1, 228)
+        Me.pnlSidebar.Location = New System.Drawing.Point(1, 131)
         Me.pnlSidebar.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.pnlSidebar.Name = "pnlSidebar"
-        Me.pnlSidebar.Size = New System.Drawing.Size(238, 866)
+        Me.pnlSidebar.Size = New System.Drawing.Size(212, 759)
         Me.pnlSidebar.TabIndex = 9
         '
         'lblMainMenu
@@ -181,9 +173,9 @@ Partial Class frmUserDashboard
         Me.lblMainMenu.BackColor = System.Drawing.Color.Transparent
         Me.lblMainMenu.Font = New System.Drawing.Font("Segoe UI", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblMainMenu.ForeColor = System.Drawing.Color.White
-        Me.lblMainMenu.Location = New System.Drawing.Point(12, 29)
+        Me.lblMainMenu.Location = New System.Drawing.Point(11, 23)
         Me.lblMainMenu.Name = "lblMainMenu"
-        Me.lblMainMenu.Size = New System.Drawing.Size(212, 48)
+        Me.lblMainMenu.Size = New System.Drawing.Size(179, 41)
         Me.lblMainMenu.TabIndex = 7
         Me.lblMainMenu.Text = "Main Menu"
         '
@@ -193,9 +185,9 @@ Partial Class frmUserDashboard
         Me.lblVitiFoodLink.BackColor = System.Drawing.Color.Transparent
         Me.lblVitiFoodLink.Font = New System.Drawing.Font("Segoe UI", 20.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblVitiFoodLink.ForeColor = System.Drawing.Color.Black
-        Me.lblVitiFoodLink.Location = New System.Drawing.Point(32, 25)
+        Me.lblVitiFoodLink.Location = New System.Drawing.Point(28, 20)
         Me.lblVitiFoodLink.Name = "lblVitiFoodLink"
-        Me.lblVitiFoodLink.Size = New System.Drawing.Size(270, 54)
+        Me.lblVitiFoodLink.Size = New System.Drawing.Size(233, 46)
         Me.lblVitiFoodLink.TabIndex = 10
         Me.lblVitiFoodLink.Text = "Viti FoodLink"
         '
@@ -205,9 +197,9 @@ Partial Class frmUserDashboard
         Me.lblSubtitle.BackColor = System.Drawing.Color.Transparent
         Me.lblSubtitle.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblSubtitle.ForeColor = System.Drawing.Color.Black
-        Me.lblSubtitle.Location = New System.Drawing.Point(37, 90)
+        Me.lblSubtitle.Location = New System.Drawing.Point(33, 72)
         Me.lblSubtitle.Name = "lblSubtitle"
-        Me.lblSubtitle.Size = New System.Drawing.Size(326, 25)
+        Me.lblSubtitle.Size = New System.Drawing.Size(267, 20)
         Me.lblSubtitle.TabIndex = 11
         Me.lblSubtitle.Text = "Community Food Surplus Management"
         '
@@ -222,24 +214,22 @@ Partial Class frmUserDashboard
         Me.pnlHeaderLine.Location = New System.Drawing.Point(-2, -2)
         Me.pnlHeaderLine.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.pnlHeaderLine.Name = "pnlHeaderLine"
-        Me.pnlHeaderLine.Size = New System.Drawing.Size(1584, 161)
+        Me.pnlHeaderLine.Size = New System.Drawing.Size(1408, 129)
         Me.pnlHeaderLine.TabIndex = 12
         '
         'frmUserDashboard
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1583, 1108)
+        Me.ClientSize = New System.Drawing.Size(1407, 886)
         Me.Controls.Add(Me.pnlHeaderLine)
         Me.Controls.Add(Me.pnlSidebar)
         Me.Controls.Add(Me.pnlContent)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
-        Me.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.MaximizeBox = False
         Me.Name = "frmUserDashboard"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "User Dashboard"
-        Me.pnlContent.ResumeLayout(False)
         CType(Me.picVitiBot, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.picProfile, System.ComponentModel.ISupportInitialize).EndInit()
         Me.pnlSidebar.ResumeLayout(False)

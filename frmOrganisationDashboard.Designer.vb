@@ -37,6 +37,7 @@ Partial Class frmOrganisationDashboard
         Me.Button1 = New System.Windows.Forms.Button()
         Me.lblOrganisationDashboard = New System.Windows.Forms.Label()
         Me.pnlHeading = New System.Windows.Forms.Panel()
+        Me.Label1 = New System.Windows.Forms.Label()
         CType(Me.picVitiBot, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.picProfile, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.pnlSidebar.SuspendLayout()
@@ -46,24 +47,24 @@ Partial Class frmOrganisationDashboard
         'lblWelcome
         '
         Me.lblWelcome.AutoSize = True
-        Me.lblWelcome.Font = New System.Drawing.Font("Segoe UI", 20.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblWelcome.Font = New System.Drawing.Font("Arial Narrow", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblWelcome.ForeColor = System.Drawing.Color.Black
-        Me.lblWelcome.Location = New System.Drawing.Point(51, 36)
+        Me.lblWelcome.Location = New System.Drawing.Point(1129, 50)
         Me.lblWelcome.Name = "lblWelcome"
-        Me.lblWelcome.Size = New System.Drawing.Size(233, 46)
+        Me.lblWelcome.Size = New System.Drawing.Size(51, 27)
         Me.lblWelcome.TabIndex = 0
-        Me.lblWelcome.Text = "Viti FoodLink"
+        Me.lblWelcome.Text = "user"
         '
         'lblTitle
         '
         Me.lblTitle.AutoSize = True
-        Me.lblTitle.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblTitle.Font = New System.Drawing.Font("Segoe UI", 20.0!, System.Drawing.FontStyle.Bold)
         Me.lblTitle.ForeColor = System.Drawing.Color.Black
-        Me.lblTitle.Location = New System.Drawing.Point(54, 79)
+        Me.lblTitle.Location = New System.Drawing.Point(40, 18)
         Me.lblTitle.Name = "lblTitle"
-        Me.lblTitle.Size = New System.Drawing.Size(267, 20)
+        Me.lblTitle.Size = New System.Drawing.Size(233, 46)
         Me.lblTitle.TabIndex = 1
-        Me.lblTitle.Text = "Community Food Surplus Management"
+        Me.lblTitle.Text = "Viti FoodLink"
         '
         'btnLogout
         '
@@ -76,12 +77,9 @@ Partial Class frmOrganisationDashboard
         '
         'pnlContent
         '
-        Me.pnlContent.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-            Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.pnlContent.Location = New System.Drawing.Point(239, 118)
         Me.pnlContent.Name = "pnlContent"
-        Me.pnlContent.Size = New System.Drawing.Size(1151, 762)
+        Me.pnlContent.Size = New System.Drawing.Size(1170, 723)
         Me.pnlContent.TabIndex = 7
         '
         'picVitiBot
@@ -169,7 +167,7 @@ Partial Class frmOrganisationDashboard
         Me.pnlSidebar.Location = New System.Drawing.Point(-5, 117)
         Me.pnlSidebar.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.pnlSidebar.Name = "pnlSidebar"
-        Me.pnlSidebar.Size = New System.Drawing.Size(238, 736)
+        Me.pnlSidebar.Size = New System.Drawing.Size(238, 724)
         Me.pnlSidebar.TabIndex = 11
         '
         'Button1
@@ -190,7 +188,7 @@ Partial Class frmOrganisationDashboard
         Me.lblOrganisationDashboard.BackColor = System.Drawing.Color.Transparent
         Me.lblOrganisationDashboard.Font = New System.Drawing.Font("Segoe UI", 14.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblOrganisationDashboard.ForeColor = System.Drawing.Color.FromArgb(CType(CType(10, Byte), Integer), CType(CType(65, Byte), Integer), CType(CType(45, Byte), Integer))
-        Me.lblOrganisationDashboard.Location = New System.Drawing.Point(642, 79)
+        Me.lblOrganisationDashboard.Location = New System.Drawing.Point(580, 72)
         Me.lblOrganisationDashboard.Name = "lblOrganisationDashboard"
         Me.lblOrganisationDashboard.Size = New System.Drawing.Size(293, 32)
         Me.lblOrganisationDashboard.TabIndex = 12
@@ -199,6 +197,7 @@ Partial Class frmOrganisationDashboard
         'pnlHeading
         '
         Me.pnlHeading.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.pnlHeading.Controls.Add(Me.Label1)
         Me.pnlHeading.Controls.Add(Me.lblOrganisationDashboard)
         Me.pnlHeading.Controls.Add(Me.picProfile)
         Me.pnlHeading.Controls.Add(Me.lblTitle)
@@ -206,19 +205,29 @@ Partial Class frmOrganisationDashboard
         Me.pnlHeading.Location = New System.Drawing.Point(-5, -10)
         Me.pnlHeading.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.pnlHeading.Name = "pnlHeading"
-        Me.pnlHeading.Size = New System.Drawing.Size(1422, 123)
+        Me.pnlHeading.Size = New System.Drawing.Size(1552, 123)
         Me.pnlHeading.TabIndex = 13
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Location = New System.Drawing.Point(45, 77)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(238, 16)
+        Me.Label1.TabIndex = 13
+        Me.Label1.Text = "Community Food Surplus Management"
         '
         'frmOrganisationDashboard
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1407, 881)
+        Me.ClientSize = New System.Drawing.Size(1410, 847)
         Me.Controls.Add(Me.pnlHeading)
         Me.Controls.Add(Me.pnlSidebar)
         Me.Controls.Add(Me.pnlContent)
         Me.Controls.Add(Me.btnLogout)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
+        Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "frmOrganisationDashboard"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
@@ -247,4 +256,5 @@ Partial Class frmOrganisationDashboard
     Friend WithEvents Button1 As Button
     Friend WithEvents lblOrganisationDashboard As Label
     Friend WithEvents pnlHeading As Panel
+    Friend WithEvents Label1 As Label
 End Class

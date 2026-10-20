@@ -136,9 +136,9 @@ Public Class frmLogin
             Label1.Text = "Welcome Back"
             Label2.Text = "Username:"
             Label3.Text = "Password:"
-            btnLogin.Text = "Login"
-            btnRegister.Text = "Create Account"
-            btnBack.Text = "Back"
+            btnLogin.Text = "&Login"
+            btnRegister.Text = "&Create Account"
+            btnBack.Text = "&Back"
 
         ElseIf LanguageHelper.CurrentLanguage = "Itaukei" Then
 
