@@ -47,11 +47,11 @@ Partial Class frmOrganisationDashboard
         'lblWelcome
         '
         Me.lblWelcome.AutoSize = True
-        Me.lblWelcome.Font = New System.Drawing.Font("Arial Narrow", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblWelcome.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.lblWelcome.ForeColor = System.Drawing.Color.Black
-        Me.lblWelcome.Location = New System.Drawing.Point(1129, 50)
+        Me.lblWelcome.Location = New System.Drawing.Point(1012, 61)
         Me.lblWelcome.Name = "lblWelcome"
-        Me.lblWelcome.Size = New System.Drawing.Size(51, 27)
+        Me.lblWelcome.Size = New System.Drawing.Size(36, 20)
         Me.lblWelcome.TabIndex = 0
         Me.lblWelcome.Text = "user"
         '

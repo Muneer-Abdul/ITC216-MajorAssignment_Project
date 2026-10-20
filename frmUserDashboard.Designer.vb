@@ -58,7 +58,7 @@ Partial Class frmUserDashboard
         '
         Me.lblWelcome.AutoSize = True
         Me.lblWelcome.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblWelcome.Location = New System.Drawing.Point(1160, 48)
+        Me.lblWelcome.Location = New System.Drawing.Point(989, 55)
         Me.lblWelcome.Name = "lblWelcome"
         Me.lblWelcome.Size = New System.Drawing.Size(107, 20)
         Me.lblWelcome.TabIndex = 1

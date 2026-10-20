@@ -57,7 +57,7 @@ Partial Class frmDashboard
         Me.pnlHeader.Controls.Add(Me.Label1)
         Me.pnlHeader.Location = New System.Drawing.Point(-10, -3)
         Me.pnlHeader.Name = "pnlHeader"
-        Me.pnlHeader.Size = New System.Drawing.Size(1433, 86)
+        Me.pnlHeader.Size = New System.Drawing.Size(1428, 86)
         Me.pnlHeader.TabIndex = 0
         '
         'lblDashboard
@@ -65,7 +65,7 @@ Partial Class frmDashboard
         Me.lblDashboard.AutoSize = True
         Me.lblDashboard.Font = New System.Drawing.Font("Segoe UI", 16.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblDashboard.ForeColor = System.Drawing.Color.FromArgb(CType(CType(10, Byte), Integer), CType(CType(65, Byte), Integer), CType(CType(45, Byte), Integer))
-        Me.lblDashboard.Location = New System.Drawing.Point(736, 48)
+        Me.lblDashboard.Location = New System.Drawing.Point(736, 31)
         Me.lblDashboard.Name = "lblDashboard"
         Me.lblDashboard.Size = New System.Drawing.Size(157, 37)
         Me.lblDashboard.TabIndex = 11
