@@ -1,4 +1,6 @@
-# Viti FoodLink
+# ITC216 Major Assignment Project
+
+## Viti FoodLink
 
 ### A Community Food-Sharing, Surplus Management, and Barter System for Fiji
 
