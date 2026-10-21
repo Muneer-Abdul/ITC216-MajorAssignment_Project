@@ -220,7 +220,7 @@ Partial Class frmRegistration
         Me.MinimizeBox = False
         Me.Name = "frmRegistration"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = " "
+        Me.Text = " Registration"
         CType(Me.pbDecorativeBorder, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()

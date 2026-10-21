@@ -351,7 +351,7 @@ Public Class frmDistribution
 
             Me.Text = "Distribution"
 
-            Label1.Text = "PRODUCE DISTRIBUTION"
+            Label1.Text = "Produce Distribution"
             Label2.Text = "Select Produce:"
             Label3.Text = "Available Quantity:"
             Label4.Text = "Select Recipient:"
