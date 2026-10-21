@@ -44,11 +44,11 @@ Partial Class frmViewBarter
         Me.dgvBarter.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.DisplayedCells
         Me.dgvBarter.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.dgvBarter.EnableHeadersVisualStyles = False
-        Me.dgvBarter.Location = New System.Drawing.Point(26, 151)
+        Me.dgvBarter.Location = New System.Drawing.Point(10, 83)
         Me.dgvBarter.Name = "dgvBarter"
         Me.dgvBarter.RowHeadersWidth = 51
         Me.dgvBarter.RowTemplate.Height = 24
-        Me.dgvBarter.Size = New System.Drawing.Size(1096, 387)
+        Me.dgvBarter.Size = New System.Drawing.Size(1126, 475)
         Me.dgvBarter.TabIndex = 2
         '
         'btnConfirmBarter
@@ -56,7 +56,7 @@ Partial Class frmViewBarter
         Me.btnConfirmBarter.BackColor = System.Drawing.Color.FromArgb(CType(CType(10, Byte), Integer), CType(CType(65, Byte), Integer), CType(CType(45, Byte), Integer))
         Me.btnConfirmBarter.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnConfirmBarter.ForeColor = System.Drawing.Color.White
-        Me.btnConfirmBarter.Location = New System.Drawing.Point(288, 629)
+        Me.btnConfirmBarter.Location = New System.Drawing.Point(482, 618)
         Me.btnConfirmBarter.Name = "btnConfirmBarter"
         Me.btnConfirmBarter.Size = New System.Drawing.Size(143, 62)
         Me.btnConfirmBarter.TabIndex = 0
@@ -72,7 +72,7 @@ Partial Class frmViewBarter
         Me.Controls.Add(Me.dgvBarter)
         Me.Controls.Add(Me.Label1)
         Me.Name = "frmViewBarter"
-        Me.Text = "  "
+        Me.Text = "  View Barter"
         CType(Me.dgvBarter, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()

@@ -241,9 +241,15 @@ Public Class frmDashboard
 
     End Sub
 
-    Private Sub btnBarter_Click(sender As Object, e As EventArgs) Handles btnBarter.Click
+    Private Sub btnBarter_Click(
+    sender As Object,
+    e As EventArgs
+) Handles btnBarter.Click
 
-        Dim barterMenu As New frmBarterMenu()
+        Dim barterMenu As New frmBarterMenu(
+        loggedInUserID,
+        loggedInName
+    )
 
         barterMenu.TopLevel = False
         barterMenu.FormBorderStyle = FormBorderStyle.None

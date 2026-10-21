@@ -1,5 +1,15 @@
 ﻿Public Class frmBarterMenu
 
+    Private loggedInUserID As Integer
+    Private loggedInName As String
+
+    Public Sub New(userID As Integer, fullName As String)
+        InitializeComponent()
+
+        loggedInUserID = userID
+        loggedInName = fullName
+    End Sub
+
     Private Sub frmBarterMenu_Load(
         sender As Object,
         e As EventArgs
@@ -9,13 +19,15 @@
 
     End Sub
 
-
     Private Sub btnAddBarter_Click(
         sender As Object,
         e As EventArgs
     ) Handles btnAddBarter.Click
 
-        Dim barterForm As New frmBarter()
+        Dim barterForm As New frmBarter(
+            loggedInUserID,
+            loggedInName
+        )
 
         barterForm.TopLevel = False
         barterForm.FormBorderStyle = FormBorderStyle.None
@@ -28,13 +40,15 @@
 
     End Sub
 
-
     Private Sub btnViewBarter_Click(
         sender As Object,
         e As EventArgs
     ) Handles btnViewBarter.Click
 
-        Dim viewBarterForm As New frmViewBarter()
+        Dim viewBarterForm As New frmViewBarter(
+            loggedInUserID,
+            loggedInName
+        )
 
         viewBarterForm.TopLevel = False
         viewBarterForm.FormBorderStyle = FormBorderStyle.None
@@ -47,7 +61,6 @@
 
     End Sub
 
-
     Private Sub ApplyLanguage()
 
         If LanguageHelper.CurrentLanguage = "English" Then
@@ -56,13 +69,11 @@
             btnAddBarter.Text = "&Add Barter"
             btnViewBarter.Text = "&View Barter"
 
-
         ElseIf LanguageHelper.CurrentLanguage = "Itaukei" Then
 
             Label1.Text = "Menu ni Veisau"
             btnAddBarter.Text = "Vakuria na Veisau"
             btnViewBarter.Text = "Raica na Veisau"
-
 
         ElseIf LanguageHelper.CurrentLanguage = "Fiji Hindi" Then
 

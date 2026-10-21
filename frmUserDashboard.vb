@@ -78,7 +78,7 @@
         e As EventArgs
     ) Handles btnBarter.Click
 
-        Dim barterMenu As New frmBarterMenu()
+        Dim barterMenu As New frmBarterMenu(loggedInUserID, loggedInName)
 
         barterMenu.TopLevel = False
         barterMenu.FormBorderStyle = FormBorderStyle.None
