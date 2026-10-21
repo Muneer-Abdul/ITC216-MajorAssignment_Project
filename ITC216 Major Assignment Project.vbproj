@@ -270,10 +270,19 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="bin\Debug\ITC216 Major Assignment Project.exe" />
+    <Content Include="bin\Debug\ITC216 Major Assignment Project.pdb" />
+    <Content Include="bin\Debug\ITC216 Major Assignment Project.xml" />
+    <Content Include="bin\Debug\System.Data.SQLite.dll" />
+    <Content Include="bin\Debug\System.Data.SQLite.xml" />
+    <Content Include="bin\Debug\x64\SQLite.Interop.dll" />
+    <Content Include="bin\Debug\x86\SQLite.Interop.dll" />
     <Content Include="Database\VitiFoodLink.db">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="html file\VitiFoodLink_Web.html" />
+    <None Include="bin\Debug\Database\VitiFoodLink.db" />
+    <None Include="bin\Debug\ITC216 Major Assignment Project.exe.config" />
     <None Include="My Project\Application.myapp">
       <Generator>MyApplicationCodeGenerator</Generator>
       <LastGenOutput>Application.Designer.vb</LastGenOutput>
