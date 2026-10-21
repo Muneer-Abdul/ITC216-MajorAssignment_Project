@@ -1,5 +1,5 @@
 # ITC216 Major Assignment Project
-Viti FoodLink
+## Viti FoodLink
 A Community Food-Sharing, Surplus Management, and Barter System for Fiji
 Viti FoodLink is a Windows desktop application designed to help
 communities manage surplus food, connect available produce with people
@@ -13,7 +13,7 @@ Visual Studio
 Project status: A portable Windows release ZIP has been created
 and tested from an extracted folder. Complete the final user
 acceptance tests before treating the release as production-ready.
-
+#
 Contents
 - Project Goals
 - Key Features
@@ -57,6 +57,7 @@ Key Features
   cloud-based generative AI service.
 - Multilingual interface support on implemented forms.
 - SQLite local data persistence.
+
 Technology Stack
   Technology             Purpose
   VB.NET                 Application programming language
@@ -70,6 +71,7 @@ Application Forms
 The project uses separate forms for different responsibilities. Exact
 actions available on each form depend on the current implementation and
 permissions.
+#
   Form                                Purpose
   frmWelcome                        Welcome screen and language
                                       selection.
@@ -125,6 +127,8 @@ permissions.
 
   frmVitiBot                        Provides local, prepared-response
                                   assistance.
+#
+
 For forms whose exact class names are not listed, the names displayed in
 Visual Studio and in the repository are authoritative.
 User Roles and Permissions
