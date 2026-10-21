@@ -250,6 +250,52 @@ Public Class frmBarter
     Private Sub ApplyLanguage()
         'Keep your existing ApplyLanguage implementation here.
         'Preserve your current English, iTaukei and Fiji Hindi labels.
+
+        If LanguageHelper.CurrentLanguage = "English" Then
+
+            'Label7.Text = "Food Barter Exchange"
+            Label7.Text = "Person Name:"
+            Label8.Text = "Contact Number:"
+            Label2.Text = "Offered Produce:"
+            Label3.Text = "Offered Quantity:"
+            Label4.Text = "Requested Produce:"
+            Label5.Text = "Requested Quantity:"
+            Label6.Text = "Community:"
+
+            btnAddBarter.Text = "&Add Barter"
+            btnClear.Text = "&Clear Fields"
+
+        ElseIf LanguageHelper.CurrentLanguage = "Itaukei" OrElse
+               LanguageHelper.CurrentLanguage = "iTaukei" Then
+
+            Label1.Text = "Veisau ni Kakana"
+            Label7.Text = "Yaca ni Tamata:"
+            Label8.Text = "Naba ni Veitaratara:"
+            Label2.Text = "Kakana e Soli:"
+            Label3.Text = "Levu ni Kakana e Soli:"
+            Label4.Text = "Kakana e Kerei:"
+            Label5.Text = "Levu ni Kakana e Kerei:"
+            Label6.Text = "Tikina:"
+
+            btnAddBarter.Text = "Vakacuruma na Barter"
+            btnClear.Text = "Vakasavasavataka"
+
+        ElseIf LanguageHelper.CurrentLanguage = "Fiji Hindi" Then
+
+            Label1.Text = "Khana Badlao"
+            Label7.Text = "Aadmi ke Naam:"
+            Label8.Text = "Contact Number:"
+            Label2.Text = "Diya Gaya Khana:"
+            Label3.Text = "Diya Gaya Quantity:"
+            Label4.Text = "Maanga Gaya Khana:"
+            Label5.Text = "Maanga Gaya Quantity:"
+            Label6.Text = "Community:"
+
+            btnAddBarter.Text = "Barter Jodo"
+            btnClear.Text = "Fields Saaf Karo"
+
+        End If
+
     End Sub
 
     Private Function GetText(
@@ -270,5 +316,6 @@ Public Class frmBarter
         End Select
 
     End Function
+
 
 End Class

@@ -149,7 +149,7 @@ Partial Class frmBarter
         'txtOfferedProduce
         '
         Me.txtOfferedProduce.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtOfferedProduce.Location = New System.Drawing.Point(260, 214)
+        Me.txtOfferedProduce.Location = New System.Drawing.Point(289, 213)
         Me.txtOfferedProduce.Name = "txtOfferedProduce"
         Me.txtOfferedProduce.Size = New System.Drawing.Size(179, 27)
         Me.txtOfferedProduce.TabIndex = 2
@@ -157,7 +157,7 @@ Partial Class frmBarter
         'txtOfferedQuantity
         '
         Me.txtOfferedQuantity.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtOfferedQuantity.Location = New System.Drawing.Point(260, 270)
+        Me.txtOfferedQuantity.Location = New System.Drawing.Point(289, 269)
         Me.txtOfferedQuantity.Name = "txtOfferedQuantity"
         Me.txtOfferedQuantity.Size = New System.Drawing.Size(179, 27)
         Me.txtOfferedQuantity.TabIndex = 3
@@ -184,9 +184,9 @@ Partial Class frmBarter
         Me.Label7.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label7.Location = New System.Drawing.Point(103, 110)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(96, 20)
+        Me.Label7.Size = New System.Drawing.Size(99, 20)
         Me.Label7.TabIndex = 14
-        Me.Label7.Text = "Person Name"
+        Me.Label7.Text = "Person Name:"
         '
         'Label8
         '
@@ -194,14 +194,14 @@ Partial Class frmBarter
         Me.Label8.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label8.Location = New System.Drawing.Point(103, 166)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(118, 20)
+        Me.Label8.Size = New System.Drawing.Size(121, 20)
         Me.Label8.TabIndex = 15
-        Me.Label8.Text = "Contact Number"
+        Me.Label8.Text = "Contact Number:"
         '
         'txtName
         '
         Me.txtName.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtName.Location = New System.Drawing.Point(260, 107)
+        Me.txtName.Location = New System.Drawing.Point(289, 106)
         Me.txtName.Name = "txtName"
         Me.txtName.Size = New System.Drawing.Size(179, 27)
         Me.txtName.TabIndex = 0
@@ -209,7 +209,7 @@ Partial Class frmBarter
         'txtNumber
         '
         Me.txtNumber.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtNumber.Location = New System.Drawing.Point(260, 162)
+        Me.txtNumber.Location = New System.Drawing.Point(289, 161)
         Me.txtNumber.Name = "txtNumber"
         Me.txtNumber.Size = New System.Drawing.Size(179, 27)
         Me.txtNumber.TabIndex = 1

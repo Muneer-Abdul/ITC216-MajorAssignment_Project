@@ -49,7 +49,7 @@ Partial Class frmOrganisationDashboard
         Me.lblWelcome.AutoSize = True
         Me.lblWelcome.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.lblWelcome.ForeColor = System.Drawing.Color.Black
-        Me.lblWelcome.Location = New System.Drawing.Point(1012, 61)
+        Me.lblWelcome.Location = New System.Drawing.Point(1077, 60)
         Me.lblWelcome.Name = "lblWelcome"
         Me.lblWelcome.Size = New System.Drawing.Size(36, 20)
         Me.lblWelcome.TabIndex = 0
