@@ -56,9 +56,9 @@ Partial Class frmViewBarter
         Me.btnConfirmBarter.BackColor = System.Drawing.Color.FromArgb(CType(CType(10, Byte), Integer), CType(CType(65, Byte), Integer), CType(CType(45, Byte), Integer))
         Me.btnConfirmBarter.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnConfirmBarter.ForeColor = System.Drawing.Color.White
-        Me.btnConfirmBarter.Location = New System.Drawing.Point(520, 618)
+        Me.btnConfirmBarter.Location = New System.Drawing.Point(288, 629)
         Me.btnConfirmBarter.Name = "btnConfirmBarter"
-        Me.btnConfirmBarter.Size = New System.Drawing.Size(143, 53)
+        Me.btnConfirmBarter.Size = New System.Drawing.Size(143, 62)
         Me.btnConfirmBarter.TabIndex = 0
         Me.btnConfirmBarter.Text = "Confirm Barter"
         Me.btnConfirmBarter.UseVisualStyleBackColor = False

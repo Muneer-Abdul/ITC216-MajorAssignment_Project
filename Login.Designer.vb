@@ -32,6 +32,7 @@ Partial Class frmLogin
         Me.btnRegister = New System.Windows.Forms.Button()
         Me.btnBack = New System.Windows.Forms.Button()
         Me.pbDecorativeBorder = New System.Windows.Forms.PictureBox()
+        Me.chkShowPassword = New System.Windows.Forms.CheckBox()
         CType(Me.pbDecorativeBorder, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -139,12 +140,23 @@ Partial Class frmLogin
         Me.pbDecorativeBorder.TabIndex = 12
         Me.pbDecorativeBorder.TabStop = False
         '
+        'chkShowPassword
+        '
+        Me.chkShowPassword.AutoSize = True
+        Me.chkShowPassword.Location = New System.Drawing.Point(322, 335)
+        Me.chkShowPassword.Name = "chkShowPassword"
+        Me.chkShowPassword.Size = New System.Drawing.Size(125, 20)
+        Me.chkShowPassword.TabIndex = 13
+        Me.chkShowPassword.Text = "Show Password"
+        Me.chkShowPassword.UseVisualStyleBackColor = True
+        '
         'frmLogin
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(249, Byte), Integer), CType(CType(247, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(661, 714)
+        Me.Controls.Add(Me.chkShowPassword)
         Me.Controls.Add(Me.btnBack)
         Me.Controls.Add(Me.btnRegister)
         Me.Controls.Add(Me.btnLogin)
@@ -175,4 +187,5 @@ Partial Class frmLogin
     Friend WithEvents btnRegister As Button
     Friend WithEvents btnBack As Button
     Friend WithEvents pbDecorativeBorder As PictureBox
+    Friend WithEvents chkShowPassword As CheckBox
 End Class

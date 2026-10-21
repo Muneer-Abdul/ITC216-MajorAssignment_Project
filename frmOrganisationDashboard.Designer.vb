@@ -86,7 +86,7 @@ Partial Class frmOrganisationDashboard
         '
         Me.picVitiBot.Cursor = System.Windows.Forms.Cursors.Hand
         Me.picVitiBot.Image = CType(resources.GetObject("picVitiBot.Image"), System.Drawing.Image)
-        Me.picVitiBot.Location = New System.Drawing.Point(90, 443)
+        Me.picVitiBot.Location = New System.Drawing.Point(82, 484)
         Me.picVitiBot.Name = "picVitiBot"
         Me.picVitiBot.Size = New System.Drawing.Size(76, 59)
         Me.picVitiBot.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom

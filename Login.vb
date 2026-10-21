@@ -183,4 +183,14 @@ Public Class frmLogin
 
     End Sub
 
+    Private Sub CheckBox1_CheckedChanged(sender As Object, e As EventArgs) Handles chkShowPassword.CheckedChanged, chkShowPassword.CheckedChanged
+
+
+        If chkShowPassword.Checked Then
+            txtPassword.UseSystemPasswordChar = False
+        Else
+            txtPassword.UseSystemPasswordChar = True
+        End If
+
+    End Sub
 End Class
