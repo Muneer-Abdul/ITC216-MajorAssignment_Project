@@ -224,14 +224,14 @@ Partial Class frmRecipients
         Me.dgvRecipients.RowHeadersWidth = 51
         Me.dgvRecipients.RowTemplate.Height = 24
         Me.dgvRecipients.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.dgvRecipients.Size = New System.Drawing.Size(1084, 361)
+        Me.dgvRecipients.Size = New System.Drawing.Size(1084, 312)
         Me.dgvRecipients.TabIndex = 18
         '
         'frmRecipients
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1148, 767)
+        Me.ClientSize = New System.Drawing.Size(1148, 716)
         Me.Controls.Add(Me.dgvRecipients)
         Me.Controls.Add(Me.btnClear)
         Me.Controls.Add(Me.btnDelete)
