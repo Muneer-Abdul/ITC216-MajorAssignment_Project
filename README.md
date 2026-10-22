@@ -224,6 +224,7 @@ by a person.
 6.  Select **Add Barter**.
 7.  Verify the offer in the barter records and follow the available
     confirmation process.
+8.  Upon the barter confirmation both parties are notified via email
 
 ### Review reports
 
