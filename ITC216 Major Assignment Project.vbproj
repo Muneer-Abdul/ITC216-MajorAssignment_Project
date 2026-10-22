@@ -99,6 +99,7 @@
     <Compile Include="Distribution.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="EmailHelper.vb" />
     <Compile Include="FoodExchange.Designer.vb">
       <DependentUpon>FoodExchange.vb</DependentUpon>
     </Compile>

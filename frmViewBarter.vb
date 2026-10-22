@@ -33,7 +33,8 @@ Public Class frmViewBarter
                     "OfferedProduce, OfferedQuantity, " &
                     "RequestedProduce, RequestedQuantity, " &
                     "Community, BarterDate, Status, " &
-                    "CreatorName, ConfirmedByName, ConfirmedAt " &
+                    "CreatorUserID, CreatorName, " &
+                    "ConfirmedByUserID, ConfirmedByName, ConfirmedAt " &
                     "FROM Barter ORDER BY BarterID DESC"
 
                 Using adapter As New SQLiteDataAdapter(query, conn)
@@ -56,17 +57,19 @@ Public Class frmViewBarter
             dgvBarter.ColumnHeadersHeight = 35
             dgvBarter.RowTemplate.Height = 30
 
-            'Make the confirmation information easier to find.
             If dgvBarter.Columns.Contains("CreatorName") Then
-                dgvBarter.Columns("CreatorName").HeaderText = "Offer Created By"
+                dgvBarter.Columns("CreatorName").HeaderText =
+                    "Offer Created By"
             End If
 
             If dgvBarter.Columns.Contains("ConfirmedByName") Then
-                dgvBarter.Columns("ConfirmedByName").HeaderText = "Confirmed By"
+                dgvBarter.Columns("ConfirmedByName").HeaderText =
+                    "Confirmed By"
             End If
 
             If dgvBarter.Columns.Contains("ConfirmedAt") Then
-                dgvBarter.Columns("ConfirmedAt").HeaderText = "Confirmation Date"
+                dgvBarter.Columns("ConfirmedAt").HeaderText =
+                    "Confirmation Date"
             End If
 
         Catch ex As Exception
@@ -117,8 +120,8 @@ Public Class frmViewBarter
 
         Dim creatorUserID As Integer = 0
 
-        'Older offers may not have creator IDs.
         If dgvBarter.Columns.Contains("CreatorUserID") AndAlso
+           selectedRow.Cells("CreatorUserID").Value IsNot Nothing AndAlso
            Not IsDBNull(selectedRow.Cells("CreatorUserID").Value) Then
 
             Integer.TryParse(
@@ -131,45 +134,33 @@ Public Class frmViewBarter
             "Confirmed",
             StringComparison.OrdinalIgnoreCase
         ) Then
-
-            Dim confirmer As String =
-                Convert.ToString(selectedRow.Cells("ConfirmedByName").Value)
-
-            Dim confirmedAt As String =
-                Convert.ToString(selectedRow.Cells("ConfirmedAt").Value)
-
             MessageBox.Show(
                 GetText(
-                    "This barter has already been confirmed by ",
-                    "Sa vakadeitaki oti na veisau oqo mai vei ",
-                    "Ee barter pehle hi confirm ho chuka hai: "
-                ) & If(String.IsNullOrWhiteSpace(confirmer),
-                       GetText("another user.", "e dua tale na dauvakayagataka.", "dusre user ne."),
-                       confirmer) &
-                Environment.NewLine &
-                GetText("Confirmation date: ", "Tikinisiga ni vakadeitaki: ", "Confirm date: ") &
-                confirmedAt,
-                GetText("Barter Confirmed", "Veisau sa Vakadeitaki", "Barter Confirmed"),
-                MessageBoxButtons.OK,
-                MessageBoxIcon.Information
+                    "This barter has already been confirmed.",
+                    "Sa vakadeitaki oti na veisau oqo.",
+                    "Yeh barter pehle hi confirm ho chuka hai."
+                )
             )
             Return
         End If
 
-        'Prevent the creator from confirming their own offer.
         If creatorUserID <> 0 AndAlso creatorUserID = loggedInUserID Then
             MessageBox.Show(
                 GetText(
                     "You cannot confirm your own barter offer.",
-                    "E sega ni rawa ni o vakadeitaka na nomu solisoli veisau.",
+                    "E sega ni rawa ni o vakadeitaka na nomu soli veisau.",
                     "Aap apna khud ka barter offer confirm nahi kar sakte."
-                ),
-                GetText("Not Allowed", "E Sega ni Vakadonui", "Allowed Nahi Hai"),
-                MessageBoxButtons.OK,
-                MessageBoxIcon.Warning
+                )
             )
             Return
         End If
+
+        ' Capture all row information BEFORE refreshing the grid.
+        Dim offeredProduce As String =
+            Convert.ToString(selectedRow.Cells("OfferedProduce").Value)
+
+        Dim requestedProduce As String =
+            Convert.ToString(selectedRow.Cells("RequestedProduce").Value)
 
         Dim result As DialogResult = MessageBox.Show(
             GetText(
@@ -189,6 +180,10 @@ Public Class frmViewBarter
         If result <> DialogResult.Yes Then Return
 
         Try
+            Dim confirmedAt As String =
+                DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss")
+
+            ' Update the database first.
             Using conn As SQLiteConnection = DatabaseHelper.GetConnection()
                 conn.Open()
 
@@ -205,57 +200,121 @@ Public Class frmViewBarter
                 Using cmd As New SQLiteCommand(query, conn)
                     cmd.Parameters.AddWithValue("@userID", loggedInUserID)
                     cmd.Parameters.AddWithValue("@userName", loggedInName)
-                    cmd.Parameters.AddWithValue(
-                        "@confirmedAt",
-                        DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss")
-                    )
+                    cmd.Parameters.AddWithValue("@confirmedAt", confirmedAt)
                     cmd.Parameters.AddWithValue("@barterID", barterID)
 
                     Dim rowsUpdated As Integer = cmd.ExecuteNonQuery()
 
                     If rowsUpdated = 0 Then
                         MessageBox.Show(
-                            GetText(
-                                "The offer is no longer available or you cannot confirm your own offer. Refreshing the list.",
-                                "Sa sega ni tiko na soli veisau se o sega ni rawa ni vakadeitaka na nomu soli veisau. Vakarautaka tale na lisi.",
-                                "Offer ab available nahi hai ya aap apna offer confirm nahi kar sakte. List refresh ho rahi hai."
-                            ),
-                            GetText("Barter", "Veisau", "Barter"),
-                            MessageBoxButtons.OK,
-                            MessageBoxIcon.Information
+                            "The offer is no longer available or cannot be confirmed. Refreshing the list."
                         )
-
                         LoadBarterData()
                         Return
                     End If
                 End Using
             End Using
 
+            ' Database update succeeded. Retrieve both email addresses.
+            Dim creatorEmail As String = GetUserEmail(creatorUserID)
+            Dim confirmerEmail As String = GetUserEmail(loggedInUserID)
+
+            ' Refresh only after capturing the data needed for the emails.
             LoadBarterData()
 
+            Dim emailBody As String =
+                "Hello," & Environment.NewLine & Environment.NewLine &
+                "A barter offer in Viti FoodLink has been confirmed." &
+                Environment.NewLine & Environment.NewLine &
+                "Barter ID: " & barterID & Environment.NewLine &
+                "Offered produce: " & offeredProduce & Environment.NewLine &
+                "Requested produce: " & requestedProduce & Environment.NewLine &
+                "Confirmed by: " & loggedInName & Environment.NewLine &
+                "Confirmation time: " & confirmedAt & Environment.NewLine &
+                Environment.NewLine &
+                "Please contact the other party to arrange the exchange." &
+                Environment.NewLine & Environment.NewLine &
+                "Regards," & Environment.NewLine &
+                "Viti FoodLink"
+
+            Dim creatorEmailSent As Boolean = False
+            Dim confirmerEmailSent As Boolean = False
+            Dim emailErrors As String = ""
+
+            ' Notify the offer creator.
+            If creatorUserID > 0 AndAlso
+               Not String.IsNullOrWhiteSpace(creatorEmail) Then
+
+                Try
+                    EmailHelper.SendEmail(
+                        creatorEmail,
+                        "Viti FoodLink - Barter Confirmed",
+                        emailBody
+                    )
+                    creatorEmailSent = True
+
+                Catch ex As Exception
+                    emailErrors &=
+                        "Creator email failed: " & ex.Message &
+                        Environment.NewLine
+                End Try
+
+            Else
+                emailErrors &=
+                    "Creator email unavailable: no linked user ID or email address." &
+                    Environment.NewLine
+            End If
+
+            ' Notify the person who confirmed the barter.
+            If Not String.IsNullOrWhiteSpace(confirmerEmail) Then
+
+                Try
+                    EmailHelper.SendEmail(
+                        confirmerEmail,
+                        "Viti FoodLink - Barter Confirmation Receipt",
+                        emailBody
+                    )
+                    confirmerEmailSent = True
+
+                Catch ex As Exception
+                    emailErrors &=
+                        "Confirmer email failed: " & ex.Message &
+                        Environment.NewLine
+                End Try
+
+            Else
+                emailErrors &=
+                    "Your email address is missing from your account." &
+                    Environment.NewLine
+            End If
+
+            Dim summary As String =
+                "Barter confirmed successfully." & Environment.NewLine &
+                "Creator email sent: " &
+                If(creatorEmailSent, "Yes", "No") &
+                Environment.NewLine &
+                "Confirmer email sent: " &
+                If(confirmerEmailSent, "Yes", "No")
+
+            If emailErrors <> "" Then
+                summary &= Environment.NewLine & Environment.NewLine &
+                    "Email notification details:" & Environment.NewLine &
+                    emailErrors
+            End If
+
             MessageBox.Show(
-                GetText(
-                    "Barter confirmed successfully. Your name and confirmation time have been recorded.",
-                    "Sa vakadeitaki na veisau. Sa maroroi na yacamu kei na gauna ni vakadeitaki.",
-                    "Barter confirm ho gaya. Aapka naam aur confirmation time save ho gaya."
-                ),
-                GetText(
-                    "Barter Confirmed",
-                    "Veisau sa Vakadeitaki",
-                    "Barter Confirmed"
-                ),
+                summary,
+                "Viti FoodLink",
                 MessageBoxButtons.OK,
-                MessageBoxIcon.Information
+                If(emailErrors = "",
+                   MessageBoxIcon.Information,
+                   MessageBoxIcon.Warning)
             )
 
         Catch ex As Exception
             MessageBox.Show(
-                GetText(
-                    "Error confirming barter: ",
-                    "Sega ni rawa ni vakadeitaka na veisau: ",
-                    "Barter confirm karne mein error: "
-                ) & ex.Message,
-                GetText("Error", "Sega ni Rawa", "Error"),
+                "Error confirming barter: " & ex.Message,
+                "Error",
                 MessageBoxButtons.OK,
                 MessageBoxIcon.Error
             )
@@ -293,6 +352,65 @@ Public Class frmViewBarter
         Else
             Return englishText
         End If
+
+    End Function
+
+    Private Sub btnTestEmail_Click(
+        sender As Object,
+        e As EventArgs
+    )
+
+        Try
+            Dim recipient As String =
+                Environment.GetEnvironmentVariable("VITIFOODLINK_EMAIL")
+
+            EmailHelper.SendEmail(
+                recipient,
+                "Viti FoodLink Email Test",
+                "Success! Viti FoodLink can send emails through Gmail."
+            )
+
+            MessageBox.Show(
+                "Test email sent successfully. Check your inbox.",
+                "Email Test",
+                MessageBoxButtons.OK,
+                MessageBoxIcon.Information
+            )
+
+        Catch ex As Exception
+            MessageBox.Show(
+                "Email test failed: " & ex.Message,
+                "Email Error",
+                MessageBoxButtons.OK,
+                MessageBoxIcon.Error
+            )
+        End Try
+
+    End Sub
+
+    Private Function GetUserEmail(userID As Integer) As String
+
+        If userID <= 0 Then Return ""
+
+        Using conn As SQLiteConnection = DatabaseHelper.GetConnection()
+            conn.Open()
+
+            Dim query As String =
+                "SELECT Email FROM Users WHERE UserID = @userID"
+
+            Using cmd As New SQLiteCommand(query, conn)
+                cmd.Parameters.AddWithValue("@userID", userID)
+
+                Dim result As Object = cmd.ExecuteScalar()
+
+                If result IsNot Nothing AndAlso
+                   result IsNot DBNull.Value Then
+                    Return result.ToString().Trim()
+                End If
+            End Using
+        End Using
+
+        Return ""
 
     End Function
 

@@ -37,6 +37,8 @@ Partial Class frmRegistration
         Me.btnRegister = New System.Windows.Forms.Button()
         Me.btnBack = New System.Windows.Forms.Button()
         Me.pbDecorativeBorder = New System.Windows.Forms.PictureBox()
+        Me.Label7 = New System.Windows.Forms.Label()
+        Me.txtEmail = New System.Windows.Forms.TextBox()
         CType(Me.pbDecorativeBorder, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -58,7 +60,7 @@ Partial Class frmRegistration
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(31, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(55, Byte), Integer))
-        Me.Label2.Location = New System.Drawing.Point(180, 166)
+        Me.Label2.Location = New System.Drawing.Point(180, 147)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(84, 20)
         Me.Label2.TabIndex = 1
@@ -69,7 +71,7 @@ Partial Class frmRegistration
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(31, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(55, Byte), Integer))
-        Me.Label3.Location = New System.Drawing.Point(180, 216)
+        Me.Label3.Location = New System.Drawing.Point(180, 223)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(84, 20)
         Me.Label3.TabIndex = 2
@@ -91,7 +93,7 @@ Partial Class frmRegistration
         Me.txtFullName.BackColor = System.Drawing.Color.White
         Me.txtFullName.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtFullName.ForeColor = System.Drawing.Color.FromArgb(CType(CType(31, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(55, Byte), Integer))
-        Me.txtFullName.Location = New System.Drawing.Point(285, 163)
+        Me.txtFullName.Location = New System.Drawing.Point(285, 140)
         Me.txtFullName.Name = "txtFullName"
         Me.txtFullName.Size = New System.Drawing.Size(196, 27)
         Me.txtFullName.TabIndex = 0
@@ -195,12 +197,31 @@ Partial Class frmRegistration
         Me.pbDecorativeBorder.TabIndex = 13
         Me.pbDecorativeBorder.TabStop = False
         '
+        'Label7
+        '
+        Me.Label7.AutoSize = True
+        Me.Label7.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold)
+        Me.Label7.Location = New System.Drawing.Point(180, 184)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(51, 20)
+        Me.Label7.TabIndex = 14
+        Me.Label7.Text = "Email:"
+        '
+        'txtEmail
+        '
+        Me.txtEmail.Location = New System.Drawing.Point(285, 182)
+        Me.txtEmail.Name = "txtEmail"
+        Me.txtEmail.Size = New System.Drawing.Size(196, 22)
+        Me.txtEmail.TabIndex = 15
+        '
         'frmRegistration
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(249, Byte), Integer), CType(CType(247, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(659, 714)
+        Me.Controls.Add(Me.txtEmail)
+        Me.Controls.Add(Me.Label7)
         Me.Controls.Add(Me.btnBack)
         Me.Controls.Add(Me.btnRegister)
         Me.Controls.Add(Me.cmbRole)
@@ -241,4 +262,6 @@ Partial Class frmRegistration
     Friend WithEvents btnRegister As Button
     Friend WithEvents btnBack As Button
     Friend WithEvents pbDecorativeBorder As PictureBox
+    Friend WithEvents Label7 As Label
+    Friend WithEvents txtEmail As TextBox
 End Class

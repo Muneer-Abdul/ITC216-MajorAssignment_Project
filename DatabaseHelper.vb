@@ -15,9 +15,7 @@ Module DatabaseHelper
         "Data Source=" & DatabasePath & ";Version=3;"
 
     Public Function GetConnection() As SQLiteConnection
-
         Return New SQLiteConnection(ConnectionString)
-
     End Function
 
     Public Sub InitializeDatabase()
@@ -47,6 +45,13 @@ Module DatabaseHelper
             Using cmd As New SQLiteCommand(query, conn)
                 cmd.ExecuteNonQuery()
             End Using
+
+            ' ADD EMAIL COLUMN TO EXISTING USERS TABLE
+            AddUserColumnIfMissing(
+                conn,
+                "Email",
+                "TEXT"
+            )
 
             ' SURPLUS PRODUCE TABLE
             Dim surplusQuery As String =
@@ -136,6 +141,57 @@ Module DatabaseHelper
 
     End Sub
 
+    ' CHECK WHETHER A USERS COLUMN EXISTS
+    Private Function UserColumnExists(
+        conn As SQLiteConnection,
+        columnName As String
+    ) As Boolean
+
+        Using checkCmd As New SQLiteCommand(
+            "PRAGMA table_info(Users);", conn)
+
+            Using reader As SQLiteDataReader = checkCmd.ExecuteReader()
+
+                While reader.Read()
+
+                    If reader("name").ToString().Equals(
+                        columnName,
+                        StringComparison.OrdinalIgnoreCase
+                    ) Then
+                        Return True
+                    End If
+
+                End While
+
+            End Using
+        End Using
+
+        Return False
+
+    End Function
+
+    ' ADD A USERS COLUMN ONLY IF IT IS MISSING
+    Private Sub AddUserColumnIfMissing(
+        conn As SQLiteConnection,
+        columnName As String,
+        columnDefinition As String
+    )
+
+        If Not UserColumnExists(conn, columnName) Then
+
+            Dim alterQuery As String =
+                "ALTER TABLE Users ADD COLUMN " &
+                columnName & " " & columnDefinition & ";"
+
+            Using alterCmd As New SQLiteCommand(alterQuery, conn)
+                alterCmd.ExecuteNonQuery()
+            End Using
+
+        End If
+
+    End Sub
+
+    ' CHECK WHETHER A BARTER COLUMN EXISTS
     Private Function BarterColumnExists(
         conn As SQLiteConnection,
         columnName As String
@@ -164,6 +220,7 @@ Module DatabaseHelper
 
     End Function
 
+    ' ADD A BARTER COLUMN ONLY IF IT IS MISSING
     Private Sub AddBarterColumnIfMissing(
         conn As SQLiteConnection,
         columnName As String,

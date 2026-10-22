@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class frmViewBarter
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,11 +20,12 @@ Partial Class frmViewBarter
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.dgvBarter = New System.Windows.Forms.DataGridView()
         Me.btnConfirmBarter = New System.Windows.Forms.Button()
+        Me.Label2 = New System.Windows.Forms.Label()
         CType(Me.dgvBarter, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -63,11 +64,21 @@ Partial Class frmViewBarter
         Me.btnConfirmBarter.Text = "Confirm Barter"
         Me.btnConfirmBarter.UseVisualStyleBackColor = False
         '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Location = New System.Drawing.Point(663, 641)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(353, 16)
+        Me.Label2.TabIndex = 3
+        Me.Label2.Text = "After the barter confirmation an email is sent to both parties "
+        '
         'frmViewBarter
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1148, 767)
+        Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.btnConfirmBarter)
         Me.Controls.Add(Me.dgvBarter)
         Me.Controls.Add(Me.Label1)
@@ -82,4 +93,5 @@ Partial Class frmViewBarter
     Friend WithEvents Label1 As Label
     Friend WithEvents btnConfirmBarter As Button
     Protected WithEvents dgvBarter As DataGridView
+    Friend WithEvents Label2 As Label
 End Class
